@@ -19,6 +19,9 @@ set_party_name = {
 #COUNTRY LEADERS
 recruit_character = SOV_Vladimir_Putin
 
+#MINISTERS
+recruit_character = SOV_Andrey_Belousov
+
 declare_war_on = {
 		target = UKR
 		type = annex_everything
@@ -32,6 +35,18 @@ declare_war_on = {
 capital = 219 # Moscow
 
 starting_train_buffer = 3.0
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2024.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 93
+	fascism = 3
+	communism = 4
+}
 
 
 set_research_slots = 3
