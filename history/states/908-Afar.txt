@@ -21,7 +21,7 @@ state = {
 		victory_points = {
 			13240 2 
 		}
-		owner = AFA
+		owner = ETH
 		add_core_of = ETH
 		add_core_of = AFA
 		1936.6.1 = {

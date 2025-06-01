@@ -5,7 +5,7 @@ state = {
 	state_category = pastoral
 
 	history = {
-		owner = ENG
+		owner = SUD
 		add_core_of = SUD
 		buildings = {
 			infrastructure = 2

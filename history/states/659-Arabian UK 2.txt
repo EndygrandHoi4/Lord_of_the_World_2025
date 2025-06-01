@@ -10,7 +10,7 @@ state={
 	local_supplies=0.000
 
 	history = {
-		owner = ENG
+		owner = YEM
 		add_core_of = YEM
 		buildings = {
 			infrastructure = 1
