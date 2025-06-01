@@ -1,11 +1,10 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_DESC"
-		date = 1936.1.1.12
+		name = "THE_WAR_NAME"
+		desc = "THE_WAR_DESC"
+		date = 2025.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "SOV"
-		default = yes
+		default_country = "GER"
 		
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
@@ -82,7 +81,7 @@ bookmarks = {
 			}
 		}
 
-		"UKR" = {
+		GER = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			available = { has_dlc = "Gotterdammerung" }
@@ -98,7 +97,7 @@ bookmarks = {
 			}
 		}
 
-		"UKR" = {
+		GER = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			available = { NOT = { has_dlc = "Gotterdammerung" } }
@@ -114,7 +113,7 @@ bookmarks = {
 			}
 		}
 
-		"PRC"={
+		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			available = { has_dlc = "By Blood Alone" }
@@ -129,7 +128,7 @@ bookmarks = {
 				ITA_a_colonial_empire
 			}		
 		}
-		"PRC"={
+		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			available = { NOT = { has_dlc = "By Blood Alone" } }
@@ -144,7 +143,7 @@ bookmarks = {
 				ITA_a_colonial_empire
 			}		
 		}
-		"TUR"={
+		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
@@ -163,8 +162,14 @@ bookmarks = {
 			ideology = communism
 			available = { has_dlc = "No Step Back" }
 			ideas = {
+				trotskyite_plot_nsb
+				SOV_second_five_year_plan_fake_1936_ns
+				SOV_politicized_military
 			}
 			focuses = {
+				SOV_behead_the_snake
+				SOV_the_supreme_soviet
+				SOV_reconvene_the_zemsky_sobor
 			}	
 		}
 		"SOV"={
@@ -172,8 +177,14 @@ bookmarks = {
 			ideology = communism
 			available = { NOT = { has_dlc = "No Step Back" } }
 			ideas = {
+				trotskyite_plot_nsb
+				SOV_second_five_year_plan_fake_1936_ns
+				SOV_politicized_military
 			}
 			focuses = {
+				SOV_behead_the_snake
+				SOV_father_of_nations
+				SOV_the_supreme_soviet
 			}	
 		}
 
