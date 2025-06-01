@@ -1,0 +1,15 @@
+focus_tree = {
+	id = uruguay_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = URG
+		}
+	}
+
+	
+	default = no
+}

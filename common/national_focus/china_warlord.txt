@@ -1,0 +1,20 @@
+﻿focus_tree = {
+	id = china_warlord_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			OR = {
+				tag = YUN
+				tag = SIK
+				tag = GXC
+				tag = SHX
+				tag = XSM
+			}
+		}
+	}
+	
+	default = no
+}

@@ -1,0 +1,15 @@
+﻿focus_tree = {
+	id = free_french_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 1
+			tag = FRA
+			
+		}
+	}
+	
+	default = no
+}

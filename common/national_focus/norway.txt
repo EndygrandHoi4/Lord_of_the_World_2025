@@ -1,0 +1,14 @@
+focus_tree = {
+	id = norwegian_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			NOR_AAT = yes 
+		}
+	}
+	
+	default = no
+}

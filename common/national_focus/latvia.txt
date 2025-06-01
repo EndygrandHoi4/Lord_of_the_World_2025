@@ -1,0 +1,15 @@
+﻿focus_tree = {
+	id = latvia_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LAT
+			has_dlc = "No Step Back"
+		}
+	}
+	
+
+	default = no
+}

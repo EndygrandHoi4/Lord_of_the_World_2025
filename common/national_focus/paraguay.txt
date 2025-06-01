@@ -1,0 +1,19 @@
+focus_tree = {
+	id = paraguay_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PAR
+		}
+	}
+
+	initial_show_position = {
+		x = 10
+		y = 0
+	}
+	
+	default = no
+}

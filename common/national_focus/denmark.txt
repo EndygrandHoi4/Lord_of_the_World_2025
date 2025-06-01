@@ -1,0 +1,14 @@
+focus_tree = { 
+	id = danish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DEN
+		}
+	}
+	
+	default = no
+}

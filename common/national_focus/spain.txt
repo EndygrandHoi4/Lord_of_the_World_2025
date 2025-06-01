@@ -1,0 +1,14 @@
+﻿focus_tree = {
+	id = spanish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SPR
+		}
+	}
+
+	default = no
+}

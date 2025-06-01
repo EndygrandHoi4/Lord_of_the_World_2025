@@ -1,0 +1,13 @@
+focus_tree = {
+	id = ethiopia_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = ETH
+		}
+	}
+
+	default = no
+}

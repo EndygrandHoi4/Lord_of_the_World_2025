@@ -1,0 +1,14 @@
+focus_tree = {
+	id = chilean_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHL
+		}
+	}
+	
+
+	default = no
+}

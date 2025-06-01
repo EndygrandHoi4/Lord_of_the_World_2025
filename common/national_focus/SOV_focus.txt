@@ -1,0 +1,349 @@
+focus_tree = {
+	id = soviet_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 55 y = 1500 }
+
+	#Великая Россия
+focus = {
+	id = RUS_Great_Russia
+	icon = GFX_surrender_tiny_flag
+	cost = 2
+	x = 25
+	y = 0
+	completion_reward = { 
+		196 = { set_demilitarized_zone = yes }
+		200 = { set_demilitarized_zone = yes }
+		227 = { set_demilitarized_zone = yes }
+		228 = { set_demilitarized_zone = yes }
+		240 = { set_demilitarized_zone = yes }
+		220 = { set_demilitarized_zone = yes }
+		224 = { set_demilitarized_zone = yes }
+		193 = { set_demilitarized_zone = yes }
+		225 = { set_demilitarized_zone = yes }
+		221 = { set_demilitarized_zone = yes }
+		226 = { set_demilitarized_zone = yes }
+		197 = { set_demilitarized_zone = yes }
+		192 = { set_demilitarized_zone = yes }
+		766 = { set_demilitarized_zone = yes }
+	}
+}
+
+	#Наше прошлое
+focus = {
+	id = RUS_Past_time
+	icon = GFX_focus_SOV_the_supreme_soviet
+	prerequisite = {
+		focus = RUS_Great_Russia
+	}
+	cost = 1
+	x = 25
+	y = 1.5
+	completion_reward = { }
+}
+
+	#Наше настоящее
+focus = {
+	id = RUS_Simple_time
+	icon = GFX_focus_POL_habsburg
+	prerequisite = {
+		focus = RUS_Past_time
+	}
+	cost = 1
+	x = 25
+	y = 3.5
+	completion_reward = { }
+}
+
+	#Наше будущее
+focus = {
+	id = RUS_Future_time
+	icon = GFX_focus_NORDIC_dem_research
+	prerequisite = {
+		focus = RUS_Simple_time
+	}
+	cost = 1
+	x = 25
+	y = 5.5
+	completion_reward = { }
+}
+
+	#Великая Россия 2.0
+focus = {
+	id = RUS_Great_Russia2
+	icon = GFX_surrender_tiny_flag
+	prerequisite = {
+		focus = RUS_Future_time
+	}
+	cost = 20
+	x = 25
+	y = 10
+	completion_reward = { }
+}
+
+
+#################################################
+#################################################
+
+	#Год Защитника отечества
+focus = {
+	id = RUS_year_2025
+	icon = GFX_focus_NORDIC_dem_army
+	prerequisite = {
+		focus = RUS_Great_Russia
+	}
+	cost = 10
+	x = 15
+	y = 1
+	completion_reward = { 
+		add_command_power = 50
+		add_political_power = 400
+	}
+}
+
+	#Год русского народа
+focus = {
+	id = RUS_year_2026
+	icon = GFX_focus_NORDIC_dem_capstone_civilian
+	prerequisite = {
+		focus = RUS_year_2025
+	}
+	cost = 10
+	x = 15
+	y = 2
+	completion_reward = { 
+		add_political_power = 500
+	}
+}
+
+#Год русского народа
+focus = {
+	id = RUS_year_2027
+	icon = GFX_focus_NORDIC_dem_form_alliance
+	prerequisite = {
+		focus = RUS_year_2026
+	}
+	cost = 10
+	x = 15
+	y = 3
+	completion_reward = { 
+		add_political_power = 500
+	}
+}
+
+#Год русского народа
+focus = {
+	id = RUS_year_2028
+	icon = GFX_focus_NORDIC_dem_capstone_research
+	prerequisite = {
+		focus = RUS_year_2027
+	}
+	cost = 10
+	x = 15
+	y = 4
+	completion_reward = { 
+		add_political_power = 500
+	}
+}
+
+#Год русского народа
+focus = {
+	id = RUS_year_2029
+	icon = GFX_focus_NORDIC_dem_selector_civilian
+	prerequisite = {
+		focus = RUS_year_2028
+	}
+	cost = 10
+	x = 15
+	y = 5
+	completion_reward = { 
+		add_political_power = 500
+	}
+}
+
+#Год русского народа
+focus = {
+	id = RUS_year_2030
+	icon = GFX_focus_NORDIC_com_selector_research
+	prerequisite = {
+		focus = RUS_year_2029
+	}
+	cost = 10
+	x = 15
+	y = 6
+	completion_reward = { 
+		add_political_power = 500
+	}
+}
+
+############################################
+############################################
+
+	#80 лет победы
+focus = {
+	id = RUS_80_year_of_victory
+	icon = GFX_focus_generic_join_comintern
+	prerequisite = {
+		focus = RUS_Past_time
+	}
+	cost = 1
+	x = 17
+	y = 2
+	completion_reward = { }
+}
+
+	#Подготовка к параду победы
+focus = {
+	id = RUS_preparation_parade
+	icon = GFX_focus_generic_join_comintern
+	prerequisite = {
+		focus = RUS_80_year_of_victory
+	}
+	cost = 10
+	x = 17
+	y = 3
+	completion_reward = { }
+}
+
+	#Специалисты видеографики
+focus = {
+	id = RUS_video_of_parade
+	icon = GFX_focus_RAJ_uranium_tipped_bullets
+	prerequisite = {
+		focus = RUS_preparation_parade
+	}
+	cost = 10
+	x = 17
+	y = 4
+	completion_reward = { }
+}
+
+	#Определить технику на параде
+focus = {
+	id = RUS_army_parade
+	icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+	prerequisite = {
+		focus = RUS_preparation_parade
+	}
+	cost = 7
+	x = 19
+	y = 4
+	completion_reward = { }
+}
+
+	#Военные Северной кореи на параде
+focus = {
+	id = RUS_North_Korea_parade
+	icon = GFX_focus_SOV_flying_clubs
+	prerequisite = {
+		focus = RUS_video_of_parade
+	}
+	cost = 7
+	x = 17
+	y = 5
+	completion_reward = { }
+}
+
+	#Военные КНР на параде
+focus = {
+	id = RUS_PRC_parade
+	icon = GFX_focus_chi_one_china_policy
+	prerequisite = {
+		focus = RUS_video_of_parade
+	}
+	cost = 7
+	x = 19
+	y = 5
+	completion_reward = { }
+}
+
+	# военные СНГ на параде
+focus = {
+	id = RUS_SNG_parade
+	icon = GFX_focus_SOV_builder_of_the_red_army
+	prerequisite = {
+		focus = RUS_video_of_parade
+	}
+	cost = 7
+	x = 21
+	y = 5
+	completion_reward = { }
+}
+
+	#Участники СВО на параде
+focus = {
+	id = RUS_SVO_parade
+	icon = GFX_focus_SOV_organization_centralization_discipline
+	prerequisite = {
+		focus = RUS_North_Korea_parade
+	}
+	prerequisite = {
+		focus = RUS_PRC_parade
+	}
+	prerequisite = {
+		focus = RUS_SNG_parade
+	}
+	cost = 2
+	x = 19
+	y = 6
+	completion_reward = {
+		add_command_power = 100
+		add_political_power = 600
+	}
+}
+
+	#ПАРАД
+focus = {
+	id = RUS_PARADE
+	icon = GFX_focus_generic_join_comintern
+	prerequisite = {
+		focus = RUS_SVO_parade
+	}
+	cost = 10
+	x = 19
+	y = 7
+	completion_reward = { }
+}
+
+	#Выплаты ветеранам победы
+focus = {
+	id = RUS_payments_to_veterans
+	icon = GFX_focus_usa_reestablish_the_gold_standard
+	prerequisite = {
+		focus = RUS_80_year_of_victory
+	}
+	cost = 10
+	x = 19
+	y = 3
+	completion_reward = { }
+}
+
+	#Ветераны почетные жители
+focus = {
+	id = RUS_veterans_of_cities
+	icon = GFX_focus_SOV_restore_cossack_units
+	prerequisite = {
+		focus = RUS_80_year_of_victory
+	}
+	cost = 10
+	x = 21
+	y = 3
+	completion_reward = { }
+}
+
+###########################################################
+###########################################################
+
+	#СВО
+
+}

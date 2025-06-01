@@ -1,0 +1,14 @@
+debug_decisions = {
+	icon = generic_research
+	visible = {
+		is_debug = yes
+		is_ai = no
+		OR = {
+			AND = {
+				has_country_flag = NOR_vanilla_debug_tack
+				tag = NOR 
+			}
+			NOT = { tag = NOR }
+		}
+	}
+}

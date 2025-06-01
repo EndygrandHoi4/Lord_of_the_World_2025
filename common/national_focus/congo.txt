@@ -1,0 +1,14 @@
+﻿focus_tree = {
+	id = congo_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = COG
+		}
+	}
+
+	default = no
+}

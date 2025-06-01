@@ -1,0 +1,16 @@
+focus_tree = {
+	id = austria_focus_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = AUS
+			#always = no
+
+		}
+	}
+	
+	default = no
+}

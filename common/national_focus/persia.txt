@@ -1,0 +1,13 @@
+focus_tree = {
+	id = persian_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PER
+		} 
+	}
+
+	default = no
+}

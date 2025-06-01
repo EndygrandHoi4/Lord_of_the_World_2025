@@ -1,0 +1,15 @@
+focus_tree = {
+	id = argentine_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARG
+
+		} 
+	}
+
+	default = no
+
+}

@@ -1,0 +1,478 @@
+search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+	
+	FOCUS_FILTER_RESEARCH = 522
+	
+	FOCUS_FILTER_INDUSTRY = 509
+
+	FOCUS_FILTER_BALANCE_OF_POWER = 200
+	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
+	FOCUS_FILTER_PROPAGANDA = 110
+	FOCUS_FILTER_MISSIOLINI = 110
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
+
+}
+
+focus_tree = {
+	id = generic_focus
+	
+	country = {
+		factor = 1
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = political_course
+	}
+
+	#shared_focus = HABSBURG_part_of_something_bigger
+
+	#ФОКУСЫ НА ПОЛИТИКУ
+
+	#Стабильное государство
+	focus = {
+		id = stable_state
+		icon = GFX_surrender_tiny_flag
+		x = 7
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+
+	#Политический курс
+	focus = {
+		id = political_course
+		icon = GFX_surrender_tiny_flag
+		prerequisite = {
+			focus = stable_state
+		}
+		x = 7
+		y = 1.25
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+
+	#Красное сознание
+	focus = {
+		id = red_consciousness
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {
+			focus = political_course
+		}
+		mutually_exclusive = {
+			focus = colorless_politics
+			focus = right_path
+		}
+		cost = 10
+		x = 1
+		y = 2.5
+		completion_reward = { }
+	}
+
+	#Революция рабочих
+	focus = {
+		id = The_Workers_Revolution
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {
+			focus = red_consciousness
+		}
+		mutually_exclusive = {
+			focus = The_Socialist_future
+			focus = Imperceptible_restructuring
+		}
+		cost = 10
+		x = -1
+		y = 4
+		completion_reward = { }
+	}
+
+	#Социалистическое будущее
+	focus = {
+		id = The_Socialist_future
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {
+			focus = red_consciousness
+		}
+		mutually_exclusive = {
+			focus = The_Workers_Revolution
+			focus = Imperceptible_restructuring
+		}
+		cost = 10
+		x = 1
+		y = 4
+		completion_reward = { }
+	}
+
+	#Незаметная перестройка
+	focus = {
+		id = Imperceptible_restructuring
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = {
+			focus = red_consciousness
+		}
+		mutually_exclusive = {
+			focus = The_Socialist_future
+			focus = The_Workers_Revolution
+		}
+		cost = 10
+		x = 3
+		y = 4
+		completion_reward = { }
+	}
+
+	#Бесцветная политика
+	focus = {
+		id = colorless_politics
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {
+			focus = political_course
+		}
+		mutually_exclusive = {
+			focus = right_path
+			focus = red_consciousness
+		}
+		cost = 10
+		x = 7
+		y = 2.5
+		completion_reward = { }
+	}
+
+	#Авторитарное правление
+	focus = {
+		id = Authoritarian_rule
+		icon = GFX_surrender_tiny_flag
+		prerequisite = {
+			focus = colorless_politics
+		}
+		mutually_exclusive = {
+			focus = Liberalism
+			focus = Conservative_principles
+		}
+		cost = 10
+		x = 7
+		y = 4
+		completion_reward = { }
+	}
+
+	#Либерализм - есть добро
+	focus = {
+		id = Liberalism
+		icon = GFX_surrender_tiny_flag
+		prerequisite = {
+			focus = colorless_politics
+		}
+		mutually_exclusive = {
+			focus = Authoritarian_rule
+			focus = Conservative_principles
+		}
+		cost = 10
+		x = 5
+		y = 4
+		completion_reward = { }
+	}
+
+	#Консервативные устои
+	focus = {
+		id = Conservative_principles
+		icon = GFX_surrender_tiny_flag
+		prerequisite = {
+			focus = colorless_politics
+		}
+		mutually_exclusive = {
+			focus = Liberalism
+			focus = Authoritarian_rule
+		}
+		cost = 10
+		x = 9
+		y = 4
+		completion_reward = { }
+	}
+
+	#Правый путь
+	focus = {
+		id = right_path
+		icon = GFX_focus_GER_fuhrerprinzip_bormann
+		prerequisite = {
+			focus = political_course
+		}
+		mutually_exclusive = {
+			focus = colorless_politics
+			focus = red_consciousness
+		}
+		cost = 10
+		x = 13
+		y = 2.5
+		completion_reward = { }
+	}
+
+	#Национализм
+	focus = {
+		id = focus_nationalism
+		icon = GFX_surrender_tiny_flag
+		prerequisite = {
+			focus = right_path
+		}
+		cost = 10
+		x = 11
+		y = 4
+		completion_reward = { }
+	}
+
+	#ФОКУСЫ НА СТРОИТЕЛЬСТВО
+
+	#Возрождение экономики
+	focus = {
+		id = economic_revival
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 20
+		y = 0
+		completion_reward = { 
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+			}
+
+		}
+	}
+
+	#Соединить столицу с провинциями
+	focus = {
+		id = roads_focus
+		icon = GFX_surrender_tiny_flag
+		prerequisite = {
+			focus = economic_revival
+		}
+		cost = 10
+		x = 17
+		y = 1
+		completion_reward = { 
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+			}
+		}
+	}
+
+	#Провести строительный тендер
+	focus = {
+		id = construction_tender_focus
+		icon = GFX_surrender_tiny_flag
+		prerequisite = {
+			focus = roads_focus
+		}
+		cost = 10
+		x = 15
+		y = 2
+		completion_reward = { 
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	#Государственный строительный контроль
+	focus = {
+		id = construction_control_focus
+		icon = GFX_surrender_tiny_flag
+		prerequisite = {
+			focus = roads_focus
+		}
+		cost = 10
+		x = 17
+		y = 2
+		completion_reward = { 
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	#Построитель автомагистрали
+	focus = {
+		id = motorways_focus
+		icon = GFX_surrender_tiny_flag
+		prerequisite = {
+			focus = construction_tender_focus
+		}
+		prerequisite = {
+			focus = construction_control_focus
+		}
+		cost = 10
+		x = 15
+		y = 3
+		completion_reward = { 
+			var:capital = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+			}
+
+		}
+	}
+
+
+	#Субсидировать лёгкую промышленность
+	focus = {
+		id = light_industry_focus
+		icon = GFX_surrender_tiny_flag
+		prerequisite = {
+			focus = economic_revival
+		}
+		cost = 10
+		x = 19
+		y = 1
+		completion_reward = { 
+			random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+	}
+
+	#Ремонт производственных объектов
+
+
+	#"Детские сады в каждый район"
+
+	
+	#Реформа государственной медицины
+
+
+	#Реформа образования
+	focus = {
+		id = Education_reform_focus
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		prerequisite = {
+			focus = economic_revival
+		}
+		x = 21
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = radar_tech
+				bonus = 1.5
+				uses = 1
+				category = radar_tech
+			}
+		 }
+	}
+
+	#Государственный институт
+	focus = {
+		id = State_Institute_focus
+		icon = GFX_surrender_tiny_flag
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		cost = 15
+		x = 20
+		y = 7
+		completion_reward = { 
+			add_research_slot = 2
+		}
+	}
+}
