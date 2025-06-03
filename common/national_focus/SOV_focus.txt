@@ -17,7 +17,7 @@ focus_tree = {
 	#Великая Россия
 focus = {
 	id = RUS_Great_Russia
-	icon = GFX_surrender_tiny_flag
+	icon = GFX_focus_ARG_american_allyship
 	cost = 2
 	x = 25
 	y = 0
