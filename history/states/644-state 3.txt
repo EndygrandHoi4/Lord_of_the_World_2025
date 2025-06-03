@@ -3,7 +3,7 @@ state = {
 	name = "STATE_644" # Kolyma
 
 	history = {
-		owner = SOV
+		owner = A03
 		victory_points = {
 			1819 1 
 		}

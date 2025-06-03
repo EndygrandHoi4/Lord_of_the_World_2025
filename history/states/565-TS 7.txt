@@ -13,7 +13,7 @@ state = {
 
 	history = {
 
-		owner = SOV
+		owner = A03
 		add_core_of = SOV
 		add_core_of = EVE
 

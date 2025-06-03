@@ -10,7 +10,7 @@ state = {
 		victory_points = {
 			9402 1 
 		}
-		owner = SOV
+		owner = A03
 		buildings = {
 			infrastructure = 2
 		}

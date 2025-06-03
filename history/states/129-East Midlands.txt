@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = ENG
+		owner = 002
 		victory_points = {
 			6237 10 #Nottingham
 		}

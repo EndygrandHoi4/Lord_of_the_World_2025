@@ -1,0 +1,651 @@
+#GER
+001 = "countries/Germany.txt"
+#ENG 
+002 = "countries/United Kingdom.txt"
+#SOV
+A03 = "countries/Soviet Union.txt"
+#SWE
+004 = "countries/Sweden.txt"
+#FRA 
+005 = "countries/France.txt"
+LUX 
+006 = "countries/Luxemburg.txt"
+#BEL 
+007 = "countries/Belgium.txt"
+HOL	
+008 = "countries/Holland.txt"
+CZE	
+009 = "countries/Czechoslovakia.txt"
+POL	
+010 = "countries/Poland.txt"
+AUS	
+011 = "countries/Austria.txt"
+LIT	
+012 = "countries/Lithuania.txt"
+EST	
+013 = "countries/Estonia.txt"
+LAT
+014	= "countries/Latvia.txt"
+SPR
+015 = "countries/Spain.txt"
+ITA
+016 = "countries/Italy.txt"
+ROM
+017 = "countries/Romania.txt"
+YUG
+018 = "countries/Yugoslavia.txt"
+SER
+019 = "countries/Serbia.txt"
+SWI
+020 = "countries/Switzerland.txt"
+TUR
+021 = "countries/Turkey.txt"
+GRE
+022 = "countries/Greece.txt"
+ALB
+023 = "countries/Albania.txt"
+NOR
+024 = "countries/Norway.txt"
+DEN
+025 = "countries/Denmark.txt"
+BUL
+026 = "countries/Bulgaria.txt"
+POR
+027 = "countries/Portugal.txt"
+FIN
+028 = "countries/Finland.txt"
+IRE
+029 = "countries/Ireland.txt"
+HUN
+030 = "countries/Hungary.txt"
+AFG
+031 = "countries/Afghanistan.txt"
+ARG
+032 = "countries/Argentina.txt"
+AST
+033 = "countries/Australia.txt"
+BHU
+034 = "countries/Bhutan.txt"
+BOL
+035 = "countries/Bolivia.txt"
+BRA
+036 = "countries/Brazil.txt"
+CAN
+037 = "countries/Canada.txt"
+CHI
+038 = "countries/China.txt"
+CHL
+039 = "countries/Chile.txt"
+COL
+040 = "countries/Colombia.txt"
+COS
+041 = "countries/Costa Rica.txt"
+ECU
+042 = "countries/Ecuador.txt"
+ELS
+043 = "countries/El Salvador.txt"
+ETH
+044 = "countries/Ethiopia.txt"
+GUA
+045 = "countries/Guatemla.txt"
+HON
+046 = "countries/Honduras.txt"
+IRQ
+047 = "countries/Iraq.txt"
+JAP
+048 = "countries/Japan.txt"
+KOR
+049 = "countries/Korea.txt"
+LIB
+050 = "countries/Liberia.txt"
+MEX
+051 = "countries/Mexico.txt"
+MEN
+052 = "countries/Mengkukuo.txt"
+NEP
+053 = "countries/Nepal.txt"
+NIC
+054 = "countries/Nicaragua.txt"
+NZL
+055 = "countries/New Zealand.txt"
+PAN
+056 = "countries/Panama.txt"
+PER
+057 = "countries/Persia.txt"
+PHI
+058 = "countries/Philippines.txt"
+PRU
+059 = "countries/Peru.txt"
+SAF
+060 = "countries/South Africa.txt"
+SAU
+061 = "countries/Saudi Arabia.txt"
+SIA
+062 = "countries/Siam.txt"
+SIK
+063 = "countries/Sinkiang.txt"
+TIB
+064 = "countries/Tibet.txt"
+URG
+065 = "countries/Uruguay.txt"
+VEN
+066 = "countries/Venezula.txt"
+YUN
+067 = "countries/Yunnan.txt"
+USA
+068 = "countries/USA.txt"
+MON
+069 = "countries/Mongolia.txt"
+TAN
+070 = "countries/Tannu Tuva.txt"
+PAR
+071 = "countries/Paraguay.txt"
+CUB
+072 = "countries/Cuba.txt"
+DOM
+073 = "countries/Dominican Republic.txt"
+HAI
+074 = "countries/Haiti.txt"
+YEM
+075 = "countries/Yeman.txt"
+OMA
+076 = "countries/Oman.txt"
+SLO
+077 = "countries/Slovakia.txt"
+RAJ
+078 = "countries/British Raj.txt"
+CRO
+079 = "countries/Croatia.txt"
+GXC
+080 = "countries/Guangxi.txt"
+PRC
+081 = "countries/ComChina.txt"
+SHX
+082 = "countries/Shanxi.txt"
+XSM
+083 = "countries/Xibei San Ma.txt"
+ICE
+084 = "countries/Iceland.txt"
+LEB
+085 = "countries/Lebanon.txt"
+JOR
+086 = "countries/Jordan.txt"
+SYR
+087 = "countries/Syria.txt"
+EGY
+088 = "countries/Egypt.txt"
+LBA
+089 = "countries/Libya.txt"
+WGR
+090 = "countries/West Germany.txt"
+DDR
+091 = "countries/East Germany.txt"
+PAL
+092 = "countries/Palestine.txt"
+ISR
+093 = "countries/Israel.txt"
+VIN
+094 = "countries/Vietnam.txt"
+CAM
+095 = "countries/Cambodia.txt"
+MAL
+096 = "countries/Malaysia.txt"
+INS
+097 = "countries/Indonesia.txt"
+LAO
+098 = "countries/Laos.txt"
+MNT
+099 = "countries/Montenegro.txt"
+UKR
+100 = "countries/Ukraine.txt"
+GEO
+101 = "countries/Georgia.txt"
+KAZ
+102 = "countries/Kazakhstan.txt" 
+AZR
+103 = "countries/Azerbaijan.txt"
+ARM
+104 = "countries/Armenia.txt"
+BLR
+105 = "countries/Belarus.txt"
+ANG
+106 = "countries/Angola.txt"
+MZB
+107 = "countries/Mozambique.txt"
+ZIM
+108 = "countries/Zimbabwe.txt"
+COG
+109 = "countries/Congo.txt"
+KEN
+110 = "countries/Kenya.txt"
+PAK
+111 = "countries/Pakistan.txt"
+BOT
+112 = "countries/Botswana.txt"
+MAN
+113 = "countries/Manchukou.txt"
+BAH
+114 = "countries/Bahamas.txt"
+BAN
+115 = "countries/Bangladesh.txt"
+BLZ
+116 = "countries/Belize.txt"
+BRM
+117 = "countries/Burma.txt"
+CRC
+118 = "countries/Curacao.txt"
+GDL
+119 = "countries/Guadeloupe.txt"
+GYA
+120 = "countries/Guyana.txt"
+JAM
+121 = "countries/Jamaica.txt"
+JAN
+122 = "countries/Jan Mayen.txt"
+KYR
+123 = "countries/Kyrgyzstan.txt"
+MAD
+124 = "countries/Madagascar.txt"
+MOL
+125 = "countries/Moldova.txt"
+PNG
+126 = "countries/Papua New Guinea.txt"
+PUE
+127 = "countries/Puerto Rico.txt"
+QAT
+128 = "countries/Qatar.txt"
+SCO
+129 = "countries/Scotland.txt"
+SRL
+130 = "countries/Sri Lanka.txt"
+SUR
+131 = "countries/Suriname.txt"
+TAJ
+132 = "countries/Tajikistan.txt"
+TRI
+133 = "countries/Trinidad and Tobago.txt"
+TMS
+134 = "countries/Turkmenistan.txt"
+UAE
+135 = "countries/United Arab Emirates.txt"
+UZB
+136 = "countries/Uzbekistan.txt"
+KUW
+137 = "countries/Kuwait.txt"
+CYP
+138 = "countries/Cyprus.txt"
+MLT
+139 = "countries/Malta.txt"
+ALG
+140 = "countries/Algeria.txt"
+MOR
+141 = "countries/Morocco.txt"
+TUN
+142 = "countries/Tunisia.txt"
+SUD
+143 = "countries/Sudan.txt"
+ERI
+144 = "countries/Eritrea.txt"
+DJI
+145 = "countries/Djibouti.txt"
+SOM
+146 = "countries/Somalia.txt"
+UGA
+147 = "countries/Uganda.txt"
+RWA
+148 = "countries/Rwanda.txt"
+BRD
+149 = "countries/Burundi.txt"
+TZN
+150 = "countries/Tanzania.txt"
+ZAM
+151 = "countries/Zambia.txt"
+MLW
+152 = "countries/Malawi.txt"
+GAB
+153 = "countries/Gabon.txt"
+RCG
+154 = "countries/Republic of Congo.txt"
+EQG
+155 = "countries/Equatorial Guinea.txt"
+CMR
+156 = "countries/Cameroon.txt"
+CAR
+157 = "countries/Central African Republic.txt"
+CHA
+158 = "countries/Chad.txt"
+NGA
+159 = "countries/Nigeria.txt"
+DAH
+160 = "countries/Dahomey.txt"
+TOG
+161 = "countries/Togo.txt"
+GHA
+162 = "countries/Ghana.txt"
+IVO
+163 = "countries/Ivory Coast.txt"
+VOL
+164 = "countries/Upper Volta.txt"
+MLI
+165 = "countries/Mali.txt"
+SIE
+166 = "countries/Sierra Leone.txt"
+GNA
+167 = "countries/Guinea.txt"
+GNB
+168 = "countries/Guinea-Bissau.txt"
+SEN
+169 = "countries/Senegal.txt"
+GAM
+170 = "countries/Gambia.txt"
+WLS
+171 = "countries/Wales.txt"
+NGR
+172 = "countries/Niger.txt"
+CSA
+173 = "countries/CSA.txt"
+USB
+174 = "countries/USB.txt"#neutral US bloc during civil war in MTG
+MRT
+175 = "countries/Mauritania.txt"
+NMB
+176 = "countries/Namibia.txt"
+WES
+177 = "countries/Western Sahara.txt"
+BAS
+178 = "countries/British Antilles.txt"
+CAY
+179 = "countries/Cayenne.txt"
+MLD
+180 = "countries/Maldives.txt"
+FIJ
+181 = "countries/Fiji.txt"
+FSM
+182 = "countries/Micronesia.txt"
+TAH
+183 = "countries/Tahiti.txt"
+GUM
+184 = "countries/Guam.txt"
+SOL
+185 = "countries/Solomon.txt"
+SAM
+186 = "countries/Samoa.txt"
+HAW
+187 = "countries/Hawaii.txt"
+SLV
+188 = "countries/Slovenia.txt"
+BOS
+189 = "countries/Bosnia.txt"
+HRZ
+190 = "countries/Herzegovina.txt"
+MAC
+191 = "countries/Macedonia.txt"
+NIR
+192 = "countries/Northern Ireland.txt"
+BAY
+193 = "countries/Bavaria.txt"
+MEK
+194 = "countries/Mecklenburg.txt"
+PRE
+195 = "countries/Prussia.txt"
+SAX
+196 = "countries/Saxony.txt"
+HAN
+197 = "countries/Hanover.txt"
+WUR
+198 = "countries/Wurtemberg.txt"
+SHL
+199 = "countries/Schleswig-Holstein.txt"
+CAT
+200 = "countries/Catalonia.txt"
+NAV
+201 = "countries/Navarra.txt"
+GLC
+202 = "countries/Galicia.txt"
+ADU
+203 = "countries/Andalusia.txt"
+BRI
+204 = "countries/Brittany.txt"
+OCC
+205 = "countries/Occitania.txt"
+COR
+206 = "countries/Corsica.txt"
+KUR
+207 = "countries/Kurdistan.txt"
+TRA
+208 = "countries/Transylvania.txt"
+DNZ
+209 = "countries/Danzig.txt"
+SIL
+210 = "countries/Silesia.txt"
+KSH
+211 = "countries/Kashubia.txt"
+DON
+212 = "countries/Don Republic.txt"
+KUB
+213 = "countries/Kuban Republic.txt"
+BUK
+214 = "countries/Bukharan Republic.txt"
+ALT
+215 = "countries/Altay.txt"
+KAL
+216 = "countries/Kalmykia.txt"
+KAR
+217 = "countries/Karelia.txt"
+CRI
+218 = "countries/Crimea.txt"
+TAT
+219 = "countries/Tatarstan.txt"
+CIN
+220 = "countries/Chechnya Ingushetia.txt"
+DAG
+221 = "countries/Dagestan.txt"
+BYA
+222 = "countries/Buryatia.txt"
+CKK
+223 = "countries/Chukotka.txt"
+FER
+224 = "countries/Fareastern Republic.txt"
+YAK
+225 = "countries/Yakutia.txt"
+VLA
+226 = "countries/Vladivostok.txt"
+KKP
+227 = "countries/Karakalpakstan.txt"
+YAM
+228 = "countries/Yamalia.txt"
+TAY
+229 = "countries/Taymyria.txt"
+OVO
+230 = "countries/Ostyak Vogulia.txt"
+NEN
+231 = "countries/Nenetsia.txt"
+KOM
+232 = "countries/Komi.txt"
+ABK
+233 = "countries/Abkhazia.txt"
+KBK
+234 = "countries/Kabardino Balkaria.txt"
+NOA
+235 = "countries/North Ossetia.txt"
+VGE
+236 = "countries/Volga Germany.txt"
+BSK
+237 = "countries/Bashkortostan.txt"
+KHI
+238 = "countries/Khiva.txt"
+UDM
+239 = "countries/Udmurtia.txt"
+CHU
+240 = "countries/Chuvashia.txt"
+MEL
+241 = "countries/Mariel.txt"
+RIF
+242 = "countries/Rif.txt"
+HAR
+243 = "countries/Harar.txt"
+TIG
+244 = "countries/Tigray.txt"
+AFA
+245 = "countries/Afar.txt"
+BEG
+246 = "countries/Benishangul-Gumuz.txt"
+GBA
+247 = "countries/Gambela.txt"
+SID
+248 = "countries/Sidamo.txt"
+ORO
+249 = "countries/Oromo.txt"
+QEM
+250 = "countries/Qemant.txt"
+KHA
+251 = "countries/Khakassia.txt"
+AOI
+252 = "countries/Italian East Africa.txt"
+LBV
+253 = "countries/Lombardy Venetia.txt"
+PAP
+254 = "countries/Papal States.txt"
+TOS
+255 = "countries/Tuscany.txt"
+SPM
+256 = "countries/Sardinia Piedmont.txt"
+TTS
+257 = "countries/The Two Sicilies.txt"
+SMI
+258 = "countries/Sami.txt"
+GRN
+259 = "countries/Greenland.txt"
+RAP
+260 = "countries/Rapa Nui.txt"
+YUC
+261 = "countries/Yucatan.txt"
+RIG
+262 = "countries/Rio Grande.txt"
+QUE
+263 = "countries/Quebec.txt"
+KAT
+264 = "countries/Katanga.txt"
+BIA
+265 = "countries/Biafra.txt"
+WLA
+266 = "countries/Welsh Argentina.txt"
+CBV
+267 = "countries/Cabo Verde.txt"
+BAR
+268 = "countries/Barotseland.txt"
+EVE
+269 = "countries/Evenkia.txt"
+SOK
+270 = "countries/Sokoto.txt"
+THU
+271 = "countries/Thuringia.txt"
+HES
+272 = "countries/Hesse.txt"
+RHI
+273 = "countries/Rhineland.txt"
+UBD
+274 = "countries/United Baltic Duchy.txt"
+KOS
+275	= "countries/Kosovo.txt"
+
+# REICHSKOMMISSARIATS (no cores) (European)
+#RKB = "countries/Reichskommisariat Belgien.txt"
+#RKN = "countries/Reichskommisariat Niederlande.txt"
+#RKG = "countries/Reichskommisariat Norwegen.txt"
+#RKU = "countries/Reichskommisariat Ukraine.txt"
+#RKO = "countries/Reichskommisariat Ostland.txt"
+#RKK = "countries/Reichskommisariat Kaukasien.txt"
+#RKT = "countries/Reichskommisariat Turkestan.txt"
+#RKM = "countries/Reichskommisariat Moskowien.txt"
+#RKL = "countries/Reichskommisariat Urals.txt"
+#GEN = "countries/Generalgouvernement.txt"
+#RKH = "countries/Bohmen Mahren.txt"
+#RKI = "countries/Reichskommisariat Iberien.txt"
+#RKC = "countries/Reichskommisariat Balkan.txt"
+#RGB = "countries/Reichskommisariat Grossbritannien.txt"
+
+# REICHSKOMMISSARIATS (no cores) (African)
+#RKA = "countries/Reichskommisariat Mittelafrika.txt"
+#RNA = "countries/Reichskommisariat Nordafrika.txt"
+
+# REICHSKOMMISSARIATS (no cores) (American)
+#RKV = "countries/Reichskommisariat Klein Venedig.txt"
+#RAN = "countries/Reichskommisariat Anden.txt"
+#RCO = "countries/Reichskommisariat Kolumbus.txt"
+#RUS = "countries/Reichskommisariat Nordamerika.txt"
+
+# REICHSKOMMISSARIATS (no cores) (Asian)
+#RHD = "countries/Reichskommisariat Grosshindustan.txt"
+#RAR = "countries/Reichskommisariat Arabien.txt"
+#ROA = "countries/Reichskommisariat Ostasien.txt"
+#RAA = "countries/Reichskommisariat Australasien.txt"
+
+# AMERINDIAN NATIONS (no starting cores)
+GAR
+276 = "countries/Guarani.txt"
+INC
+277 = "countries/Inca.txt"
+MIS
+278 = "countries/Miskito.txt"
+MAY
+279 = "countries/Maya.txt"
+INU
+280 = "countries/Inuit.txt"
+CHR
+281 = "countries/Charrua.txt"
+ITZ
+282 = "countries/Itza.txt"
+NAH
+283 = "countries/Nahua.txt"
+IAS
+284 = "countries/Isthmo Amerindia.txt"
+
+# GoE 
+DIP
+285 = "countries/Partisans.txt"
+PSH
+286 = "countries/Pashtunistan.txt"
+HYD
+287 = "countries/Hyderabad.txt"
+MYS
+288 = "countries/Mysore.txt"
+RJP
+289 = "countries/Rajputana.txt"
+CIP
+290 = "countries/Central Indian Provinces.txt"
+RAS
+291 = "countries/Madras States.txt"
+NWF
+292 = "countries/North Western Frontier States.txt"
+KAS
+293 = "countries/Kashmir.txt"
+MPU
+294 = "countries/Manipur.txt"
+WIS
+295 = "countries/Western Indian States.txt"
+KOL
+296 = "countries/Kolhapur and Deccan States.txt"
+KHL
+297 = "countries/Khalistan.txt"
+SIN
+298 = "countries/Sindh.txt"
+KLT
+299 = "countries/Kalat.txt"
+SKK
+300 = "countries/Sikkim.txt"
+FSA
+301 = "countries/Federation of South Arabia.txt"
+ASY
+302 = "countries/Assyria.txt"
+BHR
+303 = "countries/Bahrain.txt"
+IMO
+304 = "countries/Omani Imamate.txt"
+BLC
+305 = "countries/Balochistan.txt"
+#NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")
+
+
+#NEW COUNTRIES
+VAT = "countries/vatican.txt"
