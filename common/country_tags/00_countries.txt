@@ -12,7 +12,7 @@ LUX
 006 = "countries/Luxemburg.txt"
 #BEL 
 007 = "countries/Belgium.txt"
-HOL	
+#HOL	
 008 = "countries/Holland.txt"
 CZE	
 009 = "countries/Czechoslovakia.txt"
@@ -32,7 +32,7 @@ ITA
 016 = "countries/Italy.txt"
 ROM
 017 = "countries/Romania.txt"
-YUG
+#YUG
 018 = "countries/Yugoslavia.txt"
 SER
 019 = "countries/Serbia.txt"
