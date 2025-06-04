@@ -14,6 +14,8 @@ name="Lord of the World 2025"
 supported_version="1.16.8"
 
 replace_path = "gfx/loadingscreens"
+replace_path = "gfx/interface/goals"
+replace_path = "gfx/FX"
 replace_path = "common/national_focus"
 replace_path = "common/defines"
 replace_path = "common/country_tags"

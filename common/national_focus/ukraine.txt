@@ -1,0 +1,47 @@
+focus_tree = {
+	id = ukraine_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 55 y = 1500 }
+	focus = {
+		id = UKR_3_year_war
+		icon = GFX
+		x = 10
+		y = 0
+		cost = 10
+	completion_reward = {
+		}
+	}
+	focus = {
+		id = UKR_place_holder_1
+		icon = GFX
+		x = 10
+		y = 1
+		cost = 10
+
+		prerequisite = {focus = UKR_3_year_war}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = UKR_place_holder_2
+		icon = GFX
+		x = 10
+		y = 2
+		cost = 10
+
+		prerequisite = {focus = UKR_place_holder_1}
+		completion_reward = {
+		}
+	}
+	}
