@@ -6,7 +6,7 @@ state={
 	state_category = megalopolis
 
 	history={
-		owner = 002
+		owner = A02
 		victory_points = {
 			6103 50 
 		}

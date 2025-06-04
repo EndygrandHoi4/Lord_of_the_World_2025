@@ -1,7 +1,7 @@
 #GER
 001 = "countries/Germany.txt"
 #ENG 
-002 = "countries/United Kingdom.txt"
+A02 = "countries/United Kingdom.txt"
 #SOV
 A03 = "countries/Soviet Union.txt"
 #SWE

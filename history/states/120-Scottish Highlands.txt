@@ -13,7 +13,7 @@ state = {
 
 	history= {
 		add_core_of = SCO
-		owner = 002
+		owner = A02
 		victory_points = {
 			6062 1 #Skye/Stornoway
 		}

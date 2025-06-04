@@ -18,7 +18,7 @@ focus_tree = {
 focus = {
 	id = RUS_Great_Russia
 	icon = GFX_Great_Russia
-	cost = 2
+	cost = 2.8
 	x = 15
 	y = 0
 	completion_reward = { 
@@ -30,7 +30,7 @@ focus = {
 focus = {
 	id = RUS_24_hours
 	icon = GFX_24_Fail
-	cost = 0.5
+	cost = 0.3
 	prerequisite = {
 		focus = RUS_Great_Russia
 	}
@@ -56,7 +56,7 @@ focus = {
 focus = {
 	id = RUS_media_svo
 	icon = GFX_Media
-	cost = 1
+	cost = 1.5
 	prerequisite = {
 		focus = RUS_24_hours
 	}
@@ -69,7 +69,7 @@ focus = {
 focus = {
 	id = RUS_more_UAVs
 	icon = GFX_UAV
-	cost = 2
+	cost = 1.9
 	prerequisite = {
 		focus = RUS_24_hours
 	}
@@ -82,7 +82,7 @@ focus = {
 focus = {
 	id = RUS_clear_conditions
 	icon = GFX_Req
-	cost = 0.2
+	cost = 0.5
 	prerequisite = {
 		focus = RUS_kursk_operation
 	}
@@ -101,7 +101,7 @@ focus = {
 focus = {
 	id = RUS_demilitarization_UKR
 	icon = GFX_Dem_Ukr
-	cost = 0.5
+	cost = 0.3
 	prerequisite = {
 		focus = RUS_clear_conditions
 	}
@@ -114,7 +114,7 @@ focus = {
 focus = {
 	id = RUS_recognition_of_areas
 	icon = GFX_Agr_Ukr
-	cost = 0.5
+	cost = 0.3
 	prerequisite = {
 		focus = RUS_clear_conditions
 	}
@@ -126,7 +126,7 @@ focus = {
 focus = {
 	id = RUS_not_OTAN
 	icon = GFX_No_NATO
-	cost = 0.5
+	cost = 0.3
 	prerequisite = {
 		focus = RUS_clear_conditions
 	}
@@ -139,7 +139,7 @@ focus = {
 focus = {
 	id = RUS_right_of_russians
 	icon = GFX_Rus_Rights
-	cost = 0.5
+	cost = 0.3
 	prerequisite = {
 		focus = RUS_clear_conditions
 	}
@@ -168,7 +168,7 @@ focus = {
 focus = {
 	id = RUS_energy_yes
 	icon = GFX_Energy_YES
-	cost = 0.5
+	cost = 1
 	prerequisite = {
 		focus = RUS_call_trump
 	}
@@ -181,7 +181,7 @@ focus = {
 focus = {
 	id = RUS_kursk_fight
 	icon = GFX_Kursk_attack
-	cost = 4
+	cost = 4.6
 	prerequisite = {
 		focus = RUS_call_trump
 	}
@@ -194,7 +194,7 @@ focus = {
 focus = {
 	id = RUS_parade_1
 	icon = GFX_Parade
-	cost = 0.5
+	cost = 0.2
 	prerequisite = {
 		focus = RUS_energy_yes
 	}
@@ -210,7 +210,7 @@ focus = {
 focus = {
 	id = RUS_three_day
 	icon = GFX_War_Pause
-	cost = 0.5
+	cost = 0.3
 	prerequisite = {
 		focus = RUS_parade_1
 	}
@@ -262,7 +262,7 @@ focus = {
 focus = {
 	id = RUS_PARADE_2
 	icon = GFX_May_9
-	cost = 1
+	cost = 0.2
 	prerequisite = {
 		focus = RUS_countries_parade
 	}
@@ -294,7 +294,7 @@ focus = {
 focus = {
 	id = RUS_prisoner_exchange
 	icon = GFX_Prisoners
-	cost = 1
+	cost = 1.2
 	prerequisite = {
 		focus = RUS_Medisky
 	}
@@ -307,7 +307,7 @@ focus = {
 focus = {
 	id = RUS_second_round
 	icon = GFX_Negotiation_2
-	cost = 2
+	cost = 1
 	prerequisite = {
 		focus = RUS_prisoner_exchange
 	}
@@ -320,7 +320,7 @@ focus = {
 focus = {
 	id = RUS_third_round
 	icon = GFX_Negotiation_3
-	cost = 2
+	cost = 3.4
 	prerequisite = {
 		focus = RUS_second_round
 	}

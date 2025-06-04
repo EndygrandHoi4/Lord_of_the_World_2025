@@ -9,7 +9,7 @@ state = {
 	}
 
 	history = {
-		owner = 002
+		owner = A02
 		add_core_of = ENG
 		victory_points = {
 			11332 3 #Carlisle
