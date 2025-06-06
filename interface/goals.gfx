@@ -429,5 +429,138 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/RUS/RUS_goal_more_gas.dds"
 	}
 	
+	
+	
+	### !!! AFRF !!!
+	
+	spriteType = {
+		name = "GFX_AFRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_AFRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_best_tanks"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_best_tanks.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_cancel_T_st"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_cancel_T_st.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_T_ts"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_T_ts.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Armata"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_Armata.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_hft_of_dead"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_hft_of_dead.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GTD"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_GTD.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_overmechanisation"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_overmechanisation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_spetsnaz"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_spetsnaz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_wheel_tsars"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_wheel_tsars.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mens_on_tanks"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_mens_on_tanks.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_AK_tt_UM"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_AK_tt_UM.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bplas"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_bplas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_buff_training"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_buff_training.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_protiv_fpv"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_protiv_fpv.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ww_btrs"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_ww_btrs.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_secret_insp"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_secret_insp.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_buff_conditions_I"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_buff_conditions_I.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_buff_conditions_II"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_buff_conditions_II.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_buff_conditions_III"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_buff_conditions_III.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_best_docts"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_best_docts.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_step_by_step"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_step_by_step.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_blizkrieg"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_blizkrieg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_vic_anyway"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_vic_anyway.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_best_army"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_best_army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_army_of_winners"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_army_of_winners.dds"
+	}
 
 }

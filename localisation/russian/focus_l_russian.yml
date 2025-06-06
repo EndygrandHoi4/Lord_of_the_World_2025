@@ -1,4 +1,4 @@
-l_russian:
+﻿l_russian:
  
  
  ### FOCUS POLITICS
@@ -97,3 +97,40 @@ l_russian:
  RUS_deals:0 "Торговля"
  RUS_more_oil:0 "Больше нефти!"
  RUS_more_gas:0 "Больше газа!"
+ 
+ 
+ 
+ ### FOCUS AFRF
+ 
+ RUS_AFRF:0 "ВСРФ"
+ RUS_AFRF_desc:0 "FFFFFF"
+ #ВЕЗДЕ desc доделать
+ 
+ RUS_best_tanks:0 "Лучшие танки"
+ RUS_cancel_T_st:0 "Отказ от Т-72"
+ RUS_T_ts:0 "Т-26"
+ RUS_Armata:0 "Неси меня, Армата!"
+ RUS_hft_of_dead:0 "152мм чистой смерти"
+ RUS_GTD:0 "Газовая турбина"
+ RUS_overmechanisation:0 "Окончательная механизация"
+ RUS_spetsnaz:0 "Российский спецназ"
+ RUS_wheel_tsars:0 "Колёсные цари России"
+ RUS_mens_on_tanks:0 "Люди на танках"
+ RUS_AK_tt_UM:0 "АК-12УМ"
+ RUS_bplas:0 "БПЛА!"
+ RUS_buff_training:0 "Улучшить подготовку"
+ RUS_protiv_fpv:0 "Противодрон"
+ RUS_ww_btrs:0 "Едут-едут БТРы"
+ RUS_secret_insp:0 "Тайный инспектор"
+ RUS_buff_conditions_I:0 "Улучшение условий I"
+ RUS_buff_conditions_II:0 "Улучшение условий II"
+ RUS_buff_conditions_III:0 "Улучшение условий III"
+ RUS_best_docts:0 "Лучшие доктрины"
+ RUS_step_by_step:0 "Постепенное наступление"
+ RUS_blizkrieg:0 "Блицкриг"
+ RUS_vic_anyway:0 "Неминуемая победа"
+ RUS_best_army:0 "Лучшая армия"
+ RUS_army_of_winners:0 "Армия Победителей"
+ 
+ 
+
