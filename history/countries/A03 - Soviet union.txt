@@ -5,16 +5,12 @@
 
 
 #You don't want Russian party names? Just remove these lines
-set_party_name = {
-	ideology = communism
-	long_name = SOV_communism_party_russian_long
-	name = SOV_communism_party_russian
-}
-set_party_name = {
-	ideology = fascism
-	long_name = SOV_fascism_party_russian_long
-	name = SOV_fascism_party_russian
-}
+#set_party_name = {
+#	ideology = communism
+#	long_name = SOV_communism_party_russian_long
+#	name = SOV_communism_party_russian
+#}
+
 
 #COUNTRY LEADERS
 recruit_character = SOV_Vladimir_Putin
@@ -37,15 +33,18 @@ capital = 219 # Moscow
 starting_train_buffer = 3.0
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Centrism
 	last_election = "2024.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 93
-	fascism = 3
-	communism = 4
+	Centrism = 75
+	liberalism = 3
+	radicalism = 1
+	reactionism = 10
+	theocracy = 1
+	progressivism = 10
 }
 
 

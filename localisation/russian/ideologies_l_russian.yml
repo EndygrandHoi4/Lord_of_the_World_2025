@@ -1,0 +1,38 @@
+﻿l_russian:
+ Centrism:0 "Центризм"
+ Centrism_noun:0 "Центризм"
+ Centrism_desc:0 "Центристский режим"
+ authoritarian_democracy:0 "Авторитарная демократия"
+ authoritarian_democracy_noun:0 "Авторитарная демократия"
+ authoritarian_democracy_desc:0 "Авторитарный режим"
+ social_democracy:0 "Социал-демократия"
+ social_democracy_noun:0 "Социал-демократия"
+ social_democracy_desc:0 "Социал-демократический режим"
+ stratocracy:0 "Стратократия"
+ stratocracy_noun:0 "Стратократия"
+ stratocracy_desc:0 "Военный режим"
+ populism:0 "Популизм"
+ populism_noun:0 "Популизм"
+ populism_desc:0 "Популистический режим"
+
+ liberalism:0 "Либерализм"
+ liberalism_noun:0 "Либерализм"
+ liberalism_desc:0 "Либеральный режим"
+
+ radicalism:0 "Радикализм"
+ radicalism_noun:0 "Радикализм"
+ radicalism_desc:0 "Радикальный режим"
+
+ reactionism:0 "Реакционизм"
+ reactionism_noun:0 "Реакционизм"
+ reactionism_desc:0 "Реакционный режим"
+
+
+ theocracy:0 "Теократия"
+ theocracy_noun:0 "Теократия"
+ theocracy_desc:0 "Теократический режим"
+
+
+ progressivism:0 "Прогрессивизм"
+ progressivism_noun:0 "Прогрессивизм"
+ progressivism_desc:0 "Прогрессивистский режим"
