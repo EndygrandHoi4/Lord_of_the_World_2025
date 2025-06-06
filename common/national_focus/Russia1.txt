@@ -9,7 +9,7 @@ focus_tree = {
 			tag = A03
 		}
 	}
-	
+	 
 	default = no
 
 	continuous_focus_position = { x = 55 y = 1500 }
