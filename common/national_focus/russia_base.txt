@@ -11,7 +11,7 @@ focus_tree = {
 #Суверенная экономика
 focus = {
     id = RUS_soveren_econom
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_Sov_Eco
     cost = 5
     x = 13
     y = 1
@@ -22,7 +22,7 @@ focus = {
 ############ ПОДВЕТКА: Отечественный автопром
 focus = {
     id = RUS_fatherland_ap
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_fatherland_Auto
     cost = 5
     x = 4
     y = 2
@@ -34,7 +34,7 @@ focus = {
 #КАМАЗ
 focus = {
     id = RUS_KAMAZ
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_GFX_KAMAZ
     cost = 5
     x = 2
     y = 3
@@ -46,7 +46,7 @@ focus = {
 #LADA
 focus = {
     id = RUS_LADA
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_GFX_LADA
     cost = 5
     x = 4
     y = 3
@@ -58,7 +58,7 @@ focus = {
 #УАЗ
 focus = {
     id = RUS_UAZ
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_GFX_UAZ
     cost = 5
     x = 6
     y = 3
@@ -70,7 +70,7 @@ focus = {
 #Урал
 focus = {
     id = RUS_Ural
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_GFX_URAL
     cost = 5
     x = 3
     y = 4
@@ -82,7 +82,7 @@ focus = {
 #ГАЗ
 focus = {
     id = RUS_GAZ
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_GFX_GAZ
     cost = 5
     x = 5
     y = 4
@@ -95,7 +95,7 @@ focus = {
 ############ ПОДВЕТКА: Ради нужд народа
 focus = {
     id = RUS_for_people_needs
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_for_people_needs
     cost = 5
     x = 10
     y = 2
@@ -107,7 +107,7 @@ focus = {
 #Социальная инфраструктура
 focus = {
     id = RUS_soc_infr
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_Soc_Inf
     cost = 5
     x = 8
     y = 3
@@ -119,7 +119,7 @@ focus = {
 #Реформа медицины
 focus = {
     id = RUS_med_reform
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_Med_Ref
     cost = 5
     x = 10
     y = 3
@@ -131,7 +131,7 @@ focus = {
 #Вернуть лёгкую промышленность
 focus = {
     id = RUS_bb_light_prom
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_Prom_Ref
     cost = 5
     x = 12
     y = 3
@@ -143,7 +143,7 @@ focus = {
 #Государство для народа
 focus = {
     id = RUS_gov_for_people
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_For_Ppl
     cost = 5
     x = 9
     y = 4
@@ -156,7 +156,7 @@ focus = {
 #Лучшая Инженерия
 focus = {
     id = RUS_best_ing
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_Best_Ing
     cost = 5
     x = 11
     y = 4
@@ -168,7 +168,7 @@ focus = {
 ############ ВЕТКА: Денежный вопрос
 focus = {
     id = RUS_money_question
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_money_question
     cost = 5
     x = 16
     y = 2
@@ -180,7 +180,7 @@ focus = {
 #Ввести цифровой рубль
 focus = {
     id = RUS_dg_ruble
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_dg_ruble
     cost = 5
     x = 14
     y = 3
@@ -192,7 +192,7 @@ focus = {
 #Звонок Набиулиной
 focus = {
     id = RUS_call_nabiulina
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_call_nabiulina
     cost = 5
     x = 18
     y = 3
@@ -204,7 +204,7 @@ focus = {
 #Замена бумаги цифрой
 focus = {
     id = RUS_paper_to_dg
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_paper_to_dg
     cost = 10
     x = 16
     y = 4
@@ -219,7 +219,7 @@ focus = {
 ############ ПОДВЕТКА: Тяжёлая промышленость 
 focus = {
     id = RUS_heavy_prom
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_heavy_prom
     cost = 5
     x = 22
     y = 2
@@ -231,7 +231,7 @@ focus = {
 #УралВагонЗавод
 focus = {
     id = RUS_UVZ
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_UVZ
     cost = 5
     x = 20
     y = 3
@@ -243,7 +243,7 @@ focus = {
 #Проекты БПЛА
 focus = {
     id = RUS_projects_bpla
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_projects_bpla
     cost = 5
     x = 24
     y = 3
@@ -255,7 +255,7 @@ focus = {
 #Производство "Герани"
 focus = {
     id = RUS_geran
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_geran
     cost = 5
     x = 24
     y = 4
@@ -268,7 +268,7 @@ focus = {
 #ВСРФ
 focus = {
     id = RUS_AFRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_AFRF
     cost = 5
     x = 33
     y = 1
@@ -277,7 +277,7 @@ focus = {
 ############ ПОДВЕТКА: Лучшие танки
 focus = {
     id = RUS_best_tanks
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_best_tanks
     cost = 5
     x = 27
     y = 2
@@ -289,7 +289,7 @@ focus = {
 #Отказ от Т-72
 focus = {
     id = RUS_cancel_T_st
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_cancel_T_st
     cost = 5
     x = 26
     y = 3
@@ -304,7 +304,7 @@ focus = {
 #Т-26
 focus = {
     id = RUS_T_ts
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_T_ts
     cost = 5
     x = 28
     y = 3
@@ -319,7 +319,7 @@ focus = {
 #Неси меня, Армата!
 focus = {
     id = RUS_Armata
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_Armata
     cost = 5
     x = 27
     y = 4
@@ -334,7 +334,7 @@ focus = {
 #152мм чистой смерти
 focus = {
     id = RUS_hft_of_dead
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_hft_of_dead
     cost = 5
     x = 26
     y = 5
@@ -346,7 +346,7 @@ focus = {
 #Газовая турбина
 focus = {
     id = RUS_GTD
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_GTD
     cost = 5
     x = 28
     y = 5
@@ -358,7 +358,7 @@ focus = {
 ########### ПОДВЕТКА: Окончательная механизация
 focus = {
     id = RUS_overmechanisation
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_overmechanisation
     cost = 5
     x = 30
     y = 2
@@ -370,7 +370,7 @@ focus = {
 #Российский спецназ
 focus = {
     id = RUS_spetsnaz
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_spetsnaz
     cost = 5
     x = 30
     y = 3
@@ -382,7 +382,7 @@ focus = {
 #Колёсные цари России
 focus = {
     id = RUS_wheel_tsars
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_wheel_tsars
     cost = 5
     x = 32
     y = 3
@@ -394,7 +394,7 @@ focus = {
 #Люди на танках
 focus = {
     id = RUS_mens_on_tanks
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_mens_on_tanks
     cost = 5
     x = 29
     y = 4
@@ -409,7 +409,7 @@ focus = {
 #АК-12УМ
 focus = {
     id = RUS_AK_tt_UM
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_AK_tt_UM
     cost = 5
     x = 31
     y = 4
@@ -421,7 +421,7 @@ focus = {
 ############ ПОДВЕТКА: БПЛА!
 focus = {
     id = RUS_bplas
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_bplas
     cost = 5
     x = 33
     y = 2
@@ -433,7 +433,7 @@ focus = {
 #Улучшить подготовку
 focus = {
     id = RUS_buff_training
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_buff_training
     cost = 5
     x = 34
     y = 3
@@ -445,7 +445,7 @@ focus = {
 #Противодрон
 focus = {
     id = RUS_protiv_fpv
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_protiv_fpv
     cost = 5
     x = 33
     y = 4
@@ -460,7 +460,7 @@ focus = {
 #Едут-едут БТРы
 focus = {
     id = RUS_ww_btrs
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_ww_btrs
     cost = 5
     x = 31
     y = 5
@@ -478,7 +478,7 @@ focus = {
 ############ ПОДВЕТКА: Тайный инспектор
 focus = {
     id = RUS_secret_insp
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_secret_insp
     cost = 5
     x = 36
     y = 2
@@ -490,7 +490,7 @@ focus = {
 #Улучшение условий: 3 уровня
 focus = {
     id = RUS_buff_conditions_I
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_buff_conditions_I
     cost = 5
     x = 36
     y = 3
@@ -501,7 +501,7 @@ focus = {
 }
 focus = {
     id = RUS_buff_conditions_II
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_buff_conditions_II
     cost = 5
     x = 36
     y = 4
@@ -512,7 +512,7 @@ focus = {
 }
 focus = {
     id = RUS_buff_conditions_III
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_buff_conditions_III
     cost = 5
     x = 36
     y = 5
@@ -524,7 +524,7 @@ focus = {
 ############ ПОДВЕТКА: Лучшие доктрины
 focus = {
     id = RUS_best_docts
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_best_docts
     cost = 5
     x = 39
     y = 2
@@ -536,7 +536,7 @@ focus = {
 #Постепенное наступление
 focus = {
     id = RUS_step_by_step
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_step_by_step
     cost = 5
     x = 38
     y = 3
@@ -551,7 +551,7 @@ focus = {
 #Блицкриг
 focus = {
     id = RUS_blizkrieg
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_blizkrieg
     cost = 5
     x = 40
     y = 3
@@ -566,7 +566,7 @@ focus = {
 #Неминуемая победа
 focus = {
     id = RUS_vic_anyway
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_vic_anyway
     cost = 5
     x = 39
     y = 4
@@ -579,7 +579,7 @@ focus = {
 #Лучшая армия
 focus = {
     id = RUS_best_army
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_best_army
     cost = 5
     x = 39
     y = 5
@@ -591,7 +591,7 @@ focus = {
 ############ АРМИЯ ПОБЕДИТЕЛЕЙ
 focus = {
     id = RUS_army_of_winners
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_army_of_winners
     cost = 5
     x = 33
     y = 6
@@ -616,7 +616,7 @@ focus = {
 #Монументальные проекты
 focus = {
     id = RUS_monumental_prj
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_monuments
     cost = 3
     x = 7
     y = 4
@@ -625,7 +625,7 @@ focus = {
 #Сибирский мегаполис
 focus = {
     id = RUS_sibirean_mgpolis
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_sib_mega
     cost = 7
     x = 4
     y = 5
@@ -637,7 +637,7 @@ focus = {
 #Великий Урал
 focus = {
     id = RUS_Great_Ural
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_great_ural
     cost = 7
     x = 6
     y = 5
@@ -649,7 +649,7 @@ focus = {
 #Запасы севера
 focus = {
     id = RUS_nord_reserves
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_north_plus
     cost = 7
     x = 8
     y = 5
@@ -661,7 +661,7 @@ focus = {
 #Европейская Империя
 focus = {
     id = RUS_european_emp
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_euro_emp
     cost = 7
     x = 10
     y = 5
@@ -673,7 +673,7 @@ focus = {
 #Второй Китай
 focus = {
     id = RUS_second_china
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_second_chi
     cost = 7
     x = 5
     y = 6
@@ -688,7 +688,7 @@ focus = {
 #Владычица мира (Россия)
 focus = {
     id = RUS_owner_of_world
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_owner_of_world
     cost = 7
     x = 7
     y = 6
@@ -703,7 +703,7 @@ focus = {
 #Самодостаточность (Тут ресы)
 focus = {
     id = RUS_samodost
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_samodost
     cost = 7
     x = 9
     y = 6
@@ -718,7 +718,7 @@ focus = {
 ############################### ФОКУСЫ БРИКС 2027
 focus = {
     id = RUS_BRICS
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_BRICS
     cost = 5
     x = 20
     y = 4
@@ -730,7 +730,7 @@ focus = {
 #Брики (тип валюта))).)
 focus = {
     id = RUS_briks
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_briks
     cost = 5
     x = 18
     y = 5
@@ -742,7 +742,7 @@ focus = {
 #Валюта между странами
 focus = {
     id = RUS_into_govs
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_into_govs
     cost = 5
     x = 17
     y = 6
@@ -757,7 +757,7 @@ focus = {
 #Валюта между народами
 focus = {
     id = RUS_into_nations
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_into_nations
     cost = 5
     x = 19
     y = 6
@@ -772,7 +772,7 @@ focus = {
 #Отказ от доллара
 focus = {
     id = RUS_no_dollars
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_no_dollars
     cost = 5
     x = 20
     y = 5
@@ -784,7 +784,7 @@ focus = {
 #Торговля
 focus = {
     id = RUS_deals
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_deals
     cost = 5
     x = 22
     y = 5
@@ -796,7 +796,7 @@ focus = {
 #Больше нефти!
 focus = {
     id = RUS_more_oil
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_more_oil
     cost = 5
     x = 21
     y = 6
@@ -808,7 +808,7 @@ focus = {
 #Больше газа!
 focus = {
     id = RUS_more_gas
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_more_gas
     cost = 5
     x = 23
     y = 6
