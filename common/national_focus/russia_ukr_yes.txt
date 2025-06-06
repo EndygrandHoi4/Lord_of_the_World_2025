@@ -28,8 +28,6 @@ focus = {
     }
     completion_reward = { 
         add_political_power = 100
-        add_stability = 20
-        add_war_support = -50
     }
 }
 #Требовать выборы - тут про выборы в украине, не в РФ!!!
