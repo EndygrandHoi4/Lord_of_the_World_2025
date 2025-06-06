@@ -48,6 +48,6 @@ set_popularities = {
 }
 
 
-set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.3
+set_research_slots = 4
+set_stability = 0.75
+set_war_support = 0.8
