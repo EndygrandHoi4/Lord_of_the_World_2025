@@ -26,7 +26,7 @@ state={
 		add_core_of = CZE
 
 		1939.3.14 = {
-			owner = GER
+			owner = A01
 			controller = GER
 		}
 	}

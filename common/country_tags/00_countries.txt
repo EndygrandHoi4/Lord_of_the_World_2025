@@ -1,5 +1,5 @@
 #GER
-001 = "countries/Germany.txt"
+A01 = "countries/Germany.txt"
 #ENG 
 A02 = "countries/United Kingdom.txt"
 #SOV
@@ -196,8 +196,8 @@ LAO
 098 = "countries/Laos.txt"
 MNT
 099 = "countries/Montenegro.txt"
-UKR
-100 = "countries/Ukraine.txt"
+#UKR
+A04 = "countries/Ukraine.txt"
 GEO
 101 = "countries/Georgia.txt"
 KAZ

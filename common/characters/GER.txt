@@ -1,0 +1,21 @@
+	
+characters = {
+	
+
+	
+	GER_Olaf_Scholzn = {
+		name = GER_Olaf_Scholzn
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/portrait_GER_Olaf_Scholzn.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberal_democracy
+			traits = {}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+}
+
+}

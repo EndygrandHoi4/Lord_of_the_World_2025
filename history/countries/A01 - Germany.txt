@@ -1,0 +1,27 @@
+﻿
+#COUNTRY LEADERS
+recruit_character = GER_Olaf_Scholzn
+
+capital = 64 # Berlin
+
+starting_train_buffer = 3.0
+
+set_politics = {
+	ruling_party = liberalism
+	last_election = "2021.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Centrism = 30
+	liberalism = 30
+	radicalism = 20
+	reactionism = 10
+	theocracy = 0
+	progressivism = 10
+}
+
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.3

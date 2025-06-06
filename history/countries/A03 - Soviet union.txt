@@ -19,7 +19,7 @@ recruit_character = SOV_Vladimir_Putin
 recruit_character = SOV_Andrey_Belousov
 
 declare_war_on = {
-		target = UKR
+		target = A04
 		type = annex_everything
 }
 

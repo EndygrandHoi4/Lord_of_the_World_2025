@@ -30,7 +30,7 @@ state = {
 		}
 
 		1938.9.30 = {
-			owner = GER
+			owner = A01
 			controller = GER
 			add_core_of = GER
 		}
