@@ -5,7 +5,7 @@ ideas = {
         #Оспариваемая конституция
         idea_RUS_konst_I = {
             allowed = {
-                original_tag = RUS
+                original_tag = A03
             }
             removal_cost = -1
             picture = GFX_surrender_tiny_flag
@@ -18,7 +18,7 @@ ideas = {
         #СВО
         idea_RUS_SVO_inf = {
             allowed = {
-                original_tag = RUS
+                original_tag = A03
             }
             removal_cost = -1
             picture = GFX_surrender_tiny_flag
@@ -31,7 +31,7 @@ ideas = {
         #Чёткие условия
         idea_RUS_shadow_flot = {
             allowed = {
-                original_tag = RUS
+                original_tag = A03
             }
             removal_cost = -1
             picture = GFX_surrender_tiny_flag
@@ -44,7 +44,7 @@ ideas = {
         #Политическая неопределённость
         idea_RUS_politics_I = {
             allowed = {
-                original_tag = RUS
+                original_tag = A03
             }
             removal_cost = -1
             picture = GFX_surrender_tiny_flag
@@ -62,7 +62,7 @@ ideas = {
         #Усилить СМИ
         idea_RUS_media_svo = {
             allowed = {
-                original_tag = RUS
+                original_tag = A03
                 has_idea = idea_RUS_SVO_inf
             }
             removal_cost = -1
@@ -75,7 +75,7 @@ ideas = {
         }
         idea_RUS_clear_conditions = {
             allowed = {
-                original_tag = RUS
+                original_tag = A03
                 has_idea = idea_RUS_SVO_inf
             }
             removal_cost = -1
@@ -88,7 +88,7 @@ ideas = {
         }
         idea_RUS_call_trump = {
             allowed = {
-                original_tag = RUS
+                original_tag = A03
                 has_idea = idea_RUS_SVO_inf
             }
             removal_cost = -1
