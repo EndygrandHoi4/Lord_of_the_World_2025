@@ -1,0 +1,230 @@
+focus_tree = {
+    id = russian_focus_un
+    country = { 
+        factor = 0
+        modifier = {
+            add = 11
+            tag = A03
+        }
+    }
+#Взять Киев
+focus = {
+    id = RUS_take_kiev
+    icon = GFX_Take_Kyiv
+    cost = 1
+    x = 6
+    y = 1
+    mutually_exclusive = {
+        focus = RUS_pos_crush
+    }
+    completion_reward = { }
+}
+#Крах позиции
+focus = {
+    id = RUS_pos_crush
+    icon = GFX_Pos_crash
+    cost = 1
+    x = 10
+    y = 1
+    mutually_exclusive = {
+        focus = RUS_take_kiev
+    }
+    completion_reward = { }
+}
+#Поддержать Путина
+focus = {
+    id = RUS_supp_Putin
+    icon = GFX_Support_Putin
+    cost = 1
+    x = 5
+    y = 2
+    prerequisite = {
+        focus = RUS_take_kiev
+    }
+    completion_reward = { }
+}
+#Прогулка в ночной Одессе
+focus = {
+    id = RUS_walking_in_odessa
+    icon = GFX_Walk_Odessa
+    cost = 2
+    x = 7
+    y = 2
+    prerequisite = {
+        focus = RUS_take_kiev
+        focus = RUS_pos_crush
+    }
+    completion_reward = { }
+}
+#Украина = западная
+focus = {
+    id = RUS_only_west_ukr
+    icon = GFX_UKR_West
+    cost = 2
+    x = 9
+    y = 2
+    prerequisite = {
+        focus = RUS_take_kiev
+        focus = RUS_pos_crush
+    }
+    completion_reward = { }
+}
+#Временный комитет
+focus = {
+    id = RUS_provgov
+    icon = GFX_Temporary_Committee
+    cost = 1
+    x = 11
+    y = 2
+    prerequisite = {
+        focus = RUS_pos_crush
+    }
+    completion_reward = { }
+}
+#Победа будет...
+focus = {
+    id = RUS_win_will_be_
+    icon = GFX_War_Will
+    cost = 1
+    x = 4
+    y = 3
+    prerequisite = {
+        focus = RUS_supp_Putin
+    }
+    completion_reward = { }
+}
+#Ултиматум Зе!
+focus = {
+    id = RUS_ultimatum_ze
+    icon = GFX_Ultimatum_Z
+    x = 8
+    y = 3
+    prerequisite = {
+        focus = RUS_walking_in_odessa
+    }
+    prerequisite = {
+        focus = RUS_only_west_ukr
+    }
+    completion_reward = { }
+}
+#За жизнь родины!
+focus = {
+    id = RUS_for_motherland
+    icon = GFX_For_Homeland
+    cost = 1
+    x = 12
+    y = 3
+    prerequisite = {
+        focus = RUS_provgov
+    }
+    completion_reward = { }
+}
+#За нами!
+focus = {
+    id = RUS_ours_vic
+    icon = GFX_Be_Our
+    cost = 1
+    x = 4
+    y = 4
+    prerequisite = {
+        focus = RUS_win_will_be_
+    }
+    completion_reward = { }
+}
+#Малороссия
+focus = {
+    id = RUS_malorussia
+    icon = GFX_Malorussia
+    cost = 4
+    x = 8
+    y = 4
+    prerequisite = {
+        focus = RUS_ultimatum_ze
+    }
+    completion_reward = { }
+}
+#Отмена конституции
+focus = {
+    id = RUS_konst_cancel
+    icon = GFX_No_Constitution
+    cost = 1
+    x = 12
+    y = 4
+    prerequisite = {
+        focus = RUS_for_motherland
+    }
+    completion_reward = { }
+}
+#Реальная политика
+focus = {
+    id = RUS_realpolitics
+    icon = GFX_Realpolitik
+    cost = 1
+    x = 5
+    y = 5
+    prerequisite = {
+        focus = RUS_ours_vic
+    }
+    completion_reward = { }
+}
+#Карпатский вопрос
+focus = {
+    id = RUS_carp_question
+    icon = GFX_Karp_Question
+    cost = 2
+    x = 7
+    y = 5
+    prerequisite = {
+        focus = RUS_malorussia
+    }
+    completion_reward = { }
+}
+#Долой нацизм!
+focus = {
+    id = RUS_doloy_nazi
+    icon = GFX_No_Nazism
+    cost = 2
+    x = 9
+    y = 5
+    prerequisite = {
+        focus = RUS_malorussia
+    }
+    completion_reward = { }
+}
+#Военная полиция
+focus = {
+    id = RUS_war_police
+    icon = GFX_War_Police
+    cost = 1
+    x = 11
+    y = 5
+    prerequisite = {
+        focus = RUS_konst_cancel
+    }
+    completion_reward = { }
+}
+#Будущее России
+focus = {
+    id = RUS_russian_future
+    icon = GFX_Russia_Future
+    cost = 1
+    x = 8
+    y = 6
+    prerequisite = {
+        focus = RUS_realpolitics
+        focus = RUS_war_police
+    }
+    prerequisite = {
+        focus = RUS_carp_question
+    }
+    prerequisite = {
+        focus = RUS_doloy_nazi
+    }
+    completion_reward = { 
+        load_focus_tree = russia_to_future
+    }
+}
+
+
+
+}

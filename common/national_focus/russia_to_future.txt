@@ -1,0 +1,47 @@
+focus_tree = {
+    id = russian_focuses_tf
+    country = { 
+        factor = 0
+        modifier = {
+            add = 11
+            tag = A03
+        }
+    }
+#Новое начало
+focus = {
+    id = RUS_new_begining
+    icon = GFX_surrender_tiny_flag
+    cost = 1
+    x = 5
+    y = 1
+    completion_reward = { 
+
+    }
+}
+#Интервью Путина
+focus = {
+    id = RUS_putin_int
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 5
+    y = 2
+    prerequisite = {
+        focus = RUS_new_begining
+    }
+    completion_reward = { }
+}
+#Внеочередные выборы
+focus = {
+    id = RUS_elections
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 5
+    y = 3
+    prerequisite = {
+        focus = RUS_putin_int
+    }
+    completion_reward = { 
+        load_focus_tree = russia_base
+    }
+}
+}
