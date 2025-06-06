@@ -1,0 +1,2049 @@
+focus_tree = {
+    id = russian_focus_ob
+    country = { 
+        factor = 0
+        modifier = {
+            add = 12
+            tag = A03
+        }
+    }
+################################ ВЕТКА СУВЕРЕННАЯ ЭКОНОМИКА
+#Суверенная экономика
+focus = {
+    id = RUS_soveren_econom
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 13
+    y = 1
+    completion_reward = { 
+        add_political_power = 100
+    }
+}
+############ ПОДВЕТКА: Отечественный автопром
+focus = {
+    id = RUS_fatherland_ap
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 4
+    y = 2
+    prerequisite = {
+        focus = RUS_soveren_econom
+    }
+    completion_reward = { }
+}
+#КАМАЗ
+focus = {
+    id = RUS_KAMAZ
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 2
+    y = 3
+    prerequisite = {
+        focus = RUS_fatherland_ap
+    }
+    completion_reward = { }
+}
+#LADA
+focus = {
+    id = RUS_LADA
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 4
+    y = 3
+    prerequisite = {
+        focus = RUS_fatherland_ap
+    }
+    completion_reward = { }
+}
+#УАЗ
+focus = {
+    id = RUS_UAZ
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 6
+    y = 3
+    prerequisite = {
+        focus = RUS_fatherland_ap
+    }
+    completion_reward = { }
+}
+#Урал
+focus = {
+    id = RUS_Ural
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 3
+    y = 4
+    prerequisite = {
+        focus = RUS_KAMAZ
+    }
+    completion_reward = { }
+}
+#ГАЗ
+focus = {
+    id = RUS_GAZ
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 5
+    y = 4
+    prerequisite = {
+        focus = RUS_LADA
+        focus = RUS_UAZ
+    }
+    completion_reward = { }
+}
+############ ПОДВЕТКА: Ради нужд народа
+focus = {
+    id = RUS_for_people_needs
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 10
+    y = 2
+    prerequisite = {
+        focus = RUS_soveren_econom    
+    }
+    completion_reward = { }
+}
+#Социальная инфраструктура
+focus = {
+    id = RUS_soc_infr
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 8
+    y = 3
+    prerequisite = {
+        focus = RUS_for_people_needs
+    }
+    completion_reward = { }
+}
+#Реформа медицины
+focus = {
+    id = RUS_med_reform
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 10
+    y = 3
+    prerequisite = {
+        focus = RUS_for_people_needs
+    }
+    completion_reward = { }
+}
+#Вернуть лёгкую промышленность
+focus = {
+    id = RUS_bb_light_prom
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 12
+    y = 3
+    prerequisite = {
+        focus = RUS_for_people_needs
+    }
+    completion_reward = { }
+}
+#Государство для народа
+focus = {
+    id = RUS_gov_for_people
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 9
+    y = 4
+    prerequisite = {
+        focus = RUS_soc_infr
+        focus = RUS_med_reform        
+    }
+    completion_reward = { }
+}
+#Лучшая Инженерия
+focus = {
+    id = RUS_best_ing
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 11
+    y = 4
+    prerequisite = {
+        focus = RUS_bb_light_prom
+    }
+    completion_reward = { }
+}
+############ ВЕТКА: Денежный вопрос
+focus = {
+    id = RUS_money_question
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 16
+    y = 2
+    prerequisite = {
+        focus = RUS_soveren_econom
+    }
+    completion_reward = { }
+}
+#Ввести цифровой рубль
+focus = {
+    id = RUS_dg_ruble
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 14
+    y = 3
+    prerequisite = {
+        focus = RUS_money_question
+    }
+    completion_reward = { }
+}
+#Звонок Набиулиной
+focus = {
+    id = RUS_call_nabiulina
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 18
+    y = 3
+    prerequisite = {
+        focus = RUS_money_question
+    }
+    completion_reward = { }
+}
+#Замена бумаги цифрой
+focus = {
+    id = RUS_paper_to_dg
+    icon = GFX_surrender_tiny_flag
+    cost = 10
+    x = 16
+    y = 4
+    prerequisite = {
+        focus = RUS_dg_ruble
+    }
+    prerequisite = {
+        focus = RUS_call_nabiulina
+    }
+    completion_reward = { }
+}
+############ ПОДВЕТКА: Тяжёлая промышленость 
+focus = {
+    id = RUS_heavy_prom
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 22
+    y = 2
+    prerequisite = {
+        focus = RUS_soveren_econom
+    }
+    completion_reward = { }
+}
+#УралВагонЗавод
+focus = {
+    id = RUS_UVZ
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 20
+    y = 3
+    prerequisite = {
+        focus = RUS_heavy_prom
+    }
+    completion_reward = { }
+}
+#Проекты БПЛА
+focus = {
+    id = RUS_projects_bpla
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 24
+    y = 3
+    prerequisite = {
+        focus = RUS_heavy_prom
+    }
+    completion_reward = { }
+}
+#Производство "Герани"
+focus = {
+    id = RUS_geran
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 24
+    y = 4
+    prerequisite = {
+        focus = RUS_projects_bpla
+    }
+    completion_reward = { }
+}
+############################## ВЕТКА АРМИИ
+#ВСРФ
+focus = {
+    id = RUS_AFRF
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 33
+    y = 1
+    completion_reward = { }
+}
+############ ПОДВЕТКА: Лучшие танки
+focus = {
+    id = RUS_best_tanks
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 27
+    y = 2
+    prerequisite = {
+        focus = RUS_AFRF
+    }
+    completion_reward = { }
+}
+#Отказ от Т-72
+focus = {
+    id = RUS_cancel_T_st
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 26
+    y = 3
+    prerequisite = {
+        focus = RUS_best_tanks
+    }
+    prerequisite = {
+        focus = RUS_heavy_prom
+    }
+    completion_reward = { }
+}
+#Т-26
+focus = {
+    id = RUS_T_ts
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 28
+    y = 3
+    prerequisite = {
+        focus = RUS_best_tanks
+    }
+    prerequisite = {
+        focus = RUS_heavy_prom
+    }
+    completion_reward = { }
+}
+#Неси меня, Армата!
+focus = {
+    id = RUS_Armata
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 27
+    y = 4
+    prerequisite = {
+        focus = RUS_cancel_T_st
+    }
+    prerequisite = {
+        focus = RUS_T_ts
+    }
+    completion_reward = { }
+}
+#152мм чистой смерти
+focus = {
+    id = RUS_hft_of_dead
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 26
+    y = 5
+    prerequisite = {
+        focus = RUS_Armata
+    }
+    completion_reward = { }
+}
+#Газовая турбина
+focus = {
+    id = RUS_GTD
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 28
+    y = 5
+    prerequisite = {
+        focus = RUS_Armata
+    }
+    completion_reward = { }
+}
+########### ПОДВЕТКА: Окончательная механизация
+focus = {
+    id = RUS_overmechanisation
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 30
+    y = 2
+    prerequisite = {
+        focus = RUS_AFRF
+    }
+    completion_reward = { }
+}
+#Российский спецназ
+focus = {
+    id = RUS_spetsnaz
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 30
+    y = 3
+    prerequisite = {
+        focus = RUS_overmechanisation
+    }
+    completion_reward = { }
+}
+#Колёсные цари России
+focus = {
+    id = RUS_wheel_tsars
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 32
+    y = 3
+    prerequisite = {
+        focus = RUS_overmechanisation
+    }
+    completion_reward = { }
+}
+#Люди на танках
+focus = {
+    id = RUS_mens_on_tanks
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 29
+    y = 4
+    prerequisite = {
+        focus = RUS_T_ts
+    }
+    prerequisite = {
+        focus = RUS_spetsnaz
+    }
+    completion_reward = { }
+}
+#АК-12УМ
+focus = {
+    id = RUS_AK_tt_UM
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 31
+    y = 4
+    prerequisite = {
+        focus = RUS_spetsnaz
+    }
+    completion_reward = { }
+}
+############ ПОДВЕТКА: БПЛА!
+focus = {
+    id = RUS_bplas
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 33
+    y = 2
+    prerequisite = {
+        focus = RUS_AFRF
+    }
+    completion_reward = { }
+}
+#Улучшить подготовку
+focus = {
+    id = RUS_buff_training
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 34
+    y = 3
+    prerequisite = {
+        focus = RUS_bplas
+    }
+    completion_reward = { }
+}
+#Противодрон
+focus = {
+    id = RUS_protiv_fpv
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 33
+    y = 4
+    prerequisite = {
+        focus = RUS_wheel_tsars
+    }
+    prerequisite = {
+        focus = RUS_buff_training
+    }
+    completion_reward = { }
+}
+#Едут-едут БТРы
+focus = {
+    id = RUS_ww_btrs
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 31
+    y = 5
+    prerequisite = {
+        focus = RUS_mens_on_tanks
+    }
+    prerequisite = {
+        focus = RUS_AK_tt_UM
+    }
+    prerequisite = {
+        focus = RUS_protiv_fpv
+    }
+    completion_reward = { }
+}
+############ ПОДВЕТКА: Тайный инспектор
+focus = {
+    id = RUS_secret_insp
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 36
+    y = 2
+    prerequisite = {
+        focus = RUS_AFRF
+    }
+    completion_reward = { }
+}
+#Улучшение условий: 3 уровня
+focus = {
+    id = RUS_buff_conditions_I
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 36
+    y = 3
+    prerequisite = {
+        focus = RUS_secret_insp
+    }
+    completion_reward = { }
+}
+focus = {
+    id = RUS_buff_conditions_II
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 36
+    y = 4
+    prerequisite = {
+        focus = RUS_buff_conditions_I
+    }
+    completion_reward = { }
+}
+focus = {
+    id = RUS_buff_conditions_III
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 36
+    y = 5
+    prerequisite = {
+        focus = RUS_buff_conditions_II
+    }
+    completion_reward = { }
+}
+############ ПОДВЕТКА: Лучшие доктрины
+focus = {
+    id = RUS_best_docts
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 39
+    y = 2
+    prerequisite = {
+        focus = RUS_AFRF
+    }
+    completion_reward = { }
+}
+#Постепенное наступление
+focus = {
+    id = RUS_step_by_step
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 38
+    y = 3
+    prerequisite = {
+        focus = RUS_best_docts
+    }
+    mutually_exclusive = {
+        focus = RUS_blizkrieg
+    }
+    completion_reward = { }
+}
+#Блицкриг
+focus = {
+    id = RUS_blizkrieg
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 40
+    y = 3
+    prerequisite = {
+        focus = RUS_best_docts
+    }
+    mutually_exclusive = {
+        focus = RUS_step_by_step
+    }
+    completion_reward = { }
+}
+#Неминуемая победа
+focus = {
+    id = RUS_vic_anyway
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 39
+    y = 4
+    prerequisite = {
+        focus = RUS_step_by_step
+        focus = RUS_blizkrieg
+    }
+    completion_reward = { }
+}
+#Лучшая армия
+focus = {
+    id = RUS_best_army
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 39
+    y = 5
+    prerequisite = {
+        focus = RUS_vic_anyway
+    }
+    completion_reward = { }
+}
+############ АРМИЯ ПОБЕДИТЕЛЕЙ
+focus = {
+    id = RUS_army_of_winners
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 33
+    y = 6
+    prerequisite = {
+        focus = RUS_hft_of_dead
+    }
+    prerequisite = {
+        focus = RUS_GTD
+    }
+    prerequisite = {
+        focus = RUS_ww_btrs
+    }
+    prerequisite = {
+        focus = RUS_buff_conditions_III
+    }
+    prerequisite = {
+        focus = RUS_best_army
+    }
+    completion_reward = { }
+}
+################################## ВЕТКА ПРОЕКТОВ
+#Монументальные проекты
+focus = {
+    id = RUS_monumental_prj
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 7
+    y = 4
+    completion_reward = { }
+}
+#Сибирский мегаполис
+focus = {
+    id = RUS_sibirean_mgpolis
+    icon = GFX_surrender_tiny_flag
+    cost = 7
+    x = 4
+    y = 5
+    prerequisite = {
+        focus = RUS_monumental_prj
+    }
+    completion_reward = { }
+}
+#Великий Урал
+focus = {
+    id = RUS_Great_Ural
+    icon = GFX_surrender_tiny_flag
+    cost = 7
+    x = 6
+    y = 5
+    prerequisite = {
+        focus = RUS_monumental_prj
+    }
+    completion_reward = { }
+}
+#Запасы севера
+focus = {
+    id = RUS_nord_reserves
+    icon = GFX_surrender_tiny_flag
+    cost = 7
+    x = 8
+    y = 5
+    prerequisite = {
+        focus = RUS_monumental_prj
+    }
+    completion_reward = { }
+}
+#Европейская Империя
+focus = {
+    id = RUS_european_emp
+    icon = GFX_surrender_tiny_flag
+    cost = 7
+    x = 10
+    y = 5
+    prerequisite = {
+        focus = RUS_monumental_prj
+    }
+    completion_reward = { }
+}
+#Второй Китай
+focus = {
+    id = RUS_second_china
+    icon = GFX_surrender_tiny_flag
+    cost = 7
+    x = 5
+    y = 6
+    prerequisite = {
+        focus = RUS_sibirean_mgpolis
+    }
+    prerequisite = {
+        focus = RUS_Great_Ural
+    }
+    completion_reward = { }
+}
+#Владычица мира (Россия)
+focus = {
+    id = RUS_owner_of_world
+    icon = GFX_surrender_tiny_flag
+    cost = 7
+    x = 7
+    y = 6
+    prerequisite = {
+        focus = RUS_Great_Ural
+    }
+    prerequisite = {
+        focus = RUS_nord_reserves
+    }
+    completion_reward = { }
+}
+#Самодостаточность (Тут ресы)
+focus = {
+    id = RUS_samodost
+    icon = GFX_surrender_tiny_flag
+    cost = 7
+    x = 9
+    y = 6
+    prerequisite = {
+        focus = RUS_nord_reserves
+    }
+    prerequisite = {
+        focus = RUS_european_emp
+    }
+    completion_reward = { }
+}
+############################### ФОКУСЫ БРИКС 2027
+focus = {
+    id = RUS_BRICS
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 20
+    y = 4
+    available = {
+        
+    }
+    completion_reward = { }
+}
+#Брики (тип валюта))).)
+focus = {
+    id = RUS_briks
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 18
+    y = 5
+    prerequisite = {
+        focus = RUS_BRICS
+    }
+    completion_reward = { }
+}
+#Валюта между странами
+focus = {
+    id = RUS_into_govs
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 17
+    y = 6
+    prerequisite = {
+        focus = RUS_briks
+    }
+    mutually_exclusive = {
+        focus = RUS_into_nations
+    }
+    completion_reward = { }
+}
+#Валюта между народами
+focus = {
+    id = RUS_into_nations
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 19
+    y = 6
+    prerequisite = {
+        focus = RUS_briks
+    }
+    mutually_exclusive = {
+        focus = RUS_into_govs
+    }
+    completion_reward = { }
+}
+#Отказ от доллара
+focus = {
+    id = RUS_no_dollars
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 20
+    y = 5
+    prerequisite = {
+        focus = RUS_BRICS
+    }
+    completion_reward = { }
+}
+#Торговля
+focus = {
+    id = RUS_deals
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 22
+    y = 5
+    prerequisite = {
+        focus = RUS_BRICS
+    }
+    completion_reward = { }
+}
+#Больше нефти!
+focus = {
+    id = RUS_more_oil
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 21
+    y = 6
+    prerequisite = {
+        focus = RUS_deals
+    }
+    completion_reward = { }
+}
+#Больше газа!
+focus = {
+    id = RUS_more_gas
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 23
+    y = 6
+    prerequisite = {
+        focus = RUS_deals
+    }
+    completion_reward = { }
+}
+##################################### ПРЕТЕНЗИИ
+#Поддержать Толстизм
+focus = {
+    id = RUS_supp_tolstism
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 50
+    y = 1
+    mutually_exclusive = {
+        focus = RUS_supp_imperialism
+    }
+    completion_reward = { }
+}
+#Воскресить имперскость
+focus = {
+    id = RUS_supp_imperialism
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 54
+    y = 1
+    mutually_exclusive = {
+        focus = RUS_supp_tolstism
+    }
+    completion_reward = { }
+}
+#Мирная экспансия
+focus = {
+    id = RUS_peaceful_exp
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 50
+    y = 2
+    prerequisite = {
+        focus = RUS_supp_tolstism
+    }
+    completion_reward = { }
+}
+#Горсть ултиматумов
+focus = {
+    id = RUS_ultimatums
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 54
+    y = 2
+    prerequisite = {
+        focus = RUS_supp_imperialism
+    }
+    completion_reward = { }
+}
+#Мир прежде всего
+focus = {
+    id = RUS_peace_important
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 45
+    y = 3
+    prerequisite = {
+        focus = RUS_supp_tolstism
+    }
+    completion_reward = { }
+}
+#Алашская автономия
+focus = {
+    id = RUS_alash_kaz
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 47
+    y = 3
+    prerequisite = {
+        focus = RUS_peaceful_exp
+    }
+    completion_reward = { }
+}
+#Кавказская нефть
+focus = {
+    id = RUS_caucasus
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 49
+    y = 3
+    prerequisite = {
+        focus = RUS_peaceful_exp
+        focus = RUS_ultimatums
+    }
+    completion_reward = { }
+}
+#Купить Аляску
+focus = {
+    id = RUS_buy_alaska
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 51
+    y = 3
+    prerequisite = {
+        focus = RUS_peaceful_exp
+        focus = RUS_ultimatums
+    }
+    completion_reward = { }
+}
+#Братская Беларусь
+focus = {
+    id = RUS_belarus
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 53
+    y = 3
+    prerequisite = {
+        focus = RUS_peaceful_exp
+        focus = RUS_ultimatums
+    }
+    completion_reward = { }
+}
+#Балтийская витрина
+focus = {
+    id = RUS_baltics
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 55
+    y = 3
+    prerequisite = {
+        focus = RUS_peaceful_exp
+        focus = RUS_ultimatums
+    }
+    completion_reward = { }
+}
+#Средняя Азия
+focus = {
+    id = RUS_middle_asia
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 57
+    y = 3
+    prerequisite = {
+        focus = RUS_ultimatums
+    }
+    completion_reward = { }
+}
+#Аве Империум
+focus = {
+    id = RUS_ave_imperium
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 59
+    y = 3
+    prerequisite = {
+        focus = RUS_supp_imperialism
+    }
+    completion_reward = { }
+}
+#Славянское государство
+focus = {
+    id = RUS_slavic_state
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 44
+    y = 4
+    prerequisite = {
+        focus = RUS_peace_important
+    }
+    mutually_exclusive = {
+        focus = RUS_our_russia
+    }
+    completion_reward = { }
+}
+#Наша Россия
+focus = {
+    id = RUS_our_russia
+    icon = GFX_surrender_tiny_flag
+    cost = x
+    x = 46
+    y = 4
+    prerequisite = {
+        focus = RUS_peace_important
+    }
+    mutually_exclusive = {
+        focus = RUS_slavic_state
+    }
+    completion_reward = { }
+}
+#Западная Украина
+focus = {
+    id = RUS_get_west_ukr
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 50
+    y = 4
+    prerequisite = {
+        focus = RUS_alash_kaz
+        focus = RUS_middle_asia
+    }
+    prerequisite = {
+        focus = RUS_caucasus
+    }
+    prerequisite = {
+        focus = RUS_buy_alaska
+    }
+    prerequisite = {
+        focus = RUS_belarus
+    }
+    prerequisite = {
+        focus = RUS_baltics
+    }
+    mutually_exclusive = {
+        focus = RUS_poland
+    }
+    completion_reward = { }
+}
+#И вновь раздел Польши
+focus = {
+    id = RUS_poland
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 54
+    y = 4
+    prerequisite = {
+        focus = RUS_alash_kaz
+        focus = RUS_middle_asia
+    }
+    prerequisite = {
+        focus = RUS_caucasus
+    }
+    prerequisite = {
+        focus = RUS_buy_alaska
+    }
+    prerequisite = {
+        focus = RUS_belarus
+    }
+    prerequisite = {
+        focus = RUS_baltics
+    }
+    mutually_exclusive = {
+        focus = RUS_get_west_ukr
+    }
+    completion_reward = { }
+}
+#Третий Рим
+focus = {
+    id = RUS_third_rome
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 58
+    y = 4
+    prerequisite = {
+        focus = RUS_ave_imperium
+    }
+    mutually_exclusive = {
+        focus = RUS_russian_empire
+    }
+    completion_reward = { }
+}
+#Российская Империя
+focus = {
+    id = RUS_russian_empire
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 60
+    y = 4
+    prerequisite = {
+        focus = RUS_ave_imperium
+    }
+    mutually_exclusive = {
+        focus = RUS_third_rome
+    }
+    completion_reward = { }
+}
+#Славная страна
+focus = {
+    id = RUS_great_country
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 50
+    y = 5
+    prerequisite = {
+        focus = RUS_get_west_ukr
+        focus = RUS_poland
+    }
+    completion_reward = { }
+}
+#Купить Гавайи
+focus = {
+    id = RUS_buy_haw
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 52
+    y = 5
+    prerequisite = {
+        focus = RUS_get_west_ukr
+        focus = RUS_poland
+    }
+    completion_reward = { }
+}
+#Русский - интернация
+focus = {
+    id = RUS_ru_internation
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 54
+    y = 5
+    prerequisite = {
+        focus = RUS_get_west_ukr
+        focus = RUS_poland
+    }
+    completion_reward = { }
+}
+#####################################################
+#####################################################
+###################   Партии   ######################
+#####################################################
+#####################################################
+######################################     Новые люди
+focus = {
+    id = RUS_new_people
+    icon = GFX_surrender_tiny_flag
+    cost = 1
+    x = 15
+    y = 10
+    completion_reward = { }
+}
+#Обеспечить конкурентность
+focus = {
+    id = RUS_concurentnost_NP
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 14
+    y = 11
+    prerequisite = {
+        focus = RUS_new_people
+    }
+    completion_reward = { }
+}
+#Децентрализация
+focus = {
+    id = RUS_decentralisation_NP
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 15
+    y = 12
+    prerequisite = {
+        focus = RUS_concurentnost_NP
+        focus = RUS_radical_NP
+    }
+    completion_reward = { }
+}
+#Приоритет избранной власти
+focus = {
+    id = RUS_isvlast_prior_NP
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 14
+    y = 13
+    prerequisite = {
+        focus = RUS_concurentnost_NP
+    }
+    completion_reward = { }
+}
+
+#Радикальные меры
+focus = {
+    id = RUS_radical_NP
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 16
+    y = 11
+    prerequisite = {
+        focus = RUS_new_people
+    }
+    completion_reward = { }
+}
+#Структурный манёвр
+focus = {
+    id = RUS_struct_maneur_NP
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 16
+    y = 13
+    prerequisite = {
+        focus = RUS_radical_NP
+    }
+    completion_reward = { }
+}
+#Долой административный пресс
+focus = {
+    id = RUS_adm_crisis_NP
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 15
+    y = 14
+    prerequisite = {
+        focus = RUS_decentralisation_NP
+    }
+    prerequisite = {
+        focus = RUS_struct_maneur_NP
+    }
+    completion_reward = { }
+}
+
+#Отменить палочную систему
+focus = {
+    id = RUS_pal_sys_NP
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 12
+    y = 11
+    prerequisite = {
+        focus = RUS_new_people
+    }
+    completion_reward = { }
+}
+#Смягчить наказания
+focus = {
+    id = RUS_smag_nakaz_NP
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 11
+    y = 12
+    prerequisite = {
+        focus = RUS_pal_sys_NP
+    }
+    completion_reward = { }
+}
+#Масштабная амнистия
+focus = {
+    id = RUS_mashtab_amnistia_NP
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 13
+    y = 12
+    prerequisite = {
+        focus = RUS_pal_sys_NP
+    }
+    completion_reward = { }
+}
+
+#Повысить качество образования
+focus = {
+    id = RUS_obrazovanie_NP
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 14
+    y = 15
+    prerequisite = {
+        focus = RUS_adm_crisis_NP
+        focus = RUS_isvlast_prior_NP
+    }
+    prerequisite = {
+        focus = RUS_smag_nakaz_NP
+        focus = RUS_mashtab_amnistia_NP
+    }
+    completion_reward = { }
+}
+
+############################################     КПРФ
+focus = {
+    id = RUS_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 1
+    x = 19
+    y = 10
+    completion_reward = { }
+}
+
+#Местные советы депутатов
+focus = {
+    id = RUS_sovets_deputatov_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 18
+    y = 11
+    prerequisite = {
+        focus = RUS_KPRF
+    }
+    completion_reward = { }
+}
+
+#Упразднить НДС
+focus = {
+    id = RUS_nds_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 17
+    y = 12
+    prerequisite = {
+        focus = RUS_sovets_deputatov_KPRF
+    }
+    completion_reward = { }
+}
+#За качество
+focus = {
+    id = RUS_kachestvo_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 18
+    y = 13
+    prerequisite = {
+        focus = RUS_nds_KPRF
+    }
+    completion_reward = { }
+}
+
+#Гарантии в жизни
+focus = {
+    id = RUS_life_guarants_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 19
+    y = 12
+prerequisite = {
+    focus = RUS_KPRF
+}
+    completion_reward = { }
+}
+#Социальное государство
+focus = {
+    id = RUS_social_state_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 19
+    y = 14
+    prerequisite = {
+        focus = RUS_kachestvo_KPRF
+    }
+    prerequisite = {
+        focus = RUS_life_guarants_KPRF
+    }
+    completion_reward = { }
+}
+
+#Старая система
+focus = {
+    id = RUS_old_sys_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 20
+    y = 11
+    prerequisite = {
+        focus = RUS_KPRF
+    }
+    completion_reward = { }
+}
+#Единая партия
+focus = {
+    id = RUS_united_party_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 21
+    y = 12
+    prerequisite = {
+        focus = RUS_old_sys_KPRF
+    }
+    completion_reward = { }
+}
+#Культ личности Зюганова
+focus = {
+    id = RUS_zuganov_cult_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 20
+    y = 13
+    prerequisite = {
+        focus = RUS_old_sys_KPRF
+    }
+    prerequisite = {
+        focus = RUS_life_guarants_KPRF
+    }
+    completion_reward = { }
+}
+
+#Национализация
+focus = {
+    id = RUS_nationalisation_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 17
+    y = 14
+    prerequisite = {
+        focus = RUS_nds_KPRF
+    }
+    completion_reward = { }
+}
+#Современный госплан
+focus = {
+    id = RUS_modern_gosplan_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 21
+    y = 14
+    prerequisite = {
+        focus = RUS_united_party_KPRF
+    }
+    prerequisite = {
+        focus = RUS_zuganov_cult_KPRF
+    }
+    completion_reward = { }
+}
+#Индустриализация
+focus = {
+    id = RUS_industialisation_KPRF_NP
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 16
+    y = 15
+    prerequisite = {
+        focus = RUS_adm_crisis_NP
+        focus = RUS_nationalisation_KPRF
+    }
+    completion_reward = { }
+}
+
+
+########################################### Единая Россия
+focus = {
+    id = RUS_UR
+    icon = GFX_surrender_tiny_flag
+    cost = 1
+    x = 23
+    y = 10
+    completion_reward = { }
+}
+
+#Скрепить партию
+focus = {
+    id = RUS_unite_UR
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 22
+    y = 11
+    prerequisite = {
+        focus = RUS_UR
+    }
+    completion_reward = { }
+}
+#Единая Россия - едина!
+focus = {
+    id = RUS_uru_UR
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 23
+    y = 12
+    prerequisite = {
+        focus = RUS_unite_UR
+    }
+    prerequisite = {
+        focus = RUS_women_rights_UR
+    }
+    completion_reward = { }
+}
+#Новый лидер
+focus = {
+    id = RUS_new_leader_UR
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 22
+    y = 13
+    prerequisite = {
+        focus = RUS_uru_UR
+    }
+    mutually_exclusive = {
+        focus = RUIS_PUTIN_UR
+    }
+    completion_reward = { }
+}
+#Умолять Путина
+focus = {
+    id = RUS_PUTIN_UR
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 24
+    y = 13
+    prerequisite = {
+        focus = RUS_uru_UR
+    }
+    mutually_exclusive = {
+        focus = RUS_new_leader_UR
+    }
+    completion_reward = { }
+}
+
+#Права женщин
+focus = {
+    id = RUS_women_rights_UR
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 24
+    y = 11
+    prerequisite = {
+        focus = RUS_UR
+    }
+    completion_reward = { }
+}
+#Повышение МРОТ
+focus = {
+    id = RUS_up_mrot_UR
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 25
+    y = 12
+    prerequisite = {
+        focus = RUS_women_rights_UR
+    }
+    completion_reward = { }
+}
+#Отечественное образование
+focus = {
+    id = RUS_obrazovanie_UR
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 25
+    y = 14
+    prerequisite = {
+        focus = RUS_up_mrot_UR
+    }
+    completion_reward = { }
+}
+
+#Газифакция
+focus = {
+    id = RUS_gazification_UR
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 23
+    y = 14
+    prerequisite = {
+        focus = RUS_new_leader_UR
+        focus = RUS_PUTIN_UR
+    }
+    completion_reward = { }
+}
+#Импортозамещение
+focus = {
+    id = RUS_importasam_UR_KPRF
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 22
+    y = 15
+    prerequisite = {
+        focus = RUS_modern_gosplan_KPRF
+        focus = RUS_gazification_UR
+    }
+    completion_reward = { }
+}
+#Больше заправок
+focus = {
+    id = RUS_more_fuel_UR
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 24
+    y = 15
+    prerequisite = {
+        focus = RUS_gazification_UR
+    }
+    prerequisite = {
+        focus = RUS_obrazovanie_UR
+    }
+    completion_reward = { }
+}
+
+#Водородная энергетика
+focus = {
+    id = RUS_H_energetic_UR_OB
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 26
+    y = 13
+    prerequisite = {
+        focus = RUS_up_mrot_UR
+        focus = RUS_econom_reform_OB
+    }
+    completion_reward = { }
+}
+#Экологические технологии
+focus = {
+    id = RUS_ecologic_UR_OB
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 26
+    y = 15
+    prerequisite = {
+        focus = RUS_H_energetic_UR_OB
+    }
+    completion_reward = { }
+}
+
+######################################## Общество будущее
+focus = {
+    id = RUS_OB
+    icon = GFX_surrender_tiny_flag
+    cost = 1
+    x = 27
+    y = 10
+    completion_reward = { }
+}
+
+#Новая конституция
+focus = {
+    id = RUS_newkonst_OB_LDPR
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 30
+    y = 11
+    prerequisite = {
+        focus = RUS_OB
+        focus = RUS_LDPR
+    }
+    completion_reward = { }
+}
+#Губернии
+focus = {
+    id = RUS_gubernii_OB_LDPR
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 29
+    y = 12
+    prerequisite = {
+        focus = RUS_newkonst_OB_LDPR
+    }
+    completion_reward = { }
+}
+#Пацифизм
+focus = {
+    id = RUS_pazifism_OB
+    icon = GFX_surrender_tiny_flag
+    cost = 10
+    x = 28
+    y = 11
+    prerequisite = {
+        focus = RUS_OB
+    }
+    completion_reward = { }
+}
+
+#Местное самоуправление
+focus = {
+    id = RUS_mestn_OB_LDPR
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 31
+    y = 12
+    prerequisite = {
+        focus = RUS_newkonst_OB_LDPR
+    }
+    completion_reward = { }
+}
+#Ослабить контроль над экономикой
+focus = {
+    id = RUS_minus_control_OB
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 26
+    y = 11
+    prerequisite = {
+        focus = RUS_OB
+    }
+    completion_reward = { }
+}
+#Реформа экономики
+focus = {
+    id = RUS_econom_reform_OB
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 27
+    y = 12
+    prerequisite = {
+        focus = RUS_minus_control_OB
+    }
+    prerequisite = {
+        focus = RUS_pazifism_OB
+    }
+    completion_reward = { }
+}
+
+#Закон об иноагентах
+focus = {
+    id = RUS_inoagent_law_OB_LDPR
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 30
+    y = 13
+    prerequisite = {
+        focus = RUS_gubernii_OB_LDPR
+        focus = RUS_mestn_OB_LDPR
+    }
+    completion_reward = { }
+}
+#Ликвидировать РосКомНадзор
+focus = {
+    id = RUS_minus_RKN_OB
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 28
+    y = 13
+    prerequisite = {
+        focus = RUS_pazifism_OB
+    }
+    completion_reward = { }
+}
+#Свободная страна
+focus = {
+    id = RUS_free_state_OB
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 29
+    y = 14
+    prerequisite = {
+        focus = RUS_minus_RKN_OB
+    }
+    prerequisite = {
+        focus = RUS_inoagent_law_OB_LDPR
+    }
+    completion_reward = { }
+}
+
+#Реформа образования
+focus = {
+    id = RUS_obrazov_reform_OB
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 27
+    y = 14
+    prerequisite = {
+        focus = RUS_econom_reform_OB
+    }
+    completion_reward = { }
+}
+#Только добровольная служба
+focus = {
+    id = RUS_dobrovolka_OB
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 28
+    y = 15
+    prerequisite = {
+        focus = RUS_obrazov_reform_OB
+    }
+    prerequisite = {
+        focus = RUS_free_state_OB
+    }
+    completion_reward = { }
+}
+
+################################################### ЛДПР
+focus = {
+    id = RUS_LDPR
+    icon = GFX_surrender_tiny_flag
+    cost = 1
+    x = 31
+    y = 10
+    completion_reward = { }
+}
+
+#Остановить нелегалов
+focus = {
+    id = RUS_stop_immigration_LDPR
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 32
+    y = 11
+    prerequisite = {
+        focus = RUS_LDPR
+    }
+    completion_reward = { }
+}
+#Эффективное распределение
+focus = {
+    id = RUS_effective_rasp_LDPR
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 32
+    y = 13
+    prerequisite = {
+        focus = RUS_stop_immigration_LDPR
+    }
+    prerequisite = {
+        focus = RUS_mestn_OB_LDPR
+    }
+    completion_reward = { }
+}
+
+#Память о Империях
+focus = {
+    id = RUS_dream_of_empires_LDPR_NOD
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 33
+    y = 12
+    prerequisite = {
+        focus = RUS_stop_immigration_LDPR
+        focus = RUS_new_konst_NOD
+    }
+    completion_reward = { }
+}
+#Безвиз в БРИКС
+focus = {
+    id = RUS_bezviz_BRICS
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 31
+    y = 14
+    prerequisite = {
+        focus = RUS_effective_rasp_LDPR
+    }
+    completion_reward = { }
+}
+
+#Цифровизация экономики
+focus = {
+    id = RUS_dg_econom_LDPR
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 31
+    y = 15
+    prerequisite = {
+        focus = RUS_bezviz_BRICS
+    }
+    completion_reward = { }
+}
+#За Жириновского!
+focus = {
+    id = RUS_for_zhirik_LDPR
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 33
+    y = 14
+    prerequisite = {
+        focus = RUS_effective_rasp_LDPR
+    }
+    completion_reward = { }
+}
+#То есть, за Слуцкого
+focus = {
+    id = RUS_for_sluzkiy
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 33
+    y = 15
+    prerequisite = {
+        focus = RUS_for_zhirik_LDPR
+    }
+    completion_reward = { }
+}
+
+#################################################### НОД
+focus = {
+    id = RUS_NOD
+    icon = GFX_surrender_tiny_flag
+    cost = 1
+    x = 35
+    y = 10
+    completion_reward = { }
+}
+#Взломать кандалы
+focus = {
+    id = RUS_broke_kandals_NOD
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 36
+    y = 11
+    prerequisite = {
+        focus = RUS_NOD
+    }
+    completion_reward = { }
+}
+#Новая конституция
+focus = {
+    id = RUS_new_konst_NOD
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 34
+    y = 11
+    prerequisite = {
+        focus = RUS_NOD
+    }
+    completion_reward = { }
+}
+#Расширение
+focus = {
+    id = RUS_expansion_NOD
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 35
+    y = 12
+    prerequisite = {
+        focus = RUS_new_konst_NOD
+    }
+    prerequisite = {
+        focus = RUS_broke_kandals_NOD
+    }
+    completion_reward = { }
+}
+
+#Связи в правительстве - тут лучше к Ростику обратиться
+focus = {
+    id = RUS_sv_in_gov_NOD
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 34
+    y = 13
+    prerequisite = {
+        focus = RUS_expansion_NOD
+    }
+    completion_reward = { }
+}
+#Блага народу
+focus = {
+    id = RUS_blaga_people_NOD
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 35
+    y = 14
+    prerequisite = {
+        focus = RUS_expansion_NOD
+    }
+    completion_reward = { }
+}
+#Суд над Горбачёвым
+focus = {
+    id = RUS_gorbachev_court
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 37
+    y = 12
+    prerequisite = {
+        focus = RUS_broke_kandals_NOD
+    }
+    completion_reward = { }
+}
+
+#На-чеку!
+focus = {
+    id = RUS_na_cheku_NOD
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 35
+    y = 15
+    prerequisite = {
+        focus = RUS_blaga_people_NOD
+    }
+    completion_reward = { }
+}
+#Милитаризация
+focus = {
+    id = RUS_militarisation
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 36
+    y = 13
+    prerequisite = {
+        focus = RUS_gorbachev_court
+    }
+    prerequisite = {
+        focus = RUS_expansion_NOD
+    }
+    completion_reward = { }
+}
+
+################################# Курильский договор
+focus = {
+    id = RUS_sakhalin_pact
+    icon = GFX_surrender_tiny_flag
+    cost = 0
+    x = 45
+    y = 11
+    completion_reward = { }
+}
+#Русская сфера
+focus = {
+    id = RUS_rus_sphere
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 45
+    y = 12
+    prerequisite = {
+        focus = RUS_sakhalin_pact
+    }
+    completion_reward = { }
+}
+#Забота о подданых
+focus = {
+    id = RUS_care_ab_sphere
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 43
+    y = 13
+    prerequisite = {
+        focus = RUS_rus_sphere
+    }
+    completion_reward = { }
+}
+#Единое экономическое пространство
+focus = {
+    id = RUS_e_e_s
+    icon = GFX_surrender_tiny_flag
+    cost = 4
+    x = 45
+    y = 13
+    prerequisite = {
+        focus = RUS_rus_sphere
+    }
+    completion_reward = { }
+}
+focus = {
+    id = RUS_instructors
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 47
+    y = 13
+    prerequisite = {
+        focus = RUS_rus_sphere
+    }
+    completion_reward = { }
+}
+#Настоящая свобода
+focus = {
+    id = RUS_real_freedom
+    icon = GFX_surrender_tiny_flag
+    cost = 5
+    x = 45
+    y = 14
+    completion_reward = { }
+    prerequisite = {
+        focus = RUS_care_ab_sphere
+    }
+    prerequisite = {
+        focus = RUS_e_e_s
+    }
+    prerequisite = {
+        focus = RUS_instructors
+    }
+}
+
+}
