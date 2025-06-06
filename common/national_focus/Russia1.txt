@@ -1,0 +1,347 @@
+focus_tree = {
+	id = russian_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = A03
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 55 y = 1500 }
+
+	#Великая Россия
+focus = {
+	id = RUS_Great_Russia
+	icon = RUS_Great_Russia
+	cost = 2.7
+	x = 15
+	y = 0
+	completion_reward = { 
+
+	}
+}
+
+	#"Провал 24 часов"
+focus = {
+	id = RUS_tf_hours
+	icon = GFX_24_Fail
+	cost = 0.3
+	prerequisite = {
+		focus = RUS_Great_Russia
+	}
+	x = 15
+	y = 1
+	completion_reward = { }
+}
+
+	#Подготовка Курской операции
+focus = {
+	id = RUS_kursk_operation
+	icon = GFX_Kursk_OP
+	cost = 2
+	prerequisite = {
+		focus = RUS_tf_hours
+	}
+	x = 13
+	y = 2
+	completion_reward = { }
+}
+
+	#Усилить СМИ
+focus = {
+	id = RUS_media_svo
+	icon = GFX_Media
+	cost = 1.4
+	prerequisite = {
+		focus = RUS_tf_hours
+	}
+	x = 15
+	y = 2
+	completion_reward = { }
+}
+
+	#Больше БПЛА
+focus = {
+	id = RUS_more_UAVs
+	icon = GFX_UAV
+	cost = 1.9
+	prerequisite = {
+		focus = RUS_tf_hours
+	}
+	x = 17
+	y = 2
+	completion_reward = { }
+}
+
+	#Четкие условия
+focus = {
+	id = RUS_clear_conditions
+	icon = GFX_Req
+	cost = 0.5
+	prerequisite = {
+		focus = RUS_kursk_operation
+	}
+	prerequisite = {
+		focus = RUS_media_svo
+	}
+	prerequisite = {
+		focus = RUS_more_UAVs
+	}
+	x = 15
+	y = 3
+	completion_reward = { }
+}
+
+	#Демилитаризация Украины
+focus = {
+	id = RUS_demilitarization_UKR
+	icon = GFX_Dem_Ukr
+	cost = 0.5
+	prerequisite = {
+		focus = RUS_clear_conditions
+	}
+	x = 12
+	y = 4
+	completion_reward = { }
+}
+
+	#Признание областей
+focus = {
+	id = RUS_recognition_of_areas
+	icon = GFX_Agr_Ukr
+	cost = 0.5
+	prerequisite = {
+		focus = RUS_clear_conditions
+	}
+	x = 14
+	y = 4
+	completion_reward = { }
+}
+	#Нет НАТО
+focus = {
+	id = RUS_not_OTAN
+	icon = GFX_No_NATO
+	cost = 0.5
+	prerequisite = {
+		focus = RUS_clear_conditions
+	}
+	x = 16
+	y = 4
+	completion_reward = { }
+}
+
+	#Права русских
+focus = {
+	id = RUS_right_of_russians
+	icon = GFX_Rus_Rights
+	cost = 0.5
+	prerequisite = {
+		focus = RUS_clear_conditions
+	}
+	x = 18
+	y = 4
+	completion_reward = { }
+}
+
+	#Звонок Трампа
+focus = {
+	id = RUS_call_trump
+	icon = GFX_Trump_Call
+	cost = 1
+	prerequisite = {
+		focus = RUS_demilitarization_UKR
+		focus = RUS_recognition_of_areas
+		focus = RUS_not_OTAN
+		focus = RUS_right_of_russians
+	}
+	x = 15
+	y = 6
+	completion_reward = { }
+}
+
+	#Да - энергетике
+focus = {
+	id = RUS_energy_yes
+	icon = GFX_Energy_YES
+	cost = 1
+	prerequisite = {
+		focus = RUS_call_trump
+	}
+	x = 14
+	y = 7
+	completion_reward = { }
+}
+
+	#Курское наступление
+focus = {
+	id = RUS_kursk_fight
+	icon = GFX_Kursk_attack
+	cost = 4.6
+	prerequisite = {
+		focus = RUS_call_trump
+	}
+	x = 16
+	y = 7
+	completion_reward = { }
+}
+
+	#Подготовка к параду
+focus = {
+	id = RUS_parade_1
+	icon = GFX_Parade
+	cost = 0.1
+	prerequisite = {
+		focus = RUS_energy_yes
+	}
+	prerequisite = {
+		focus = RUS_kursk_fight
+	}
+	x = 15
+	y = 8
+	completion_reward = { }
+}	
+
+	#3х дневное перемирие
+focus = {
+	id = RUS_three_day
+	icon = GFX_War_Pause
+	cost = 0.3
+	prerequisite = {
+		focus = RUS_parade_1
+	}
+	x = 15
+	y = 9
+	completion_reward = { }
+}
+
+	#Пригласить страны
+focus = {
+	id = RUS_countries_parade
+	icon = GFX_invite
+	cost = 0.5
+	prerequisite = {
+		focus = RUS_three_day
+	}
+	x = 13
+	y = 10
+	completion_reward = { }
+}
+
+	#Компьютерная графика
+focus = {
+	id = RUS_FX_parade
+	icon = GFX_3D_parade
+	cost = 0.5
+	prerequisite = {
+		focus = RUS_three_day
+	}
+	x = 15
+	y = 10
+	completion_reward = { }
+}
+
+	#Белоусов по-гражданке
+focus = {
+	id = RUS_Belousov_parade
+	icon = GFX_belousov
+	cost = 0.5
+	prerequisite = {
+		focus = RUS_three_day
+	}
+	x = 17
+	y = 10
+	completion_reward = { }
+}
+
+	#Этот день мы приближали как могли
+focus = {
+	id = RUS_PARADE_II
+	icon = GFX_May_9
+	cost = 0.1
+	prerequisite = {
+		focus = RUS_countries_parade
+	}
+	prerequisite = {
+		focus = RUS_3D_parade
+	}
+	prerequisite = {
+		focus = RUS_Belousov_parade
+	}
+	x = 15
+	y = 11
+	completion_reward = { }
+}
+
+	#И снова Мединский
+focus = {
+	id = RUS_Medisky
+	icon = GFX_Medinsky
+	cost = 1
+	prerequisite = {
+		focus = RUS_PARADE_2
+	}
+	x = 15
+	y = 12
+	completion_reward = { }
+}
+
+	#Обмен пленными
+focus = {
+	id = RUS_prisoner_exchange
+	icon = GFX_Prisoners
+	cost = 1.2
+	prerequisite = {
+		focus = RUS_Medisky
+	}
+	x = 15
+	y = 13
+	completion_reward = { }
+}
+
+	#Второй раунд
+focus = {
+	id = RUS_second_round
+	icon = GFX_Negotiation_2
+	cost = 1
+	prerequisite = {
+		focus = RUS_prisoner_exchange
+	}
+	x = 15
+	y = 14
+	completion_reward = { }
+}
+
+	#Третий раунд
+focus = {
+	id = RUS_third_round
+	icon = GFX_Negotiation_3
+	cost = 3.4
+	prerequisite = {
+		focus = RUS_second_round
+	}
+	x = 15
+	y = 15
+	completion_reward = { }
+}
+
+	#Мир или Война?
+focus = {
+	id = RUS_war_or_peace
+	icon = GFX_surrender_tiny_flag
+	cost = 1
+	prerequisite = {
+		focus = RUS_third_round
+	}
+	x = 15
+	y = 16
+	completion_reward = {
+		
+	}
+}
+
+}

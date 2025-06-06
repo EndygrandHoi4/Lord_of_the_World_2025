@@ -1,0 +1,101 @@
+focus_tree = {
+    id = russian_focus_uy
+    country = { 
+        factor = 0
+        modifier = {
+            add = 11
+            tag = A03
+        }
+    }
+#Встреча Путин-Трамп-Зеленский
+focus = {
+    id = RUS_meeting_P_T_Z
+    icon = GFX_Meeting_USA_UKR_RUS
+    cost = 1
+    x = 15
+    y = 1
+    completion_reward = { }
+}
+#Единая Россия - Единая Победа!
+focus = {
+    id = RUS_urussia_uvic
+    icon = GFX_United_Russia
+    cost = 4
+    x = 12
+    y = 2
+    prerequisite = {
+        focus = RUS_meeting_P_T_Z
+    }
+    completion_reward = { 
+        add_political_power = 100
+        add_stability = 20
+        add_war_support = -50
+    }
+}
+#Требовать выборы - тут про выборы в украине, не в РФ!!!
+focus = {
+    id = RUS_ukr_electorations
+    icon = GFX_Elections_Ask_UKR
+    cost = 2
+    x = 14
+    y = 2
+    prerequisite = {
+        focus = RUS_meeting_P_T_Z
+    }
+    completion_reward = { }
+}
+#Курировать денацификацию
+focus = {
+    id = RUS_ukr_denazi
+    icon = GFX_Denatif
+    cost = 4
+    x = 16
+    y = 2
+    prerequisite = {
+        focus = RUS_meeting_P_T_Z
+    }
+    completion_reward = { }
+}
+#Разоружение войск
+focus = {
+    id = RUS_demilit_ukr
+    icon = GFX_Disarmament_UKR
+    cost = 4
+    x = 18
+    y = 2
+    prerequisite = {
+        focus = RUS_meeting_P_T_Z
+    }
+    completion_reward = { }
+}
+#Нет - новым жертвам
+focus = {
+    id = RUS_no_to_trups
+    icon = GFX_No_More_Victims
+    cost = 2
+    x = 15
+    y = 3
+    prerequisite = {
+        focus = RUS_urussia_uvic
+        focus = RUS_ukr_electorations
+        focus = RUS_ukr_denazi
+        focus = RUS_demilit_ukr
+    }
+    completion_reward = { }
+}
+#Что дальше?
+focus = {
+    id = RUS_what_s_next
+    icon = GFX_what_s_next
+    cost = 3
+    x = 15
+    y = 4
+    prerequisite = {
+        focus = RUS_no_to_trups
+    }
+    completion_reward = { 
+        load_focus_tree = russia_to_future
+    }
+}
+
+}
