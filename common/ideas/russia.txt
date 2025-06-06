@@ -1,0 +1,97 @@
+#РОССИЯ
+ideas = {
+    country = {
+        #СТАРТОВЫЕ ДУХИ
+        #Оспариваемая конституция
+        idea_RUS_konst_I = {
+            allowed = {
+                original_tag = RUS
+            }
+            removal_cost = -1
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                add_stability = -0.1
+                add_war_support = -0.05
+                add_political_power_factor = -0.05
+            }
+        }
+        #СВО
+        idea_RUS_SVO_inf = {
+            allowed = {
+                original_tag = RUS
+            }
+            removal_cost = -1
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                army_attack_factor = 0.25
+                army_core_attack_factor = 4
+                army_defence_factor = 2
+            }
+        }
+        #Чёткие условия
+        idea_RUS_shadow_flot = {
+            allowed = {
+                original_tag = RUS
+            }
+            removal_cost = -1
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                add_offsite_building = { 
+                    type = civil_factory level = 1
+                }
+            }
+        }
+        #Политическая неопределённость
+        idea_RUS_politics_I = {
+            allowed = {
+                original_tag = RUS
+            }
+            removal_cost = -1
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                add_political_power_factor = -0.1
+                add_stability = -0.1
+            }
+        }
+
+
+
+
+
+        ####### ОТ ФОКУСОВ ВЕТКА ДОГОВОРА
+        #Усилить СМИ
+        idea_RUS_media_svo = {
+            allowed = {
+                original_tag = RUS
+                has_idea = idea_RUS_SVO_inf
+            }
+            removal_cost = -1
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                add_stability = -0.1
+                add_war_support = 0.2
+                army_attack_factor = 0.05
+            }
+        }
+        idea_RUS_clear_conditions = {
+            allowed = {
+                original_tag = RUS
+                has_idea = idea_RUS_SVO_inf
+            }
+            removal_cost = -1
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                add_stability = 0.1
+                add_war_support = 0.1
+                add_political_power_factor = -0.01
+            }
+        }
+        idea_RUS_call_trump = {
+            allowed = {
+                original_tag = RUS
+                has_idea = idea_RUS_SVO_inf
+            }
+            removal_cost = -1
+        }
+    }
+}
