@@ -22,7 +22,22 @@ characters = {
 		country_leader = {
 			ideology = authoritarian_democracy
 			traits = { stalin_heart_of_steel }
-			expire = "1953.3.1.1"
+			expire = "2048.3.1.1"
+			id = -1
+		}
+	}
+
+	SOV_Vladislav_Davankov = {
+		name = SOV_Vladislav_Davankov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/portrait_SOV_vlasdislav_davankov.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_liberalism
+			traits = { }
+			expire = "2089.2.1.1"
 			id = -1
 		}
 	}
