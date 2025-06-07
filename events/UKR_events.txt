@@ -1,0 +1,21 @@
+add_namespace = ukraina
+
+	country_event = {
+		id = ukraina.1
+		title = ukraina.1t
+		desc = ukraina.1d
+		picture = GFX_report_event_physics_lab_01
+		trigger = {
+			A03 = { has_completed_focus = RUS_war_or_peace }
+		}
+		is_triggered_only = yes
+		option = {
+			name = ukraina.1a
+			A03 = { country_event = russia.1 }
+		}
+		option = {
+			name = ukraina.1b
+			A03 = { country_event = russia.2 }
+		}
+
+	}

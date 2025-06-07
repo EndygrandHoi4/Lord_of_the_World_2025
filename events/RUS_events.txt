@@ -1,0 +1,25 @@
+add_namespace = russia
+
+    country_event = {
+		id = russia.1
+		title = russia.1t
+		desc = russia.1d
+		picture = GFX_report_event_physics_lab_01
+		is_triggered_only = yes
+		option = {
+			name = russia.1a
+			A03 = { load_focus_tree = russian_focus_un }
+		}
+	}
+
+    country_event = {
+        id = russia.2
+        title = russia.2t
+        desc = russia.2d
+        picture = GFX_report_event_physics_lab_01
+		is_triggered_only = yes
+        option = {
+            name = russia.2a
+            A03 = { load_focus_tree = russian_focus_uy }
+        }
+    }

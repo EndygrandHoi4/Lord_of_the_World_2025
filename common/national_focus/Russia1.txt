@@ -340,7 +340,7 @@ focus = {
 	x = 15
 	y = 16
 	completion_reward = {
-		
+		A04 = { country_event = ukraina.1 }
 	}
 }
 
