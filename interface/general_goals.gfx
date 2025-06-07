@@ -1,0 +1,36 @@
+spriteTypes = {
+	
+	
+	
+	### !!! POLITICS !!!
+
+	spriteType = {
+		name = "goal_colorless_politics"
+		texturefile = "gfx/interface/goals/generic/goal_colorless_politics.dds"
+	}
+
+	spriteType = {
+		name = "goal_political_course"
+		texturefile = "gfx/interface/goals/generic/goal_political_course.dds"
+	}
+
+	spriteType = {
+		name = "goal_red_consciousness"
+		texturefile = "gfx/interface/goals/generic/goal_red_consciousness.dds"
+	}
+
+	spriteType = {
+		name = "goal_stable_state"
+		texturefile = "gfx/interface/goals/generic/goal_stable_state.dds"
+	}
+
+	spriteType = {
+		name = "goal_The_Socialist_future"
+		texturefile = "gfx/interface/goals/generic/goal_The_Socialist_future.dds"
+	}
+
+	spriteType = {
+		name = "goal_The_Workers_Revolution"
+		texturefile = "gfx/interface/goals/generic/goal_The_Workers_Revolution.dds"
+	}
+}

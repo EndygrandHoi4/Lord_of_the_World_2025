@@ -36,7 +36,7 @@ focus_tree = {
 	#Стабильное государство
 	focus = {
 		id = stable_state
-		icon = GFX_surrender_tiny_flag
+		icon = goal_stable_state
 		x = 7
 		y = 0
 		cost = 10
@@ -52,7 +52,7 @@ focus_tree = {
 	#Политический курс
 	focus = {
 		id = political_course
-		icon = GFX_surrender_tiny_flag
+		icon = goal_political_course
 		prerequisite = {
 			focus = stable_state
 		}
@@ -71,7 +71,7 @@ focus_tree = {
 	#Красное сознание
 	focus = {
 		id = red_consciousness
-		icon = GFX_focus_generic_soviet_politics
+		icon = goal_red_consciousness
 		prerequisite = {
 			focus = political_course
 		}
@@ -88,7 +88,7 @@ focus_tree = {
 	#Революция рабочих
 	focus = {
 		id = The_Workers_Revolution
-		icon = GFX_focus_generic_soviet_politics
+		icon = goal_The_Workers_Revolution
 		prerequisite = {
 			focus = red_consciousness
 		}
@@ -105,7 +105,7 @@ focus_tree = {
 	#Социалистическое будущее
 	focus = {
 		id = The_Socialist_future
-		icon = GFX_focus_generic_soviet_politics
+		icon = goal_The_Socialist_future
 		prerequisite = {
 			focus = red_consciousness
 		}
@@ -139,7 +139,7 @@ focus_tree = {
 	#Бесцветная политика
 	focus = {
 		id = colorless_politics
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = goal_colorless_politics
 		prerequisite = {
 			focus = political_course
 		}
