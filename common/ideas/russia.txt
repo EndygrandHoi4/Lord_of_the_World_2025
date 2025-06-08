@@ -5,7 +5,7 @@ ideas = {
         #Оспариваемая конституция
         idea_RUS_konst_I = {
             allowed = {
-                original_tag = A03
+                always = no
             }
             removal_cost = -1
             picture = GFX_RUS_Great_Russia
@@ -18,7 +18,7 @@ ideas = {
         #СВО
         idea_RUS_SVO_inf = {
             allowed = {
-                original_tag = A03
+                always = no
             }
             removal_cost = -1
             picture = GFX_surrender_tiny_flag
@@ -31,7 +31,7 @@ ideas = {
         #Чёткие условия
         idea_RUS_shadow_flot = {
             allowed = {
-                original_tag = A03
+                tag = A03
             }
             removal_cost = -1
             picture = GFX_Req
@@ -44,7 +44,7 @@ ideas = {
         #Политическая неопределённость
         idea_RUS_politics_I = {
             allowed = {
-                original_tag = A03
+                tag = A03
             }
             removal_cost = -1
             picture = GFX_surrender_tiny_flag

@@ -47,6 +47,8 @@ set_popularities = {
 	progressivism = 10
 }
 
+add_ideas = {
+}
 
 set_research_slots = 4
 set_stability = 0.75

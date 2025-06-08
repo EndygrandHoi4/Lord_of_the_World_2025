@@ -133,7 +133,8 @@ focus_tree = {
 		cost = 10
 		x = 3
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+		 }
 	}
 
 	#Бесцветная политика
