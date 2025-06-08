@@ -202,7 +202,7 @@ focus = {
 	y = 7
 	completion_reward = {
 		add_offsite_building = {
-			type = civil_factory level = 1
+			type = industrial_complex level = 1
 		}
 		add_offsite_building = {
 			type = arms_factory level = 1

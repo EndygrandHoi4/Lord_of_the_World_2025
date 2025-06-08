@@ -2,14 +2,14 @@
 
 news_event = {
 	id = news.1
-	title = news.1.t
-	desc = news.1.d
+	title = news.1t
+	desc = news.1d
 	picture = GFX_news_event_001
 
 	major = yes
 
 	is_triggered_only = yes
 	option = {
-		name = news.1.a
+		name = news.1a
 	}
 }

@@ -35,7 +35,7 @@ guiTypes = {
 		
 			instantTextBoxType = {
 				name = "Title"
-				position = { x = 14 y = 70 }
+				position = { x = 50 y = 70 }
 				font = "hoi4_typewriter22"
 				borderSize = {x = 0 y = 0}
 				text = "Title text here!"	
@@ -80,7 +80,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "bottom_Window"
-			position = { x=0 y=221 }	
+			position = { x= 0 y=221 }	
 			size = { width = 581 height = 206 }
 			moveable = yes
 			clipping = no
@@ -469,7 +469,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "EventWindow_News"
 		position = { x=-282 y=-310 }	
-		size = { width = 528 height = 595 }
+		size = { width = 1000 height = 700 }
 		moveable = yes
 		Orientation = CENTER
 		show_sound = world_news_effect
@@ -497,8 +497,9 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "Title"
-				position = { x = 12 y = 260 }
-				font = "hoi4_typewriter22"
+				position = { x = 290 y = 200 }
+				#font = "hoi4_typewriter23"
+				font = "hoi_20bs"
 				borderSize = {x = 0 y = 0}
 				text = "Title text here!"	
 				maxWidth = 490
@@ -522,12 +523,13 @@ guiTypes = {
 		
 			instantTextBoxType = {
 				name = "Description"
-				position = { x = 39 y = 170 }
-				font = "hoi4_typewriter16"
+				position = { x = 200 y = 130 }
+				#font = "hoi4_typewriter17"
+				font = "hoi_20bs"
 				borderSize = {x = 0 y = 0}
 				text = "Long text here!"	
 				maxWidth = 460
-				maxHeight = 230
+				maxHeight = 300
 				format = left
 			}	
 		}			
@@ -535,14 +537,14 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "bottom_Window"
-			position = { x=0 y=221 }	
+			position = { x=200  y=221 }	
 			size = { width = 581 height = 405 }
 			Orientation = UPPER_LEFT
 
 			gridBoxType = {
 				name = "options_grid"
-				position = { x = 80 y = -1 }
-				size = { width = 300 height = 30 }
+				position = { x = 0 y = -1 }
+				size = { width = 300 height = 75 }
 				slotsize = { width = 300 height = 47 }
 				max_slots_horizontal = 1
 				format = "UPPER_LEFT"
@@ -552,6 +554,10 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "event_option_entry"
+		position = {
+			x = 350
+			y = 90
+		}
 		size = { width = 300 height = 47 }
 		clipping = no
 		
@@ -562,7 +568,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "Name"
-			position = { x = 0 y = 0 }
+			position = { x = -19 y = 7 }
 			font = "hoi_20bs"
 			maxWidth = 340
 			maxHeight = 40
