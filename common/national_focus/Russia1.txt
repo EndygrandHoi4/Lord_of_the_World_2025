@@ -17,7 +17,7 @@ focus_tree = {
 	#Великая Россия
 focus = {
 	id = RUS_Great_Russia
-	icon = RUS_Great_Russia
+	icon = GFX_RUS_Great_Russia
 	cost = 2.7
 	x = 15
 	y = 0
@@ -62,7 +62,9 @@ focus = {
 	}
 	x = 15
 	y = 2
-	completion_reward = { }
+	completion_reward = { 
+		add_ideas = idea_RUS_media_svo
+	}
 }
 
 	#Больше БПЛА
@@ -94,7 +96,9 @@ focus = {
 	}
 	x = 15
 	y = 3
-	completion_reward = { }
+	completion_reward = { 
+		add_ideas = idea_RUS_clear_conditions
+	}
 }
 
 	#Демилитаризация Украины
@@ -107,7 +111,12 @@ focus = {
 	}
 	x = 12
 	y = 4
-	completion_reward = { }
+	completion_reward = { 
+		modify_idea = {
+			idea = idea_RUS_clear_conditions
+			add_war_support = 0.05
+		}
+	}
 }
 
 	#Признание областей
@@ -120,7 +129,12 @@ focus = {
 	}
 	x = 14
 	y = 4
-	completion_reward = { }
+	completion_reward = { 
+		modify_idea = {
+			idea = idea_RUS_clear_conditions
+			add_political_power_factor = 0.2
+		}
+	}
 }
 	#Нет НАТО
 focus = {
@@ -132,7 +146,12 @@ focus = {
 	}
 	x = 16
 	y = 4
-	completion_reward = { }
+	completion_reward = { 
+		modify_idea = {
+			idea = idea_RUS_clear_conditions
+			army_attack_factor = 0.05
+		}
+	}
 }
 
 	#Права русских
@@ -145,7 +164,12 @@ focus = {
 	}
 	x = 18
 	y = 4
-	completion_reward = { }
+	completion_reward = { 
+		modify_idea = {
+			idea = idea_RUS_clear_conditions
+			add_stability = 0.15
+		}
+	}
 }
 
 	#Звонок Трампа
@@ -161,7 +185,9 @@ focus = {
 	}
 	x = 15
 	y = 6
-	completion_reward = { }
+	completion_reward = { 
+		add_ideas = idea_RUS_call_trump
+	}
 }
 
 	#Да - энергетике
@@ -174,7 +200,14 @@ focus = {
 	}
 	x = 14
 	y = 7
-	completion_reward = { }
+	completion_reward = {
+		add_offsite_building = {
+			type = civil_factory level = 1
+		}
+		add_offsite_building = {
+			type = arms_factory level = 1
+		}
+	}
 }
 
 	#Курское наступление
