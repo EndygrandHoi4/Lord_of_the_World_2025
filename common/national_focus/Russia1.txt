@@ -194,7 +194,7 @@ focus = {
 focus = {
 	id = RUS_parade_1
 	icon = GFX_Parade
-	cost = 0.1
+	cost = 0.2
 	prerequisite = {
 		focus = RUS_energy_yes
 	}
@@ -260,9 +260,9 @@ focus = {
 
 	#Этот день мы приближали как могли
 focus = {
-	id = RUS_PARADE_II
+	id = RUS_PARADE_2
 	icon = GFX_May_9
-	cost = 0.1
+	cost = 0.2
 	prerequisite = {
 		focus = RUS_countries_parade
 	}
@@ -340,7 +340,9 @@ focus = {
 	x = 15
 	y = 16
 	completion_reward = {
-		A04 = { country_event = ukraina.1 }
+		A04 = { 
+			country_event = ukraina.1
+		}
 	}
 }
 
