@@ -236,7 +236,12 @@ focus = {
 	}
 	x = 15
 	y = 8
-	completion_reward = { }
+	completion_reward = {
+		add_timed_idea =  { 
+			idea = idea_RUS_parade
+			days = 61
+		}
+	}
 }	
 
 	#3х дневное перемирие
@@ -249,7 +254,12 @@ focus = {
 	}
 	x = 15
 	y = 9
-	completion_reward = { }
+	completion_reward = {
+		modify_idea = {
+			idea = idea_RUS_parade
+			add_stability = 0.5
+		}
+	}
 }
 
 	#Пригласить страны
@@ -262,7 +272,12 @@ focus = {
 	}
 	x = 13
 	y = 10
-	completion_reward = { }
+	completion_reward = {
+		modify_idea = {
+			idea = idea_RUS_parade
+			add_war_support = 0.5
+		}
+	}
 }
 
 	#Компьютерная графика
@@ -275,7 +290,9 @@ focus = {
 	}
 	x = 15
 	y = 10
-	completion_reward = { }
+	completion_reward = {
+		add_political_power = 100
+	}
 }
 
 	#Белоусов по-гражданке
@@ -307,7 +324,17 @@ focus = {
 	}
 	x = 15
 	y = 11
-	completion_reward = { }
+	completion_reward = {
+		modify_idea = {
+			idea = idea_RUS_parade
+			add_offsite_building = {
+				type = industrial_complex level = 1
+			}
+			add_offsite_building = {
+				type = arms_factory level = 1
+			}
+		}
+	}
 }
 
 	#И снова Мединский
@@ -320,7 +347,9 @@ focus = {
 	}
 	x = 15
 	y = 12
-	completion_reward = { }
+	completion_reward = {
+		add_ideas = idea_RUS_UKR
+	}
 }
 
 	#Обмен пленными
@@ -333,7 +362,9 @@ focus = {
 	}
 	x = 15
 	y = 13
-	completion_reward = { }
+	completion_reward = {
+		add_manpower = 1000
+	}
 }
 
 	#Второй раунд
@@ -346,7 +377,13 @@ focus = {
 	}
 	x = 15
 	y = 14
-	completion_reward = { }
+	completion_reward = {
+		modify_idea = {
+			idea = idea_RUS_UKR
+			add_stability = 0.1
+			add_war_support = -0.05
+		}
+	}
 }
 
 	#Третий раунд
@@ -359,7 +396,12 @@ focus = {
 	}
 	x = 15
 	y = 15
-	completion_reward = { }
+	completion_reward = {
+		modify_idea = {
+			idea = idea_RUS_UKR
+			add_political_power_factor = -0.1
+		}
+	}
 }
 
 	#Мир или Война?
