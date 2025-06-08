@@ -20,6 +20,9 @@ add_namespace = russia
 		is_triggered_only = yes
         option = {
             name = russia.2a
-            A03 = { load_focus_tree = russian_focus_uy }
+            A03 = { 
+				load_focus_tree = russian_focus_uy
+				remove_ideas = idea_RUS_SVO_inf
+			}
         }
     }

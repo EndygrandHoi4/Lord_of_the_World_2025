@@ -37,7 +37,7 @@ ideas = {
             picture = GFX_Req
             modifier = {
                 add_offsite_building = { 
-                    type = civil_factory level = 1
+                    type = industrial_complex level = 1
                 }
             }
         }
@@ -86,6 +86,29 @@ ideas = {
                 add_offsite_building = {
                     type = civil_factory level = 1
                 }
+            }
+        }
+        #ПАРАД
+        idea_RUS_parade = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_May_9
+            modifier = {
+                add_war_support = -0.25
+                add_political_power_factor = -0.05
+            }
+        }
+        #Переговоры с УКР
+        idea_RUS_UKR = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                add_political_power_factor = -0.1
             }
         }
     }
