@@ -8,7 +8,7 @@ ideas = {
                 original_tag = A03
             }
             removal_cost = -1
-            picture = GFX_surrender_tiny_flag
+            picture = GFX_RUS_Great_Russia
             modifier = {
                 add_stability = -0.1
                 add_war_support = -0.05
@@ -34,7 +34,7 @@ ideas = {
                 original_tag = A03
             }
             removal_cost = -1
-            picture = GFX_surrender_tiny_flag
+            picture = GFX_Req
             modifier = {
                 add_offsite_building = { 
                     type = civil_factory level = 1
@@ -66,32 +66,27 @@ ideas = {
                 has_idea = idea_RUS_SVO_inf
             }
             removal_cost = -1
-            picture = GFX_surrender_tiny_flag
+            picture = GFX_Media
             modifier = {
                 add_stability = -0.1
                 add_war_support = 0.2
                 army_attack_factor = 0.05
             }
         }
-        idea_RUS_clear_conditions = {
-            allowed = {
-                original_tag = A03
-                has_idea = idea_RUS_SVO_inf
-            }
-            removal_cost = -1
-            picture = GFX_surrender_tiny_flag
-            modifier = {
-                add_stability = 0.1
-                add_war_support = 0.1
-                add_political_power_factor = -0.01
-            }
-        }
+        #Звонок Трампу
         idea_RUS_call_trump = {
             allowed = {
                 original_tag = A03
                 has_idea = idea_RUS_SVO_inf
             }
             removal_cost = -1
+            picture = GFX_Trump_Call
+            modifier = {
+                add_stability = 0.1
+                add_offsite_building = {
+                    type = civil_factory level = 1
+                }
+            }
         }
     }
 }
