@@ -37,7 +37,7 @@ ideas = {
             picture = GFX_Req
             modifier = {
                 add_offsite_building = { 
-                    type = civil_factory level = 1
+                    type = industrial_complex level = 1
                 }
             }
         }
