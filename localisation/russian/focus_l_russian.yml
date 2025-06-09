@@ -1,10 +1,12 @@
 ﻿l_russian:
  
  
- ### FOCUS POLITICS
+ ### FOCUS "DEAL" POLITICS
  
  RUS_Great_Russia:0 "Великая Россия"
  RUS_Great_Russia_desc:0 "FFFFFF"
+ #ВЕЗДЕ desc доделать
+ 
  RUS_24_hours:0 "Провал 24 часов"
  RUS_media_svo:0 "Усилить СМИ"
  RUS_kursk_operation:0 "Подготовка Курской операции"
@@ -131,6 +133,103 @@
  RUS_vic_anyway:0 "Неминуемая победа"
  RUS_best_army:0 "Лучшая армия"
  RUS_army_of_winners:0 "Армия Победителей"
+ 
+ 
+ 
+ ### FOCUS CLAIMS
+ 
+ RUS_supp_tolstism:0 "Поддержать Толстизм"
+ RUS_supp_tolstism_desc:0 "FFFFFF"
+ #ВЕЗДЕ desc доделать
+ 
+ RUS_supp_imperialism:0 "Воскресить имперскость"
+ RUS_peaceful_exp:0 "Мирная экспансия"
+ RUS_ultimatums:0 "Горсть ултиматумов"
+ RUS_peace_important:0 "Мир прежде всего"
+ RUS_alash_kaz:0 "Алашская автономия"
+ RUS_caucasus:0 "Кавказская нефть"
+ RUS_buy_alaska:0 "Купить Аляску"
+ RUS_belarus:0 "Братская Беларусь"
+ RUS_baltics:0 "Балтийская витрина"
+ RUS_middle_asia:0 "Средняя Азия"
+ RUS_ave_imperium:0 "Ave Imperium!"
+ 
+ 
+ 
+ ### FOCUS POLITICS
+ 
+ RUS_new_people:0 "Новые люди"
+ RUS_KPRF:0 "КПРФ"
+ RUS_UR:0 "Единая Россия"
+ RUS_OB:0 "оБ"
+ RUS_LDPR:0 "ЛДПР"
+ RUS_NOD:0 "НОД"
+ 
+ RUS_concurentnost_NP:0 "Обеспечить конкурентность"
+ RUS_decentralisation_NP:0 "Децентрализация"
+ RUS_isvlast_prior_NP:0 "Приоритет избранной власти"
+ RUS_radical_NP:0 "Радикальные меры"
+ RUS_struct_maneur_NP:0 "Структурный манёвр"
+ RUS_adm_crisis_NP:0 "Долой административный пресс"
+ RUS_pal_sys_NP:0 "Отменить палочную систему"
+ RUS_smag_nakaz_NP:0 "Смягчить наказания"
+ RUS_mashtab_amnistia_NP:0 "Масштабная амнистия"
+ RUS_obrazovanie_NP:0 "Повысить качество образования"
+ 
+ RUS_sovets_deputatov_KPRF:0 "Местные советы депутатов"
+ RUS_nds_KPRF:0 "Упразднить НДС"
+ RUS_kachestvo_KPRF:0 "За качество!"
+ RUS_life_guarants_KPRF:0 "Гарантии в жизни"
+ RUS_social_state_KPRF:0 "Социальное государство"
+ RUS_old_sys_KPRF:0 "Старая система"
+ RUS_united_party_KPRF:0 "Единая партия"
+ RUS_zuganov_cult_KPRF:0 "Культ личности Зюганова"
+ RUS_nationalisation_KPRF:0 "Национализация"
+ RUS_modern_gosplan_KPRF:0 "Современный госплан"
+ RUS_industialisation_KPRF_NP:0 "Индустриализация"
+ 
+ RUS_uru_UR:0 "Скрепить партию"
+ RUS_unite_UR:0 "Единая Россия - едина!"
+ RUS_women_rights_UR:0 "Права женщин"
+ RUS_up_mrot_UR:0 "Повышение МРОТ"
+ RUS_new_leader_UR:0 "Новый лидер"
+ RUS_PUTIN_UR:0 "Умолять Путина"
+ RUS_obrazovanie_UR:0 "Отечественное образование"
+ RUS_gazification_UR:0 "Газифакция"
+ RUS_importasam_UR_KPRF:0 "Импортозамещение"
+ RUS_more_fuel_UR:0 "Больше заправок"
+ RUS_H_energetic_UR_OB:0 "Водородная энергетика"
+ RUS_ecologic_UR_OB:0 "Экологические технологии"
+ 
+ RUS_newkonst_OB_LDPR:0 "Новая конституция"
+ RUS_gubernii_OB_LDPR:0 "Губернии"
+ RUS_pazifism_OB:0 "Пацифизм"
+ RUS_mestn_OB_LDPR:0 "Местное самоуправление"
+ RUS_minus_control_OB:0 "Ослабить контроль над экономикой"
+ RUS_econom_reform_OB:0 "Реформа экономики"
+ RUS_inoagent_law_OB_LDPR:0 "Закон об иноагентах"
+ RUS_minus_RKN_OB:0 "Ликвидировать РосКомНадзор"
+ RUS_free_state_OB:0 "Свободная страна"
+ RUS_obrazov_reform_OB:0 "Реформа образования"
+ RUS_dobrovolka_OB:0 "Только добровольная служба"
+ 
+ RUS_stop_immigration_LDPR:0 "Остановить нелегалов"
+ RUS_effective_rasp_LDPR:0 "Эффективное распределение"
+ RUS_dream_of_empires_LDPR_NOD:0 "Память о Империях"
+ RUS_bezviz_BRICS:0 "Безвиз в БРИКС"
+ RUS_dg_econom_LDPR:0 "Цифровизация экономики"
+ RUS_for_zhirik_LDPR:0 "За Жириновского!"
+ RUS_for_sluzkiy:0 "То есть, за Слуцкого"
+ 
+ RUS_broke_kandals_NOD:0 "Взломать кандалы"
+ RUS_new_konst_NOD:0 "Новая конституция"
+ RUS_expansion_NOD:0 "Расширение"
+ RUS_sv_in_gov_NOD:0 "Связи в правительстве"
+ RUS_blaga_people_NOD:0 "Блага народу"
+ RUS_gorbachev_court:0 "Суд над Горбачёвым"
+ RUS_na_cheku_NOD:0 "На-чеку!"
+ RUS_militarisation:0 "Милитаризация"
+ 
  
  
 
