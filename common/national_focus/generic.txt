@@ -713,6 +713,7 @@ focus_tree = {
 	}
 
 	#Радикализм
+	###Радикализм
 	focus = {
 		id = GER_radicalism
 		icon = GFX_idea_PLACEHOLDER_idea_icon
