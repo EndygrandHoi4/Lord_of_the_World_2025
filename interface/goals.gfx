@@ -2,7 +2,7 @@ spriteTypes = {
 	
 	
 	
-	### !!! POLITICS !!!
+	### !!! DEAL POLITICS !!!
 
 	spriteType = {
 		name = "GFX_Great_Russia"
@@ -562,5 +562,413 @@ spriteTypes = {
 		name = "GFX_army_of_winners"
 		texturefile = "gfx/interface/goals/RUS/RUS_goal_army_of_winners.dds"
 	}
-
+	
+	
+	
+	# !!! CLAIMS !!!
+	
+	spriteType = {
+		name = "GFX_supp_tolstism"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_supp_tolstism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_supp_imperialism"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_supp_imperialism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_peaceful_exp"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_peaceful_exp.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ultimatums"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_ultimatums.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_peace_important"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_peace_important.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_alash_kaz"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_alash_kaz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_caucasus"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_caucasus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_buy_alaska"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_buy_alaska.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_belarus"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_belarus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_baltics"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_baltics.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_middle_asia"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_middle_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ave_imperium"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_ave_imperium.dds"
+	}
+	
+	
+	
+	### !!! POLITICS !!!
+	
+	spriteType = {
+		name = "GFX_new_people"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_new_people.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_UR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_UR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_OB"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_OB.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LDPR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_LDPR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOD"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_NOD.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_concurentnost_NP"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_concurentnost_NP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decentralisation_NP"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_decentralisation_NP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_isvlast_prior_NP"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_isvlast_prior_NP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_radical_NP"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_radical_NP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_struct_maneur_NP"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_struct_maneur_NP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_adm_crisis_NP"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_adm_crisis_NP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pal_sys_NP"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_pal_sys_NP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_smag_nakaz_NP"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_smag_nakaz_NP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mashtab_amnistia_NP"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_mashtab_amnistia_NP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obrazovanie_NP"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_obrazovanie_NP.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_sovets_deputatov_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_sovets_deputatov_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_nds_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_nds_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_kachestvo_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_kachestvo_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_life_guarants_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_life_guarants_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_social_state_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_social_state_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_old_sys_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_old_sys_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_united_party_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_united_party_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_zuganov_cult_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_zuganov_cult_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_modern_gosplan_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_modern_gosplan_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_nationalisation_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_nationalisation_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_industialisation_KPRF_NP"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_industialisation_KPRF_NP.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_unite_UR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_unite_UR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_uru_UR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_uru_UR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_new_leader_UR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_new_leader_UR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_PUTIN_UR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_PUTIN_UR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obrazovanie_UR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_obrazovanie_UR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gazification_UR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_gazification_UR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_importasam_UR_KPRF"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_importasam_UR_KPRF.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_more_fuel_UR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_more_fuel_UR.dds"
+	}
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_newkonst_OB_LDPR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_newkonst_OB_LDPR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gubernii_OB_LDPR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_gubernii_OB_LDPR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pazifism_OB"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_pazifism_OB.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mestn_OB_LDPR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_mestn_OB_LDPR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_minus_control_OB"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_minus_control_OB.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_econom_reform_OB"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_econom_reform_OB.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_inoagent_law_OB_LDPR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_inoagent_law_OB_LDPR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_minus_RKN_OB"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_minus_RKN_OB.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_free_state_OB"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_free_state_OB.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obrazov_reform_OB"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_obrazov_reform_OB.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_dobrovolka_OB"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_dobrovolka_OB.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_stop_immigration_LDPR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_stop_immigration_LDPR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_effective_rasp_LDPR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_effective_rasp_LDPR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_dream_of_empires_LDPR_NOD"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_dream_of_empires_LDPR_NOD.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bezviz_BRICS"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_bezviz_BRICS.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_dg_econom_LDPR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_dg_econom_LDPR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_for_zhirik_LDPR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_for_zhirik_LDPR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_for_sluzkiy"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_for_sluzkiy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_women_rights_UR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_women_rights_UR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_up_mrot_UR"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_up_mrot_UR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_H_energetic_UR_OB"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_H_energetic_UR_OB.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ecologic_UR_OB"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_ecologic_UR_OB.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_broke_kandals_NOD"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_broke_kandals_NOD.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_new_konst_NOD"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_new_konst_NOD.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_expansion_NOD"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_expansion_NOD.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sv_in_gov_NOD"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_sv_in_gov_NOD.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_blaga_people_NOD"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_blaga_people_NOD.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gorbachev_court"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_gorbachev_court.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_na_cheku_NOD"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_na_cheku_NOD.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_militarisation"
+		texturefile = "gfx/interface/goals/RUS/RUS_goal_militarisation.dds"
+	}
+	
+	
 }
