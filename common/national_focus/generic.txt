@@ -24,6 +24,7 @@ focus_tree = {
 	
 	default = yes
 	reset_on_civilwar = no
+	continuous_focus_position = { x = 55 y = 1900 }
 
 	initial_show_position = {
 		focus = political_course
@@ -37,7 +38,7 @@ focus_tree = {
 	focus = {
 		id = stable_state
 		icon = goal_stable_state
-		x = 7
+		x = 19
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -56,7 +57,7 @@ focus_tree = {
 		prerequisite = {
 			focus = stable_state
 		}
-		x = 7
+		x = 19
 		y = 1.25
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -68,412 +69,471 @@ focus_tree = {
 		}
 	}
 
-	#Красное сознание
+	#Политические реформы
 	focus = {
-		id = red_consciousness
-		icon = goal_red_consciousness
+		id = GEN_political_reform
+		icon = GFX_idea_PLACEHOLDER_idea_icon
 		prerequisite = {
 			focus = political_course
 		}
 		mutually_exclusive = {
-			focus = colorless_politics
-			focus = right_path
+			focus = GEN_pragmatic_approach
+			focus = GER_resource_mobilization
 		}
 		cost = 10
-		x = 1
-		y = 2.5
+		x = 4
+		y = 3
 		completion_reward = { }
 	}
 
-	#Революция рабочих
+	#Свободные выборы
 	focus = {
-		id = The_Workers_Revolution
-		icon = goal_The_Workers_Revolution
-		prerequisite = {
-			focus = red_consciousness
-		}
-		mutually_exclusive = {
-			focus = The_Socialist_future
-			focus = Imperceptible_restructuring
-		}
+		id = GEN_free_elections
+		icon = GFX_idea_PLACEHOLDER_idea_icon
 		cost = 10
-		x = -1
-		y = 4
-		completion_reward = { }
-	}
-
-	#Социалистическое будущее
-	focus = {
-		id = The_Socialist_future
-		icon = goal_The_Socialist_future
 		prerequisite = {
-			focus = red_consciousness
+			focus = GEN_political_reform
 		}
-		mutually_exclusive = {
-			focus = The_Workers_Revolution
-			focus = Imperceptible_restructuring
-		}
-		cost = 10
-		x = 1
-		y = 4
-		completion_reward = { }
-	}
-
-	#Незаметная перестройка
-	focus = {
-		id = Imperceptible_restructuring
-		icon = GFX_focus_generic_soviet_politics
-		prerequisite = {
-			focus = red_consciousness
-		}
-		mutually_exclusive = {
-			focus = The_Socialist_future
-			focus = The_Workers_Revolution
-		}
-		cost = 10
-		x = 3
-		y = 4
-		completion_reward = {
-		 }
-	}
-
-	#Бесцветная политика
-	focus = {
-		id = colorless_politics
-		icon = goal_colorless_politics
-		prerequisite = {
-			focus = political_course
-		}
-		mutually_exclusive = {
-			focus = right_path
-			focus = red_consciousness
-		}
-		cost = 10
-		x = 7
-		y = 2.5
-		completion_reward = { }
-	}
-
-	#Авторитарное правление
-	focus = {
-		id = Authoritarian_rule
-		icon = GFX_surrender_tiny_flag
-		prerequisite = {
-			focus = colorless_politics
-		}
-		mutually_exclusive = {
-			focus = Liberalism
-			focus = Conservative_principles
-		}
-		cost = 10
-		x = 7
-		y = 4
-		completion_reward = { }
-	}
-
-	#Либерализм - есть добро
-	focus = {
-		id = Liberalism
-		icon = GFX_surrender_tiny_flag
-		prerequisite = {
-			focus = colorless_politics
-		}
-		mutually_exclusive = {
-			focus = Authoritarian_rule
-			focus = Conservative_principles
-		}
-		cost = 10
-		x = 5
-		y = 4
-		completion_reward = { }
-	}
-
-	#Консервативные устои
-	focus = {
-		id = Conservative_principles
-		icon = GFX_surrender_tiny_flag
-		prerequisite = {
-			focus = colorless_politics
-		}
-		mutually_exclusive = {
-			focus = Liberalism
-			focus = Authoritarian_rule
-		}
-		cost = 10
 		x = 9
 		y = 4
 		completion_reward = { }
 	}
 
-	#Правый путь
+	#Защита прав человека
 	focus = {
-		id = right_path
-		icon = GFX_focus_GER_fuhrerprinzip_bormann
-		prerequisite = {
-			focus = political_course
-		}
-		mutually_exclusive = {
-			focus = colorless_politics
-			focus = red_consciousness
-		}
+		id = GEN_human_rights
+		icon = GFX_idea_PLACEHOLDER_idea_icon
 		cost = 10
-		x = 13
-		y = 2.5
-		completion_reward = { }
-	}
-
-	#Национализм
-	focus = {
-		id = focus_nationalism
-		icon = GFX_surrender_tiny_flag
 		prerequisite = {
-			focus = right_path
+			focus = GEN_political_reform
 		}
-		cost = 10
-		x = 11
+		x = 5
 		y = 4
 		completion_reward = { }
 	}
 
-	#ФОКУСЫ НА СТРОИТЕЛЬСТВО
-
-	#Возрождение экономики
+	#Экономическая либерализация
 	focus = {
-		id = economic_revival
-		icon = GFX_surrender_tiny_flag
+		id = GEN_economic_liberalisation
+		icon = GFX_idea_PLACEHOLDER_idea_icon
 		cost = 10
-		x = 20
-		y = 0
-		completion_reward = { 
-			random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-			}
-			random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-			}
+		prerequisite = {
+			focus = GEN_political_reform
+		}
+		x = 0
+		y = 4
+		completion_reward = { }
+	}
 
+	#Развитие предпринимательства
+	focus = {
+		id = GEN_entrepreneurship_development
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_economic_liberalisation
+		}
+		x = 2
+		y = 5
+		completion_reward = { }
+	}
+
+	#Свободная пресса
+	focus = {
+		id = GEN_free_press
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_political_reform
+		}
+		x = -2
+		y = 5
+		completion_reward = { }
+	}
+
+	#Законодательная прозрачность
+	focus = {
+		id = GEN_legislative_trasparency
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_free_elections
+		}
+		x = 9
+		y = 5
+		completion_reward = { }
+	}
+
+	#Расширение гражданских свобод
+	focus = {
+		id = GEN_more_human_rights
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_human_rights
+		}
+		x = 5
+		y = 5
+		completion_reward = { }
+	}
+
+	#Иностранные инвестиции
+	focus = {
+		id = GEN_foreign_investments
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_entrepreneurship_development
+		}
+		prerequisite = {
+			focus = GEN_free_press
+		}
+		prerequisite = {
+			focus = GEN_more_human_rights
+		}
+		x = 5
+		y = 6
+		completion_reward = { }
+	}
+
+	#Сотрудничество с демократиями
+	focus = {
+		id = GEN_cooperation_with_democracies
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_more_human_rights
+		}
+		prerequisite = {
+			focus = GEN_legislative_trasparency
+		}
+		x = 8
+		y = 6
+		completion_reward = { }
+	}
+
+	#Политическое образование
+	focus = {
+		id = GEN_political_education
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_entrepreneurship_development
+		}
+		x = 0
+		y = 6
+		completion_reward = { }
+	}
+
+	#Борьба с коррупцией 
+	focus = {
+		id = GEN_fight_against_corruption
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_legislative_trasparency
+		}
+		prerequisite = {
+			focus = GEN_free_elections
+		}
+		x = 11
+		y = 6
+		completion_reward = { }
+	}
+
+	#Глобальное развитие
+	###Активное участие в международных организациях и инициативах
+	focus = {
+		id = GEN_global_development
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_fight_against_corruption
+		}
+		prerequisite = {
+			focus = GEN_cooperation_with_democracies
+		}
+		prerequisite = {
+			focus = GEN_foreign_investments
+		}
+		prerequisite = {
+			focus = GEN_political_education
+		}
+		x = 4
+		y = 7
+		completion_reward = { }
+	}
+
+	#ЛИБЕРАЛИЗМ
+	focus = {
+		id = GEN_liberalism
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_global_development
+		}
+		x = 4
+		y = 9
+		completion_reward = {
+			ROOT = {
+				set_politics = {
+					ruling_party = liberalism
+					elections_allowed = yes
+				}
+			}
 		}
 	}
 
-	#Соединить столицу с провинциями
+	#Прагматический подход
 	focus = {
-		id = roads_focus
-		icon = GFX_surrender_tiny_flag
-		prerequisite = {
-			focus = economic_revival
-		}
+		id = GEN_pragmatic_approach
+		icon = GFX_idea_PLACEHOLDER_idea_icon
 		cost = 10
-		x = 17
-		y = 1
-		completion_reward = { 
-			random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-			}
-			random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-			}
-			random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-			}
-			random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-			}
-		}
-	}
-
-	#Провести строительный тендер
-	focus = {
-		id = construction_tender_focus
-		icon = GFX_surrender_tiny_flag
 		prerequisite = {
-			focus = roads_focus
+			focus = political_course
 		}
-		cost = 10
-		x = 15
-		y = 2
-		completion_reward = { 
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
+		mutually_exclusive = {
+			focus = GEN_political_reform
+			focus = GER_resource_mobilization
 		}
-	}
-
-	#Государственный строительный контроль
-	focus = {
-		id = construction_control_focus
-		icon = GFX_surrender_tiny_flag
-		prerequisite = {
-			focus = roads_focus
-		}
-		cost = 10
-		x = 17
-		y = 2
-		completion_reward = { 
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-		}
-	}
-
-	#Построитель автомагистрали
-	focus = {
-		id = motorways_focus
-		icon = GFX_surrender_tiny_flag
-		prerequisite = {
-			focus = construction_tender_focus
-		}
-		prerequisite = {
-			focus = construction_control_focus
-		}
-		cost = 10
-		x = 15
-		y = 3
-		completion_reward = { 
-			var:capital = {
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-			}
-
-		}
-	}
-
-
-	#Субсидировать лёгкую промышленность
-	focus = {
-		id = light_industry_focus
-		icon = GFX_surrender_tiny_flag
-		prerequisite = {
-			focus = economic_revival
-		}
-		cost = 10
 		x = 19
-		y = 1
-		completion_reward = { 
-			random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-			}
-		}
+		y = 3
+		completion_reward = { }
 	}
 
-	#Ремонт производственных объектов
-
-
-	#"Детские сады в каждый район"
-
-	
-	#Реформа государственной медицины
-
-
-	#Реформа образования
+	#Национальное согласие
 	focus = {
-		id = Education_reform_focus
-		icon = GFX_surrender_tiny_flag
+		id = GEN_national_harmony
+		icon = GFX_idea_PLACEHOLDER_idea_icon
 		cost = 10
 		prerequisite = {
-			focus = economic_revival
+			focus = GEN_pragmatic_approach
+		}
+		x = 13
+		y = 4
+		completion_reward = { }
+	}
+
+	#Стимулирование экономики
+	focus = {
+		id = GEN_stimulation_economy
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_pragmatic_approach
+		}
+		x = 23
+		y = 4
+		completion_reward = { }
+	}
+
+	#Умеренная социальная политика
+	focus = {
+		id = GEN_moderate_socialpolicy
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_pragmatic_approach
+		}
+		x = 17
+		y = 4
+		completion_reward = { }
+	}
+
+	#Программа занятости
+	focus = {
+		id = GEN_employment_programme
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_moderate_socialpolicy
+		}
+		prerequisite = {
+			focus = GEN_stimulation_economy
+		}
+		x = 20
+		y = 5
+		completion_reward = { }
+	}
+
+	#Образование для всех
+	focus = {
+		id = GEN_education_for_all
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_national_harmony
+		}
+		prerequisite = {
+			focus = GEN_moderate_socialpolicy
+		}
+		x = 15
+		y = 5
+		completion_reward = { }
+	}
+
+	#Гибкая налоговая система
+	focus = {
+		id = GEN_tax_system
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_stimulation_economy
+		}
+		x = 23
+		y = 6
+		completion_reward = { }
+	}
+
+	#Поддержка семьи
+	focus = {
+		id = GEN_family_support
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_national_harmony
+		}
+		x = 14
+		y = 6
+		completion_reward = { }
+	}
+
+	#Управление конфликтами
+	###Межэтническое и межкультурное примирение для поддержания внутреннего мира
+	focus = {
+		id = GEN_conflict_management
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_employment_programme
+			focus = GEN_education_for_all
+		}
+		x = 18
+		y = 6
+		completion_reward = { }
+	}
+
+	#Иклюзивное правительство
+	###Включение представителей всех политических и социальных течений
+	focus = {
+		id = GEN_inclusuve_government
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_conflict_management
+		}
+		prerequisite = {
+			focus = GEN_tax_system
 		}
 		x = 21
-		y = 1
+		y = 7
+		completion_reward = { }
+	}
+
+	#Национальные традиции
+	###Поддержка и сохранение культурного наследия
+	focus = {
+		id = GEN_national_traditions
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_family_support
+		}
+		prerequisite = {
+			focus = GEN_conflict_management
+		}
+		x = 16
+		y = 7
+		completion_reward = { }
+	}
+
+	#Инфраструктурные проекты
+	focus = {
+		id = GEN_infrastructur_project
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_stimulation_economy
+		}
+		x = 25
+		y = 7
+		completion_reward = { }
+	}
+
+	#укрепление безопасности
+	###Умеренное усиление сил правопорядка и военной мощи
+	focus = {
+		id = GEN_strengthening_security
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_national_traditions
+		}
+		prerequisite = {
+			focus = GEN_inclusuve_government
+		}
+		prerequisite = {
+			focus = GEN_infrastructur_project
+		}
+		x = 19
+		y = 8
+		completion_reward = { }
+	}
+
+	#Центризм
+	focus = {
+		id = GEN_centrism
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_strengthening_security
+		}
+		x = 19
+		y = 9
 		completion_reward = {
-			add_tech_bonus = {
-				name = radar_tech
-				bonus = 1.5
-				uses = 1
-				category = radar_tech
+			ROOT = {
+				set_politics = {
+					ruling_party = Centrism
+					elections_allowed = yes
+				}
 			}
 		 }
 	}
 
-	#Государственный институт
+	#Мобилизация ресурсов
 	focus = {
-		id = State_Institute_focus
-		icon = GFX_surrender_tiny_flag
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		id = GER_resource_mobilization
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = political_course
+		}
+		mutually_exclusive = {
+			focus = GEN_pragmatic_approach
+			focus = GEN_political_reform
+		}
+		x = 34
+		y = 3
+		completion_reward = { }
+	}
 
-		cost = 15
-		x = 20
-		y = 7
+	#Радикализм
+	focus = {
+		id = GER_radicalism
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		x = 34
+		y = 9
 		completion_reward = { 
-			add_research_slot = 2
+			ROOT = {
+				set_politics = {
+					ruling_party = radicalism
+					elections_allowed = no
+				}
+			}
 		}
 	}
+
+
+
 }
