@@ -1,0 +1,30 @@
+﻿#COUNTRY LEADERS
+recruit_character = USA_donald_trump
+
+#MINISTERS
+#recruit_character = 
+
+
+capital = 361
+
+starting_train_buffer = 3.0
+
+set_politics = {
+	ruling_party = Centrism
+	last_election = "2024.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Centrism = 50
+	liberalism = 50
+	radicalism = 0
+	reactionism = 0
+	theocracy = 0
+	progressivism = 0
+}
+
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.3

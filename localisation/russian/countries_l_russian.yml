@@ -1,6 +1,6 @@
 ﻿l_russian:
-
-#ФРГ
+ 
+#A01 ФРГ
  A01_Centrism: "Федеративная республика Германия"
  A01_Centrism_DEF: "Федеративная республика Германия"
  A01_Centrism_ADJ: "Германск"
@@ -20,7 +20,27 @@
  A01_progressivism_DEF: "Конфедерация северных и южных немцев"
  A01_progressivism_ADJ: "Германск"
 
-#Россия
+#A02 Великобритания
+ A02_Centrism: "Соединенное королевство Великобритании и Северной Ирландии"
+ A02_Centrism_DEF: "Соединенное королевство Великобритании и Северной Ирландии"
+ A02_Centrism_ADJ: "Британск"
+ A02_liberalism: "Соединенное королевство Великобритании и Северной Ирландии"
+ A02_liberalism_DEF: "Соединенное королевство Великобритании и Северной Ирландии"
+ A02_liberalism_ADJ: "Британск"
+ A02_radicalism: "Великая Британия" 
+ A02_radicalism_DEF: "Великая Британия"
+ A02_radicalism_ADJ: "Великобританск"
+ A02_reactionism: "Соединенное королевство Великобритании и Северной Ирландии"
+ A02_reactionism_DEF: "Соединенное королевство Великобритании и Северной Ирландии"
+ A02_reactionism_ADJ: "Британск"
+ A02_theocracy: "Англиканские земли"
+ A02_theocracy_DEF: "Англиканские земли"
+ A02_theocracy_ADJ: "Англиканск"
+ A02_progressivism: "Необританская сфера"
+ A02_progressivism_DEF: "Необританская сфера"
+ A02_progressivism_ADJ: "Необританск"
+
+#A03 Россия
  A03_Centrism: "Российская Федерация"
  A03_Centrism_DEF: "Российская Федерация"
  A03_Centrism_ADJ: "Российск"
@@ -40,7 +60,7 @@
  A03_progressivism_DEF: "Союз Европы и Азии"
  A03_progressivism_ADJ: "Союзнеческ"
 
-#Украина
+#A04 Украина
  A04_radicalism: "Украина"
  A04_radicalism_DEF: "Украина"
  A04_radicalism_ADJ: "Украинск"
@@ -56,3 +76,46 @@
  A04_progressivism: "Украинская федерация" 
  A04_progressivism_DEF: "Украинская федерация"
  A04_progressivism_ADJ: "Украинск"
+
+#A05 Швеция
+ #A05
+
+#А06 Франция
+ A06_Centrism: "Французкая республика"
+ A06_Centrism_DEF: "Французкая республика"
+ A06_Centrism_ADJ: "Французск"
+ A06_liberalism: "Французкая республика"
+ A06_liberalism_DEF: "Французкая республика"
+ A06_liberalism_ADJ: "Французск"
+ A06_radicalism: "Французское государство" 
+ A06_radicalism_DEF: "Французское государство"
+ A06_radicalism_ADJ: "Французск"
+ A06_reactionism: "Франция"
+ A06_reactionism_DEF: "Франция"
+ A06_reactionism_ADJ: "Французск"
+ A06_theocracy: "Святая земля Франков"
+ A06_theocracy_DEF: "Святая земля Франков"
+ A06_theocracy_ADJ: "Франция"
+ A06_progressivism: "Территории западной Европы"
+ A06_progressivism_DEF: "Территории западной Европы"
+ A06_progressivism_ADJ: "Западно-европейск"
+
+#A07 США
+ A07_Centrism: "Соединенные штаты Америки"
+ A07_Centrism_DEF: "Соединенные штаты Америки"
+ A07_Centrism_ADJ: "Американск"
+ A07_liberalism: "Соединенные штаты Америки"
+ A07_liberalism_DEF: "Соединенные штаты Америки"
+ A07_liberalism_ADJ: "Американск"
+ A07_radicalism: "Американское государство" 
+ A07_radicalism_DEF: "Американское государство"
+ A07_radicalism_ADJ: "Американск"
+ A07_reactionism: "Союз государств Америки"
+ A07_reactionism_DEF: "Союз государств Америки"
+ A07_reactionism_ADJ: "Американск"
+ A07_theocracy: "Боголюбивая Американская Федерация"
+ A07_theocracy_DEF: "Боголюбивая Американская Федерация"
+ A07_theocracy_ADJ: "Американск"
+ A07_progressivism: "Великая Америка"
+ A07_progressivism_DEF: "Великая Америка"
+ A07_progressivism_ADJ: "Американск"

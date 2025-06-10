@@ -1,10 +1,4 @@
-####
-#### NO STEP BACK
-####
-
-
-#You don't want Russian party names? Just remove these lines
-#set_party_name = {
+﻿
 #	ideology = communism
 #	long_name = SOV_communism_party_russian_long
 #	name = SOV_communism_party_russian
@@ -22,21 +16,21 @@
 #recruit_character = 
 
 
-capital = 126
+capital = 16
 
 starting_train_buffer = 3.0
 
 set_politics = {
-	ruling_party = reactionism
-	last_election = "2024.1.1"
+	ruling_party = liberalism
+	last_election = "2022.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	Centrism = 15
+	Centrism = 30
 	liberalism = 30
-	radicalism = 5
-	reactionism = 50
+	radicalism = 15
+	reactionism = 25
 	theocracy = 0
 	progressivism = 0
 }

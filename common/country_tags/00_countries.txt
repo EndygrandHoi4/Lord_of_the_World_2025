@@ -5,9 +5,9 @@ A02 = "countries/United Kingdom.txt"
 #SOV
 A03 = "countries/Soviet Union.txt"
 #SWE
-004 = "countries/Sweden.txt"
+A05 = "countries/Sweden.txt"
 #FRA 
-005 = "countries/France.txt"
+A06 = "countries/France.txt"
 LUX 
 006 = "countries/Luxemburg.txt"
 #BEL 
@@ -92,8 +92,8 @@ HON
 046 = "countries/Honduras.txt"
 IRQ
 047 = "countries/Iraq.txt"
-JAP
-048 = "countries/Japan.txt"
+#JAP
+A08 = "countries/Japan.txt"
 KOR
 049 = "countries/Korea.txt"
 LIB
@@ -132,8 +132,8 @@ VEN
 066 = "countries/Venezula.txt"
 YUN
 067 = "countries/Yunnan.txt"
-USA
-068 = "countries/USA.txt"
+#USA
+A07 = "countries/USA.txt"
 MON
 069 = "countries/Mongolia.txt"
 TAN

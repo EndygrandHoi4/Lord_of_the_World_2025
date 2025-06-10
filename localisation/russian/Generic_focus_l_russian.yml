@@ -1,27 +1,132 @@
 ﻿l_russian:
+ generic_focus: "Национальный фокус"
+ NATIONAL_FOCUS_MUTUALLY_EXCLUSIVE_TREE: "Эти ветви являются взаимоисключающими."
+ NATIONAL_FOCUS_EXCLUSIVE_INFO_DESC: "Взаимоисключающая с"
+ NATIONAL_FOCUS_EXCLUSIVE_INFO_ENTRY: "$FOCUS|Y$"
+ NATIONAL_FOCUS_NO_CURRENT_EFFECT: "В настоящее время фокус не даёт каких-либо эффектов. Изменения политической ситуации в мире могут повлиять на это."
+ confirm_cancel_national_focus: "Отменить национальный фокус"
+ confirm_cancel_national_focus_progress_loss_singular: "Вы потеряете §R$LOST_DAYS$§! день развития."
+ confirm_cancel_national_focus_progress_loss_plural: "Вы потеряете §R$LOST_DAYS$§! д. развития."
+ confirm_cancel_national_focus_desc: "Вы действительно хотите отменить национальный фокус §H$FOCUS_NAME$§!?"
+
  stable_state:0 "Стабильное государство"
  political_course:0 "Политический курс"
-
- red_consciousness:0 "Красное сознание"
- colorless_politics:0 "Бесцветная политика"
- right_path:0 "Правый путь"
- The_Workers_Revolution:0 "Революция рабочих"
- The_Socialist_future:0 "Социалистическое будущее"
- Imperceptible_restructuring:0 "Незаметная перестройка"
- Authoritarian_rule:0 "Авторитарное правление"
- Liberalism:0 "Либерализм есть - добро"
- Conservative_principles:0 "Консервативные устои"
- focus_nationalism:0 "Национализм"
-
-
-
- economic_revival:0 "Экономическое возрождение"
- roads_focus:0 "Соединить столицу с провинциями"
- construction_tender_focus:0 "Провести строительный тендер"
- construction_control_focus:0 "Государственный строительный контроль"
- motorways_focus:0 "Построить автомагистраль"
- light_industry_focus:0 "Субсидировать легкую промышленность"
- Education_reform_focus:0 "Реформа образования"
- State_Institute_focus:0 "Построить государственный институт"
-
  
+#Либерализм
+ GEN_political_reform:0 "Политическая реформа"
+ GEN_political_reform_desc:0 "Начало демократизации и усиление институтов демократии"
+ GEN_free_elections:0 "Свободные выборы"
+ GEN_free_elections_desc:0 "Установление открытых и справедливых выборов"
+ GEN_human_rights:0 "Защита прав человека"
+ GEN_human_rights_desc:0 "Усиление законодательства для защиты прав граждан"
+ GEN_economic_liberalisation:0 "Экономическая либерализация"
+ GEN_economic_liberalisation_desc:0 "Снижение налогов и снятие регуляций для бизнеса"
+ GEN_entrepreneurship_development:0 "Развитие предпринимательства"
+ GEN_entrepreneurship_development_desc:0 "Поддержка малого и среднего бизнеса через субсидии и кредиты"
+ GEN_free_press:0 "Свободная пресса"
+ GEN_free_press_desc:0 "Полная свобода СМИ и защита журналистов"
+ GEN_legislative_trasparency:0 "Законодательная прозрачность"
+ GEN_legislative_trasparency_desc:0 "Прозрачность в работе правительства и общественных проектов"
+ GEN_more_human_rights:0 "Расширение гражданских свобод"
+ GEN_more_human_rights_desc:0 "Усиление прав личности и отмена ограничивающих законов"
+ GEN_foreign_investments:0 "Иностранные инвестиции"
+ GEN_foreign_investments_desc:0 "Создание благоприятных условий для привлечения инвестиций извне"
+ GEN_cooperation_with_democracies:0 "Сотрудничество с демократиями"
+ GEN_cooperation_with_democracies_desc:0 "Создание альянсов с либеральными странами"
+ GEN_political_education:0 "Политическое образование"
+ GEN_political_education_desc:0 "Повышение осведомленности о правах и обязанностях граждан"
+ GEN_fight_against_corruption:0 "Борьба с коррупцией"
+ GEN_fight_against_corruption_desc:0 "Усиление антикоррупционного законодательства"
+ GEN_global_development:0 "Глобальное развитие"
+ GEN_global_development_desc:0 "Активное участие в международных организациях и инициативах"
+ GEN_liberalism:0 "Либерализм"
+ GEN_liberalism_desc:0 "Либерализм"
+
+#Центризм
+ GEN_pragmatic_approach:0 "Прагматический подход"
+ GEN_pragmatic_approach_desc:0 "Укрепление централизованной власти при поддержке широких слоёв общества"
+
+ GEN_national_harmony:0 "Национальное согласие"
+ GEN_national_harmony_desc:0 "Проведение политики примирения и сотрудничества"
+
+ GEN_stimulation_economy:0 "Стимулирование экономики"
+ GEN_stimulation_economy_desc:0 "Введение стимулов для сбалансированного экономического роста"
+
+ GEN_moderate_socialpolicy:0 "Умеренная социальная политика"
+ GEN_moderate_socialpolicy_desc:0 "Совмещение элементов социальной защиты и рыночной экономики"
+
+ GEN_employment_programme:0 "Программа занятости"
+ GEN_employment_programme_desc:0 "Создание рабочих мест через государственные инициативы"
+
+ GEN_education_for_all:0 "Образование для всех"
+ GEN_education_for_all_desc:0 "Обеспечение доступного образования на всех уровнях"
+
+ GEN_tax_system:0 "Гибкая налоговая система"
+ GEN_tax_system_desc:0 "Создание прогрессивной налоговой системы"
+
+ GEN_family_support:0 "Поддержка семьи"
+ GEN_family_support_desc:0 "Разработка программ поддержки семей и детства"
+
+ GEN_conflict_management:0 "Управление конфликтами"
+ GEN_conflict_management_desc:0 "Межэтническое и межкультурное примирение для поддержания внутреннего мира"
+
+ GEN_inclusuve_government:0 "Инклюзивное правительство"
+ GEN_inclusuve_government_desc:0 "Включение представителей всех политических и социальных течений"
+
+ GEN_national_traditions:0 "Защита национальных традиций"
+ GEN_national_traditions_desc:0 "Поддержка и сохранение культурного наследия"
+
+ GEN_infrastructur_project:0 "Инфраструктурные проекты"
+ GEN_infrastructur_project_desc:0 "Инвестиции в развитие транспортной и технической инфраструктуры"
+
+ GEN_strengthening_security:0 "Укрепление безопасности"
+ GEN_strengthening_security_desc:0 "Умеренное усиление сил правопорядка и военной мощи"
+
+ GEN_centrism:0 "Центризм"
+ GEN_centrism_desc:0 "Центризм"
+
+#Радикализм
+ GER_resource_mobilization:0 "Мобилизация ресурсов"
+ GER_resource_mobilization_desc:0 "Централизация всех ресурсов для достижения быстрых изменений"
+
+ GEN_radical_reforms:0 "Радикальные реформы"
+ GEN_radical_reforms_desc:0 "Быстрая трансформация политической и экономической систем"
+
+ GEN_military_militarization:0 "Военная милитаризация"
+ GEN_military_militarization_desc:0 "Значительное увеличение военных расходов и численности армии"
+
+ GEN_ideological_purity:0 "Идеологическая чистота"
+ GEN_ideological_purity_desc:0 "Устранение внутренних врагов и усиление государственной идеологии"
+
+ GEN_State_control:0 "Государственный контроль"
+ GEN_State_control_desc:0 "Переход ключевых секторов экономики под государственный контроль"
+
+ GEN_Advocacy_campaign:0 "Пропагандистская кампания"
+ GEN_Advocacy_campaign_desc:0 "Широкое использование СМИ для продвижения идеологии"
+
+ GEN_New_leaders:0 "Новые лидеры"
+ GEN_New_leaders_desc:0 "Обновление кадрового состава на высших уровнях власти"
+
+ GEN_Expansionist_policy:0 "Экспансионистская политика"
+ GEN_Expansionist_policy_desc:0 "Подготовка к территориальной экспансии и усиление влияния"
+
+ GEN_Securitization_of_dependencies:0 "Секьюритизация зависимостей"
+ GEN_Securitization_of_dependencies_desc:0 "Усиление контроля над стратегическими ресурсами"
+
+ GEN_A_new_kind_of_party:0 "Партия нового типа"
+ GEN_A_new_kind_of_party_desc:0 "Создание и развитие политической партии, полностью подчиненной государственной идеологии"
+
+ GEN_Cyber_sovereignty:0 "Кибер-суверенитет"
+ GEN_Cyber_sovereignty_desc:0 "Усиление контроля над интернетом и цифровыми технологиями"
+
+ GEN_Autonomous_economy:0 "Сплочение нации"
+ GEN_Autonomous_economy_desc:0 "Пропаганда национализма и укрепление единства общества"
+
+ GEN_Rallying_the_nation:0 "Автономная экономика"
+ GEN_Rallying_the_nation_desc:0 "Минимизация внешних зависимостей за счет самообеспечения"
+
+ GEN_Aggression_against_enemies:0 "Агрессия против врагов"
+ GEN_Aggression_against_enemies_desc:0 "Готовность к активной конфронтации с внешними и внутренними врагами"
+
+ GER_radicalism:0 "РАДИКАЛИЗМ"
+ GER_radicalism_desc:0 "РАДИКАЛИЗМ"

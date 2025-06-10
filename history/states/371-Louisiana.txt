@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = A07
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
@@ -21,7 +21,7 @@ state={
 
 			}
 		}
-		add_core_of = USA
+		add_core_of = A07
 		victory_points = {
 			7552 10 
 		}

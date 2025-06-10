@@ -517,11 +517,212 @@ focus_tree = {
 		completion_reward = { }
 	}
 
+	#Радикальные реформы
+	focus = {
+		id = GEN_radical_reforms
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GER_resource_mobilization
+		}
+		x = 28
+		y = 4
+		completion_reward = { }
+	}
+
+	#Военная милитаризация
+	focus = {
+		id = GEN_military_militarization
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GER_resource_mobilization
+		}
+		x = 40
+		y = 4
+		completion_reward = { }
+	}
+
+	#Идеологическая чистота
+	focus = {
+		id = GEN_ideological_purity
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GER_resource_mobilization
+		}
+		x = 32
+		y = 5
+		completion_reward = { }
+	}
+
+	#Государственный контроль
+	focus = {
+		id = GEN_State_control
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GER_resource_mobilization
+		}
+		x = 36
+		y = 5
+		completion_reward = { }
+	}
+
+	#Пропагандистская кампания
+	focus = {
+		id = GEN_Advocacy_campaign
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_military_militarization
+		}
+		prerequisite = {
+			focus = GEN_State_control
+		}
+		x = 38
+		y = 6
+		completion_reward = { }
+	}
+
+	#Новые лидеры
+	focus = {
+		id = GEN_New_leaders
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_ideological_purity
+		}
+		prerequisite = {
+			focus = GEN_radical_reforms
+		}
+		x = 30
+		y = 6
+		completion_reward = { }
+	}
+
+	#Экспансионистская политика
+	focus = {
+		id = GEN_Expansionist_policy
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Advocacy_campaign
+		}
+		x = 40
+		y = 7
+		completion_reward = { }
+	}
+
+	#Секьюритизация зависимостей
+	focus = {
+		id = GEN_Securitization_of_dependencies
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_New_leaders
+		}
+		x = 28
+		y = 7
+		completion_reward = { }
+	}
+
+	#Партия нового типа
+	###Создание и развитие политической партии, полностью подчиненной государственной идеологии
+	focus = {
+		id = GEN_A_new_kind_of_party
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_New_leaders
+		}
+		x = 32
+		y = 7
+		completion_reward = { }
+	}
+
+	#Кибер-суверенитет
+	###Усиление контроля над интернетом и цифровыми технологиями
+	focus = {
+		id = GEN_Cyber_sovereignty
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Advocacy_campaign
+		}
+		x = 36
+		y = 7
+		completion_reward = { }
+	}
+
+	#Автономная экономика
+	###Минимизация внешних зависимостей за счет самообеспечения
+	focus = {
+		id = GEN_Autonomous_economy
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_ideological_purity
+		}
+		prerequisite = {
+			focus = GEN_State_control
+		}
+		x = 34
+		y = 6
+		completion_reward = { }
+	}
+
+	#Сплочение нации
+	###Пропаганда национализма и укрепление единства общества
+	focus = {
+		id = GEN_Rallying_the_nation
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_A_new_kind_of_party
+		}
+		prerequisite = {
+			focus = GEN_Autonomous_economy
+		}
+		prerequisite = {
+			focus = GEN_Securitization_of_dependencies
+		}
+		x = 33
+		y = 8
+		completion_reward = { }
+	}
+
+	#Агрессия против врагов
+	###Готовность к активной конфронтации с внешними и внутренними врагами
+	focus = {
+		id = GEN_Aggression_against_enemies
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Autonomous_economy
+		}
+		prerequisite = {
+			focus = GEN_Cyber_sovereignty
+		}
+		prerequisite = {
+			focus = GEN_Expansionist_policy
+		}
+		x = 35
+		y = 8
+		completion_reward = { }
+	}
+
 	#Радикализм
 	focus = {
 		id = GER_radicalism
 		icon = GFX_idea_PLACEHOLDER_idea_icon
 		cost = 10
+		prerequisite = {
+			focus = GEN_Rallying_the_nation
+		}
+		prerequisite = {
+			focus = GEN_Aggression_against_enemies
+		}
 		x = 34
 		y = 9
 		completion_reward = { 
