@@ -1129,7 +1129,7 @@ focus = {
 ######################################     Новые люди
 focus = {
     id = RUS_new_people
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_new_people
     cost = 1
     x = 15
     y = 10
@@ -1138,7 +1138,7 @@ focus = {
 #Обеспечить конкурентность
 focus = {
     id = RUS_concurentnost_NP
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_concurentnost_NP
     cost = 4
     x = 14
     y = 11
@@ -1150,7 +1150,7 @@ focus = {
 #Децентрализация
 focus = {
     id = RUS_decentralisation_NP
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_decentralisation_NP
     cost = 4
     x = 15
     y = 12
@@ -1163,7 +1163,7 @@ focus = {
 #Приоритет избранной власти
 focus = {
     id = RUS_isvlast_prior_NP
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_isvlast_prior_NP
     cost = 3
     x = 14
     y = 13
@@ -1176,7 +1176,7 @@ focus = {
 #Радикальные меры
 focus = {
     id = RUS_radical_NP
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_radical_NP
     cost = 3
     x = 16
     y = 11
@@ -1188,7 +1188,7 @@ focus = {
 #Структурный манёвр
 focus = {
     id = RUS_struct_maneur_NP
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_struct_maneur_NP
     cost = 5
     x = 16
     y = 13
@@ -1200,7 +1200,7 @@ focus = {
 #Долой административный пресс
 focus = {
     id = RUS_adm_crisis_NP
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_adm_crisis_NP
     cost = 5
     x = 15
     y = 14
@@ -1216,7 +1216,7 @@ focus = {
 #Отменить палочную систему
 focus = {
     id = RUS_pal_sys_NP
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_pal_sys_NP
     cost = 2
     x = 12
     y = 11
@@ -1228,7 +1228,7 @@ focus = {
 #Смягчить наказания
 focus = {
     id = RUS_smag_nakaz_NP
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_smag_nakaz_NP
     cost = 2
     x = 11
     y = 12
@@ -1240,7 +1240,7 @@ focus = {
 #Масштабная амнистия
 focus = {
     id = RUS_mashtab_amnistia_NP
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_mashtab_amnistia_NP
     cost = 5
     x = 13
     y = 12
@@ -1253,7 +1253,7 @@ focus = {
 #Повысить качество образования
 focus = {
     id = RUS_obrazovanie_NP
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_obrazovanie_NP
     cost = 5
     x = 14
     y = 15
@@ -1271,7 +1271,7 @@ focus = {
 ############################################     КПРФ
 focus = {
     id = RUS_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_KPRF
     cost = 1
     x = 19
     y = 10
@@ -1281,7 +1281,7 @@ focus = {
 #Местные советы депутатов
 focus = {
     id = RUS_sovets_deputatov_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_sovets_deputatov_KPRF
     cost = 5
     x = 18
     y = 11
@@ -1294,7 +1294,7 @@ focus = {
 #Упразднить НДС
 focus = {
     id = RUS_nds_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_nds_KPRF
     cost = 2
     x = 17
     y = 12
@@ -1306,7 +1306,7 @@ focus = {
 #За качество
 focus = {
     id = RUS_kachestvo_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_kachestvo_KPRF
     cost = 3
     x = 18
     y = 13
@@ -1319,7 +1319,7 @@ focus = {
 #Гарантии в жизни
 focus = {
     id = RUS_life_guarants_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_life_guarants_KPRF
     cost = 2
     x = 19
     y = 12
@@ -1331,7 +1331,7 @@ prerequisite = {
 #Социальное государство
 focus = {
     id = RUS_social_state_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_social_state_KPRF
     cost = 4
     x = 19
     y = 14
@@ -1347,7 +1347,7 @@ focus = {
 #Старая система
 focus = {
     id = RUS_old_sys_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_old_sys_KPRF
     cost = 4
     x = 20
     y = 11
@@ -1359,7 +1359,7 @@ focus = {
 #Единая партия
 focus = {
     id = RUS_united_party_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_united_party_KPRF
     cost = 2
     x = 21
     y = 12
@@ -1371,7 +1371,7 @@ focus = {
 #Культ личности Зюганова
 focus = {
     id = RUS_zuganov_cult_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_zuganov_cult_KPRF
     cost = 5
     x = 20
     y = 13
@@ -1387,7 +1387,7 @@ focus = {
 #Национализация
 focus = {
     id = RUS_nationalisation_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_nationalisation_KPRF
     cost = 3
     x = 17
     y = 14
@@ -1399,7 +1399,7 @@ focus = {
 #Современный госплан
 focus = {
     id = RUS_modern_gosplan_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_modern_gosplan_KPRF
     cost = 5
     x = 21
     y = 14
@@ -1414,7 +1414,7 @@ focus = {
 #Индустриализация
 focus = {
     id = RUS_industialisation_KPRF_NP
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_industialisation_KPRF_NP
     cost = 3
     x = 16
     y = 15
@@ -1429,7 +1429,7 @@ focus = {
 ########################################### Единая Россия
 focus = {
     id = RUS_UR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_UR
     cost = 1
     x = 23
     y = 10
@@ -1439,7 +1439,7 @@ focus = {
 #Скрепить партию
 focus = {
     id = RUS_unite_UR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_unite_UR
     cost = 3
     x = 22
     y = 11
@@ -1451,7 +1451,7 @@ focus = {
 #Единая Россия - едина!
 focus = {
     id = RUS_uru_UR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_uru_UR
     cost = 2
     x = 23
     y = 12
@@ -1466,7 +1466,7 @@ focus = {
 #Новый лидер
 focus = {
     id = RUS_new_leader_UR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_new_leader_UR
     cost = 5
     x = 22
     y = 13
@@ -1481,7 +1481,7 @@ focus = {
 #Умолять Путина
 focus = {
     id = RUS_PUTIN_UR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_PUTIN_UR
     cost = 5
     x = 24
     y = 13
@@ -1497,7 +1497,7 @@ focus = {
 #Права женщин
 focus = {
     id = RUS_women_rights_UR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_women_rights_UR
     cost = 3
     x = 24
     y = 11
@@ -1509,7 +1509,7 @@ focus = {
 #Повышение МРОТ
 focus = {
     id = RUS_up_mrot_UR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_up_mrot_UR
     cost = 4
     x = 25
     y = 12
@@ -1521,7 +1521,7 @@ focus = {
 #Отечественное образование
 focus = {
     id = RUS_obrazovanie_UR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_obrazovanie_UR
     cost = 3
     x = 25
     y = 14
@@ -1534,7 +1534,7 @@ focus = {
 #Газифакция
 focus = {
     id = RUS_gazification_UR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_gazification_UR
     cost = 5
     x = 23
     y = 14
@@ -1547,7 +1547,7 @@ focus = {
 #Импортозамещение
 focus = {
     id = RUS_importasam_UR_KPRF
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_importasam_UR_KPRF
     cost = 5
     x = 22
     y = 15
@@ -1560,7 +1560,7 @@ focus = {
 #Больше заправок
 focus = {
     id = RUS_more_fuel_UR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_more_fuel_UR
     cost = 5
     x = 24
     y = 15
@@ -1576,7 +1576,7 @@ focus = {
 #Водородная энергетика
 focus = {
     id = RUS_H_energetic_UR_OB
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_H_energetic_UR_OB
     cost = 3
     x = 26
     y = 13
@@ -1589,7 +1589,7 @@ focus = {
 #Экологические технологии
 focus = {
     id = RUS_ecologic_UR_OB
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_ecologic_UR_OB
     cost = 2
     x = 26
     y = 15
@@ -1602,7 +1602,7 @@ focus = {
 ######################################## Общество будущее
 focus = {
     id = RUS_OB
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_OB
     cost = 1
     x = 27
     y = 10
@@ -1612,7 +1612,7 @@ focus = {
 #Новая конституция
 focus = {
     id = RUS_newkonst_OB_LDPR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_newkonst_OB_LDPR
     cost = 5
     x = 30
     y = 11
@@ -1625,7 +1625,7 @@ focus = {
 #Губернии
 focus = {
     id = RUS_gubernii_OB_LDPR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_gubernii_OB_LDPR
     cost = 3
     x = 29
     y = 12
@@ -1637,7 +1637,7 @@ focus = {
 #Пацифизм
 focus = {
     id = RUS_pazifism_OB
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_pazifism_OB
     cost = 10
     x = 28
     y = 11
@@ -1650,7 +1650,7 @@ focus = {
 #Местное самоуправление
 focus = {
     id = RUS_mestn_OB_LDPR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_mestn_OB_LDPR
     cost = 3
     x = 31
     y = 12
@@ -1662,7 +1662,7 @@ focus = {
 #Ослабить контроль над экономикой
 focus = {
     id = RUS_minus_control_OB
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_minus_control_OB
     cost = 5
     x = 26
     y = 11
@@ -1674,7 +1674,7 @@ focus = {
 #Реформа экономики
 focus = {
     id = RUS_econom_reform_OB
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_econom_reform_OB
     cost = 5
     x = 27
     y = 12
@@ -1690,7 +1690,7 @@ focus = {
 #Закон об иноагентах
 focus = {
     id = RUS_inoagent_law_OB_LDPR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_inoagent_law_OB_LDPR
     cost = 3
     x = 30
     y = 13
@@ -1703,7 +1703,7 @@ focus = {
 #Ликвидировать РосКомНадзор
 focus = {
     id = RUS_minus_RKN_OB
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_minus_RKN_OB
     cost = 2
     x = 28
     y = 13
@@ -1715,7 +1715,7 @@ focus = {
 #Свободная страна
 focus = {
     id = RUS_free_state_OB
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_free_state_OB
     cost = 2
     x = 29
     y = 14
@@ -1731,7 +1731,7 @@ focus = {
 #Реформа образования
 focus = {
     id = RUS_obrazov_reform_OB
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_obrazov_reform_OB
     cost = 3
     x = 27
     y = 14
@@ -1743,7 +1743,7 @@ focus = {
 #Только добровольная служба
 focus = {
     id = RUS_dobrovolka_OB
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_dobrovolka_OB
     cost = 2
     x = 28
     y = 15
@@ -1759,7 +1759,7 @@ focus = {
 ################################################### ЛДПР
 focus = {
     id = RUS_LDPR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_LDPR
     cost = 1
     x = 31
     y = 10
@@ -1769,7 +1769,7 @@ focus = {
 #Остановить нелегалов
 focus = {
     id = RUS_stop_immigration_LDPR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_stop_immigration_LDPR
     cost = 5
     x = 32
     y = 11
@@ -1781,7 +1781,7 @@ focus = {
 #Эффективное распределение
 focus = {
     id = RUS_effective_rasp_LDPR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_effective_rasp_LDPR
     cost = 4
     x = 32
     y = 13
@@ -1797,7 +1797,7 @@ focus = {
 #Память о Империях
 focus = {
     id = RUS_dream_of_empires_LDPR_NOD
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_dream_of_empires_LDPR_NOD
     cost = 2
     x = 33
     y = 12
@@ -1810,7 +1810,7 @@ focus = {
 #Безвиз в БРИКС
 focus = {
     id = RUS_bezviz_BRICS
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_bezviz_BRICS
     cost = 3
     x = 31
     y = 14
@@ -1823,7 +1823,7 @@ focus = {
 #Цифровизация экономики
 focus = {
     id = RUS_dg_econom_LDPR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_dg_econom_LDPR
     cost = 5
     x = 31
     y = 15
@@ -1835,7 +1835,7 @@ focus = {
 #За Жириновского!
 focus = {
     id = RUS_for_zhirik_LDPR
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_for_zhirik_LDPR
     cost = 2
     x = 33
     y = 14
@@ -1847,7 +1847,7 @@ focus = {
 #То есть, за Слуцкого
 focus = {
     id = RUS_for_sluzkiy
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_for_sluzkiy
     cost = 2
     x = 33
     y = 15
@@ -1860,7 +1860,7 @@ focus = {
 #################################################### НОД
 focus = {
     id = RUS_NOD
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_NOD
     cost = 1
     x = 35
     y = 10
@@ -1869,7 +1869,7 @@ focus = {
 #Взломать кандалы
 focus = {
     id = RUS_broke_kandals_NOD
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_broke_kandals_NOD
     cost = 5
     x = 36
     y = 11
@@ -1881,7 +1881,7 @@ focus = {
 #Новая конституция
 focus = {
     id = RUS_new_konst_NOD
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_new_konst_NOD
     cost = 5
     x = 34
     y = 11
@@ -1893,7 +1893,7 @@ focus = {
 #Расширение
 focus = {
     id = RUS_expansion_NOD
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_expansion_NOD
     cost = 5
     x = 35
     y = 12
@@ -1909,7 +1909,7 @@ focus = {
 #Связи в правительстве - тут лучше к Ростику обратиться
 focus = {
     id = RUS_sv_in_gov_NOD
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_sv_in_gov_NOD
     cost = 4
     x = 34
     y = 13
@@ -1921,7 +1921,7 @@ focus = {
 #Блага народу
 focus = {
     id = RUS_blaga_people_NOD
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_blaga_people_NOD
     cost = 4
     x = 35
     y = 14
@@ -1933,7 +1933,7 @@ focus = {
 #Суд над Горбачёвым
 focus = {
     id = RUS_gorbachev_court
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_gorbachev_court
     cost = 4
     x = 37
     y = 12
@@ -1946,7 +1946,7 @@ focus = {
 #На-чеку!
 focus = {
     id = RUS_na_cheku_NOD
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_na_cheku_NOD
     cost = 2
     x = 35
     y = 15
@@ -1958,7 +1958,7 @@ focus = {
 #Милитаризация
 focus = {
     id = RUS_militarisation
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_militarisation
     cost = 5
     x = 36
     y = 13
