@@ -42,6 +42,8 @@ characters = {
 		}
 	}
 
+	
+
 	#TODO: This should be a country leader token added to Stalin in the appropriate event/focus/whatever
 	SOV_tsar_iosif_stalin = {
 		name = "Tsar Joseph I"
@@ -50,7 +52,7 @@ characters = {
 				large = "GFX_portrait_SOV_tsar_stalin"
 			}
 		}
-		country_leader = {
+ 		country_leader = {
 			ideology = despotism
 			expire = "1953.3.1.1"
 			id = -1
