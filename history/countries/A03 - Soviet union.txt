@@ -48,6 +48,7 @@ set_popularities = {
 }
 
 add_ideas = {
+	idea_RUS_konst_I
 }
 
 set_research_slots = 4

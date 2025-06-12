@@ -5,7 +5,7 @@ ideas = {
         #Оспариваемая конституция
         idea_RUS_konst_I = {
             allowed = {
-                always = no
+                tag = A03
             }
             removal_cost = -1
             picture = GFX_RUS_Great_Russia
@@ -18,7 +18,7 @@ ideas = {
         #СВО
         idea_RUS_SVO_inf = {
             allowed = {
-                always = no
+                tag = A03
             }
             removal_cost = -1
             picture = GFX_surrender_tiny_flag
