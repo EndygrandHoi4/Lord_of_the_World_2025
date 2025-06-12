@@ -1,6 +1,5 @@
 ﻿l_russian:
-
-#Центризм
+ #Центризм
  Centrism:0 "Центризм"
  Centrism_noun:0 "Центризм"
  Centrism_desc:0 "Центристский режим"
@@ -17,7 +16,7 @@
  populism_noun:0 "Популизм"
  populism_desc:0 "Популистический режим"
 
-#Либерализм
+ #Либерализм
  liberalism:0 "Либерализм"
  liberalism_noun:0 "Либерализм"
  liberalism_desc:0 "Либеральный режим"
