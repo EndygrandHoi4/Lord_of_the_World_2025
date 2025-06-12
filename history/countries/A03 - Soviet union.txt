@@ -5,11 +5,36 @@
 
 
 #You don't want Russian party names? Just remove these lines
-#set_party_name = {
-#	ideology = communism
-#	long_name = SOV_communism_party_russian_long
-#	name = SOV_communism_party_russian
-#}
+set_party_name = { # NOD
+	ideology = radicalism
+	long_name = SOV_radicalism_party_russian_long
+	name = SOV_radicalism_party_russian
+}
+set_party_name = { # NP
+	ideology = liberalism
+	long_name = SOV_liberalism_party_russian_long
+	name = SOV_liberalism_party_russian
+}
+set_party_name = { # United Russia
+	ideology = Centrism
+	long_name = SOV_Centrism_UR_party_russian_long
+	name = SOV_Centrism_UR_party_russian
+}
+set_party_name = { # Zhirik
+	ideology = reactionism
+	long_name = SOV_reactionism_LDPR_party_russian_long
+	name = SOV_reactionism_LDPR_party_russian
+}
+set_party_name = { # Curch
+	ideology = theocracy
+	long_name = SOV_theocraty_party_russian_long
+	name = SOV_theocraty_party_russian
+}
+set_party_name = { # Inoagents
+	ideology = progressivism
+	long_name = SOV_progressivism_party_russian_long
+	name = SOV_progressivism_party_russian
+}
 
 
 #COUNTRY LEADERS
