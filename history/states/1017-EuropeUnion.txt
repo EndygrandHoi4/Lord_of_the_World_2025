@@ -1,0 +1,24 @@
+state = {
+	id = 1017
+	name = "STATE_1017"
+	manpower = 2000
+	
+	state_category = city
+
+	history = {
+
+		owner = E30
+
+		buildings = {
+			industrial_complex = 4
+		}
+
+		victory_points = {
+			9536 3 # Charleroi
+		}
+		
+	}
+
+	provinces = {
+		9536
+	}
