@@ -42,6 +42,77 @@ characters = {
 		}
 	}
 
+	SOV_Genady_Zuganov = {
+		name = SOV_Genady_Zuganov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/portrait_SOV_Genady_Zuganov.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = { }
+			expire = "2035.5.1.1"
+			id = -1
+		}
+	}
+
+	SOV_Nikolay_Haritonov = {
+		name = SOV_Nikolay_Haritonov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/portrait_SOV_Nikolay_Haritonov.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = { }
+			expire = "2032.8.1.1"
+		}
+	}
+
+	SOV_Roman_Uneman = {
+		name = SOV_Roman_Uneman
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/portrait_SOV_Roman_Uneman.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			traits = { }
+			expire = "2083.3.1.1"
+		}
+	}
+
+	SOV_Leonid_Slutzky = {
+		name = SOV_Leonid_Slutzky
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/portrait_SOV_Slutzky.dds"
+			}
+		}
+		country_leader = {
+			ideology = neoconservatism
+			traits = { }
+			expire = "2054.2.1.1"
+		}
+	}
+	
+	SOV_Evgeny_Fedorov = {
+		name = SOV_Evgeny_Fedorov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/portrait_SOV_Evg_Fedorov.dds"
+			}
+		}
+		country_leader = {
+			ideology = radical_socialism
+			traits = { }
+			expire = "2061.10.1.1"
+		}
+	}
+
 	
 
 	#TODO: This should be a country leader token added to Stalin in the appropriate event/focus/whatever
