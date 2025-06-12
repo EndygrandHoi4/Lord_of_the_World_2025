@@ -66,11 +66,11 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	Centrism = 75
+	Centrism = 67
 	liberalism = 3
 	radicalism = 1
-	reactionism = 10
-	theocracy = 1
+	reactionism = 14
+	theocracy = 5
 	progressivism = 10
 }
 
