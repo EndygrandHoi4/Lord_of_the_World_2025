@@ -92,7 +92,7 @@ focus = {
         focus = RUS_no_to_trups
     }
     completion_reward = { 
-        load_focus_tree = russia_to_future
+        load_focus_tree = russian_focuses_tf
     }
 }
 

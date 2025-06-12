@@ -41,7 +41,7 @@ focus = {
         focus = RUS_putin_int
     }
     completion_reward = { 
-        load_focus_tree = russia_base
+        load_focus_tree = russian_focus_ob
     }
 }
 }
