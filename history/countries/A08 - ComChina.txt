@@ -1,0 +1,41 @@
+﻿
+#	ideology = communism
+#	long_name = SOV_communism_party_russian_long
+#	name = SOV_communism_party_russian
+#}
+#set_party_name = {
+#	ideology = fascism
+#	long_name = SOV_fascism_party_russian_long
+#	name = SOV_fascism_party_russian
+#}
+
+#COUNTRY LEADERS
+recruit_character = PRC_Xi_Jinping
+
+#MINISTERS
+#recruit_character = 
+
+
+capital = 622
+
+starting_train_buffer = 3.0
+
+set_politics = {
+	ruling_party = reactionism
+	last_election = "2022.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Centrism = 0
+	liberalism = 0
+	radicalism = 0
+	reactionism = 90
+	theocracy = 0
+	progressivism = 10
+}
+
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.3

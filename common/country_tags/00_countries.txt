@@ -158,8 +158,8 @@ CRO
 079 = "countries/Croatia.txt"
 GXC
 080 = "countries/Guangxi.txt"
-PRC
-081 = "countries/ComChina.txt"
+#PRC
+A08 = "countries/ComChina.txt"
 SHX
 082 = "countries/Shanxi.txt"
 XSM

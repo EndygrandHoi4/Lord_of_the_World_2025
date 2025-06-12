@@ -8,7 +8,7 @@ characters={
 		}
 
 		country_leader={
-			ideology=marxism
+			ideology=market_socialism
 			traits={ cornered_fox }
 			expire="1965.1.1.1"
 			id=-1
