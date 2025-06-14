@@ -1,0 +1,17 @@
+characters = {
+	ISR_Benjamin_Netanyahu = {
+		name = ISR_Benjamin_Netanyahu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ISR/portrait_ISR_Benjamin_Netanyahu.dds"
+			}
+		}
+		country_leader= {
+			ideology= zionism
+			traits = {
+			}
+			expire="2040.1.1.1"
+			id=-1
+		}
+	}
+}

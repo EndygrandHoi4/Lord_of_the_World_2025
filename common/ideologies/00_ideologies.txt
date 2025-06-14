@@ -5,15 +5,19 @@ ideologies = {
 		types = {
 
 			authoritarian_democracy = {
+
 			}
 
 			social_democracy = {
+
 			}
 
 			stratocracy = {
+
 			}
 
 			populism = {
+
 			}
 		}
 
@@ -134,18 +138,23 @@ ideologies = {
 		types = {
 
 			neonazism = {
+
 			}
 
 			ultranationalismism = {
+
 			}
 
 			anarchism = {
+				can_be_randomly_selected = no
 			}
 
 			salafi_jihadism = {
+				can_be_randomly_selected = no
 			}
 
 			PMCs = {
+				can_be_randomly_selected = no
 			}
 
 			radical_socialism = {
@@ -153,7 +162,7 @@ ideologies = {
 			}
 
 			khomeinism = {
-				
+				can_be_randomly_selected = no
 			}
 		}
 
@@ -200,9 +209,11 @@ ideologies = {
 		types = {
 
 			market_socialism = {
+
 			}
 
 			neoconservatism = {
+
 			}
 
 			national_conservatism = {
@@ -210,7 +221,11 @@ ideologies = {
 			}
 
 			kemalism = {
-				
+				can_be_randomly_selected = no
+			}
+
+			zionism = {
+				can_be_randomly_selected = no
 			}
 
 		}

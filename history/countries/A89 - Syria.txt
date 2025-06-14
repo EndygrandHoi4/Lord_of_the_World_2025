@@ -1,12 +1,12 @@
 ﻿
 #COUNTRY LEADERS
-recruit_character = IRI_Seyed_Ali_Hosseini_Khamenei
+#recruit_character = 
 
 #MINISTERS
 #recruit_character = 
 
 
-capital = 266
+capital = 554
 
 starting_train_buffer = 3.0
 
@@ -20,9 +20,9 @@ set_politics = {
 set_popularities = {
 	Centrism = 0
 	liberalism = 0
-	radicalism = 50
+	radicalism = 80
 	reactionism = 0
-	theocracy = 50
+	theocracy = 20
 	progressivism = 0
 }
 
