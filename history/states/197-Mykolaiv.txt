@@ -15,7 +15,7 @@ state={
 			infrastructure = 3 #was: 5
 			dockyard = 1
 		}
-		add_core_of = SOV
+		add_core_of = A03
 		add_core_of = UKR
 		1939.1.1 = {
 			buildings = {

@@ -9,7 +9,7 @@ state={
 	
 
 	history={
-		owner = PER
+		owner = A60
 		buildings = {
 			infrastructure = 1
 		}

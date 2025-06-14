@@ -151,6 +151,10 @@ ideologies = {
 			radical_socialism = {
 
 			}
+
+			khomeinism = {
+				
+			}
 		}
 
 		dynamic_faction_names = {
@@ -203,6 +207,10 @@ ideologies = {
 
 			national_conservatism = {
 
+			}
+
+			kemalism = {
+				
 			}
 
 		}

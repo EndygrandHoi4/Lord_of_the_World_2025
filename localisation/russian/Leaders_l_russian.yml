@@ -1,4 +1,6 @@
 ﻿l_russian:
+
+#Россия
  SOV_Vladimir_Putin: "Владимир Путин"
  SOV_Vladislav_Davankov: "Владислав Даванков"
  SOV_Genady_Zuganov: "Геннадий Зюганов"
@@ -6,9 +8,24 @@
  SOV_Roman_Uneman: "Роман Юнеман"
  SOV_Leonid_Slutzky: "Леонид Слуцкий"
  SOV_Evgeny_Fedorov: "Евгений Фёдоров"
+
+#США
  USA_donald_trump: "Дональд Трамп"
+
+#Франция
  FRA_macron: "Эммануэль Макрон"
+
+#Украина
  UKR_vladimir_zelenski: "Владимир Зеленский"
+
+#Великобритания
  ENG_charles: "Король Карл III"
+
+#Турция
  TUR_recep_erdogan: "Реджеп Эрдоган"
+
+#Китай
  PRC_Xi_Jinping: "Си Цзиньпин"
+
+#Иран
+ IRI_Seyed_Ali_Hosseini_Khamenei: "Сейед Али Хосейни Хаменеи"

@@ -20,8 +20,8 @@ state = {
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = SOV
-		add_core_of = UKR
+		add_core_of = A03
+		add_core_of = A04
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2

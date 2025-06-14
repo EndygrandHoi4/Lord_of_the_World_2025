@@ -1,0 +1,31 @@
+﻿
+#COUNTRY LEADERS
+recruit_character = IRI_Seyed_Ali_Hosseini_Khamenei
+
+#MINISTERS
+#recruit_character = 
+
+
+capital = 266
+
+starting_train_buffer = 3.0
+
+set_politics = {
+	ruling_party = radicalism
+	last_election = "2024.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Centrism = 0
+	liberalism = 0
+	radicalism = 50
+	reactionism = 80
+	theocracy = 50
+	progressivism = 0
+}
+
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.3

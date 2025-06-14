@@ -12,7 +12,7 @@ characters={
 
 			}
 			country_leader={
-				ideology=despotism
+				ideology=kemalism
 				traits={ father_of_the_turks }
 				expire="1965.1.1.1"
 				id=-1

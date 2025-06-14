@@ -1,0 +1,17 @@
+characters = {
+	IRI_Seyed_Ali_Hosseini_Khamenei = {
+		name = IRI_Seyed_Ali_Hosseini_Khamenei
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PER/portrait_IRI_Seyed_Ali_Hosseini_Khamenei.dds"
+			}
+		}
+		country_leader= {
+			ideology= khomeinism
+			traits = {
+			}
+			expire="2040.1.1.1"
+			id=-1
+		}
+	}
+}
