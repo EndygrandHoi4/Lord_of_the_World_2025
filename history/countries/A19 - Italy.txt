@@ -1,0 +1,31 @@
+﻿
+#COUNTRY LEADERS
+#recruit_character =
+
+#MINISTERS
+#recruit_character = 
+
+
+capital = 2
+
+starting_train_buffer = 3.0
+
+set_politics = {
+	ruling_party = liberalism
+	last_election = "2024.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Centrism = 20
+	liberalism = 60
+	radicalism = 10
+	reactionism = 10
+	theocracy = 0
+	progressivism = 0
+}
+
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.3

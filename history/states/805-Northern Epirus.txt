@@ -25,7 +25,7 @@ state={
 		add_claim_by = ITA
 
 		1939.4.12 = {
-			owner = ITA
+			owner = A19
 			controller = ITA
 			remove_claim_by = ITA
 		}

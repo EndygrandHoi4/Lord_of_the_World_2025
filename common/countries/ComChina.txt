@@ -3,4 +3,4 @@ use_legacy_ai_pp_spend = yes
 graphical_culture = asian_gfx
 graphical_culture_2d = asian_2d
 
-color = { 194  54  78 }
+color = { 145  0  0 }

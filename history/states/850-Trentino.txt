@@ -10,7 +10,7 @@ state = {
 		victory_points = { #Trento
 			9598 1
 		}
-		owner = ITA
+		owner = A19
 		buildings = {
 			infrastructure = 2 #was 3 before split
 		}

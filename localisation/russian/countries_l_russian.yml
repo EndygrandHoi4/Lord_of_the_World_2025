@@ -184,6 +184,62 @@
  A08_progressivism_DEF: "Народный союз обновленного Китая"
  A08_progressivism_ADJ: "Китайск"
 
+#A09 Бельгия
+ A09_Centrism: "Бельгийская республика"
+ A09_Centrism_DEF: "Бельгийская республика"
+ A09_Centrism_ADJ: "Бельгийск."
+
+ A09_liberalism: "Бельгийская республика"
+ A09_liberalism_DEF: "Бельгийская республика"
+ A09_liberalism_ADJ: "Бельгийск."
+
+ A09_radicalism: "Бельгийская республика" 
+ A09_radicalism_DEF: "Бельгийская республика"
+ A09_radicalism_ADJ: "Бельгийск."
+
+ #Пояснение:
+ A09_reactionism: "Бельгийская республика"
+ A09_reactionism_DEF: "Бельгийская республика"
+ A09_reactionism_ADJ: "Бельгийск."
+
+ #Пояснение:
+ A09_theocracy: "Бельгийская республика"
+ A09_theocracy_DEF: "Бельгийская республика"
+ A09_theocracy_ADJ: "Бельгийск."
+
+ #Пояснение:
+ A09_progressivism: "Бельгийская республика"
+ A09_progressivism_DEF: "Бельгийская республика"
+ A09_progressivism_ADJ: "Бельгийск."
+
+#A19 Италия
+ A19_Centrism: "Республика Италия"
+ A19_Centrism_DEF: "Республика Италия"
+ A19_Centrism_ADJ: "Итальянск."
+
+ A19_liberalism: "Республика Италия"
+ A19_liberalism_DEF: "Республика Италия"
+ A19_liberalism_ADJ: "Итальянск."
+
+ A19_radicalism: "Республика Италия" 
+ A19_radicalism_DEF: "Республика Италия"
+ A19_radicalism_ADJ: "Итальянск."
+
+ #Пояснение:
+ A19_reactionism: "Республика Италия"
+ A19_reactionism_DEF: "Республика Италия"
+ A19_reactionism_ADJ: "Итальянск."
+
+ #Пояснение:
+ A19_theocracy: "Республика Италия"
+ A19_theocracy_DEF: "Республика Италия"
+ A19_theocracy_ADJ: "Итальянск."
+
+ #Пояснение:
+ A19_progressivism: "Республика Италия"
+ A19_progressivism_DEF: "Республика Италия"
+ A19_progressivism_ADJ: "Итальянск."
+
 #A24 Турция
  A24_Centrism: "Турецкая республика"
  A24_Centrism_DEF: "Турецкая республика"

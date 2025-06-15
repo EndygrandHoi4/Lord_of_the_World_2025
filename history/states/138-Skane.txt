@@ -7,7 +7,7 @@ state = {
 	state_category = city
 
 	history = {
-		owner = SWE
+		owner = A05
 
 		victory_points = {
 			9279 5 # Malmö

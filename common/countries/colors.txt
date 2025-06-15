@@ -9,8 +9,8 @@ A02 = {
 	color_ui = rgb { 255 73 121 }
 }
 A03 = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
+	color = rgb { 70 140 0 }
+	color_ui = rgb { 76  153  0 }
 }
 SWE = {
 	color = rgb { 36 132 247 }
@@ -209,8 +209,9 @@ PAN = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
 }
-PER = {
-	color = rgb { 71 113 97 }
+#PER
+A60 = {
+	color = rgb { 0 82 0 }
 	color_ui = rgb { 92 147 126 }
 }
 PHI = {
@@ -308,9 +309,10 @@ CRO = {
 	color_ui = rgb { 230 255 122 }
 }
 
-PRC = {
-	color = rgb { 245 12 55 }
-	color_ui = rgb { 178 34 60 }
+#PRC
+A08 = {
+	color = rgb { 145  0  0 }
+	color_ui = rgb { 154 0 0 }
 }
 
 GXC = {

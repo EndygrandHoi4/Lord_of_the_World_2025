@@ -10,7 +10,7 @@ state=
 		victory_points = {
 			408 1
 		}
-		owner = SWE
+		owner = A05
 		add_core_of = SWE
 		buildings = {
 			infrastructure = 3 #was: 6

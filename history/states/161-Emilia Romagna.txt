@@ -11,7 +11,7 @@ state = {
 	}
 
 	history = {
-		owner = ITA
+		owner = A19
 		victory_points = { #Bologna
 			6606 5
 		}
