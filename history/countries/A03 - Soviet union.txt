@@ -17,13 +17,13 @@ set_party_name = { # NP
 }
 set_party_name = { # United Russia
 	ideology = Centrism
-	long_name = SOV_Centrism_UR_party_russian_long
-	name = SOV_Centrism_UR_party_russian
+	long_name = SOV_Centrism_party_UR_russian_long
+	name = SOV_Centrism_party_UR_russian
 }
 set_party_name = { # Zhirik
 	ideology = reactionism
-	long_name = SOV_reactionism_LDPR_party_russian_long
-	name = SOV_reactionism_LDPR_party_russian
+	long_name = SOV_reactionism_party_LDPR_russian_long
+	name = SOV_reactionism_party_LDPR_russian
 }
 set_party_name = { # Curch
 	ideology = theocracy
