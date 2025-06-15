@@ -38,7 +38,7 @@ focus_tree = {
 	focus = {
 		id = stable_state
 		icon = goal_stable_state
-		x = 19
+		x = 34
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -57,7 +57,7 @@ focus_tree = {
 		prerequisite = {
 			focus = stable_state
 		}
-		x = 19
+		x = 34
 		y = 1.25
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -79,6 +79,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GEN_pragmatic_approach
 			focus = GER_resource_mobilization
+			focus = GEN_religious_leader
+			focus = GEN_Restoring_traditions
 		}
 		cost = 10
 		x = 4
@@ -272,6 +274,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GEN_global_development
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = 4
 		y = 9
 		completion_reward = {
@@ -295,6 +298,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GEN_political_reform
 			focus = GER_resource_mobilization
+			focus = GEN_religious_leader
+			focus = GEN_Restoring_traditions
 		}
 		x = 19
 		y = 3
@@ -488,6 +493,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GEN_strengthening_security
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = 19
 		y = 9
 		completion_reward = {
@@ -511,6 +517,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GEN_pragmatic_approach
 			focus = GEN_political_reform
+			focus = GEN_religious_leader
+			focus = GEN_Restoring_traditions
 		}
 		x = 34
 		y = 3
@@ -709,7 +717,8 @@ focus_tree = {
 		}
 		x = 35
 		y = 8
-		completion_reward = { }
+		completion_reward = {
+		}
 	}
 
 	#Радикализм
@@ -724,6 +733,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GEN_Aggression_against_enemies
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = 34
 		y = 9
 		completion_reward = { 
@@ -734,6 +744,608 @@ focus_tree = {
 				}
 			}
 		}
+	}
+
+	#Теократия
+	###Теократия
+	focus = {
+		id = GER_theocracy
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Religious_traditions
+		}
+		prerequisite = {
+			focus = GEN_Charity_and_aid
+		}
+		prerequisite = {
+			focus = GEN_Spiritual_diplomacy
+		}
+		prerequisite = {
+			focus = GEN_Ethics_in_economics
+		}
+		prerequisite = {
+			focus = GEN_Strengthening_family_values
+		}
+		prerequisite = {
+			focus = GEN_Support_for_religious_art
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = 49
+		y = 9
+		completion_reward = {
+			ROOT = {
+				set_politics = {
+					ruling_party = theocracy
+					elections_allowed = no
+				}
+			}
+		 }
+	}
+
+	#Верующий руководитель
+	focus = {
+		id = GEN_religious_leader
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = political_course
+		}
+		mutually_exclusive = {
+			focus = GEN_political_reform
+			focus = GEN_pragmatic_approach
+			focus = GER_resource_mobilization
+			focus = GEN_Restoring_traditions
+		}
+		x = 49
+		y = 3
+		completion_reward = { }
+	}
+
+	#Священные законы
+	###Изменение законодательства в соответствии с религиозными нормами
+	focus = {
+		id = GEN_Sacred_Laws
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_religious_leader
+		}
+		x = 43
+		y = 4
+		completion_reward = { }
+	}
+
+	#Религиозные объединения
+	###Усиление роли национальных религиозных сообществ
+	focus = {
+		id = GEN_religious_association
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_religious_leader
+		}
+		x = 55
+		y = 4
+		completion_reward = { }
+	}
+
+	#Образование в духе веры
+	###Внедрение религиозных принципов в систему образования
+	focus = {
+		id = GEN_education_spirit
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_religious_association
+		}
+		x = 53
+		y = 5
+		completion_reward = { }
+	}
+
+	#Религиозные праздники
+	focus = {
+		id = GEN_Religious_holidays
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Sacred_Laws
+		}
+		x = 45
+		y = 5
+		completion_reward = { }
+	}
+
+	#Распространение веры
+	###Активная пропаганда и миссионерская деятельность
+	focus = {
+		id = GEN_Spreading_the_Faith
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_education_spirit
+		}
+		x = 51
+		y = 6
+		completion_reward = { }
+	}
+
+	#Критика светскости
+	###Ослабление светских институтов в пользу религиозных
+	focus = {
+		id = GEN_Criticism_of_secularism
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Religious_holidays
+		}
+		x = 47
+		y = 6
+		completion_reward = { }
+	}
+
+	#Святая армия
+	###Создание специализированных религиозных военных формирований
+	focus = {
+		id = GEN_sacred_army
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Criticism_of_secularism
+		}
+		prerequisite = {
+			focus = GEN_Spreading_the_Faith
+		}
+		x = 49
+		y = 7
+		completion_reward = { }
+	}
+
+	#Религиозные традиции
+	focus = {
+		id = GEN_Religious_traditions
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Religious_holidays
+		}
+		x = 43
+		y = 8
+		completion_reward = { }
+	}
+
+	#Духовная дипломатия
+	focus = {
+		id = GEN_Spiritual_diplomacy
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_sacred_army
+		}
+		x = 47
+		y = 8
+		completion_reward = { }
+	}
+
+	#Благотворительность и помощь
+	focus = {
+		id = GEN_Charity_and_aid
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Criticism_of_secularism
+		}
+		x = 45
+		y = 8
+		completion_reward = { }
+	}
+
+	#Поддержка религиозного искусства
+	focus = {
+		id = GEN_Support_for_religious_art
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_education_spirit
+		}
+		x = 55
+		y = 8
+		completion_reward = { }
+	}
+
+	#Этика в экономике
+	focus = {
+		id = GEN_Ethics_in_economics
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_sacred_army
+		}
+		x = 51
+		y = 8
+		completion_reward = { }
+	}
+
+	#Укрепление семейных ценностей
+	focus = {
+		id = GEN_Strengthening_family_values
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Spreading_the_Faith
+		}
+		x = 53
+		y = 8
+		completion_reward = { }
+	}
+
+	#Восстановление традиций
+	###Возвращение и укрепление традиционных ценностей в обществе
+	focus = {
+		id = GEN_Restoring_traditions
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = political_course
+		}
+		mutually_exclusive = {
+			focus = GEN_religious_leader
+			focus = GER_resource_mobilization
+			focus = GEN_pragmatic_approach
+			focus = GEN_political_reform
+		}
+		x = 64
+		y = 3
+		completion_reward = { }
+	}
+
+	#Консервативные реформы
+	###Обзор и изменение законодательства в сторону консервативных норм
+	focus = {
+		id = GEN_Conservative_reforms
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Restoring_traditions
+		}
+		x = 62
+		y = 4
+		completion_reward = { }
+	}
+
+	#Закон и порядок
+	###Усиление законодательства для поддержания общественного порядка
+	focus = {
+		id = GEN_Law_and_order
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Restoring_traditions
+		}
+		x = 66
+		y = 4
+		completion_reward = { }
+	}
+
+	#Поддержка семейных ценностей
+	###Программы и инициативы для укрепления института семьи
+	focus = {
+		id = GEN_Support_for_family_values
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Restoring_traditions
+		}
+		x = 64
+		y = 4.5
+		completion_reward = { }
+	}
+
+	#Культурное наследие
+	###Защита и поддержка национального культурного наследия
+	focus = {
+		id = GEN_Cultural_heritage
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Conservative_reforms
+		}
+		x = 60
+		y = 5
+		completion_reward = { }
+	}
+
+	#Укрепление государственной власти
+	###Увеличение роли центральной власти и бюрократии
+	focus = {
+		id = GEN_Strengthening_State_power
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Law_and_order
+		}
+		x = 68
+		y = 5
+		completion_reward = { }
+	}
+
+	#Противостояние модернизму
+	###Политика противодействия современной культурной и социальной экспансии
+	focus = {
+		id = GEN_Opposition_to_modernism
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Cultural_heritage
+		}
+		x = 58
+		y = 6
+		completion_reward = { }
+	}
+
+	#Реставрация религиозных норм
+	###Поддержка религиозных институтов и их роли в обществе
+	focus = {
+		id = GEN_Restoration_of_religious_norms
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Support_for_family_values
+		}
+		x = 64
+		y = 6
+		completion_reward = { }
+	}
+
+	#Традиционное образование
+	###Введение традиционных подходов и предметов в школьную программу
+	focus = {
+		id = GEN_Traditional_education
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Opposition_to_modernism
+		}
+		x = 60
+		y = 7
+		completion_reward = { }
+	}
+
+	#Антиглобализм
+	###Сопротивление внешнему влиянию и глобальным тенденциям
+	focus = {
+		id = GEN_anti_globalism
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Strengthening_State_power
+		}
+		x = 70
+		y = 6
+		completion_reward = { }
+	}
+
+	#Экономика самообеспечения
+	###Усиление внутреннего производства и уменьшение зависимости от импорта
+	focus = {
+		id = GEN_The_economy_of_self-sufficiency
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_anti_globalism
+		}
+		x = 68
+		y = 7
+		completion_reward = { }
+	}
+
+	#Защита национального рынка
+	###Ограничения для иностранных компаний и поддержка местного бизнеса
+	focus = {
+		id = GEN_Protection_of_the_national_market
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_The_economy_of_self-sufficiency
+		}
+		x = 66
+		y = 8
+		completion_reward = { }
+	}
+
+	#Национальная идентичность
+	###Усиление националистической пропаганды и государственного патриотизма
+	focus = {
+		id = GEN_National_identity
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Restoration_of_religious_norms
+		}
+		x = 64
+		y = 7.5
+		completion_reward = { }
+	}
+
+	#Устойчивое развитие
+	###Долгосрочное планирование экономического роста без ущерба для традиций
+	focus = {
+		id = GEN_Sustainable_development
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Traditional_education
+		}
+		x = 62
+		y = 8
+		completion_reward = { }
+	}
+
+	#Реакционизм
+	focus = {
+		id = GEN_reactionism
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Sustainable_development
+		}
+		prerequisite = {
+			focus = GEN_National_identity
+		}
+		prerequisite = {
+			focus = GEN_Protection_of_the_national_market
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = 64
+		y = 9
+		completion_reward = { 
+			ROOT = {
+				set_politics = {
+					ruling_party = reactionism
+					elections_allowed = yes
+				}
+			}
+		}
+	}
+
+
+
+	################################################
+	###########ЭКОНОМИЧЕСКИЕ ФОКУСЫ#################
+	################################################
+
+	#Государственное производство
+	focus = {
+		id = GEN_State_production
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		available = {
+			ROOT = {
+				has_completed_focus = stable_state
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 10
+		y = 12
+		completion_reward = { }
+	}
+
+	#Централизация производства
+	###Усиление государственного контроля над ключевыми секторами экономики
+	focus = {
+		id = GEN_Centralization_of_production
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_State_production
+		}
+		x = 7
+		y = 13
+		completion_reward = { }
+	}
+
+	#Государственный план развития
+	###Разработка пятилетнего плана для повышения эффективности и продуктивности
+	focus = {
+		id = GEN_State_Development_Plan
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_State_production
+		}
+		x = 13
+		y = 13
+		completion_reward = { }
+	}
+
+	#Модернизация инфраструктуры
+	###Инвестиции в обновление государственных производственных мощностей
+	focus = {
+		id = GEN_Infrastructure_modernization
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_State_production
+		}
+		x = 10
+		y = 13
+		completion_reward = { }
+	}
+
+	#Программы субсидирования
+	###Организация государственной поддержки для стратегических отраслей
+	focus = {
+		id = GEN_Subsidy_programs
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_State_Development_Plan
+			focus = GEN_Infrastructure_modernization
+		}
+		x = 12
+		y = 14
+		completion_reward = { }
+	}
+
+	#Национализация ресурсов
+	###Перевод природных ресурсов в государственную собственность
+	focus = {
+		id = GEN_Nationalization_of_resources
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Centralization_of_production
+			focus = GEN_Infrastructure_modernization
+		}
+		x = 8
+		y = 14
+		completion_reward = { }
+	}
+
+	#Создание рабочих мест
+	### Государственные инициативы по увеличению занятости
+	focus = {
+		id = GEN_Job_creation
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Nationalization_of_resources
+		}
+		prerequisite = {
+			focus = GEN_Subsidy_programs
+		}
+		x = 10
+		y = 15
+		completion_reward = { }
+	}
+
+	#Поддержка инноваций
+	###Стимулирование и финансирование научных и технологических изысканий
+	focus = {
+		id = GEN_Innovation_support
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Job_creation
+		}
+		x = 8
+		y = 16
+		completion_reward = { }
+	}
+
+	#Реформа налогообложения
+	###Создание налоговых льгот для государственных предприятий
+	focus = {
+		id = GEN_Tax_reform
+		icon = GFX_idea_PLACEHOLDER_idea_icon
+		cost = 10
+		prerequisite = {
+			focus = GEN_Job_creation
+		}
+		x = 12
+		y = 16
+		completion_reward = { }
 	}
 
 
