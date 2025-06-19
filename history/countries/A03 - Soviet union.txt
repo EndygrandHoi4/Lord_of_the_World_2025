@@ -83,7 +83,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	idea_RUS_konst_I
+	A03_kursk
 }
 
 set_research_slots = 4

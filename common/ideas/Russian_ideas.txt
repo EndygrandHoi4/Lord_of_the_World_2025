@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		A03_kursk = {
+			allowed = {
+				always = yes
+                TAG = A03
+            }
+            removal_cost = -1
+			picture = GFX_RUS_Great_Russia
+            modifier = {
+                add_stability = -0.1
+                add_war_support = -0.05
+                add_political_power_factor = -0.05
+            }
+		}
+	}
+}

@@ -3,11 +3,7 @@ ideas = {
     country = {
         #СТАРТОВЫЕ ДУХИ
         #Оспариваемая конституция
-        idea_RUS_konst_I = {
-            allowed = {
-                tag = A03
-            }
-            removal_cost = -1
+        RUS_idea_1 = {
             picture = GFX_RUS_Great_Russia
             modifier = {
                 add_stability = -0.1

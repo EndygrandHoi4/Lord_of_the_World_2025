@@ -49,7 +49,9 @@ focus = {
 	}
 	x = 13
 	y = 2
-	completion_reward = { }
+	completion_reward = { 
+		add_ideas = A03_kursk
+	}
 }
 
 	#Усилить СМИ
