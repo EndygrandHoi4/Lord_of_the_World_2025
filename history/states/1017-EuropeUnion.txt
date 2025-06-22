@@ -7,7 +7,7 @@ state = {
 
 	history = {
 
-		owner = E30
+		owner = E10
 
 		buildings = {
 			industrial_complex = 4

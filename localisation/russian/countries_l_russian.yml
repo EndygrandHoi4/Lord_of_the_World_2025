@@ -351,3 +351,34 @@
  A95_progressivism: "Сообщество Сиона"
  A95_progressivism_DEF: "Сообщество Сиона"
  A95_progressivism_ADJ: "Сионистск."
+
+
+
+#E10 Европейский союз
+ E10_Centrism: "Европейский союз"
+ E10_Centrism_DEF: "Европейский союз"
+ E10_Centrism_ADJ: "Европейск."
+
+ E10_liberalism: "Европейский союз"
+ E10_liberalism_DEF: "Европейский союз"
+ E10_liberalism_ADJ: "Европейск."
+
+ #Пояснение:
+ E10_radicalism: "Европейская империя" 
+ E10_radicalism_DEF: "Европейская империя"
+ E10_radicalism_ADJ: "Европейск."
+
+ #Пояснение:
+ E10_reactionism: "Европейский союз"
+ E10_reactionism_DEF: "Европейский союз"
+ E10_reactionism_ADJ: "Европейск."
+
+ #Пояснение:
+ E10_theocracy: "Европейская теократия"
+ E10_theocracy_DEF: "Европейская теократия"
+ E10_theocracy_ADJ: "Европейск."
+
+ #Пояснение:
+ E10_progressivism: "Европейское сообщество"
+ E10_progressivism_DEF: "Европейское сообщество"
+ E10_progressivism_ADJ: "Европейск."

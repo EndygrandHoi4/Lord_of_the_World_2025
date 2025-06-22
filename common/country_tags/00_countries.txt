@@ -648,4 +648,4 @@ E09 = "countries/Balochistan.txt"
 
 
 #NEW COUNTRIES
-VAT = "countries/vatican.txt"
+E10 = "countries/european union.txt"
