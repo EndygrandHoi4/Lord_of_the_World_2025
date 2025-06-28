@@ -20,7 +20,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = authoritarian_democracy
+			ideology = civilizationism
 			traits = { stalin_heart_of_steel }
 			expire = "2048.3.1.1"
 			id = -1

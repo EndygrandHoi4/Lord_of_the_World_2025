@@ -19,6 +19,14 @@ ideologies = {
 			populism = {
 
 			}
+
+			Trumpism = {
+				can_be_randomly_selected = no
+			}
+
+			civilizationism = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {
@@ -33,8 +41,8 @@ ideologies = {
 		color = { 0 0 255 }
 
 		rules = {
-			can_create_collaboration_government = no
-			can_declare_war_on_same_ideology = no
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
 			can_force_government = yes
 			can_send_volunteers = yes
 			can_puppet = yes
