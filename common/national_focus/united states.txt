@@ -1,0 +1,10 @@
+focus_tree = {
+    id = usa_focuses
+    country = {
+        factor = 0
+        modifier = {
+            add = 13
+            tag = A03
+        }
+    }
+}
