@@ -14,15 +14,15 @@ characters={
 		}
 	}
 
-	USA_Baiden={
-		name=USA_Baiden
+	USA_Joe_Biden={
+		name=USA_Joe_Biden
 		portraits = {
 			civilian = {
-				large = 
+				large = "gfx/leaders/USA/portrait_USA_Joe_Biden.dds"
 			}
 		}
 		country_leader={
-			ideology = liberalism
+			ideology = liberal_democracy
 			traits = {
 
 			}

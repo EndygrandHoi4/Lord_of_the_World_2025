@@ -1,5 +1,6 @@
 ﻿#COUNTRY LEADERS
 recruit_character = USA_donald_trump
+recruit_character = USA_Joe_Biden
 
 #MINISTERS
 #recruit_character = 
@@ -10,8 +11,8 @@ capital = 361
 starting_train_buffer = 3.0
 
 set_politics = {
-	ruling_party = Centrism
-	last_election = "2024.1.1"
+	ruling_party = liberalism
+	last_election = "2020.3.3"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -22,6 +23,18 @@ set_popularities = {
 	reactionism = 0
 	theocracy = 0
 	progressivism = 0
+}
+
+set_party_name = {
+	ideology = Centrism
+	long_name = USA_Republican_party_long
+	name = USA_Republican_party
+}
+
+set_party_name = {
+	ideology = liberalism
+	long_name = USA_Democratic_party_long
+	name = USA_Democratic_party
 }
 
 

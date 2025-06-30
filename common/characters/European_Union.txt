@@ -1,0 +1,16 @@
+characters={
+	EU_council_of_europe={
+		name=EU_council_of_europe
+		portraits={
+			civilian={
+				large= "gfx/leaders/Europe_Union/portrait_EU_Council_of_Europe.dds"
+			}
+		}
+		country_leader={
+			ideology = neoliberalism
+			traits={ dislikes_germany }
+			expire="2041.1.1.1"
+			id=-1
+		}
+	}
+}

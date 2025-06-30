@@ -1,6 +1,6 @@
 
 #COUNTRY LEADERS
-#recruit_character =
+recruit_character = EU_council_of_europe
 
 #MINISTERS
 #recruit_character = 

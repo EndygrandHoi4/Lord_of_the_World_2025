@@ -11,6 +11,7 @@
 
 #США
  USA_donald_trump: "Дональд Трамп"
+ USA_Joe_Biden: "Джо Байден"
 
 #Франция
  FRA_macron: "Эммануэль Макрон"
@@ -32,3 +33,6 @@
 
 #Израиль
  ISR_Benjamin_Netanyahu: "Биньямин Нетаньяху"
+
+#Европейский союз
+ EU_council_of_europe: "Европейский совет"

@@ -122,3 +122,9 @@
  SOV_theocraty_party_russian_long: "Патриархат Всея Руси"
  SOV_progressivism_party_russian: "Иноагенты"
  SOV_progressivism_party_russian_long: "Иноагенты"
+
+#США
+ USA_Republican_party_long: "§RРеспубликанская партия§!"
+ USA_Republican_party: "§RРеспубликанская партия§!"
+ USA_Democratic_party_long: "§CДемократическая партия§!"
+ USA_Democratic_party: "§CДемократическая партия§!"
