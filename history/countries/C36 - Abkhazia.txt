@@ -6,7 +6,7 @@
 #recruit_character = 
 
 
-capital = 312
+capital = 826
 
 starting_train_buffer = 3.0
 
