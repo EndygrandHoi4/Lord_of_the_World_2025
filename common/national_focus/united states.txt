@@ -4,7 +4,7 @@ focus_tree = {
         factor = 0
         modifier = {
             add = 13
-            tag = A03
+            tag = A07
         }
     }
 }
