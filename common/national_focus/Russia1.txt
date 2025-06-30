@@ -335,6 +335,10 @@ focus = {
 				type = arms_factory level = 1
 			}
 		}
+		add_timed_idea = {
+			idea = idea_RUS_intwar
+			days = 3
+		}
 	}
 }
 
