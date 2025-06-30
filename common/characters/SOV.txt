@@ -112,6 +112,21 @@ characters = {
 			expire = "2061.10.1.1"
 		}
 	}
+	#Временное правительство
+		SOV_provisional_government = {
+		name = SOV_provisional_government
+
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_white_transitionary_council"
+			}
+		}
+		country_leader = {
+			ideology = stratocracy
+			expire = "2032.3.1.1"
+			id = -1
+			traits = {	}
+	}
 
 	
 
@@ -217,23 +232,7 @@ characters = {
 		}
 	}
 
-	SOV_provisional_government = {
-		name = SOV_provisional_government
 
-		portraits = {
-			civilian = {
-				large = "GFX_portrait_SOV_white_transitionary_council"
-			}
-		}
-		country_leader = {
-			ideology = despotism
-			expire = "1953.3.1.1"
-			id = -1
-			traits = {
-				emigre_connections desperate_gambit dysfunctional_assembly
-			}
-		}
-	}
 
 
    # #    #####   #    #  #   #      #        ######    ##    #####   ######  #####    ####  
