@@ -1,0 +1,127 @@
+#СВО
+ideas = {
+	country = {
+		#Влияние СВО
+		idea_SVO_inf = {
+            allowed = {
+                tag = A03
+				tag = A04
+            }
+            removal_cost = -1
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                army_attack_factor = -0.25
+                army_core_attack_factor = 0.75
+                army_defence_factor = 2
+            }
+        }
+		#Противотанковые средства
+		idea_SVO_tank = {
+			allowed = {
+				tag = A03
+				tag = A04
+			}
+			removal_cost = -1
+			picture = GFX_surrender_tiny_flag
+			modifier = {
+				army_attack_factor = -0.5
+			}
+		}
+		#Усталость от войны
+		idea_SVO_nowarsupport = {
+			allowed = {
+				tag = A03
+				tag = A04
+			}
+			removal_cost = -1
+			picture = GFX_surrender_tiny_flag
+			modifier = {
+				war_support_weekly_factor = -0.01
+			}
+		}
+		#############Эскалация уровни
+		idea_SVO_esc_I = {
+			allowed = {
+				tag = A03
+				tag = A04
+			}
+			removal_cost = -1
+			picture = GFX_surrender_tiny_flag
+			modifier = {
+				stability_weekly_factor = 0.01
+				experience_gain_army_factor = -0.3 
+			}
+		}
+		idea_SVO_esc_II = {
+			allowed = {
+				tag = A03
+				tag = A04
+			}
+			removal_cost = -1
+			picture = GFX_surrender_tiny_flag
+			modifier = {
+				war_support_weekly_factor = 0.01
+				experience_gain_army_factor = -0.2 
+			}
+		}
+		idea_SVO_esc_III = {
+			allowed = {
+				tag = A03
+				tag = A04
+			}
+			removal_cost = -1
+			picture = GFX_surrender_tiny_flag
+			modifier = {
+				stability_weekly_factor = -0.01
+				war_support_weekly_factor = 0.01
+				experience_gain_army_factor = -0.1
+			}
+		}
+		idea_SVO_esc_IV = {
+			allowed = {
+				tag = A03
+				tag = A04
+			}
+			removal_cost = -1
+			picture = GFX_surrender_tiny_flag
+			modifier = {
+				stability_weekly_factor = -0.02
+			}
+		}
+		idea_SVO_esc_V = {
+			allowed = {
+				tag = A03
+				tag = A04
+			}
+			removal_cost = -1
+			picture = GFX_surrender_tiny_flag
+			modifier = {
+				stability_weekly_factor = -0.03
+				war_support_weekly_factor = -0.01
+				experience_gain_army_factor = 0.1
+			}
+		}
+		###################################
+		#Память об СВО
+		idea_SVO_was = {
+			allowed = {
+				tag = A03
+				tag = A04
+				NOT = {
+					A03 = {
+						has_idea = idea_SVO_inf
+					}
+					A04 = {
+						has_idea = idea_SVO_inf
+					}
+				}
+			}
+			removal_cost = -1
+			picture = GFX_surrender_tiny_flag
+			modifier = {
+				war_support_factor = -0.5
+				war_support_weekly_factor = 0.01
+			}
+		}
+	}
+}
