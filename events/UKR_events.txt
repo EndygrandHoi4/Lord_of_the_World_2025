@@ -19,3 +19,34 @@ add_namespace = ukraina
 		}
 
 	}
+
+	#Ультиматум Зе!
+	country_event = {
+		id = ukraina.2
+		title = ukraina.2t
+		desc = ukraina.2d 
+		picture = GFX_report_event_physics_lab_01
+		trigger = {
+			A03 = {
+				has_completed_focus = RUS_ultimatum_ze
+			}
+		}
+		is_triggered_only = yes
+		option = {
+			name = ukraina.2a 
+			A03 = {
+				country_event = russia.3
+			}
+			A04 = {
+				remove_ideas = idea_SVO_inf
+			}
+		}
+		option = {
+			name = ukraina.2b
+			A04 = {
+				army_defense_factor = -0.5
+				add_stability = -1
+				add_war_support = -1
+			}
+		}
+	}
