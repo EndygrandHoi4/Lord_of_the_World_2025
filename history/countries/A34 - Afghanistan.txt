@@ -11,17 +11,17 @@ capital = 267
 starting_train_buffer = 3.0
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = theocracy
 	last_election = "2024.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	Centrism = 20
-	liberalism = 60
-	radicalism = 10
-	reactionism = 10
-	theocracy = 0
+	Centrism = 0
+	liberalism = 0
+	radicalism = 0
+	reactionism = 0
+	theocracy = 100
 	progressivism = 0
 }
 
