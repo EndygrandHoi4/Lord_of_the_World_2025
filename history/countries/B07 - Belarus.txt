@@ -1,6 +1,6 @@
 ﻿
 #COUNTRY LEADERS
-recruit_character = BEL_Alexander_Lukashenko
+recruit_character = BLR_Alexander_Lukashenko
 
 #MINISTERS
 #recruit_character =

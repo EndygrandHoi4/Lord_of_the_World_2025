@@ -1,0 +1,17 @@
+characters = {
+	BLR_Alexander_Lukashenko = {
+		name = Alexander_Lukashenko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLR/portrait_BLR_Alexander_Lukashenko.dds"
+			}
+		}
+		country_leader= {
+			ideology= authoritarian_democracy
+			traits = {
+			}
+			expire="2040.1.1.1"
+			id=-1
+		}
+	}
+}
