@@ -1,9 +1,9 @@
 ﻿
 #COUNTRY LEADERS
-#recruit_character =
+recruit_character = BEL_Alexander_Lukashenko
 
 #MINISTERS
-#recruit_character = 
+#recruit_character =
 
 
 capital = 206
@@ -11,16 +11,16 @@ capital = 206
 starting_train_buffer = 3.0
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = Centrism
 	last_election = "2024.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	Centrism = 20
-	liberalism = 60
-	radicalism = 10
-	reactionism = 10
+	Centrism = 80
+	liberalism = 0
+	radicalism = 0
+	reactionism = 20
 	theocracy = 0
 	progressivism = 0
 }
