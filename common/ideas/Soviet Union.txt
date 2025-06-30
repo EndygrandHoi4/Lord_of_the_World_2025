@@ -85,6 +85,17 @@ ideas = {
                 add_political_power_factor = -0.05
             }
         }
+        #Перемирие
+        idea_RUS_intwar = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_May_9
+            modifier = {
+                army_attack_factor = -1.0
+            }
+        }
         #Переговоры с УКР
         idea_RUS_UKR = {
             allowed = {
