@@ -42,8 +42,6 @@ recruit_character = SOV_Vladimir_Putin
 
 recruit_character = SOV_Vladislav_Davankov
 
-recruit_character = SOV_Genady_Zuganov
-
 recruit_character = SOV_Roman_Uneman
 
 recruit_character = SOV_Leonid_Slutzky
