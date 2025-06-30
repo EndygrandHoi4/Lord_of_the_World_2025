@@ -44,6 +44,7 @@ ideas = {
 			allowed = {
 				tag = A03
 				tag = A04
+				has_idea = idea_SVO_inf
 			}
 			removal_cost = -1
 			picture = GFX_surrender_tiny_flag
@@ -56,6 +57,7 @@ ideas = {
 			allowed = {
 				tag = A03
 				tag = A04
+				has_idea = idea_SVO_inf
 			}
 			removal_cost = -1
 			picture = GFX_surrender_tiny_flag
@@ -68,6 +70,7 @@ ideas = {
 			allowed = {
 				tag = A03
 				tag = A04
+				has_idea = idea_SVO_inf
 			}
 			removal_cost = -1
 			picture = GFX_surrender_tiny_flag
@@ -81,6 +84,7 @@ ideas = {
 			allowed = {
 				tag = A03
 				tag = A04
+				has_idea = idea_SVO_inf
 			}
 			removal_cost = -1
 			picture = GFX_surrender_tiny_flag
@@ -92,6 +96,7 @@ ideas = {
 			allowed = {
 				tag = A03
 				tag = A04
+				has_idea = idea_SVO_inf
 			}
 			removal_cost = -1
 			picture = GFX_surrender_tiny_flag
