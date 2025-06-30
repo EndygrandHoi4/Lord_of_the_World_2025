@@ -1,0 +1,19 @@
+#СВО
+ideas = {
+	country = {
+		#Влияние СВО
+		idea_SVO_inf = {
+            allowed = {
+                tag = A03
+				tag = A04
+            }
+            removal_cost = -1
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                army_attack_factor = 0.25
+                army_core_attack_factor = 4
+                army_defence_factor = 2
+            }
+        }
+	}
+}
