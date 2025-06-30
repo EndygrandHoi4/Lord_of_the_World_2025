@@ -13,7 +13,7 @@ state={
 
 	}
 	history={
-		owner = AFG
+		owner = A34
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1

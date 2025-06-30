@@ -265,6 +265,31 @@
  A24_progressivism_DEF: "Союз народов Турции"
  A24_progressivism_ADJ: "Турецк."
 
+#A34 Афганистан
+ A34_Centrism: "Республика Афганистан"
+ A34_Centrism_DEF: "Республика Афганистан"
+ A34_Centrism_ADJ: "Афганск."
+
+ A34_liberalism: "Демократическая Республика Хорасан"
+ A34_liberalism_DEF: "Демократическая Республика Хорасан"
+ A34_liberalism_ADJ: "Афганск."
+
+ A34_radicalism: "Великий Эмират Пуштунистан" 
+ A34_radicalism_DEF: "Великий Эмират Пуштунистан"
+ A34_radicalism_ADJ: "Афганск."
+
+ A34_reactionism: "Царство Захир-Шаха"
+ A34_reactionism_DEF: "Царство Захир-Шаха"
+ A34_reactionism_ADJ: "Афганск."
+
+ A34_theocracy: "Исламский Эмират Афганистан"
+ A34_theocracy_DEF: "Исламский Эмират Афганистан"
+ A34_theocracy_ADJ: "Афганск."
+
+ A34_progressivism: "Союз Общин Горного Края"
+ A34_progressivism_DEF: "Союз Общин Горного Края"
+ A34_progressivism_ADJ: "Афганск."
+
 #A60 Иран
  A60_Centrism: "Республика Иран"
  A60_Centrism_DEF: "Республика Иран"
@@ -352,6 +377,33 @@
  A95_progressivism_DEF: "Сообщество Сиона"
  A95_progressivism_ADJ: "Сионистск."
 
+
+
+
+#B07 Белорусь
+ B07_Centrism: "Республика Белорусь"
+ B07_Centrism_DEF: "Республика Белорусь"
+ B07_Centrism_ADJ: "Белоруск."
+
+ B07_liberalism: "Народная республика Краёв"
+ B07_liberalism_DEF: "Народная республика Краёв"
+ B07_liberalism_ADJ: "Белоруск."
+
+ B07_radicalism: "Народная республика Полесье" 
+ B07_radicalism_DEF: "Народная республика Полесье"
+ B07_radicalism_ADJ: "Белоруск."
+
+ B07_reactionism: "Белая Русь"
+ B07_reactionism_DEF: "Белая Русь"
+ B07_reactionism_ADJ: "Белоруск."
+
+ B07_theocracy: "Христианская конфедерация Беловежья"
+ B07_theocracy_DEF: "Христианская конфедерация Беловежья"
+ B07_theocracy_ADJ: "Белоруск."
+
+ B07_progressivism: "Свободное Поднепровье"
+ B07_progressivism_DEF: "Свободное Поднепровье"
+ B07_progressivism_ADJ: "Белоруск."
 
 
 #E10 Европейский союз
