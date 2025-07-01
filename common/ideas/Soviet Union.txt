@@ -242,5 +242,35 @@ ideas = {
                 political_advisor_cost_factor = -0.1
             }
         }
+        idea_RUS_adm_reform = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1
+            }
+        }
+        idea_RUS_police_laws = { ########Изначалка
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_pal_sys_NP
+            modifier = {
+                stability_factor = -0.1
+            }
+        }
+        idea_RUS_edu_laws = {
+            allowed = {
+                original_tag = A03 
+            }
+            removal_cost = -1
+            picture = GFX_obrazovanie_UR
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
     }
 }
