@@ -99,3 +99,19 @@ add_namespace = russia
 			name = russia.5a
 		}
 	}
+
+	#Интервью Путина
+	news_event = {
+		id = russia.6
+		title = russia.6t
+		desc = russia.6d
+		trigger = {
+			A03 = {
+				has_completed_focus = RUS_putin_int
+			}
+		}
+		is_triggered_only = yes
+		option = {
+			name = russia.6a
+		}
+	}
