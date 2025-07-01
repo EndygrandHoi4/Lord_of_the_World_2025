@@ -2,7 +2,7 @@ focus_tree = {
     id = russian_focuses_tf
     country = { 
         factor = 0
-        modifier = {
+        modifier = { 
             add = 11
             tag = A03
         }
@@ -15,7 +15,7 @@ focus = {
     x = 5
     y = 1
     completion_reward = { 
-
+        add_ideas = idea_RUS_pazifism
     }
 }
 #Интервью Путина
@@ -28,7 +28,11 @@ focus = {
     prerequisite = {
         focus = RUS_new_begining
     }
-    completion_reward = { }
+    completion_reward = {
+        #Ивент привязан
+        recruit_character = SOV_provisional_government
+        retire_character = SOV_Vladimir_Putin
+    }
 }
 #Внеочередные выборы
 focus = {
