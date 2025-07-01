@@ -3,7 +3,7 @@ ideas = {
     country = {
         #СТАРТОВЫЕ ДУХИ
         #Оспариваемая конституция
-        RUS_idea_1 = {
+        idea_RUS_osconst = {
             picture = GFX_RUS_Great_Russia
             modifier = {
                 add_stability = -0.1
@@ -14,12 +14,23 @@ ideas = {
         #СВО - В SMO.txt
         
         #Чёткие условия
-        idea_RUS_shadow_flot = {
+        idea_RUS_clear_conditions = {
             allowed = {
                 tag = A03
             }
             removal_cost = -1
             picture = GFX_Req
+            modifier = {
+                political_power_gain = 0.01
+            }
+        }
+        #Теневой флот
+        idea_RUS_shadow_flot = {
+            allowed = {
+                tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_surrender_tiny_flag
             modifier = {
                 add_offsite_building = { 
                     type = industrial_complex level = 1
@@ -105,6 +116,114 @@ ideas = {
             picture = GFX_surrender_tiny_flag
             modifier = {
                 add_political_power_factor = -0.1
+            }
+        }
+
+
+        ####### ОТ ВЕТКИ ФОКУСОВ УКРАИНА - НЕТ
+        #Невозмутимое наступление
+        idea_RUS_supernastup = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_Take_Kyiv
+            modifier = {
+                war_support_weekly_factor = 0.1
+            }
+        }
+        #НЕМИНУЕМЫЙ КРАХ ЭТАПЫ
+        idea_RUS_crush_I = {
+            allowed = {
+                original_tag = A03
+                has_idea = idea_RUS_supernastup
+            }
+            removal_cost = -1
+            picture = GFX_Pos_crash
+            modifier = {
+                political_power_gain = -0.01
+                stability_weekly_factor = -0.01
+            }
+        }
+        idea_RUS_crush_II = {
+            allowed = {
+                original_tag = A03
+                has_idea = idea_RUS_supernastup
+            }
+            removal_cost = -1
+            picture = GFX_Pos_crash
+            modifier = {
+                political_power_gain = -0.02
+                stability_weekly_factor = -0.02
+            }
+        }
+        idea_RUS_crush_III = {
+            allowed = {
+                original_tag = A03
+                has_idea = idea_RUS_supernastup
+            }
+            removal_cost = -1
+            picture = GFX_Pos_crash
+            modifier = {
+                political_power_gain = -0.03
+                stability_weekly_factor = -0.03
+            }
+        }
+        idea_RUS_crush_IV = {
+            allowed = {
+                original_tag = A03
+                has_idea = idea_RUS_supernastup
+            }
+            removal_cost = -1
+            picture = GFX_Pos_crash
+            modifier = {
+                political_power_gain = -0.04
+                stability_weekly_factor = -0.04
+            }
+        }
+        idea_RUS_crush_V = {
+            allowed = {
+                original_tag = A03
+                has_idea = idea_RUS_supernastup
+            }
+            removal_cost = -1
+            picture = GFX_Pos_crash
+            modifier = {
+                political_power_gain = -0.05
+                stability_weekly_factor = -0.05
+            }
+        }
+        #####
+        #Отсутствие конституции
+        idea_RUS_noconst = {
+            allowed = {
+                original_tag = A03
+                A03 = {
+                    NOT = {
+                        has_idea = idea_RUS_osconst
+                        has_idea = idea_RUS_newconst
+                    }
+                }
+            }
+            removal_cost = -1
+            picture = GFX_No_Constitution
+            modifier = {
+                stability_factor = -0.2
+                political_power_gain = -0.1
+                political_advisor_cost_factor = 2
+            }
+        }
+        #Новая конституция
+        idea_RUS_newconst = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_RUS_Great_Russia
+            modifier = {
+                stability_factor = 0.1
+                political_power_gain = 0.1
+                political_advisor_cost_factor = -0.1
             }
         }
     }
