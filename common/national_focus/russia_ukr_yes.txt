@@ -14,7 +14,9 @@ focus = {
     cost = 1
     x = 15
     y = 1
-    completion_reward = { }
+    completion_reward = {
+        #Ивент привязан
+    }
 }
 #Единая Россия - Единая Победа!
 focus = {
@@ -27,6 +29,9 @@ focus = {
         focus = RUS_meeting_P_T_Z
     }
     completion_reward = { 
+        A04 = {
+            add_political_power = -100
+        }
         add_political_power = 100
     }
 }
@@ -40,7 +45,12 @@ focus = {
     prerequisite = {
         focus = RUS_meeting_P_T_Z
     }
-    completion_reward = { }
+    completion_reward = {
+        A04 = {
+            add_political_power = -100
+        }
+        add_political_power = 100
+    }
 }
 #Курировать денацификацию
 focus = {
@@ -52,7 +62,16 @@ focus = {
     prerequisite = {
         focus = RUS_meeting_P_T_Z
     }
-    completion_reward = { }
+    completion_reward = {
+        A04 = {
+            add_political_power = -100
+            add_popularity = {
+                ideology = radicalism
+                popularity = -0.2
+            }
+        }
+        add_political_power = 100
+    }
 }
 #Разоружение войск
 focus = {
@@ -64,7 +83,13 @@ focus = {
     prerequisite = {
         focus = RUS_meeting_P_T_Z
     }
-    completion_reward = { }
+    completion_reward = {
+        A04 = {
+            add_political_power = -100
+            add_manpower = -800000
+        }
+        add_political_power = 100
+    }
 }
 #Нет - новым жертвам
 focus = {
@@ -79,7 +104,12 @@ focus = {
         focus = RUS_ukr_denazi
         focus = RUS_demilit_ukr
     }
-    completion_reward = { }
+    completion_reward = {
+        A04 = {
+            add_political_power = -100
+        }
+        add_political_power = 100
+    }
 }
 #Что дальше?
 focus = {
