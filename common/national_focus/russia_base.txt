@@ -1,4 +1,4 @@
-focus_tree = {
+focus_tree = { 
     id = russian_focus_ob
     country = { 
         factor = 0
@@ -821,7 +821,7 @@ focus = {
 #Поддержать Толстизм
 focus = {
     id = RUS_supp_tolstism
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_supp_tolstism
     cost = 2
     x = 50
     y = 1
@@ -833,7 +833,7 @@ focus = {
 #Воскресить имперскость
 focus = {
     id = RUS_supp_imperialism
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_supp_imperialism
     cost = 2
     x = 54
     y = 1
@@ -845,7 +845,7 @@ focus = {
 #Мирная экспансия
 focus = {
     id = RUS_peaceful_exp
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_peaceful_exp
     cost = 2
     x = 50
     y = 2
@@ -857,7 +857,7 @@ focus = {
 #Горсть ултиматумов
 focus = {
     id = RUS_ultimatums
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_ultimatums
     cost = 2
     x = 54
     y = 2
@@ -869,7 +869,7 @@ focus = {
 #Мир прежде всего
 focus = {
     id = RUS_peace_important
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_peace_important
     cost = 3
     x = 45
     y = 3
@@ -881,7 +881,7 @@ focus = {
 #Алашская автономия
 focus = {
     id = RUS_alash_kaz
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_alash_kaz
     cost = 4
     x = 47
     y = 3
@@ -893,7 +893,7 @@ focus = {
 #Кавказская нефть
 focus = {
     id = RUS_caucasus
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_caucasus
     cost = 3
     x = 49
     y = 3
@@ -906,7 +906,7 @@ focus = {
 #Купить Аляску
 focus = {
     id = RUS_buy_alaska
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_buy_alaska
     cost = 3
     x = 51
     y = 3
@@ -919,7 +919,7 @@ focus = {
 #Братская Беларусь
 focus = {
     id = RUS_belarus
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_belarus
     cost = 3
     x = 53
     y = 3
@@ -932,7 +932,7 @@ focus = {
 #Балтийская витрина
 focus = {
     id = RUS_baltics
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_baltics
     cost = 3
     x = 55
     y = 3
@@ -945,7 +945,7 @@ focus = {
 #Средняя Азия
 focus = {
     id = RUS_middle_asia
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_middle_asia
     cost = 3
     x = 57
     y = 3
@@ -957,7 +957,7 @@ focus = {
 #Аве Империум
 focus = {
     id = RUS_ave_imperium
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_ave_imperium
     cost = 3
     x = 59
     y = 3
@@ -969,7 +969,7 @@ focus = {
 #Славянское государство
 focus = {
     id = RUS_slavic_state
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_slavic_state
     cost = 4
     x = 44
     y = 4
@@ -984,7 +984,7 @@ focus = {
 #Наша Россия
 focus = {
     id = RUS_our_russia
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_our_russia
     cost = x
     x = 46
     y = 4
@@ -999,7 +999,7 @@ focus = {
 #Западная Украина
 focus = {
     id = RUS_get_west_ukr
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_get_west_ukr
     cost = 4
     x = 50
     y = 4
@@ -1027,7 +1027,7 @@ focus = {
 #И вновь раздел Польши
 focus = {
     id = RUS_poland
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_poland
     cost = 4
     x = 54
     y = 4
@@ -1055,7 +1055,7 @@ focus = {
 #Третий Рим
 focus = {
     id = RUS_third_rome
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_third_rome
     cost = 4
     x = 58
     y = 4
@@ -1070,7 +1070,7 @@ focus = {
 #Российская Империя
 focus = {
     id = RUS_russian_empire
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_russian_empire
     cost = 4
     x = 60
     y = 4
@@ -1085,7 +1085,7 @@ focus = {
 #Славная страна
 focus = {
     id = RUS_great_country
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_great_country
     cost = 4
     x = 50
     y = 5
@@ -1098,7 +1098,7 @@ focus = {
 #Купить Гавайи
 focus = {
     id = RUS_buy_haw
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_buy_haw
     cost = 4
     x = 52
     y = 5
@@ -1111,7 +1111,7 @@ focus = {
 #Русский - интернация
 focus = {
     id = RUS_ru_internation
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_ru_internation
     cost = 4
     x = 54
     y = 5
@@ -1133,7 +1133,14 @@ focus = {
     cost = 1
     x = 15
     y = 10
-    completion_reward = { }
+    available = {
+        root = {
+            has_government = liberalism
+        }
+    }
+    completion_reward = {
+
+    }
 }
 #Обеспечить конкурентность
 focus = {
@@ -1142,10 +1149,31 @@ focus = {
     cost = 4
     x = 14
     y = 11
+    available = {
+        root = {
+            has_government = liberalism
+        }
+    }
     prerequisite = {
         focus = RUS_new_people
     }
-    completion_reward = { }
+    completion_reward = {
+        if = {
+            limit = {
+                NOT = {
+                    has_idea = idea_RUS_newconst
+                }
+            }
+            add_ideas = idea_RUS_newconst
+        }
+        modify_idea = {
+			idea = idea_RUS_newconst
+			add_offsite_building = {
+                type = industrial_complex
+                level = 1
+            }
+		}
+    }
 }
 #Децентрализация
 focus = {
@@ -1154,11 +1182,22 @@ focus = {
     cost = 4
     x = 15
     y = 12
+    available = {
+        root = {
+            has_government = liberalism
+        }
+    }
     prerequisite = {
         focus = RUS_concurentnost_NP
         focus = RUS_radical_NP
     }
-    completion_reward = { }
+    completion_reward = {
+        modify_idea = {
+            idea = idea_RUS_newconst
+            political_power_gain = 0.05
+        }
+        add_ideas = idea_RUS_adm_reform
+    }
 }
 #Приоритет избранной власти
 focus = {
@@ -1167,10 +1206,20 @@ focus = {
     cost = 3
     x = 14
     y = 13
+    available = {
+        root = {
+            has_government = liberalism
+        }
+    }
     prerequisite = {
         focus = RUS_concurentnost_NP
     }
-    completion_reward = { }
+    completion_reward = {
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.1
+        }
+    }
 }
 
 #Радикальные меры
@@ -1180,10 +1229,19 @@ focus = {
     cost = 3
     x = 16
     y = 11
+    available = {
+        root = {
+            has_government = liberalism
+        }
+    }
     prerequisite = {
         focus = RUS_new_people
     }
-    completion_reward = { }
+    completion_reward = {
+        add_manpower = -10000
+        add_stability = 0.2
+
+    }
 }
 #Структурный манёвр
 focus = {
@@ -1192,10 +1250,24 @@ focus = {
     cost = 5
     x = 16
     y = 13
+    available = {
+        root = {
+            has_government = liberalism
+        }
+    }
     prerequisite = {
         focus = RUS_radical_NP
     }
-    completion_reward = { }
+    completion_reward = {
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 1
+        }
+    }
 }
 #Долой административный пресс
 focus = {
@@ -1204,13 +1276,23 @@ focus = {
     cost = 5
     x = 15
     y = 14
+    available = {
+        root = {
+            has_government = liberalism
+        }
+    }
     prerequisite = {
         focus = RUS_decentralisation_NP
     }
     prerequisite = {
         focus = RUS_struct_maneur_NP
     }
-    completion_reward = { }
+    completion_reward = {
+        modify_idea = {
+            idea = idea_RUS_adm_reform
+            production_factory_max_efficiency_factor = 0.1
+        }
+    }
 }
 
 #Отменить палочную систему
@@ -1220,10 +1302,21 @@ focus = {
     cost = 2
     x = 12
     y = 11
+    available = {
+        root = {
+            has_government = liberalism
+        }
+    }
     prerequisite = {
         focus = RUS_new_people
     }
-    completion_reward = { }
+    completion_reward = {
+        modify_idea = {
+            idea = idea_RUS_police_laws
+            stability_factor = 0.2 
+            war_support_factor = -0.1
+        }
+    }
 }
 #Смягчить наказания
 focus = {
@@ -1232,10 +1325,20 @@ focus = {
     cost = 2
     x = 11
     y = 12
+    available = {
+        root = {
+            has_government = liberalism
+        }
+    }
     prerequisite = {
         focus = RUS_pal_sys_NP
     }
-    completion_reward = { }
+    completion_reward = {
+        modify_idea = {
+            idea = idea_RUS_police_laws
+            stability_factor = 0.1
+        }
+    }
 }
 #Масштабная амнистия
 focus = {
@@ -1244,10 +1347,22 @@ focus = {
     cost = 5
     x = 13
     y = 12
+    available = {
+        root = {
+            has_government = liberalism
+        }
+    }
     prerequisite = {
         focus = RUS_pal_sys_NP
     }
-    completion_reward = { }
+    completion_reward = {
+        add_manpower = 1000
+        add_stability = 0.1 
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+    }
 }
 
 #Повысить качество образования
@@ -1257,6 +1372,11 @@ focus = {
     cost = 5
     x = 14
     y = 15
+    available = {
+        root = {
+            has_government = liberalism
+        }
+    }
     prerequisite = {
         focus = RUS_adm_crisis_NP
         focus = RUS_isvlast_prior_NP
@@ -1265,7 +1385,20 @@ focus = {
         focus = RUS_smag_nakaz_NP
         focus = RUS_mashtab_amnistia_NP
     }
-    completion_reward = { }
+    completion_reward = { 
+        if = {
+            limit = {
+                NOT = {
+                    has_idea = idea_RUS_edu_laws
+                }
+            }
+            add_ideas = idea_RUS_edu_laws
+        }
+        modify_idea = {
+            idea = idea_RUS_edu_laws
+            research_speed_factor = 0.05
+        }
+    }
 }
 
 ############################################     КПРФ
@@ -1275,7 +1408,9 @@ focus = {
     cost = 1
     x = 19
     y = 10
-    completion_reward = { }
+    completion_reward = {
+        
+    }
 }
 
 #Местные советы депутатов
@@ -1974,7 +2109,7 @@ focus = {
 ################################# Курильский договор
 focus = {
     id = RUS_sakhalin_pact
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_sakhalin_pact
     cost = 0
     x = 45
     y = 11
@@ -1983,7 +2118,7 @@ focus = {
 #Русская сфера
 focus = {
     id = RUS_rus_sphere
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_rus_sphere
     cost = 4
     x = 45
     y = 12
@@ -1995,7 +2130,7 @@ focus = {
 #Забота о подданых
 focus = {
     id = RUS_care_ab_sphere
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_care_ab_sphere
     cost = 3
     x = 43
     y = 13
@@ -2007,7 +2142,7 @@ focus = {
 #Единое экономическое пространство
 focus = {
     id = RUS_e_e_s
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_e_e_s
     cost = 4
     x = 45
     y = 13
@@ -2018,7 +2153,7 @@ focus = {
 }
 focus = {
     id = RUS_instructors
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_instructors
     cost = 3
     x = 47
     y = 13
@@ -2030,7 +2165,7 @@ focus = {
 #Настоящая свобода
 focus = {
     id = RUS_real_freedom
-    icon = GFX_surrender_tiny_flag
+    icon = GFX_real_freedom
     cost = 5
     x = 45
     y = 14
