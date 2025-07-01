@@ -2,7 +2,7 @@
 ####
 #### NO STEP BACK
 ####
-
+ 
 
 #You don't want Russian party names? Just remove these lines
 set_party_name = { # NOD
@@ -41,8 +41,6 @@ set_party_name = { # Inoagents
 recruit_character = SOV_Vladimir_Putin
 
 recruit_character = SOV_Vladislav_Davankov
-
-recruit_character = SOV_Roman_Uneman
 
 recruit_character = SOV_Leonid_Slutzky
 
