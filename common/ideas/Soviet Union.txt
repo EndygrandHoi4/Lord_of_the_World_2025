@@ -213,6 +213,22 @@ ideas = {
                 political_advisor_cost_factor = 2
             }
         }
+        ############## Ветка В будущее
+        idea_RUS_pazifism = {
+            allowed = {
+                original_tag = A03
+                A03 = {
+                    has_completed_focus = RUS_new_begining
+                }
+            }
+            removal_cost = -1
+            picture = GFX_supp_tolstism
+            modifier = {
+                stability_factor = 0.5
+                war_support_factor = -0.5
+            }
+        }
+        ##############
         #Новая конституция
         idea_RUS_newconst = {
             allowed = {
