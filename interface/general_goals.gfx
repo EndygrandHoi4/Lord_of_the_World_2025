@@ -3,34 +3,248 @@ spriteTypes = {
 	
 	
 	### !!! POLITICS !!!
-
-	spriteType = {
-		name = "goal_colorless_politics"
-		texturefile = "gfx/interface/goals/generic/goal_colorless_politics.dds"
-	}
-
-	spriteType = {
-		name = "goal_political_course"
-		texturefile = "gfx/interface/goals/generic/goal_political_course.dds"
-	}
-
-	spriteType = {
-		name = "goal_red_consciousness"
-		texturefile = "gfx/interface/goals/generic/goal_red_consciousness.dds"
-	}
-
+	
 	spriteType = {
 		name = "goal_stable_state"
 		texturefile = "gfx/interface/goals/generic/goal_stable_state.dds"
 	}
-
+	
 	spriteType = {
-		name = "goal_The_Socialist_future"
-		texturefile = "gfx/interface/goals/generic/goal_The_Socialist_future.dds"
+		name = "goal_political_course"
+		texturefile = "gfx/interface/goals/generic/goal_political_course.dds"
 	}
-
+	
+	## LIBERALISM
+	
 	spriteType = {
-		name = "goal_The_Workers_Revolution"
-		texturefile = "gfx/interface/goals/generic/goal_The_Workers_Revolution.dds"
+		name = "GFX_GEN_political_reform"
+		texturefile = "gfx/interface/goals/generic/GEN_political_reform.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_GEN_free_elections"
+		texturefile = "gfx/interface/goals/generic/GEN_free_elections.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_human_rights"
+		texturefile = "gfx/interface/goals/generic/GEN_human_rights.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_economic_liberalisation"
+		texturefile = "gfx/interface/goals/generic/GEN_economic_liberalisation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_entrepreneurship_development"
+		texturefile = "gfx/interface/goals/generic/GEN_entrepreneurship_development.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_free_press"
+		texturefile = "gfx/interface/goals/generic/GEN_free_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_legislative_trasparency"
+		texturefile = "gfx/interface/goals/generic/GEN_legislative_trasparency.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_more_human_rights"
+		texturefile = "gfx/interface/goals/generic/GEN_more_human_rights.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_foreign_investments"
+		texturefile = "gfx/interface/goals/generic/GEN_foreign_investments.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_cooperation_with_democracies"
+		texturefile = "gfx/interface/goals/generic/GEN_cooperation_with_democracies.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_political_education"
+		texturefile = "gfx/interface/goals/generic/GEN_political_education.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_fight_against_corruption"
+		texturefile = "gfx/interface/goals/generic/GEN_fight_against_corruption.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_global_development"
+		texturefile = "gfx/interface/goals/generic/GEN_global_development.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_liberalism"
+		texturefile = "gfx/interface/goals/generic/GEN_liberalism.dds"
+	}
+	
+	##  CENTRISM
+	
+	spriteType = {
+		name = "GFX_GEN_pragmatic_approach"
+		texturefile = "gfx/interface/goals/generic/GEN_pragmatic_approach.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_national_harmony"
+		texturefile = "gfx/interface/goals/generic/GEN_national_harmony.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_stimulation_economy"
+		texturefile = "gfx/interface/goals/generic/GEN_stimulation_econom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_moderate_socialpolicy"
+		texturefile = "gfx/interface/goals/generic/GEN_moderate_socialpolicy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_employment_programme"
+		texturefile = "gfx/interface/goals/generic/GEN_employment_programme.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_education_for_all"
+		texturefile = "gfx/interface/goals/generic/GEN_education_for_all.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_tax_system"
+		texturefile = "gfx/interface/goals/generic/GEN_tax_system.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_family_support"
+		texturefile = "gfx/interface/goals/generic/GEN_family_support.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_conflict_management"
+		texturefile = "gfx/interface/goals/generic/GEN_conflict_management.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_inclusuve_government"
+		texturefile = "gfx/interface/goals/generic/GEN_inclusuve_government.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_national_traditions"
+		texturefile = "gfx/interface/goals/generic/GEN_national_traditions.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_infrastructur_project"
+		texturefile = "gfx/interface/goals/generic/GEN_infrastructur_project.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_strengthening_security"
+		texturefile = "gfx/interface/goals/generic/GEN_strengthening_security.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_centrism"
+		texturefile = "gfx/interface/goals/generic/GEN_centrism.dds"
+	}
+	
+	## RADICALISM
+	
+	spriteType = {
+		name = "GFX_GER_resource_mobilization"
+		texturefile = "gfx/interface/goals/generic/GEN_resource_mobilization.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_radical_reforms"
+		texturefile = "gfx/interface/goals/generic/GEN_radical_reforms.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_military_militarization"
+		texturefile = "gfx/interface/goals/generic/GEN_military_militarization.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_ideological_purity"
+		texturefile = "gfx/interface/goals/generic/GEN_ideological_purity.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_State_control"
+		texturefile = "gfx/interface/goals/generic/GEN_State_control.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_Advocacy_campaign"
+		texturefile = "gfx/interface/goals/generic/GEN_Advocacy_campaign.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_New_leaders"
+		texturefile = "gfx/interface/goals/generic/GEN_New_leaders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_A_new_kind_of_party"
+		texturefile = "gfx/interface/goals/generic/GEN_A_new_kind_of_party.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_Rallying_the_nation"
+		texturefile = "gfx/interface/goals/generic/GEN_Rallying_the_nation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_Expansionist_policy"
+		texturefile = "gfx/interface/goals/generic/GEN_Expansionist_policy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_Securitization_of_dependencies"
+		texturefile = "gfx/interface/goals/generic/GEN_Securitization_of_dependencies.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_Cyber_sovereignty"
+		texturefile = "gfx/interface/goals/generic/GEN_Cyber_sovereignty.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_Autonomous_economy"
+		texturefile = "gfx/interface/goals/generic/GEN_Autonomous_economy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_Aggression_against_enemies"
+		texturefile = "gfx/interface/goals/generic/GEN_Aggression_against_enemies.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GEN_radicalism"
+		texturefile = "gfx/interface/goals/generic/GEN_radicalism.dds"
+	}
+	
+	
+	### copy-paste
+	#spriteType = {
+	#	name = "GFX_GEN_"
+	#	texturefile = "gfx/interface/goals/generic/GEN_.dds"
+	#}
+	
+	
+	
+	
+	
+	
 }
