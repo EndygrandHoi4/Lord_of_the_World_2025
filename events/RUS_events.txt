@@ -83,3 +83,19 @@ add_namespace = russia
 			#+Нацдух Украине "Окружение Россией" до войны с РФ\аннексии последней
 		}
 	}
+
+	#Новость - Путин-Трамп-Зеленский
+	news_event = {
+		id = russia.5
+		title = russia.5t
+		desc = russia.5d
+		trigger = {
+			A03 = {
+				has_completed_focus = RUS_meeting_P_T_Z
+			}
+		}
+		is_triggered_only = yes
+		option = {
+			name = russia.5a
+		}
+	}
