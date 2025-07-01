@@ -10,7 +10,7 @@ add_namespace = russia
 			name = russia.1a
 			A03 = { load_focus_tree = russian_focus_un }
 		}
-	}
+	} 
 
     country_event = {
         id = russia.2
@@ -23,6 +23,63 @@ add_namespace = russia
             A03 = { 
 				load_focus_tree = russian_focus_uy
 				remove_ideas = idea_RUS_SVO_inf
+				add_ideas = idea_SVO_was
 			}
+			A04 = {
+				add_ideas = idea_SVO_was
+			}
+			
         }
     }
+
+	#Зе сдаётся!
+	country_event = {
+		id = russia.3
+		title = russia.3t
+		desc = russia.3d 
+		picture = GFX_report_event_physics_lab_01
+		is_triggered_only = yes
+		option = {
+			name = russia.3a 
+			A03 = {
+				set_state_owner = 196
+				set_state_owner = 200
+				set_state_owner = 221
+				set_state_owner = 225
+				set_state_owner = 226
+				set_state_owner = 227
+				set_state_owner = 228
+				remove_ideas = idea_SVO_inf
+				add_ideas = idea_SVO_was
+			}
+			A04 = {
+				add_ideas = idea_SVO_was
+			}
+		}
+	}
+
+	#Карпаты
+	country_event = {
+		id = russia.4
+		title = russia.4t 
+		desc = russia.4d
+		trigger = {
+			A03 = {
+				has_completed_focus = RUS_carp_question
+			}
+		}
+		is_triggered_only = yes
+		option = {
+			name = russia.4a
+			#Передача карпат Венгрии
+		}
+		option = {
+			name = russia.4b
+			#Передача карпат Словакии 
+		}
+		option = {
+			name = russia.4c
+			#Автономия в составе России
+			#+Нацдух Украине "Окружение Россией" до войны с РФ\аннексии последней
+		}
+	}
