@@ -17,7 +17,27 @@ focus = {
     mutually_exclusive = {
         focus = RUS_pos_crush
     }
-    completion_reward = { }
+    completion_reward = {
+        remove_ideas = idea_SVO_inf
+        remove_ideas = idea_SVO_esc_I
+        remove_ideas = idea_SVO_esc_II
+        remove_ideas = idea_SVO_esc_III
+        remove_ideas = idea_SVO_esc_IV
+        add_ideas = idea_SVO_esc_V
+        A04 = {
+            remove_ideas = idea_SVO_inf
+            remove_ideas = idea_SVO_esc_I
+            remove_ideas = idea_SVO_esc_II
+            remove_ideas = idea_SVO_esc_III
+            remove_ideas = idea_SVO_esc_IV
+            add_ideas = idea_SVO_esc_V 
+        }
+        add_popularity = {
+            ideology = Centrism
+            popularity = 0.1
+        }
+        add_ideas = idea_US_supernastup
+    }
 }
 #Крах позиции
 focus = {
@@ -29,7 +49,27 @@ focus = {
     mutually_exclusive = {
         focus = RUS_take_kiev
     }
-    completion_reward = { }
+    completion_reward = {
+        remove_ideas = idea_SVO_inf
+        remove_ideas = idea_SVO_esc_I
+        remove_ideas = idea_SVO_esc_II
+        remove_ideas = idea_SVO_esc_III
+        remove_ideas = idea_SVO_esc_IV
+        add_ideas = idea_SVO_esc_V
+        A04 = {
+            remove_ideas = idea_SVO_inf
+            remove_ideas = idea_SVO_esc_I
+            remove_ideas = idea_SVO_esc_II
+            remove_ideas = idea_SVO_esc_III
+            remove_ideas = idea_SVO_esc_IV
+            add_ideas = idea_SVO_esc_V 
+        }
+        add_popularity = {
+            ideology = Centrism
+            popularity = -0.2
+        }
+        add_ideas = idea_US_supernastup
+    }
 }
 #Поддержать Путина
 focus = {
@@ -41,7 +81,13 @@ focus = {
     prerequisite = {
         focus = RUS_take_kiev
     }
-    completion_reward = { }
+    completion_reward = {
+        add_war_support = 0.1
+        add_popularity = {
+            ideology = Centrism
+            popularity = 0.05
+        }
+    }
 }
 #Прогулка в ночной Одессе
 focus = {
@@ -54,7 +100,13 @@ focus = {
         focus = RUS_take_kiev
         focus = RUS_pos_crush
     }
-    completion_reward = { }
+    completion_reward = {
+        add_war_support = 0.1
+        modify_idea = {
+            idea = idea_US_supernastup
+            army_attack_factor = 0.25
+        }
+    }
 }
 #Украина = западная
 focus = {
@@ -67,7 +119,13 @@ focus = {
         focus = RUS_take_kiev
         focus = RUS_pos_crush
     }
-    completion_reward = { }
+    completion_reward = {
+        add_stability = 0.1
+        modify_idea = {
+            idea = idea_US_supernastup
+            army_attack_factor = 0.25
+        }
+    }
 }
 #Временный комитет
 focus = {
@@ -79,7 +137,16 @@ focus = {
     prerequisite = {
         focus = RUS_pos_crush
     }
-    completion_reward = { }
+    completion_reward = {
+        recruit_character = SOV_provisional_government
+        set_party_name = {
+            ideology = Centrism
+            long_name = SOV_Centrism_party_provgov_russian_long
+            name = SOV_Centrism_party_provgov_russian
+        }
+        retire_character = SOV_Vladimir_Putin
+        add_ideas = idea_RUS_crush_I
+    }
 }
 #Победа будет...
 focus = {
@@ -91,7 +158,9 @@ focus = {
     prerequisite = {
         focus = RUS_supp_Putin
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 #Ултиматум Зе!
 focus = {
@@ -105,7 +174,11 @@ focus = {
     prerequisite = {
         focus = RUS_only_west_ukr
     }
-    completion_reward = { }
+    completion_reward = {
+        A04 = {
+            army_defense_factor = -0.75
+        }
+    }
 }
 #За жизнь родины!
 focus = {
@@ -117,7 +190,36 @@ focus = {
     prerequisite = {
         focus = RUS_provgov
     }
-    completion_reward = { }
+    completion_reward = {
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_II
+            }
+            remove_ideas = idea_RUS_crush_II
+            add_ideas = idea_RUS_crush_I
+        }
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_III
+            }
+            remove_ideas = idea_RUS_crush_III
+            add_ideas = idea_RUS_crush_II
+        }
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_IV
+            }
+            remove_ideas = idea_RUS_crush_IV
+            add_ideas = idea_RUS_crush_III
+        }
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_V
+            }
+            remove_ideas = idea_RUS_crush_V
+            add_ideas = idea_RUS_crush_IV
+        }
+    }
 }
 #За нами!
 focus = {
@@ -129,7 +231,9 @@ focus = {
     prerequisite = {
         focus = RUS_win_will_be_
     }
-    completion_reward = { }
+    completion_reward = {
+        army_experience = 10
+    }
 }
 #Малороссия
 focus = {
@@ -141,7 +245,19 @@ focus = {
     prerequisite = {
         focus = RUS_ultimatum_ze
     }
-    completion_reward = { }
+    available = {
+            ROOT = {
+                has_war = no
+            }
+        }
+    completion_reward = {
+        remove_ideas = idea_RUS_crush_I
+        remove_ideas = idea_RUS_crush_II
+        remove_ideas = idea_RUS_crush_III
+        remove_ideas = idea_RUS_crush_IV
+        remove_ideas = idea_RUS_crush_V
+        
+    }
 }
 #Отмена конституции
 focus = {
@@ -153,7 +269,38 @@ focus = {
     prerequisite = {
         focus = RUS_for_motherland
     }
-    completion_reward = { }
+    completion_reward = {
+        add_stability = 0.1
+        add_ideas = idea_RUS_noconst
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_II
+            }
+            remove_ideas = idea_RUS_crush_II
+            add_ideas = idea_RUS_crush_I
+        }
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_III
+            }
+            remove_ideas = idea_RUS_crush_III
+            add_ideas = idea_RUS_crush_II
+        }
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_IV
+            }
+            remove_ideas = idea_RUS_crush_IV
+            add_ideas = idea_RUS_crush_III
+        }
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_V
+            }
+            remove_ideas = idea_RUS_crush_V
+            add_ideas = idea_RUS_crush_IV
+        }
+    }
 }
 #Реальная политика
 focus = {
@@ -165,7 +312,9 @@ focus = {
     prerequisite = {
         focus = RUS_ours_vic
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 #Карпатский вопрос
 focus = {
@@ -177,7 +326,9 @@ focus = {
     prerequisite = {
         focus = RUS_malorussia
     }
-    completion_reward = { }
+    completion_reward = {
+        #ивент привязан
+    }
 }
 #Долой нацизм!
 focus = {
@@ -189,7 +340,15 @@ focus = {
     prerequisite = {
         focus = RUS_malorussia
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+        A04 = {
+            add_popularity = {
+                ideology = radicalism
+                popularity = -0.2
+            }
+        }
+    }
 }
 #Военная полиция
 focus = {
@@ -201,7 +360,37 @@ focus = {
     prerequisite = {
         focus = RUS_konst_cancel
     }
-    completion_reward = { }
+    completion_reward = {
+        army_experience = 10
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_II
+            }
+            remove_ideas = idea_RUS_crush_II
+            add_ideas = idea_RUS_crush_I
+        }
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_III
+            }
+            remove_ideas = idea_RUS_crush_III
+            add_ideas = idea_RUS_crush_II
+        }
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_IV
+            }
+            remove_ideas = idea_RUS_crush_IV
+            add_ideas = idea_RUS_crush_III
+        }
+        if = {
+            limit = {
+                has_idea = idea_RUS_crush_V
+            }
+            remove_ideas = idea_RUS_crush_V
+            add_ideas = idea_RUS_crush_IV
+        }
+    }
 }
 #Будущее России
 focus = {
