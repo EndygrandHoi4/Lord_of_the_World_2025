@@ -96,15 +96,21 @@ focus = {
     cost = 2
     x = 7
     y = 2
+    available = {
+        NOT = {
+            has_idea = idea_RUS_conternastup_I
+            has_idea = idea_RUS_conternastup_II
+        }
+    }
     prerequisite = {
         focus = RUS_take_kiev
         focus = RUS_pos_crush
     }
     completion_reward = {
         add_war_support = 0.1
-        modify_idea = {
-            idea = idea_US_supernastup
-            army_attack_factor = 0.25
+        add_timed_idea = {
+            idea = idea_RUS_conternastup_I
+            days = 30
         }
     }
 }
@@ -115,15 +121,21 @@ focus = {
     cost = 2
     x = 9
     y = 2
+    available = {
+        NOT = {
+            has_idea = idea_RUS_conternastup_I
+            has_idea = idea_RUS_conternastup_II
+        }
+    }
     prerequisite = {
         focus = RUS_take_kiev
         focus = RUS_pos_crush
     }
     completion_reward = {
         add_stability = 0.1
-        modify_idea = {
-            idea = idea_US_supernastup
-            army_attack_factor = 0.25
+        add_timed_idea = {
+            idea = idea_RUS_conternastup_II
+            days = 30
         }
     }
 }
@@ -168,6 +180,15 @@ focus = {
     icon = GFX_Ultimatum_Z
     x = 8
     y = 3
+    available = {
+        NOT = {
+            has_idea = idea_RUS_conternastup_I
+            has_idea = idea_RUS_conternastup_II
+        }
+        A04 = {
+            surrender_progress > 0.4
+        }
+    }
     prerequisite = {
         focus = RUS_walking_in_odessa
     }
@@ -175,9 +196,8 @@ focus = {
         focus = RUS_only_west_ukr
     }
     completion_reward = {
-        A04 = {
-            army_defense_factor = -0.75
-        }
+        add_political_power = 100
+        #Ивент привязан
     }
 }
 #За жизнь родины!
@@ -271,6 +291,7 @@ focus = {
     }
     completion_reward = {
         add_stability = 0.1
+        remove_ideas = idea_RUS_osconst
         add_ideas = idea_RUS_noconst
         if = {
             limit = {
