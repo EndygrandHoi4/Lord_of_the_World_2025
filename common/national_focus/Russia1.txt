@@ -35,7 +35,12 @@ focus = {
 	}
 	x = 15
 	y = 1
-	completion_reward = { }
+	completion_reward = {
+		add_war_support = -0.1
+		A04 = {
+			add_war_support = -0.1
+		}
+	}
 }
 
 	#Подготовка Курской операции
@@ -78,7 +83,12 @@ focus = {
 	}
 	x = 17
 	y = 2
-	completion_reward = { }
+	completion_reward = {
+		add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+	}
 }
 
 	#Четкие условия
@@ -113,10 +123,7 @@ focus = {
 	x = 12
 	y = 4
 	completion_reward = { 
-		modify_idea = {
-			idea = idea_RUS_clear_conditions
-			add_war_support = 0.05
-		}
+		add_war_support = 0.05
 	}
 }
 
@@ -131,10 +138,7 @@ focus = {
 	x = 14
 	y = 4
 	completion_reward = { 
-		modify_idea = {
-			idea = idea_RUS_clear_conditions
 			add_political_power_factor = 0.2
-		}
 	}
 }
 	#Нет НАТО
@@ -148,9 +152,9 @@ focus = {
 	x = 16
 	y = 4
 	completion_reward = { 
-		modify_idea = {
-			idea = idea_RUS_clear_conditions
-			army_attack_factor = 0.05
+		add_popularity = {
+			ideology = Centrism
+			popularity = 0.05
 		}
 	}
 }
@@ -166,10 +170,7 @@ focus = {
 	x = 18
 	y = 4
 	completion_reward = { 
-		modify_idea = {
-			idea = idea_RUS_clear_conditions
-			add_stability = 0.15
-		}
+		add_war_support = 0.05
 	}
 }
 
@@ -187,7 +188,38 @@ focus = {
 	x = 15
 	y = 6
 	completion_reward = { 
-		add_ideas = idea_RUS_call_trump
+		add_timed_idea = {
+			idea = idea_RUS_call_trump
+			days = 20
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_II
+			}
+			remove_ideas = idea_SVO_esc_II
+			add_ideas = idea_SVO_esc_I
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_III
+			}
+			remove_ideas = idea_SVO_esc_III
+			add_ideas = idea_SVO_esc_II
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_IV
+			}
+			remove_ideas = idea_SVO_esc_IV
+			add_ideas = idea_SVO_esc_III
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_V
+			}
+			remove_ideas = idea_SVO_esc_V
+			add_ideas = idea_SVO_esc_IV
+		}
 	}
 }
 
@@ -208,6 +240,34 @@ focus = {
 		add_offsite_building = {
 			type = arms_factory level = 1
 		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_II
+			}
+			remove_ideas = idea_SVO_esc_II
+			add_ideas = idea_SVO_esc_I
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_III
+			}
+			remove_ideas = idea_SVO_esc_III
+			add_ideas = idea_SVO_esc_II
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_IV
+			}
+			remove_ideas = idea_SVO_esc_IV
+			add_ideas = idea_SVO_esc_III
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_V
+			}
+			remove_ideas = idea_SVO_esc_V
+			add_ideas = idea_SVO_esc_IV
+		}
 	}
 }
 
@@ -221,7 +281,41 @@ focus = {
 	}
 	x = 16
 	y = 7
-	completion_reward = { }
+	completion_reward = {
+		army_experience = 10
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_I
+			}
+			remove_ideas = idea_SVO_esc_I
+			add_ideas = idea_SVO_esc_II
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_II
+			}
+			remove_ideas = idea_SVO_esc_II
+			add_ideas = idea_SVO_esc_III
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_III
+			}
+			remove_ideas = idea_SVO_esc_III
+			add_ideas = idea_SVO_esc_IV
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_IV
+			}
+			remove_ideas = idea_SVO_esc_IV
+			add_ideas = idea_SVO_esc_V
+		}
+		add_timed_idea = {
+			idea = idea_RUS_conternastup_I
+			days = 30
+		}
+	}
 }
 
 	#Подготовка к параду
@@ -256,9 +350,34 @@ focus = {
 	x = 15
 	y = 9
 	completion_reward = {
-		modify_idea = {
-			idea = idea_RUS_parade
-			add_stability = 0.5
+		add_manpower = 1000
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_II
+			}
+			remove_ideas = idea_SVO_esc_II
+			add_ideas = idea_SVO_esc_I
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_III
+			}
+			remove_ideas = idea_SVO_esc_III
+			add_ideas = idea_SVO_esc_II
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_IV
+			}
+			remove_ideas = idea_SVO_esc_IV
+			add_ideas = idea_SVO_esc_III
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_V
+			}
+			remove_ideas = idea_SVO_esc_V
+			add_ideas = idea_SVO_esc_IV
 		}
 	}
 }
@@ -274,10 +393,7 @@ focus = {
 	x = 13
 	y = 10
 	completion_reward = {
-		modify_idea = {
-			idea = idea_RUS_parade
-			add_war_support = 0.5
-		}
+		add_threat = -10
 	}
 }
 
@@ -306,7 +422,9 @@ focus = {
 	}
 	x = 17
 	y = 10
-	completion_reward = { }
+	completion_reward = {
+		army_experience = 10
+	}
 }
 
 	#Этот день мы приближали как могли
@@ -326,14 +444,9 @@ focus = {
 	x = 15
 	y = 11
 	completion_reward = {
-		modify_idea = {
-			idea = idea_RUS_parade
-			add_offsite_building = {
-				type = industrial_complex level = 1
-			}
-			add_offsite_building = {
-				type = arms_factory level = 1
-			}
+		add_breakthrough_points = {
+			specialization = specialization_land
+			value = 1
 		}
 		add_timed_idea = {
 			idea = idea_RUS_intwar
@@ -354,6 +467,34 @@ focus = {
 	y = 12
 	completion_reward = {
 		add_ideas = idea_RUS_UKR
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_II
+			}
+			remove_ideas = idea_SVO_esc_II
+			add_ideas = idea_SVO_esc_I
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_III
+			}
+			remove_ideas = idea_SVO_esc_III
+			add_ideas = idea_SVO_esc_II
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_IV
+			}
+			remove_ideas = idea_SVO_esc_IV
+			add_ideas = idea_SVO_esc_III
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_V
+			}
+			remove_ideas = idea_SVO_esc_V
+			add_ideas = idea_SVO_esc_IV
+		}
 	}
 }
 
@@ -369,6 +510,9 @@ focus = {
 	y = 13
 	completion_reward = {
 		add_manpower = 1000
+		A04 = {
+			add_manpower = 1000
+		}
 	}
 }
 
@@ -383,10 +527,33 @@ focus = {
 	x = 15
 	y = 14
 	completion_reward = {
-		modify_idea = {
-			idea = idea_RUS_UKR
-			add_stability = 0.1
-			add_war_support = -0.05
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_II
+			}
+			remove_ideas = idea_SVO_esc_II
+			add_ideas = idea_SVO_esc_I
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_III
+			}
+			remove_ideas = idea_SVO_esc_III
+			add_ideas = idea_SVO_esc_II
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_IV
+			}
+			remove_ideas = idea_SVO_esc_IV
+			add_ideas = idea_SVO_esc_III
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_V
+			}
+			remove_ideas = idea_SVO_esc_V
+			add_ideas = idea_SVO_esc_IV
 		}
 	}
 }
@@ -402,9 +569,33 @@ focus = {
 	x = 15
 	y = 15
 	completion_reward = {
-		modify_idea = {
-			idea = idea_RUS_UKR
-			add_political_power_factor = -0.1
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_II
+			}
+			remove_ideas = idea_SVO_esc_II
+			add_ideas = idea_SVO_esc_I
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_III
+			}
+			remove_ideas = idea_SVO_esc_III
+			add_ideas = idea_SVO_esc_II
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_IV
+			}
+			remove_ideas = idea_SVO_esc_IV
+			add_ideas = idea_SVO_esc_III
+		}
+		if = {
+			limit = {
+				has_idea = idea_SVO_esc_V
+			}
+			remove_ideas = idea_SVO_esc_V
+			add_ideas = idea_SVO_esc_IV
 		}
 	}
 }
