@@ -1,9 +1,48 @@
 #РОССИЯ
 ideas = {
     country = {
+        ################ Механики
+        #Русское контрнаступление
+        idea_RUS_conternastup_I = {
+            allowed = {
+                tag = A03
+                NOT = {
+                    A03 = {
+                       has_war = yes 
+                    }
+                }
+            }
+            removal_cost = -1 
+            picture = GFX_Kursk_OP
+            modifier = {
+                army_core_attack_factor = 0.5
+            }
+        }
+        idea_RUS_conternastup_II = {
+            allowed = {
+                tag = A03
+                NOT = {
+                    A03 = {
+                        has_war = yes
+                    }
+                }
+            }
+            removal_cost = -1 
+            picture = GFX_Kursk_attack
+            modifier = {
+                army_core_attack_factor = 0.5
+                army_attack_factor = 0.1
+            }
+        }
+
+
         #СТАРТОВЫЕ ДУХИ
         #Оспариваемая конституция
         idea_RUS_osconst = {
+            allowed = {
+                tag = A03
+            }
+            removal_cost = -1 
             picture = GFX_RUS_Great_Russia
             modifier = {
                 add_stability = -0.1
@@ -242,7 +281,9 @@ ideas = {
                 political_advisor_cost_factor = -0.1
             }
         }
-        idea_RUS_adm_reform = {
+        ############# NP
+        #Административная реформа NP
+        idea_RUS_adm_NP_I = {
             allowed = {
                 original_tag = A03
             }
@@ -252,22 +293,56 @@ ideas = {
                 production_factory_max_efficiency_factor = 0.1
             }
         }
-        idea_RUS_police_laws = { ########Изначалка
+        idea_RUS_adm_NP_II = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                production_factory_max_efficiency_factor = 0.2
+            }
+        }
+        idea_RUS_adm_NP_III = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_surrender_tiny_flag
+            modifier = {
+                production_factory_max_efficiency_factor = 0.3
+            }
+        }
+        #Реформа полиции NP
+        idea_RUS_police_NP_I = {
             allowed = {
                 original_tag = A03
             }
             removal_cost = -1 
             picture = GFX_pal_sys_NP
             modifier = {
-                stability_factor = -0.1
+                stability_factor = 0.1
             }
         }
-        idea_RUS_edu_laws = {
+        idea_RUS_police_NP_II = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_pal_sys_NP
+            modifier = {
+                stability_factor = 0.1
+                political_advisor_cost_factor = -0.05
+                political_power_gain = 0.05
+            }
+        }
+
+        idea_RUS_edu_laws_NP_I = {
             allowed = {
                 original_tag = A03 
             }
             removal_cost = -1
-            picture = GFX_obrazovanie_UR
+            picture = GFX_obrazovanie_NP
             modifier = {
                 research_speed_factor = 0.05
             }
