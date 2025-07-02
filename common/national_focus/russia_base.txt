@@ -1166,13 +1166,7 @@ focus = {
             }
             add_ideas = idea_RUS_newconst
         }
-        modify_idea = {
-			idea = idea_RUS_newconst
-			add_offsite_building = {
-                type = industrial_complex
-                level = 1
-            }
-		}
+        add_ideas = idea_RUS_adm_NP_I
     }
 }
 #Децентрализация
@@ -1192,11 +1186,10 @@ focus = {
         focus = RUS_radical_NP
     }
     completion_reward = {
-        modify_idea = {
-            idea = idea_RUS_newconst
-            political_power_gain = 0.05
+        swap_ideas = {
+            remove_idea = idea_RUS_adm_NP_I
+            add_idea = idea_RUS_adm_NP_II
         }
-        add_ideas = idea_RUS_adm_reform
     }
 }
 #Приоритет избранной власти
@@ -1288,9 +1281,9 @@ focus = {
         focus = RUS_struct_maneur_NP
     }
     completion_reward = {
-        modify_idea = {
-            idea = idea_RUS_adm_reform
-            production_factory_max_efficiency_factor = 0.1
+        swap_ideas = {
+            remove_idea = idea_RUS_adm_NP_II
+            add_idea = idea_RUS_adm_NP_III
         }
     }
 }
@@ -1311,11 +1304,7 @@ focus = {
         focus = RUS_new_people
     }
     completion_reward = {
-        modify_idea = {
-            idea = idea_RUS_police_laws
-            stability_factor = 0.2 
-            war_support_factor = -0.1
-        }
+        add_ideas = idea_RUS_police_NP_I
     }
 }
 #Смягчить наказания
@@ -1334,9 +1323,9 @@ focus = {
         focus = RUS_pal_sys_NP
     }
     completion_reward = {
-        modify_idea = {
-            idea = idea_RUS_police_laws
-            stability_factor = 0.1
+        swap_ideas = {
+            remove_idea = idea_RUS_police_NP_I
+            add_idea = idea_RUS_police_NP_II
         }
     }
 }
@@ -1394,10 +1383,7 @@ focus = {
             }
             add_ideas = idea_RUS_edu_laws
         }
-        modify_idea = {
-            idea = idea_RUS_edu_laws
-            research_speed_factor = 0.05
-        }
+        add_ideas = idea_RUS_edu_laws_NP_I
     }
 }
 
