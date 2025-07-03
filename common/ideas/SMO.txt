@@ -24,7 +24,7 @@ ideas = {
 			removal_cost = -1
 			picture = GFX_surrender_tiny_flag
 			modifier = {
-				army_attack_factor = -0.5
+				army_armor_attack_factor = -0.5
 			}
 		}
 		#Усталость от войны
