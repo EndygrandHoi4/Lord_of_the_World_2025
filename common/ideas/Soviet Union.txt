@@ -150,6 +150,9 @@ ideas = {
         idea_RUS_UKR = {
             allowed = {
                 original_tag = A03
+                A03 = {
+                    has_war_with = A04
+                }
             }
             removal_cost = -1
             picture = GFX_surrender_tiny_flag
@@ -164,6 +167,7 @@ ideas = {
         idea_RUS_supernastup = {
             allowed = {
                 original_tag = A03
+                has_war_with = A04
             }
             removal_cost = -1
             picture = GFX_Take_Kyiv

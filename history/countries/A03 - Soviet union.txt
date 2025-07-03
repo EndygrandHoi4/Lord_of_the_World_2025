@@ -3,6 +3,7 @@
 #### NO STEP BACK
 ####
  
+oob = A03_2025
 
 #You don't want Russian party names? Just remove these lines
 set_party_name = { # NOD
@@ -79,7 +80,13 @@ set_popularities = {
 }
 
 add_ideas = {
-	A03_kursk
+	idea_RUS_osconst
+	idea_RUS_shadow_flot
+	idea_RUS_politics_I
+	
+	idea_SVO_inf
+	idea_SVO_tank
+	idea_SVO_esc_IV
 }
 
 set_research_slots = 4
