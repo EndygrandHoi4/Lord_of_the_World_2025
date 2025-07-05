@@ -43,6 +43,7 @@ set_popularities = {
 
 add_ideas = {
 	idea_NATO_countries
+	idea_United_Nations_Security_Council_countries
 }
 
 set_research_slots = 3

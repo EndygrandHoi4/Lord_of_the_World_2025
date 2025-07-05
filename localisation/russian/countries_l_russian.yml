@@ -399,6 +399,31 @@
  A25_progressivism_DEF: "Светская Федерация Эллады"
  A25_progressivism_ADJ: "Элладск."
 
+#A29 Болгария
+ A29_Centrism: "Республика Болгария"
+ A29_Centrism_DEF: "Республика Болгария"
+ A29_Centrism_ADJ: "Болгарск."
+
+ A29_liberalism: "Болгарская демократическая республика"
+ A29_liberalism_DEF: "Болгарская демократическая республика"
+ A29_liberalism_ADJ: "Болгарск."
+
+ A29_radicalism: "Великая республика Тракия" 
+ A29_radicalism_DEF: "Великая республика Тракия"
+ A29_radicalism_ADJ: "Тракийск."
+
+ A29_reactionism: "Царство България Трето"
+ A29_reactionism_DEF: "Царство България Трето"
+ A29_reactionism_ADJ: "Българск."
+
+ A29_theocracy: "Православная Держава Болгария"
+ A29_theocracy_DEF: "Православная Держава Болгария"
+ A29_theocracy_ADJ: "Болгарск."
+
+ A29_progressivism: "Республика Родопы"
+ A29_progressivism_DEF: "Республика Родопы"
+ A29_progressivism_ADJ: "Родопск."
+
 #A34 Афганистан
  A34_Centrism: "Республика Афганистан"
  A34_Centrism_DEF: "Республика Афганистан"

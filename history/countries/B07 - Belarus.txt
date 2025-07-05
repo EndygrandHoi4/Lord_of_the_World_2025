@@ -25,6 +25,11 @@ set_popularities = {
 	progressivism = 0
 }
 
+add_ideas = {
+	idea_Commonwealth_of_Independent_States_countries
+	idea_BRICS_countries
+}
+
 
 set_research_slots = 3
 set_stability = 0.5

@@ -1,0 +1,17 @@
+characters = {
+	AFG_Khaibatullah_Akhundzada = {
+		name = Khaibatullah_Akhundzada
+		portraits = {
+			civilian = {
+				large = 
+			}
+		}
+		country_leader= {
+			ideology= deobandi_islamist_traditionalism
+			traits = {
+			}
+			expire="2040.1.1.1"
+			id=-1
+		}
+	}
+}

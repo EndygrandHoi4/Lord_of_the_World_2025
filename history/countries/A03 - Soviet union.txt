@@ -80,6 +80,10 @@ set_popularities = {
 }
 
 add_ideas = {
+	idea_United_Nations_Security_Council_countries
+	idea_Commonwealth_of_Independent_States_countries
+	idea_BRICS_countries
+
 	idea_RUS_osconst
 	idea_RUS_shadow_flot
 	idea_RUS_politics_I

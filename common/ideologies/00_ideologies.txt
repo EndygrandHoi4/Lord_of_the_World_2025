@@ -292,6 +292,10 @@ ideologies = {
 			islamic_theocraty = {
 			}
 
+			deobandi_islamist_traditionalism = {
+
+			}
+
 			christian_theocraty = {
 			}
 
