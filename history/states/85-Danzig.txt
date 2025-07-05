@@ -7,7 +7,7 @@ state = {
 
 	history = {
 
-		owner = POL
+		owner = A12
 		add_core_of = POL
 		add_core_of = DNZ
 		add_core_of = KSH

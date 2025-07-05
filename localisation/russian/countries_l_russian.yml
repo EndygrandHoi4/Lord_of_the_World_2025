@@ -212,6 +212,62 @@
  A09_progressivism_DEF: "Бельгийская республика"
  A09_progressivism_ADJ: "Бельгийск."
 
+#A12 Польша
+ A12_Centrism: "Республика Польша"
+ A12_Centrism_DEF: "Республика Польша"
+ A12_Centrism_ADJ: "Польск."
+
+ A12_liberalism: "Польская демократическая республика"
+ A12_liberalism_DEF: "Польская демократическая республика"
+ A12_liberalism_ADJ: "Польск."
+
+ A12_radicalism: "Национальное Государство Польша" 
+ A12_radicalism_DEF: "Национальное Государство Польша"
+ A12_radicalism_ADJ: "Польск."
+
+ #Пояснение:
+ A12_reactionism: "Сарматское Содружество"
+ A12_reactionism_DEF: "Сарматское Содружество"
+ A12_reactionism_ADJ: "Сарматск."
+
+ #Пояснение:
+ A12_theocracy: "Польское Государство Христово"
+ A12_theocracy_DEF: "Польское Государство Христово"
+ A12_theocracy_ADJ: "Польск."
+
+ #Пояснение:
+ A12_progressivism: "Польская Социальная Республика"
+ A12_progressivism_DEF: "Польская Социальная Республика"
+ A12_progressivism_ADJ: "Польск."
+
+#A18 Испания
+ A18_Centrism: "Королевство Испания"
+ A18_Centrism_DEF: "Королевство Испания"
+ A18_Centrism_ADJ: "Испанск."
+
+ A18_liberalism: "Королевство Испания"
+ A18_liberalism_DEF: "Королевство Испания"
+ A18_liberalism_ADJ: "Испанск."
+
+ A18_radicalism: "Единая и Великая Испания" 
+ A18_radicalism_DEF: "Испания"
+ A18_radicalism_ADJ: "Испанск."
+
+ #Пояснение:
+ A18_reactionism: "Монархия Католических Королей"
+ A18_reactionism_DEF: "Монархия Католических Королей"
+ A18_reactionism_ADJ: "Испанск."
+
+ #Пояснение: (Tierra Santa de Santiago) - Апелляция к апостолу Иакову (Сантьяго), небесному покровителю Испании, и идее священной миссии.
+ A18_theocracy: "Святая Земля Сантьяго"
+ A18_theocracy_DEF: "Святая Земля Сантьяго"
+ A18_theocracy_ADJ: "Испанск."
+
+ #Пояснение:
+ A18_progressivism: "Союз Свободных Народов Испании"
+ A18_progressivism_DEF: "Союз Свободных Народов Испании"
+ A18_progressivism_ADJ: "Испанск."
+
 #A19 Италия
  A19_Centrism: "Республика Италия"
  A19_Centrism_DEF: "Республика Италия"
@@ -240,6 +296,59 @@
  A19_progressivism_DEF: "Республика Италия"
  A19_progressivism_ADJ: "Итальянск."
 
+#A20 Румыния
+ A20_Centrism: "Румыния"
+ A20_Centrism_DEF: "Румыния"
+ A20_Centrism_ADJ: "Румынск."
+
+ A20_liberalism: "Республика Румыния"
+ A20_liberalism_DEF: "Республика Румыния"
+ A20_liberalism_ADJ: "Румынск."
+
+ A20_radicalism: "Народная Республика Дакия" 
+ A20_radicalism_DEF: "Народная Республика Дакия"
+ A20_radicalism_ADJ: "Румынск."
+
+ #Пояснение:
+ A20_reactionism: "Цара Ромыняскэ"
+ A20_reactionism_DEF: "Цара Ромыняскэ"
+ A20_reactionism_ADJ: "Романяск."
+
+ #Пояснение:
+ A20_theocracy: "Фиваида Карпат"
+ A20_theocracy_DEF: "Фиваида Карпат"
+ A20_theocracy_ADJ: "Фиваидск."
+
+ #Пояснение:
+ A20_progressivism: "Новая Румыния"
+ A20_progressivism_DEF: "Новая Румыния"
+ A20_progressivism_ADJ: "Румыниск."
+
+#A23 Швейцария
+ A23_Centrism: "Швейцарская Конфедерация"
+ A23_Centrism_DEF: "Швейцарская Конфедерация"
+ A23_Centrism_ADJ: "Швейцарск."
+
+ A23_liberalism: "Швейцарская Конфедерация"
+ A23_liberalism_DEF: "Швейцарская Конфедерация"
+ A23_liberalism_ADJ: "Швейцарск."
+
+ A23_radicalism: "Союз Коренных Кантонов" 
+ A23_radicalism_DEF: "Союз Коренных Кантонов"
+ A23_radicalism_ADJ: "Кантонск."
+
+ A23_reactionism: "Республика Гельветия"
+ A23_reactionism_DEF: "Республика Гельветия"
+ A23_reactionism_ADJ: "Гельветийск."
+
+ A23_theocracy: "Земля Цвингли и Кальвина"
+ A23_theocracy_DEF: "Земля Цвингли и Кальвина"
+ A23_theocracy_ADJ: "Швейцарск."
+
+ A23_progressivism: "Космополитическая Гельвеция"
+ A23_progressivism_DEF: "Космополитическая Гельвеция"
+ A23_progressivism_ADJ: "Гельветийск."
+
 #A24 Турция
  A24_Centrism: "Турецкая республика"
  A24_Centrism_DEF: "Турецкая республика"
@@ -264,6 +373,31 @@
  A24_progressivism: "Союз народов Турции"
  A24_progressivism_DEF: "Союз народов Турции"
  A24_progressivism_ADJ: "Турецк."
+
+#A25 Греция
+ A25_Centrism: "Эллинская Республика"
+ A25_Centrism_DEF: "Эллинская Республика"
+ A25_Centrism_ADJ: "Эллинск."
+
+ A25_liberalism: "Свободная Республика Эгейя"
+ A25_liberalism_DEF: "Свободная Республика Эгейя"
+ A25_liberalism_ADJ: "Эгейск."
+
+ A25_radicalism: "Великая Греция" 
+ A25_radicalism_DEF: "Великая Греция"
+ A25_radicalism_ADJ: "Греческ."
+
+ A25_reactionism: "Королевство Эллинов"
+ A25_reactionism_DEF: "Королевство Эллинов"
+ A25_reactionism_ADJ: "Эллинск."
+
+ A25_theocracy: "Свет Афона"
+ A25_theocracy_DEF: "Свет Афона"
+ A25_theocracy_ADJ: "Афонск."
+
+ A25_progressivism: "Светская Федерация Эллады"
+ A25_progressivism_DEF: "Светская Федерация Эллады"
+ A25_progressivism_ADJ: "Элладск."
 
 #A34 Афганистан
  A34_Centrism: "Республика Афганистан"
@@ -404,6 +538,35 @@
  B07_progressivism: "Свободное Поднепровье"
  B07_progressivism_DEF: "Свободное Поднепровье"
  B07_progressivism_ADJ: "Белоруск."
+
+#B27 Молдова
+ B27_Centrism: "Республика Молдова"
+ B27_Centrism_DEF: "Республика Молдова"
+ B27_Centrism_ADJ: "Молдовск."
+
+ B27_liberalism: "Молдавская Демократическая Ассоциация"
+ B27_liberalism_DEF: "Молдавская Демократическая Ассоциация"
+ B27_liberalism_ADJ: "Молдовск."
+
+ #Пояснение: (Moldova Mare / Великая Молдова) - Националистическая идея объединения исторических молдавских земель (включая части Румынии и Украины)
+ B27_radicalism: "Молдова Маре" 
+ B27_radicalism_DEF: "Молдова Маре"
+ B27_radicalism_ADJ: "Молдовск."
+
+ #Пояснение:
+ B27_reactionism: "Княжество Молдова"
+ B27_reactionism_DEF: "Княжество Молдова"
+ B27_reactionism_ADJ: "Молдовск."
+
+ #Пояснение: (Tebaida Nistreană) - Фиваида – символ места монашеского подвижничества, указывает на стремление создать "святую землю" между Днестром и Прутом.
+ B27_theocracy: "Днестровская Фиваида"
+ B27_theocracy_DEF: "Днестровская Фиваида"
+ B27_theocracy_ADJ: "Молдовск."
+
+ #Пояснение:
+ B27_progressivism: "Зеленая Республика Молдова"
+ B27_progressivism_DEF: "Зеленая Республика Молдова"
+ B27_progressivism_ADJ: "Молдовск."
 
 
 #E10 Европейский союз

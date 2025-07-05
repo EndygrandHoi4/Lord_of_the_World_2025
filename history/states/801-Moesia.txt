@@ -6,7 +6,7 @@ state={
 	state_category=rural
 
 	history={
-		owner = BUL
+		owner = A29
 		victory_points = { #Ruse
 			9612 3
 		}

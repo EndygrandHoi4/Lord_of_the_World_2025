@@ -6,7 +6,7 @@ state={
 		tungsten=10.000 #added due to Portugal Setup
 	}
 	history={
-		owner = SPR
+		owner = A18
 		victory_points = {
 			3874 1 
 		}

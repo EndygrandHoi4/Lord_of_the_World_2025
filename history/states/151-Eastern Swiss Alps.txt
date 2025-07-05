@@ -8,7 +8,7 @@ state={
 		aluminium=15 # was: 24
 	}
 	history={
-		owner = SWI
+		owner = A23
 		victory_points = { 658 1 }
 		buildings = {
 			infrastructure = 1 

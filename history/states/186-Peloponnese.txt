@@ -16,7 +16,7 @@ state={
 		victory_points = {
 			11965 1
 		}
-		owner = GRE
+		owner = A25
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

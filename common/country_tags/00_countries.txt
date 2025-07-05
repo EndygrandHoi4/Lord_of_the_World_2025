@@ -649,3 +649,4 @@ E09 = "countries/Balochistan.txt"
 
 #NEW COUNTRIES
 E10 = "countries/european union.txt"
+E11 = "countries/Pridnestrovian Moldavian Republic.txt"

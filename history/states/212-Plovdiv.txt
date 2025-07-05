@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = BUL
+		owner = A29
 		victory_points = { #Plovdiv
 			6923 10
 		}

@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = ROM
+		owner = A20
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1

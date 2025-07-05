@@ -6,7 +6,7 @@ state={
 		tungsten=10.000
 	}
 	history={
-		owner = SPR
+		owner = A18
 		victory_points = {
 			726 1
 		}
