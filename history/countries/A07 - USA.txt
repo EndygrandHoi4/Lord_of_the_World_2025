@@ -37,6 +37,9 @@ set_party_name = {
 	name = USA_Democratic_party
 }
 
+add_ideas = {
+	idea_NATO_countries
+}
 
 set_research_slots = 4
 set_stability = 0.5

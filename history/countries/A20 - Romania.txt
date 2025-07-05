@@ -25,6 +25,10 @@ set_popularities = {
 	progressivism = 0
 }
 
+add_ideas = {
+	idea_EU_countries
+	idea_NATO_countries
+}
 
 set_research_slots = 4
 set_stability = 0.5

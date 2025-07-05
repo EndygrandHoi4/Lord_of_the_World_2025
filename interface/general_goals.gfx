@@ -8,7 +8,7 @@ spriteTypes = {
 		name = "goal_stable_state"
 		texturefile = "gfx/interface/goals/generic/goal_stable_state.dds"
 	}
-	
+
 	spriteType = {
 		name = "goal_political_course"
 		texturefile = "gfx/interface/goals/generic/goal_political_course.dds"

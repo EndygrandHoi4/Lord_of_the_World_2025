@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_general_NATO"
+		texturefile = "gfx/interface/ideas/generic_nato.dds"
+	}
+}

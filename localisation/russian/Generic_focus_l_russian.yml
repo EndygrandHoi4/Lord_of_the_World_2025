@@ -9,7 +9,7 @@
  confirm_cancel_national_focus_progress_loss_plural: "Вы потеряете §R$LOST_DAYS$§! д. развития."
  confirm_cancel_national_focus_desc: "Вы действительно хотите отменить национальный фокус §H$FOCUS_NAME$§!?"
 
- stable_state:0 "Стабильное государство"
+ stable_state:0 "[ROOT.GetName] в 2025 году"
  political_course:0 "Политический курс"
 
 #Либерализм
