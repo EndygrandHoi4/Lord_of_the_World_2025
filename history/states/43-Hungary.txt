@@ -11,7 +11,7 @@ state={
 	state_category = large_city
 
 	history={
-		owner = HUN
+		owner = A33
 		buildings = {
 			infrastructure = 3
 			arms_factory = 4

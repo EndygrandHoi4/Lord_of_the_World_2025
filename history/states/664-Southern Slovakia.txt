@@ -15,7 +15,7 @@ state = {
 	
 	history = {
 
-		owner = SLO
+		owner = A79
 
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -26,7 +26,7 @@ state = {
 			6573 1 # Kosice
 		}
 
-		add_core_of = CZE
+		add_core_of = A79
 		add_core_of = SLO
 
 		# This should isntead be reclaimable through Hungarian focuses with ww
@@ -38,14 +38,7 @@ state = {
 			}
 			add_claim_by = HUN
 		}
-		
 
-		1939.3.14 = {
-			owner = HUN
-			controller = HUN
-			remove_claim_by = HUN
-			add_core_of = HUN
-		}
 	}
 	
 	provinces = {
