@@ -1394,8 +1394,11 @@ focus = {
     cost = 1
     x = 19
     y = 10
+    available = {
+        has_country_leader_ideology = market_socialism
+    }
     completion_reward = {
-        
+            
     }
 }
 
@@ -1406,10 +1409,18 @@ focus = {
     cost = 5
     x = 18
     y = 11
+    available = {
+        has_country_leader_ideology = market_socialism
+    }
     prerequisite = {
         focus = RUS_KPRF
     }
-    completion_reward = { }
+    completion_reward = {
+        add_popularity = {
+            ideology = reactionism
+            popularity = 0.1
+        }
+    }
 }
 
 #Упразднить НДС
@@ -1419,10 +1430,15 @@ focus = {
     cost = 2
     x = 17
     y = 12
+    available = {
+        has_country_leader_ideology = market_socialism
+    }
     prerequisite = {
         focus = RUS_sovets_deputatov_KPRF
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_delnds_KPRF
+    }
 }
 #За качество
 focus = {
@@ -1431,10 +1447,15 @@ focus = {
     cost = 3
     x = 18
     y = 13
+    available = {
+        has_country_leader_ideology = market_socialism
+    }
     prerequisite = {
         focus = RUS_nds_KPRF
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 
 #Гарантии в жизни
@@ -1444,10 +1465,15 @@ focus = {
     cost = 2
     x = 19
     y = 12
-prerequisite = {
-    focus = RUS_KPRF
-}
-    completion_reward = { }
+    available = {
+        has_country_leader_ideology = market_socialism
+    }
+    prerequisite = {
+        focus = RUS_KPRF
+    }
+    completion_reward = {
+        add_ideas = idea_RUS_social_KPRF_I
+    }
 }
 #Социальное государство
 focus = {
@@ -1456,13 +1482,21 @@ focus = {
     cost = 4
     x = 19
     y = 14
+    available = {
+        has_country_leader_ideology = market_socialism
+    }
     prerequisite = {
         focus = RUS_kachestvo_KPRF
     }
     prerequisite = {
         focus = RUS_life_guarants_KPRF
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_social_KPRF_I
+            add_idea = idea_RUS_social_KPRF_II
+        }
+    }
 }
 
 #Старая система
@@ -1472,10 +1506,15 @@ focus = {
     cost = 4
     x = 20
     y = 11
+    available = {
+        has_country_leader_ideology = market_socialism
+    }
     prerequisite = {
         focus = RUS_KPRF
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_old_sys_KPRF
+    }
 }
 #Единая партия
 focus = {
@@ -1484,10 +1523,18 @@ focus = {
     cost = 2
     x = 21
     y = 12
+    available = {
+        has_country_leader_ideology = market_socialism
+    }
     prerequisite = {
         focus = RUS_old_sys_KPRF
     }
-    completion_reward = { }
+    completion_reward = {
+        add_popularity = {
+            ideology = reactionism
+            popularity = 0.05
+        }
+    }
 }
 #Культ личности Зюганова
 focus = {
@@ -1496,13 +1543,18 @@ focus = {
     cost = 5
     x = 20
     y = 13
+    available = {
+        has_country_leader_ideology = market_socialism
+    }
     prerequisite = {
         focus = RUS_old_sys_KPRF
     }
     prerequisite = {
         focus = RUS_life_guarants_KPRF
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 
 #Национализация
@@ -1512,10 +1564,26 @@ focus = {
     cost = 3
     x = 17
     y = 14
+    available = {
+        has_country_leader_ideology = market_socialism
+    }
     prerequisite = {
         focus = RUS_nds_KPRF
     }
-    completion_reward = { }
+    completion_reward = {
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 1
+        }
+    }
 }
 #Современный госплан
 focus = {
@@ -1524,13 +1592,29 @@ focus = {
     cost = 5
     x = 21
     y = 14
+    available = {
+        has_country_leader_ideology = market_socialism
+    }
     prerequisite = {
         focus = RUS_united_party_KPRF
     }
     prerequisite = {
         focus = RUS_zuganov_cult_KPRF
     }
-    completion_reward = { }
+    completion_reward = {
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+    }
 }
 #Индустриализация
 focus = {
@@ -1543,7 +1627,9 @@ focus = {
         focus = RUS_adm_crisis_NP
         focus = RUS_nationalisation_KPRF
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_indust_NP_KPRF
+    }
 }
 
 
@@ -1554,6 +1640,9 @@ focus = {
     cost = 1
     x = 23
     y = 10
+    available = {
+        has_country_leader_ideology = civilizationism
+    }
     completion_reward = { }
 }
 
@@ -1564,10 +1653,15 @@ focus = {
     cost = 3
     x = 22
     y = 11
+    available = {
+        has_country_leader_ideology = civilizationism
+    }
     prerequisite = {
         focus = RUS_UR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 #Единая Россия - едина!
 focus = {
@@ -1576,13 +1670,19 @@ focus = {
     cost = 2
     x = 23
     y = 12
+    available = {
+        has_country_leader_ideology = civilizationism
+    }
     prerequisite = {
         focus = RUS_unite_UR
     }
     prerequisite = {
         focus = RUS_women_rights_UR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_stability = 0.05
+        add_political_power = 100
+    }
 }
 #Новый лидер
 focus = {
@@ -1591,6 +1691,12 @@ focus = {
     cost = 5
     x = 22
     y = 13
+    available = {
+        has_country_leader_ideology = civilizationism
+        NOT = {
+           is_country_leader = SOV_Vladimir_Putin 
+        }
+    }
     prerequisite = {
         focus = RUS_uru_UR
     }
@@ -1606,6 +1712,10 @@ focus = {
     cost = 5
     x = 24
     y = 13
+    available = {
+        has_country_leader_ideology = civilizationism
+        is_country_leader = SOV_Vladimir_Putin
+    }
     prerequisite = {
         focus = RUS_uru_UR
     }
@@ -1622,10 +1732,15 @@ focus = {
     cost = 3
     x = 24
     y = 11
+    available = {
+        has_country_leader_ideology = civilizationism
+    }
     prerequisite = {
         focus = RUS_UR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_possible_UR_I
+    }
 }
 #Повышение МРОТ
 focus = {
@@ -1634,10 +1749,18 @@ focus = {
     cost = 4
     x = 25
     y = 12
+    available = {
+        has_country_leader_ideology = civilizationism
+    }
     prerequisite = {
         focus = RUS_women_rights_UR
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_possible_UR_I
+            add_idea = idea_RUS_possible_UR_II
+        }
+    }
 }
 #Отечественное образование
 focus = {
@@ -1646,10 +1769,15 @@ focus = {
     cost = 3
     x = 25
     y = 14
+    available = {
+        has_country_leader_ideology = civilizationism
+    }
     prerequisite = {
         focus = RUS_up_mrot_UR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_edu_UR
+    }
 }
 
 #Газифакция
@@ -1659,11 +1787,16 @@ focus = {
     cost = 5
     x = 23
     y = 14
+    available = {
+        has_country_leader_ideology = civilizationism
+    }
     prerequisite = {
         focus = RUS_new_leader_UR
         focus = RUS_PUTIN_UR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_energetic_UR_I
+    }
 }
 #Импортозамещение
 focus = {
@@ -1676,7 +1809,9 @@ focus = {
         focus = RUS_modern_gosplan_KPRF
         focus = RUS_gazification_UR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_importosam_KPRF_UR
+    }
 }
 #Больше заправок
 focus = {
@@ -1685,13 +1820,21 @@ focus = {
     cost = 5
     x = 24
     y = 15
+    available = {
+        has_country_leader_ideology = civilizationism
+    }
     prerequisite = {
         focus = RUS_gazification_UR
     }
     prerequisite = {
         focus = RUS_obrazovanie_UR
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_energetic_UR_I
+            add_idea = idea_RUS_energetic_UR_II
+        }
+    }
 }
 
 #Водородная энергетика
@@ -1705,7 +1848,9 @@ focus = {
         focus = RUS_up_mrot_UR
         focus = RUS_econom_reform_OB
     }
-    completion_reward = { }
+    completion_reward = { 
+        add_ideas = idea_RUS_eco_energ_UR_OB_I
+    }
 }
 #Экологические технологии
 focus = {
@@ -1717,7 +1862,12 @@ focus = {
     prerequisite = {
         focus = RUS_H_energetic_UR_OB
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_eco_energ_UR_OB_I
+            add_idea = idea_RUS_eco_energ_UR_OB_II
+        }
+    }
 }
 
 ######################################## Общество будущее
@@ -1727,6 +1877,9 @@ focus = {
     cost = 1
     x = 27
     y = 10
+    available = {
+        has_country_leader_ideology = social_democracy
+    }
     completion_reward = { }
 }
 
@@ -1741,7 +1894,17 @@ focus = {
         focus = RUS_OB
         focus = RUS_LDPR
     }
-    completion_reward = { }
+    completion_reward = {
+        if = {
+            limit = {
+                NOT = {
+                    has_idea = idea_RUS_newconst
+                }
+            }
+            add_ideas = idea_RUS_newconst
+        }
+        add_ideas = idea_RUS_adm_OB_LDPR_I
+    }
 }
 #Губернии
 focus = {
@@ -1753,7 +1916,15 @@ focus = {
     prerequisite = {
         focus = RUS_newkonst_OB_LDPR
     }
-    completion_reward = { }
+    mutually_exclusive = {
+        focus = RUS_mestn_OB_LDPR
+    }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_adm_OB_LDPR_I
+            add_idea = idea_RUS_adm_OB_LDPR_Ia
+        }
+    }
 }
 #Пацифизм
 focus = {
@@ -1762,10 +1933,16 @@ focus = {
     cost = 10
     x = 28
     y = 11
+    available = {
+        has_country_leader_ideology = social_democracy
+    }
     prerequisite = {
         focus = RUS_OB
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+        add_war_support = -0.1
+    }
 }
 
 #Местное самоуправление
@@ -1778,7 +1955,15 @@ focus = {
     prerequisite = {
         focus = RUS_newkonst_OB_LDPR
     }
-    completion_reward = { }
+    mutually_exclusive = {
+        focus = RUS_gubernii_OB_LDPR
+    }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_adm_OB_LDPR_I
+            add_idea = idea_RUS_adm_OB_LDPR_Ib
+        }
+    }
 }
 #Ослабить контроль над экономикой
 focus = {
@@ -1787,10 +1972,15 @@ focus = {
     cost = 5
     x = 26
     y = 11
+    available = {
+        has_country_leader_ideology = social_democracy
+    }
     prerequisite = {
         focus = RUS_OB
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_LF_OB_I
+    }
 }
 #Реформа экономики
 focus = {
@@ -1799,13 +1989,21 @@ focus = {
     cost = 5
     x = 27
     y = 12
+    available = {
+        has_country_leader_ideology = social_democracy
+    }
     prerequisite = {
         focus = RUS_minus_control_OB
     }
     prerequisite = {
         focus = RUS_pazifism_OB
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_LF_OB_I
+            add_idea = idea_RUS_LF_OB_II
+        }
+    }
 }
 
 #Закон об иноагентах
@@ -1819,7 +2017,9 @@ focus = {
         focus = RUS_gubernii_OB_LDPR
         focus = RUS_mestn_OB_LDPR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_stability = 0.1
+    }
 }
 #Ликвидировать РосКомНадзор
 focus = {
@@ -1828,10 +2028,18 @@ focus = {
     cost = 2
     x = 28
     y = 13
+    available = {
+        has_country_leader_ideology = social_democracy
+    }
     prerequisite = {
         focus = RUS_pazifism_OB
     }
-    completion_reward = { }
+    completion_reward = {
+        add_popularity = {
+            ideology = Centrism
+            popularity = 0.2
+        }
+    }
 }
 #Свободная страна
 focus = {
@@ -1840,13 +2048,18 @@ focus = {
     cost = 2
     x = 29
     y = 14
+    available = {
+        has_country_leader_ideology = social_democracy
+    }
     prerequisite = {
         focus = RUS_minus_RKN_OB
     }
     prerequisite = {
         focus = RUS_inoagent_law_OB_LDPR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 
 #Реформа образования
@@ -1856,10 +2069,15 @@ focus = {
     cost = 3
     x = 27
     y = 14
+    available = {
+        has_country_leader_ideology = social_democracy
+    }
     prerequisite = {
         focus = RUS_econom_reform_OB
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_edu_OB
+    }
 }
 #Только добровольная служба
 focus = {
@@ -1868,13 +2086,18 @@ focus = {
     cost = 2
     x = 28
     y = 15
+    available = {
+        has_country_leader_ideology = social_democracy
+    }
     prerequisite = {
         focus = RUS_obrazov_reform_OB
     }
     prerequisite = {
         focus = RUS_free_state_OB
     }
-    completion_reward = { }
+    completion_reward = {
+        ### Ждёт идеи от Ростика))))
+    }
 }
 
 ################################################### ЛДПР
@@ -1884,6 +2107,9 @@ focus = {
     cost = 1
     x = 31
     y = 10
+    available = {
+        has_country_leader_ideology = neoconservatism
+    }
     completion_reward = { }
 }
 
@@ -1894,10 +2120,15 @@ focus = {
     cost = 5
     x = 32
     y = 11
+    available = {
+        has_country_leader_ideology = neoconservatism
+    }
     prerequisite = {
         focus = RUS_LDPR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_stability = 0.1
+    }
 }
 #Эффективное распределение
 focus = {
@@ -1906,13 +2137,18 @@ focus = {
     cost = 4
     x = 32
     y = 13
+    available = {
+        has_country_leader_ideology = neoconservatism
+    }
     prerequisite = {
         focus = RUS_stop_immigration_LDPR
     }
     prerequisite = {
         focus = RUS_mestn_OB_LDPR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_efrasp_LDPR
+    }
 }
 
 #Память о Империях
@@ -1926,7 +2162,9 @@ focus = {
         focus = RUS_stop_immigration_LDPR
         focus = RUS_new_konst_NOD
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_emp_dreams_LDPR_NOD
+    }
 }
 #Безвиз в БРИКС
 focus = {
@@ -1935,10 +2173,16 @@ focus = {
     cost = 3
     x = 31
     y = 14
+    available = {
+        has_country_leader_ideology = neoconservatism
+    }
     prerequisite = {
         focus = RUS_effective_rasp_LDPR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_stability = 0.1
+        add_manpower = 100
+    }
 }
 
 #Цифровизация экономики
@@ -1948,10 +2192,16 @@ focus = {
     cost = 5
     x = 31
     y = 15
+    available = {
+        has_country_leader_ideology = neoconservatism
+    }
     prerequisite = {
         focus = RUS_bezviz_BRICS
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+        #НЕ ЗАБЫТЬ СКИП НА ФОКУС ИЗ ВЕТКИ ЭКОНОМИКИ
+    }
 }
 #За Жириновского!
 focus = {
@@ -1960,10 +2210,19 @@ focus = {
     cost = 2
     x = 33
     y = 14
+    available = {
+        has_country_leader_ideology = neoconservatism
+    }
     prerequisite = {
         focus = RUS_effective_rasp_LDPR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+        add_popularity = {
+            ideology = reactionism
+            popularity = 0.1
+        }
+    }
 }
 #То есть, за Слуцкого
 focus = {
@@ -1972,10 +2231,19 @@ focus = {
     cost = 2
     x = 33
     y = 15
+    available = {
+        has_country_leader_ideology = neoconservatism
+    }
     prerequisite = {
         focus = RUS_for_zhirik_LDPR
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+        add_popularity = {
+            ideology = reactionism
+            popularity = 0.1
+        }
+    }
 }
 
 #################################################### НОД
@@ -1985,6 +2253,9 @@ focus = {
     cost = 1
     x = 35
     y = 10
+    available = {
+        has_country_leader_ideology = radical_socialism
+    }
     completion_reward = { }
 }
 #Взломать кандалы
@@ -1994,10 +2265,15 @@ focus = {
     cost = 5
     x = 36
     y = 11
+    available = {
+        has_country_leader_ideology = radical_socialism
+    }
     prerequisite = {
         focus = RUS_NOD
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 #Новая конституция
 focus = {
@@ -2006,10 +2282,23 @@ focus = {
     cost = 5
     x = 34
     y = 11
+    available = {
+        has_country_leader_ideology = radical_socialism
+    }
     prerequisite = {
         focus = RUS_NOD
     }
-    completion_reward = { }
+    completion_reward = {
+        if = {
+            limit = {
+                NOT = {
+                    has_idea = idea_RUS_newconst
+                }
+            }
+            add_ideas = idea_RUS_newconst
+        }
+        add_stability = 100
+    }
 }
 #Расширение
 focus = {
@@ -2018,13 +2307,19 @@ focus = {
     cost = 5
     x = 35
     y = 12
+    available = {
+        has_country_leader_ideology = radical_socialism
+    }
     prerequisite = {
         focus = RUS_new_konst_NOD
     }
     prerequisite = {
         focus = RUS_broke_kandals_NOD
     }
-    completion_reward = { }
+    completion_reward = {
+        add_war_support = 0.1
+        #НЕ ЗАБЫТЬ СКИП НА ФОКУС В ЭКСПАНСИИ
+    }
 }
 
 #Связи в правительстве - тут лучше к Ростику обратиться
@@ -2034,10 +2329,15 @@ focus = {
     cost = 4
     x = 34
     y = 13
+    available = {
+        has_country_leader_ideology = radical_socialism
+    }
     prerequisite = {
         focus = RUS_expansion_NOD
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 1000
+    }
 }
 #Блага народу
 focus = {
@@ -2046,10 +2346,15 @@ focus = {
     cost = 4
     x = 35
     y = 14
+    available = {
+        has_country_leader_ideology = radical_socialism
+    }
     prerequisite = {
         focus = RUS_expansion_NOD
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_blaga_NOD
+    }
 }
 #Суд над Горбачёвым
 focus = {
@@ -2058,10 +2363,19 @@ focus = {
     cost = 4
     x = 37
     y = 12
+    available = {
+        has_country_leader_ideology = radical_socialism
+    }
     prerequisite = {
         focus = RUS_broke_kandals_NOD
     }
-    completion_reward = { }
+    completion_reward = {
+        add_popularity = {
+            ideology = reactionism
+            popularity = -0.1
+        }
+        add_political_power = 100
+    }
 }
 
 #На-чеку!
@@ -2071,10 +2385,15 @@ focus = {
     cost = 2
     x = 35
     y = 15
+    available = {
+        has_country_leader_ideology = radical_socialism
+    }
     prerequisite = {
         focus = RUS_blaga_people_NOD
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_na_cheku_NOD
+    }
 }
 #Милитаризация
 focus = {
@@ -2083,13 +2402,37 @@ focus = {
     cost = 5
     x = 36
     y = 13
+    available = {
+        has_country_leader_ideology = radical_socialism
+    }
     prerequisite = {
         focus = RUS_gorbachev_court
     }
     prerequisite = {
         focus = RUS_expansion_NOD
     }
-    completion_reward = { }
+    completion_reward = {
+        add_offsite_building = {
+            type = arms_factory
+            level = 1
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 1
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 1
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 1
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 1
+        }
+    }
 }
 
 ################################# Курильский договор
