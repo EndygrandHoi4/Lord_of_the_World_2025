@@ -115,3 +115,19 @@ add_namespace = russia
 			name = russia.6a
 		}
 	}
+
+	#Звонок Трамп-Путин
+	news_event = {
+		id = russia.7
+		title = russia.7t
+		desc = russia.7d
+		trigger = {
+			A03 = {
+				has_decision = decision_SVO_RUS_call_trump
+			}
+		}
+		is_triggered_only = no
+		option = {
+			name = russia.7a
+		}
+	}
