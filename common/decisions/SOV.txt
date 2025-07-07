@@ -1,0 +1,363 @@
+RUS_SVO_decision_category = {
+	mission_SVO_RUS_esc = {
+		activation = {
+			has_idea = idea_SVO_inf
+		}
+		available = {
+			NOT = {
+				has_idea = idea_SVO_inf
+			}
+		}
+		cancel_trigger = {
+			NOT = {
+				has_idea = idea_SVO_inf	
+			}
+		}
+		icon = GFX_surrender_tiny_flag
+		is_good = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_I
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_I
+					add_idea = idea_SVO_esc_II
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_I
+						add_idea = idea_SVO_esc_II
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_II
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_II
+					add_idea = idea_SVO_esc_III
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_II
+						add_idea = idea_SVO_esc_III
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_III
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_III
+					add_idea = idea_SVO_esc_IV
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_III
+						add_idea = idea_SVO_esc_IV
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_IV
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_IV
+					add_idea = idea_SVO_esc_V
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_IV
+						add_idea = idea_SVO_esc_V
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_V
+				}
+				add_stability = -0.05
+				A04 = {
+					add_war_support = 0.05
+				}
+			}
+			activate_decision = mission_SVO_RUS_esc
+		}
+	}
+	decision_SVO_RUS_call_trump = {
+		allowed = {
+			tag = A03
+		}
+		visible = {
+			A03 = {
+				has_completed_focus = RUS_tf_hours
+			}
+		}
+		available = {
+			has_political_power = 100
+		}
+		days_re_enable = 20
+		cost = 100
+		days_remove = 1
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_I
+				}
+				add_stability = 0.05
+				A04 = {
+					add_war_support = -0.05
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_II
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_II
+					add_idea = idea_SVO_esc_I
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_II
+						add_idea = idea_SVO_esc_I
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_III
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_III
+					add_idea = idea_SVO_esc_II
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_III
+						add_idea = idea_SVO_esc_II
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_IV
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_IV
+					add_idea = idea_SVO_esc_III
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_IV
+						add_idea = idea_SVO_esc_III
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_V
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_V
+					add_idea = idea_SVO_esc_IV
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_V
+						add_idea = idea_SVO_esc_IV
+					}	
+				}
+			}
+			#Ивент подключен
+		}
+	}
+	decision_SVO_RUS_exchange_mp = {
+		allowed = {
+			tag = A03
+		}
+		visible = {
+			A03 = {
+				has_completed_focus = RUS_prisoner_exchange
+			}
+		}
+		available = {
+			has_political_power = 100
+		}
+		days_re_enable = 30
+		cost = 100
+		days_remove = 1
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_I
+				}
+				add_stability = 0.05
+				A04 = {
+					add_war_support = -0.05
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_II
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_II
+					add_idea = idea_SVO_esc_I
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_II
+						add_idea = idea_SVO_esc_I
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_III
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_III
+					add_idea = idea_SVO_esc_II
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_III
+						add_idea = idea_SVO_esc_II
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_IV
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_IV
+					add_idea = idea_SVO_esc_III
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_IV
+						add_idea = idea_SVO_esc_III
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_SVO_esc_V
+				}
+				swap_ideas = {
+					remove_idea = idea_SVO_esc_V
+					add_idea = idea_SVO_esc_IV
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_SVO_esc_V
+						add_idea = idea_SVO_esc_IV
+					}	
+				}
+			}
+			add_manpower = 1000
+			A04 = {
+				add_manpower = 1000
+			}
+		}
+	}
+
+}
+RUS_provgov_decision_category = {
+	mission_RUS_provgov_collapse = {
+		activation = {
+			is_country_leader = SOV_provisional_government
+		}
+		available = {
+			NOT = {
+				is_country_leader = SOV_provisional_government
+			}
+		}
+		cancel_trigger = {
+			NOT = {
+				is_country_leader = SOV_provisional_government
+			}
+		}
+		icon = GFX_surrender_tiny_flag
+		is_good = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			if = {
+				limit = {
+					has_idea = idea_RUS_crush_I
+				}
+				swap_ideas = {
+					remove_idea = idea_RUS_crush_I
+					add_idea = idea_RUS_crush_II
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_RUS_crush_I
+						add_idea = idea_RUS_crush_II
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_RUS_crush_II
+				}
+				swap_ideas = {
+					remove_idea = idea_RUS_crush_II
+					add_idea = idea_RUS_crush_III
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_RUS_crush_II
+						add_idea = idea_RUS_crush_III
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_RUS_crush_III
+				}
+				swap_ideas = {
+					remove_idea = idea_RUS_crush_III
+					add_idea = idea_RUS_crush_IV
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_RUS_crush_III
+						add_idea = idea_RUS_crush_IV
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_RUS_crush_IV
+				}
+				swap_ideas = {
+					remove_idea = idea_RUS_crush_IV
+					add_idea = idea_RUS_crush_V
+				}
+				A04 = {
+					swap_ideas = {
+						remove_idea = idea_RUS_crush_IV
+						add_idea = idea_RUS_crush_V
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_RUS_crush_V
+				}
+				add_stability = -0.5
+				add_war_support = -0.5
+				add_political_power = -1000
+			}
+			activate_decision = mission_RUS_provgov_collapse
+		}
+	}
+}
