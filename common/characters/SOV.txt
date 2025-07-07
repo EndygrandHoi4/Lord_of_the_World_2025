@@ -44,7 +44,7 @@ characters = {
 
 	SOV_Genady_Zuganov = {
 		name = SOV_Genady_Zuganov
-		portraits = {
+		portraits = { 
 			civilian = {
 				large = "gfx/leaders/SOV/portrait_SOV_Genady_Zuganov.dds"
 			}
