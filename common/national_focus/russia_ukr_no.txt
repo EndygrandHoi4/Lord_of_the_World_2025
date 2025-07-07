@@ -1,4 +1,4 @@
-focus_tree = {
+focus_tree = { 
     id = russian_focus_un
     country = { 
         factor = 0
@@ -18,25 +18,11 @@ focus = {
         focus = RUS_pos_crush
     }
     completion_reward = {
-        remove_ideas = idea_SVO_inf
-        remove_ideas = idea_SVO_esc_I
-        remove_ideas = idea_SVO_esc_II
-        remove_ideas = idea_SVO_esc_III
-        remove_ideas = idea_SVO_esc_IV
-        add_ideas = idea_SVO_esc_V
-        A04 = {
-            remove_ideas = idea_SVO_inf
-            remove_ideas = idea_SVO_esc_I
-            remove_ideas = idea_SVO_esc_II
-            remove_ideas = idea_SVO_esc_III
-            remove_ideas = idea_SVO_esc_IV
-            add_ideas = idea_SVO_esc_V 
-        }
         add_popularity = {
             ideology = Centrism
             popularity = 0.1
         }
-        add_ideas = idea_US_supernastup
+        add_ideas = idea_RUS_supernastup
     }
 }
 #Крах позиции
@@ -50,20 +36,6 @@ focus = {
         focus = RUS_take_kiev
     }
     completion_reward = {
-        remove_ideas = idea_SVO_inf
-        remove_ideas = idea_SVO_esc_I
-        remove_ideas = idea_SVO_esc_II
-        remove_ideas = idea_SVO_esc_III
-        remove_ideas = idea_SVO_esc_IV
-        add_ideas = idea_SVO_esc_V
-        A04 = {
-            remove_ideas = idea_SVO_inf
-            remove_ideas = idea_SVO_esc_I
-            remove_ideas = idea_SVO_esc_II
-            remove_ideas = idea_SVO_esc_III
-            remove_ideas = idea_SVO_esc_IV
-            add_ideas = idea_SVO_esc_V 
-        }
         add_popularity = {
             ideology = Centrism
             popularity = -0.2

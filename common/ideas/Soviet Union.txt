@@ -271,6 +271,100 @@ ideas = {
                 war_support_factor = -0.5
             }
         }
+        ############### Совместные фокусы ПАРТИЙ НЕ СТРАН!!!
+        idea_RUS_indust_NP_KPRF = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_industialisation_KPRF_NP
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1
+                production_speed_industrial_complex_factor = 0.2
+            }
+        }
+        idea_RUS_importosam_KPRF_UR = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_importasam_UR_KPRF
+            modifier = {
+                political_power_gain = -0.1
+                production_speed_arms_factory_factor = 0.1
+                stability_factor = -0.1
+            }
+        }
+        idea_RUS_eco_energ_UR_OB_I = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_ecologic_UR_OB
+            modifier = {
+                production_speed_buildings_factor = 0.1
+                political_power_gain = 0.01
+                stability_factor = 0.05
+                research_speed_factor = 0.05
+            }
+        }
+        idea_RUS_eco_energ_UR_OB_II = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_ecologic_UR_OB
+            modifier = {
+                production_speed_buildings_factor = 0.2
+                political_power_gain = 0.05
+                stability_factor = 0.05
+                research_speed_factor = 0.1RUS_
+            }
+        }
+        idea_RUS_adm_OB_LDPR_I = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = RUS_newkonst_OB_LDPR
+            modifier = {
+                stability_factor = 0.05
+            }
+        }
+        idea_RUS_adm_OB_LDPR_Ia = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = RUS_newkonst_OB_LDPR
+            modifier = {
+                stability_factor = 0.1
+                production_speed_arms_factory_factor = 0.1
+            }
+        }
+        idea_RUS_adm_OB_LDPR_Ib = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = RUS_newkonst_OB_LDPR
+            modifier = {
+                stability_factor = 0.05
+                production_speed_industrial_complex_factor = 0.1
+                research_speed_factor = 0.05
+            }
+        }
+        idea_RUS_emp_dreams_LDPR_NOD = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_dream_of_empires_LDPR_NOD
+            modifier = {
+                war_support_weekly_factor = 0.1
+                stability_factor = 0.1
+            }
+        }
         ##############
         #Новая конституция
         idea_RUS_newconst = {
@@ -349,6 +443,187 @@ ideas = {
             picture = GFX_obrazovanie_NP
             modifier = {
                 research_speed_factor = 0.05
+            }
+        }
+        ##################### KPRF
+        # -НДС
+        idea_RUS_delnds_KPRF = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_nds_KPRF
+            modifier = {
+                political_power_gain = -0.1
+                stability_weekly_factor = 0.01
+            }
+        }
+        #Социалистическое государство
+        idea_RUS_social_KPRF_I = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_social_state_KPRF
+            modifier = {
+                political_power_gain = 0.05
+                political_advisor_cost_factor = 0.1
+            }
+        }
+        idea_RUS_social_KPRF_II = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_social_state_KPRF
+            modifier = {
+                political_power_gain = 0.1
+                political_advisor_cost_factor = 0.05
+                army_attack_factor = 0.05
+            }
+        }
+        #Старая система
+        idea_RUS_old_sys_KPRF = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            picture = GFX_old_sus_KPRF
+            modifier = {
+                research_speed_factor = -0.05
+                war_support_weekly_factor = 0.01
+            }
+        }
+        ############### UR
+        #Страна возможностей
+        idea_RUS_possible_UR_I = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = RUS_women_rights_UR
+            modifier = {
+                political_power_gain = -0.01
+                stability_factor = 0.05
+            }
+        }
+        idea_RUS_possible_UR_II = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = RUS_women_rights_UR
+            modifier = {
+                political_power_gain = -0.02
+                stability_factor = 0.1
+                production_speed_buildings_factor = 0.1
+            }
+        }
+        #Образование
+        idea_RUS_edu_UR = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = RUS_obrazovanie_UR
+            modifier = {
+                research_speed_factor = 0.1
+            }
+        }
+        #Энергетика
+        idea_RUS_energetic_UR_I = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = RUS_more_fuel_UR
+            modifier = {
+                research_speed_factor = 0.05
+                production_speed_buildings_factor = 0.05
+                consumer_goods_factor = -0.05
+            }
+        }
+        idea_RUS_energetic_UR_II = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = RUS_more_fuel_UR
+            modifier = {
+                research_speed_factor = 0.05
+                production_speed_buildings_factor = 0.05
+                consumer_goods_factor = -0.15
+            }
+        }
+        ##################### OB
+        #Laissez-fairec #Лол ебать я френч за лето не забыл)
+        idea_RUS_LF_OB_I = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_econom_reform_OB
+            modifier = {
+                industrial_capacity_factory = 0.1
+                production_speed_buildings_factor = 0.1
+            }
+        }
+        idea_RUS_LF_OB_II = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_econom_reform_OB
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1
+                industrial_capacity_factory = 0.25
+                production_speed_buildings_factor = 0.2
+            }
+        }
+        #Йет анозер едю реформ
+        idea_RUS_edu_OB = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_obrazov_reform_OB
+            modifier = {
+                research_speed_factor = 0.1
+            }
+        }
+        ############### LDPR
+        idea_RUS_efrasp_LDPR = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = RUS_effective_rasp_LDPR
+            modifier = {
+                industrial_capacity_factory = 0.25
+                production_speed_buildings_factor = 0.1
+            }
+        }
+        ############### NOD
+        idea_RUS_blaga_NOD = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_blaga_people_NOD
+            modifier = {
+                consumer_goods_factor = 0.05
+                political_power_gain = 0.1
+            }
+        }
+        idea_RUS_na_cheku_NOD = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1 
+            picture = GFX_na_cheku_NOD
+            modifier = {
+                army_defence_factor = 0.3
+                political_power_gain = 0.1
             }
         }
     }

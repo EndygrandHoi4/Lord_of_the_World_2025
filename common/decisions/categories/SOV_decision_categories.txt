@@ -1,0 +1,14 @@
+RUS_SVO_decision_category = {
+	visible = {
+		tag = A03
+		has_idea = idea_SVO_inf
+	}
+	icon = GFX_surrender_tiny_flag
+}
+RUS_provgov_decision_category = {
+	visible = {
+		tag = A03
+		is_country_leader = SOV_provisional_government
+	}
+	icon = GFX_No_Constitution
+}
