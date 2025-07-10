@@ -41,7 +41,16 @@ focus = {
     prerequisite = {
         focus = RUS_fatherland_ap
     }
-    completion_reward = { }
+    completion_reward = {
+        249 = {
+            add_extra_state_shared_building_slots = 3
+            add_building_construction = {
+                type = arms_factory
+                level = 3
+                instant_build = yes
+            }
+        }
+    }
 }
 #LADA
 focus = {
@@ -53,7 +62,24 @@ focus = {
     prerequisite = {
         focus = RUS_fatherland_ap
     }
-    completion_reward = { }
+    completion_reward = {
+        251 = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = arms_factory
+                level = 5
+                instant_build = yes
+            }
+        }
+        219 = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
 }
 #УАЗ
 focus = {
@@ -65,7 +91,16 @@ focus = {
     prerequisite = {
         focus = RUS_fatherland_ap
     }
-    completion_reward = { }
+    completion_reward = {
+        251 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
 }
 #Урал
 focus = {
@@ -77,7 +112,16 @@ focus = {
     prerequisite = {
         focus = RUS_KAMAZ
     }
-    completion_reward = { }
+    completion_reward = {
+        572 = {
+            add_extra_state_shared_building_slots = 3
+            add_building_construction = {
+                type = arms_factory
+                level = 3
+                instant_build = yes
+            }
+        }
+    }
 }
 #ГАЗ
 focus = {
@@ -90,7 +134,16 @@ focus = {
         focus = RUS_LADA
         focus = RUS_UAZ
     }
-    completion_reward = { }
+    completion_reward = {
+        234 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
 }
 ############ ПОДВЕТКА: Ради нужд народа
 focus = {
@@ -102,7 +155,9 @@ focus = {
     prerequisite = {
         focus = RUS_soveren_econom    
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 #Социальная инфраструктура
 focus = {
@@ -114,7 +169,34 @@ focus = {
     prerequisite = {
         focus = RUS_for_people_needs
     }
-    completion_reward = { }
+    completion_reward = {
+        A03 = {
+            every_controlled_state = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_built = {
+                                type = infrastructure
+                                value = 5
+                            }
+                            has_built = {
+                                type = infrastructure
+                                value = 4
+                            }
+                            has_built = {
+                                type = infrastructure
+                                value = 3
+                            }
+                        }
+                    }
+                    set_building_level = {
+                        type = infrastructure
+                        level = 3
+                    }
+                }
+            }
+        }
+    }
 }
 #Реформа медицины
 focus = {
@@ -126,7 +208,9 @@ focus = {
     prerequisite = {
         focus = RUS_for_people_needs
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_med_reform
+    }
 }
 #Вернуть лёгкую промышленность
 focus = {
@@ -138,7 +222,48 @@ focus = {
     prerequisite = {
         focus = RUS_for_people_needs
     }
-    completion_reward = { }
+    completion_reward = {
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
 }
 #Государство для народа
 focus = {
@@ -151,7 +276,10 @@ focus = {
         focus = RUS_soc_infr
         focus = RUS_med_reform        
     }
-    completion_reward = { }
+    completion_reward = {
+        add_stability = 0.05
+        add_political_power = 100
+    }
 }
 #Лучшая Инженерия
 focus = {
@@ -175,7 +303,9 @@ focus = {
     prerequisite = {
         focus = RUS_soveren_econom
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_rubl_I
+    }
 }
 #Ввести цифровой рубль
 focus = {
@@ -187,7 +317,12 @@ focus = {
     prerequisite = {
         focus = RUS_money_question
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_rubl_I
+            add_idea = idea_RUS_rubl_II
+        }
+    }
 }
 #Звонок Набиулиной
 focus = {
@@ -199,7 +334,13 @@ focus = {
     prerequisite = {
         focus = RUS_money_question
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = -50
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+    }
 }
 #Замена бумаги цифрой
 focus = {
@@ -208,13 +349,21 @@ focus = {
     cost = 10
     x = 16
     y = 4
+    bypass = {
+        has_completed_focus = RUS_dg_econom_LDPR
+    }
     prerequisite = {
         focus = RUS_dg_ruble
     }
     prerequisite = {
         focus = RUS_call_nabiulina
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_rubl_II
+            add_idea = idea_RUS_rubl_III
+        }
+    }
 }
 ############ ПОДВЕТКА: Тяжёлая промышленость 
 focus = {
@@ -238,7 +387,32 @@ focus = {
     prerequisite = {
         focus = RUS_heavy_prom
     }
-    completion_reward = { }
+    completion_reward = {
+        573 = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = arms_factory
+                level = 5
+                instant_build = yes
+            }
+        }
+        653 = {
+            add_extra_state_shared_building_slots = 3
+            add_building_construction = {
+                type = arms_factory
+                level = 3
+                instant_build = yes
+            }
+        }
+        398 = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
 }
 #Проекты БПЛА
 focus = {
@@ -250,7 +424,32 @@ focus = {
     prerequisite = {
         focus = RUS_heavy_prom
     }
-    completion_reward = { }
+    completion_reward = {
+        218 = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
 }
 #Производство "Герани"
 focus = {
@@ -262,7 +461,24 @@ focus = {
     prerequisite = {
         focus = RUS_projects_bpla
     }
-    completion_reward = { }
+    completion_reward = {
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
 }
 ############################## ВЕТКА АРМИИ
 #ВСРФ
@@ -284,7 +500,9 @@ focus = {
     prerequisite = {
         focus = RUS_AFRF
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_tanks_I
+    }
 }
 #Отказ от Т-72
 focus = {
@@ -299,7 +517,12 @@ focus = {
     prerequisite = {
         focus = RUS_heavy_prom
     }
-    completion_reward = { }
+    completion_reward = {
+        add_breakthrough_points = {
+            specialization = specialization_land
+            value = 1
+        }
+    }
 }
 #Т-26
 focus = {
@@ -314,7 +537,9 @@ focus = {
     prerequisite = {
         focus = RUS_heavy_prom
     }
-    completion_reward = { }
+    completion_reward = {
+        add_research_slot = 1
+    }
 }
 #Неси меня, Армата!
 focus = {
@@ -329,7 +554,12 @@ focus = {
     prerequisite = {
         focus = RUS_T_ts
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_tanks_I
+            add_idea = idea_RUS_tanks_II
+        }
+    }
 }
 #152мм чистой смерти
 focus = {
@@ -341,7 +571,12 @@ focus = {
     prerequisite = {
         focus = RUS_Armata
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_tanks_II
+            add_idea = idea_RUS_tanks_III
+        }
+    }
 }
 #Газовая турбина
 focus = {
@@ -353,7 +588,12 @@ focus = {
     prerequisite = {
         focus = RUS_Armata
     }
-    completion_reward = { }
+    completion_reward = {
+        add_breakthrough_points = {
+            specialization = specialization_land
+            value = 1
+        }
+    }
 }
 ########### ПОДВЕТКА: Окончательная механизация
 focus = {
@@ -365,7 +605,9 @@ focus = {
     prerequisite = {
         focus = RUS_AFRF
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_mech_I
+    }
 }
 #Российский спецназ
 focus = {
@@ -377,7 +619,9 @@ focus = {
     prerequisite = {
         focus = RUS_overmechanisation
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_spetsnaz
+    }
 }
 #Колёсные цари России
 focus = {
@@ -389,7 +633,12 @@ focus = {
     prerequisite = {
         focus = RUS_overmechanisation
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_mech_I
+            add_idea = idea_RUS_mech_II
+        }
+    }
 }
 #Люди на танках
 focus = {
@@ -404,7 +653,12 @@ focus = {
     prerequisite = {
         focus = RUS_spetsnaz
     }
-    completion_reward = { }
+    completion_reward = {
+        add_offsite_building = {
+            type = arms_factory
+            level = 2
+        }
+    }
 }
 #АК-12УМ
 focus = {
@@ -416,7 +670,40 @@ focus = {
     prerequisite = {
         focus = RUS_spetsnaz
     }
-    completion_reward = { }
+    completion_reward = {
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
 }
 ############ ПОДВЕТКА: БПЛА!
 focus = {
@@ -428,7 +715,24 @@ focus = {
     prerequisite = {
         focus = RUS_AFRF
     }
-    completion_reward = { }
+    completion_reward = {
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
 }
 #Улучшить подготовку
 focus = {
@@ -440,7 +744,9 @@ focus = {
     prerequisite = {
         focus = RUS_bplas
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_bpla
+    }
 }
 #Противодрон
 focus = {
@@ -455,7 +761,9 @@ focus = {
     prerequisite = {
         focus = RUS_buff_training
     }
-    completion_reward = { }
+    completion_reward = {
+        remove_ideas = idea_SVO_tank
+    }
 }
 #Едут-едут БТРы
 focus = {
@@ -473,7 +781,12 @@ focus = {
     prerequisite = {
         focus = RUS_protiv_fpv
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_mech_II
+            add_idea = idea_RUS_mech_III
+        }
+    }
 }
 ############ ПОДВЕТКА: Тайный инспектор
 focus = {
@@ -485,7 +798,10 @@ focus = {
     prerequisite = {
         focus = RUS_AFRF
     }
-    completion_reward = { }
+    completion_reward = { 
+        add_manpower = 1
+        add_ideas = idea_RUS_inspect_army_I
+    }
 }
 #Улучшение условий: 3 уровня
 focus = {
@@ -497,7 +813,13 @@ focus = {
     prerequisite = {
         focus = RUS_secret_insp
     }
-    completion_reward = { }
+    completion_reward = {
+        add_manpower = 132
+        swap_ideas = {
+            remove_idea = idea_RUS_inspect_army_I
+            add_idea = idea_RUS_inspect_army_II
+        }
+    }
 }
 focus = {
     id = RUS_buff_conditions_II
@@ -508,7 +830,13 @@ focus = {
     prerequisite = {
         focus = RUS_buff_conditions_I
     }
-    completion_reward = { }
+    completion_reward = {
+        add_manpower = 243
+        swap_ideas = {
+            remove_idea = idea_RUS_inspect_army_II
+            add_idea = idea_RUS_inspect_army_III
+        }
+    }
 }
 focus = {
     id = RUS_buff_conditions_III
@@ -519,7 +847,13 @@ focus = {
     prerequisite = {
         focus = RUS_buff_conditions_II
     }
-    completion_reward = { }
+    completion_reward = {
+        add_manpower = 582
+        swap_ideas = {
+            remove_idea = idea_RUS_inspect_army_III
+            add_idea = idea_RUS_inspect_army_IV
+        }
+    }
 }
 ############ ПОДВЕТКА: Лучшие доктрины
 focus = {
@@ -531,7 +865,9 @@ focus = {
     prerequisite = {
         focus = RUS_AFRF
     }
-    completion_reward = { }
+    completion_reward = {
+        army_experience = 10
+    }
 }
 #Постепенное наступление
 focus = {
@@ -546,7 +882,10 @@ focus = {
     mutually_exclusive = {
         focus = RUS_blizkrieg
     }
-    completion_reward = { }
+    completion_reward = {
+        army_experience = 10
+        add_ideas = idea_RUS_step_by_step_I
+    }
 }
 #Блицкриг
 focus = {
@@ -561,7 +900,10 @@ focus = {
     mutually_exclusive = {
         focus = RUS_step_by_step
     }
-    completion_reward = { }
+    completion_reward = {
+        army_experience = 10
+        add_ideas = idea_RUS_blitzkrieg_I
+    }
 }
 #Неминуемая победа
 focus = {
@@ -574,7 +916,27 @@ focus = {
         focus = RUS_step_by_step
         focus = RUS_blizkrieg
     }
-    completion_reward = { }
+    completion_reward = {
+        if = {
+            limit = {
+                has_idea = idea_RUS_step_by_step_I
+            }
+            swap_ideas = {
+                remove_idea = idea_RUS_step_by_step_I
+                add_idea = idea_RUS_step_by_step_II
+            }
+        }
+        if = {
+            limit = {
+                has_idea = idea_RUS_blitzkrieg_I
+            }
+            swap_ideas = {
+                remove_idea = idea_RUS_blitzkrieg_I
+                add_idea = idea_RUS_blitzkrieg_II
+            }
+        }
+        army_experience = 10
+    }
 }
 #Лучшая армия
 focus = {
@@ -586,7 +948,27 @@ focus = {
     prerequisite = {
         focus = RUS_vic_anyway
     }
-    completion_reward = { }
+    completion_reward = {
+        if = {
+            limit = {
+                has_idea = idea_RUS_step_by_step_II
+            }
+            swap_ideas = {
+                remove_idea = idea_RUS_step_by_step_II
+                add_idea = idea_RUS_step_by_step_III
+            }
+        }
+        if = {
+            limit = {
+                has_idea = idea_RUS_blitzkrieg_II
+            }
+            swap_ideas = {
+                remove_idea = idea_RUS_blitzkrieg_II
+                add_idea = idea_RUS_blitzkrieg_III
+            }
+        }
+        army_experience = 10
+    }
 }
 ############ АРМИЯ ПОБЕДИТЕЛЕЙ
 focus = {
@@ -610,7 +992,10 @@ focus = {
     prerequisite = {
         focus = RUS_best_army
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+        army_experience = 100
+    }
 }
 ################################## ВЕТКА ПРОЕКТОВ
 #Монументальные проекты
@@ -619,44 +1004,701 @@ focus = {
     icon = GFX_monuments
     cost = 3
     x = 7
-    y = 4
-    completion_reward = { }
+    y = 14
+    completion_reward = {
+        add_research_slot = 1
+    }
 }
 #Сибирский мегаполис
 focus = {
     id = RUS_sibirean_mgpolis
     icon = GFX_sib_mega
-    cost = 7
+    cost = 10
     x = 4
-    y = 5
+    y = 15
+    available = {
+        NOT = {
+            has_idea = idea_RUS_has_prj
+        }
+    }
     prerequisite = {
         focus = RUS_monumental_prj
     }
-    completion_reward = { }
+    completion_reward = {
+        579 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        580 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        403 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        824 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        577 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        571 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        578 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        570 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        40 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        569 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        654 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        516 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        878 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        576 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        568 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        567 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        329 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        566 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        876 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        575 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        565 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        564 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        563 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        877 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        574 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        561 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        644 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        562 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        560 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        657 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        409 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        408 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        822 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        874 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        822 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        637 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_extra_state_shared_building_slots = 5
+        }
+        add_timed_idea = {
+            idea = idea_RUS_has_prj
+            days = 140
+        }
+    }
 }
 #Великий Урал
 focus = {
     id = RUS_Great_Ural
     icon = GFX_great_ural
-    cost = 7
+    cost = 17
     x = 6
-    y = 5
+    y = 15
+    available = {
+        NOT = {
+            has_idea = idea_RUS_has_prj
+        }
+    }
     prerequisite = {
         focus = RUS_monumental_prj
     }
-    completion_reward = { }
+    completion_reward = {
+        399 = {
+            set_state_category = metropolis
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
+        }
+        398 = {
+            set_state_category = megalopolis
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
+        }
+        651 = {
+            set_state_category = metropolis
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
+        }
+        582 = {
+            set_state_category = metropolis
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
+        }
+        573 = {
+            set_state_category = metropolis
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 3
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
+        }
+        653 = {
+            set_state_category = megalopolis
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
+        }
+        572 = {
+            set_state_category = megalopolis
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
+        }
+        652 = {
+            set_state_category = metropolis
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
+        }
+        add_timed_idea = {
+            idea = idea_RUS_has_prj
+            days = 70
+        }
+    }
 }
 #Запасы севера
 focus = {
     id = RUS_nord_reserves
     icon = GFX_north_plus
-    cost = 7
+    cost = 17
     x = 8
-    y = 5
+    y = 15
+    available = {
+        NOT = {
+            has_idea = idea_RUS_has_prj
+        }
+    }
     prerequisite = {
         focus = RUS_monumental_prj
     }
-    completion_reward = { }
+    completion_reward = {
+        825 = {
+            add_resource = {
+                type = oil
+                amount = 15
+            }
+            add_resource = {
+                type = chromium
+                amount = 3
+            }
+            add_resource = {
+                type = steel
+                amount = 10
+            }
+        }
+        262 = {
+            add_resource = {
+                type = oil
+                amount = 15
+            }
+            add_resource = {
+                type = chromium
+                amount = 1
+            }
+            add_resource = {
+                type = steel
+                amount = 8
+            }
+            add_resource = {
+                type = aluminium
+                amount = 3
+            }
+        }
+        581 = {
+            add_resource = {
+                type = oil
+                amount = 15
+            }
+            add_resource = {
+                type = chromium
+                amount = 4
+            }
+            add_resource = {
+                type = steel
+                amount = 12
+            }
+            add_resource = {
+                type = aluminium
+                amount = 10
+            }
+        }
+        579 = {
+            add_resource = {
+                type = oil
+                amount = 15
+            }
+            add_resource = {
+                type = chromium
+                amount = 3
+            }
+            add_resource = {
+                type = steel
+                amount = 11
+            }
+            add_resource = {
+                type = aluminium
+                amount = 6
+            }
+            add_resource = {
+                type = tungsten
+                amount = 1
+            }
+        }
+        824 = {
+            add_resource = {
+                type = oil
+                amount = 18
+            }
+            add_resource = {
+                type = chromium
+                amount = 4
+            }
+            add_resource = {
+                type = steel
+                amount = 14
+            }
+            add_resource = {
+                type = aluminium
+                amount = 5
+            }
+            add_resource = {
+                type = tungsten
+                amount = 2
+            }
+        }
+        516 = {
+            add_resource = {
+                type = oil
+                amount = 20
+            }
+            add_resource = {
+                type = chromium
+                amount = 6
+            }
+            add_resource = {
+                type = steel
+                amount = 8
+            }
+            add_resource = {
+                type = aluminium
+                amount = 8
+            }
+            add_resource = {
+                type = tungsten
+                amount = 3
+            }
+        }
+        878 = {
+            add_resource = {
+                type = oil
+                amount = 20
+            }
+            add_resource = {
+                type = chromium
+                amount = 7
+            }
+            add_resource = {
+                type = steel
+                amount = 5
+            }
+            add_resource = {
+                type = aluminium
+                amount = 7
+            }
+            add_resource = {
+                type = tungsten
+                amount = 3
+            }
+        }
+        878 = {
+            add_resource = {
+                type = oil
+                amount = 20
+            }
+            add_resource = {
+                type = chromium
+                amount = 7
+            }
+            add_resource = {
+                type = steel
+                amount = 7
+            }
+            add_resource = {
+                type = aluminium
+                amount = 8
+            }
+            add_resource = {
+                type = tungsten
+                amount = 3
+            }
+        }
+        876 = {
+            add_resource = {
+                type = oil
+                amount = 15
+            }
+            add_resource = {
+                type = chromium
+                amount = 5
+            }
+            add_resource = {
+                type = steel
+                amount = 8
+            }
+            add_resource = {
+                type = aluminium
+                amount = 7
+            }
+            add_resource = {
+                type = tungsten
+                amount = 3
+            }
+        }
+        877 = {
+            add_resource = {
+                type = oil
+                amount = 20
+            }
+            add_resource = {
+                type = chromium
+                amount = 6
+            }
+            add_resource = {
+                type = steel
+                amount = 8
+            }
+            add_resource = {
+                type = aluminium
+                amount = 8
+            }
+            add_resource = {
+                type = tungsten
+                amount = 2
+            }
+        }
+        644 = {
+            add_resource = {
+                type = oil
+                amount = 15
+            }
+            add_resource = {
+                type = chromium
+                amount = 3
+            }
+            add_resource = {
+                type = steel
+                amount = 9
+            }
+            add_resource = {
+                type = aluminium
+                amount = 5
+            }
+            add_resource = {
+                type = tungsten
+                amount = 1
+            }
+        }
+        822 = {
+            add_resource = {
+                type = oil
+                amount = 15
+            }
+            add_resource = {
+                type = chromium
+                amount = 3
+            }
+            add_resource = {
+                type = steel
+                amount = 10
+            }
+            add_resource = {
+                type = aluminium
+                amount = 3
+            }
+        }
+        add_timed_idea = {
+            idea = idea_RUS_has_prj
+            days = 70
+        }
+    }
+    
 }
 #Европейская Империя
 focus = {
@@ -664,26 +1706,83 @@ focus = {
     icon = GFX_euro_emp
     cost = 7
     x = 10
-    y = 5
+    y = 15
+    available = {
+        NOT = {
+            has_idea = idea_RUS_has_prj
+        }
+    }
     prerequisite = {
         focus = RUS_monumental_prj
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_eu_emp
+        219 = {
+            add_extra_state_shared_building_slots = 3
+            add_building_construction = {
+                type = industrial_complex
+                level = 3
+            }
+        }
+        195 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+            }
+        }
+        add_timed_idea = {
+            idea = idea_RUS_has_prj
+            days = 70
+        }
+    }
 }
 #Второй Китай
 focus = {
     id = RUS_second_china
     icon = GFX_second_chi
-    cost = 7
+    cost = 17
     x = 5
-    y = 6
+    y = 16
+    available = {
+        NOT = {
+            has_idea = idea_RUS_has_prj
+        }
+    }
     prerequisite = {
         focus = RUS_sibirean_mgpolis
     }
     prerequisite = {
         focus = RUS_Great_Ural
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_sec_chi
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = industrial_complex
+                level = 5
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = industrial_complex
+                level = 5
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = industrial_complex
+                level = 5
+            }
+        }
+        add_timed_idea = {
+            idea = idea_RUS_has_prj
+            days = 70
+        }
+    }
 }
 #Владычица мира (Россия)
 focus = {
@@ -691,14 +1790,25 @@ focus = {
     icon = GFX_owner_of_world
     cost = 7
     x = 7
-    y = 6
+    y = 16
+    available = {
+        NOT = {
+            has_idea = idea_RUS_has_prj
+        }
+    }
     prerequisite = {
         focus = RUS_Great_Ural
     }
     prerequisite = {
         focus = RUS_nord_reserves
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_wowner
+        add_timed_idea = {
+            idea = idea_RUS_has_prj
+            days = 35
+        }
+    }
 }
 #Самодостаточность (Тут ресы)
 focus = {
@@ -706,14 +1816,108 @@ focus = {
     icon = GFX_samodost
     cost = 7
     x = 9
-    y = 6
+    y = 16
+    available = {
+        NOT = {
+            has_idea = idea_RUS_has_prj
+        }
+    }
     prerequisite = {
         focus = RUS_nord_reserves
     }
     prerequisite = {
         focus = RUS_european_emp
     }
-    completion_reward = { }
+    completion_reward = {
+        random_controlled_state = {
+            add_resource = {
+                type = chromium
+                amount = 1
+            }
+            add_resource = {
+                type = steel
+                amount = 3
+            }
+            add_resource = {
+                type = rubber
+                amount = 2
+            }
+        }
+        random_controlled_state = {
+            add_resource = {
+                type = chromium
+                amount = 1
+            }
+            add_resource = {
+                type = steel
+                amount = 3
+            }
+            add_resource = {
+                type = rubber
+                amount = 2
+            }
+        }
+        random_controlled_state = {
+            add_resource = {
+                type = chromium
+                amount = 1
+            }
+            add_resource = {
+                type = steel
+                amount = 3
+            }
+            add_resource = {
+                type = rubber
+                amount = 2
+            }
+        }
+        random_controlled_state = {
+            add_resource = {
+                type = chromium
+                amount = 1
+            }
+            add_resource = {
+                type = steel
+                amount = 3
+            }
+            add_resource = {
+                type = rubber
+                amount = 2
+            }
+        }
+        random_controlled_state = {
+            add_resource = {
+                type = chromium
+                amount = 1
+            }
+            add_resource = {
+                type = steel
+                amount = 3
+            }
+            add_resource = {
+                type = rubber
+                amount = 2
+            }
+        }
+        random_controlled_state = {
+            add_resource = {
+                type = chromium
+                amount = 1
+            }
+            add_resource = {
+                type = steel
+                amount = 3
+            }
+            add_resource = {
+                type = rubber
+                amount = 2
+            }
+        }
+        add_timed_idea = {
+            idea = idea_RUS_has_prj
+            days = 70
+        }
+    }
 }
 ############################### ФОКУСЫ БРИКС 2027
 focus = {
@@ -721,11 +1925,13 @@ focus = {
     icon = GFX_BRICS
     cost = 5
     x = 20
-    y = 4
+    y = 5
     available = {
-        
+        has_idea = idea_BRICS_tts
     }
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = idea_RUS_our_place_BRICS_I
+    }
 }
 #Брики (тип валюта))).)
 focus = {
@@ -733,11 +1939,20 @@ focus = {
     icon = GFX_briks
     cost = 5
     x = 18
-    y = 5
+    y = 6
+    available = {
+        has_idea = idea_BRICS_tts
+        has_idea = idea_RUS_our_place_BRICS_III
+    }
     prerequisite = {
         focus = RUS_BRICS
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_our_place_BRICS_III
+            add_idea = idea_RUS_our_place_BRICS_IV
+        }
+    }
 }
 #Валюта между странами
 focus = {
@@ -745,14 +1960,23 @@ focus = {
     icon = GFX_into_govs
     cost = 5
     x = 17
-    y = 6
+    y = 7
+    available = {
+        has_idea = idea_BRICS_tts
+        has_idea = idea_RUS_our_place_BRICS_IV
+    }
     prerequisite = {
         focus = RUS_briks
     }
     mutually_exclusive = {
         focus = RUS_into_nations
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_our_place_BRICS_IV
+            add_idea = idea_RUS_our_place_BRICS_Va
+        }
+    }
 }
 #Валюта между народами
 focus = {
@@ -760,14 +1984,23 @@ focus = {
     icon = GFX_into_nations
     cost = 5
     x = 19
-    y = 6
+    y = 7
+    available = {
+        has_idea = idea_BRICS_tts
+        has_idea = idea_RUS_our_place_BRICS_IV
+    }
     prerequisite = {
         focus = RUS_briks
     }
     mutually_exclusive = {
         focus = RUS_into_govs
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_our_place_BRICS_IV
+            add_idea = idea_RUS_our_place_BRICS_Vb
+        }
+    }
 }
 #Отказ от доллара
 focus = {
@@ -775,11 +2008,20 @@ focus = {
     icon = GFX_no_dollars
     cost = 5
     x = 20
-    y = 5
+    y = 6
+    available = {
+        has_idea = idea_BRICS_tts
+        has_idea = idea_RUS_our_place_BRICS_II
+    }
     prerequisite = {
         focus = RUS_BRICS
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_our_place_BRICS_II
+            add_idea = idea_RUS_our_place_BRICS_III
+        }
+    }
 }
 #Торговля
 focus = {
@@ -787,11 +2029,20 @@ focus = {
     icon = GFX_deals
     cost = 5
     x = 22
-    y = 5
+    y = 6
+    available = {
+        has_idea = idea_BRICS_tts
+        has_idea = idea_RUS_our_place_BRICS_I
+    }
     prerequisite = {
         focus = RUS_BRICS
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_our_place_BRICS_I
+            add_idea = idea_RUS_our_place_BRICS_II
+        }
+    }
 }
 #Больше нефти!
 focus = {
@@ -799,11 +2050,50 @@ focus = {
     icon = GFX_more_oil
     cost = 5
     x = 21
-    y = 6
+    y = 7
+    available = {
+        has_idea = idea_BRICS_tts
+    }
     prerequisite = {
         focus = RUS_deals
     }
-    completion_reward = { }
+    completion_reward = {
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = synthetic_refinery
+                level = 1
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = synthetic_refinery
+                level = 1
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = synthetic_refinery
+                level = 1
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = synthetic_refinery
+                level = 1
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = synthetic_refinery
+                level = 1
+            }
+        }
+    }
 }
 #Больше газа!
 focus = {
@@ -811,11 +2101,44 @@ focus = {
     icon = GFX_more_gas
     cost = 5
     x = 23
-    y = 6
+    y = 7
+    available = {
+        has_idea = idea_BRICS_tts
+    }
     prerequisite = {
         focus = RUS_deals
     }
-    completion_reward = { }
+    completion_reward = {
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+            }
+        }
+        random_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+            }
+        }
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+    }
 }
 ##################################### ПРЕТЕНЗИИ
 #Поддержать Толстизм
@@ -861,6 +2184,9 @@ focus = {
     cost = 2
     x = 54
     y = 2
+    bypass = {
+        has_completed_focus = RUS_expansion_NOD
+    }
     prerequisite = {
         focus = RUS_supp_imperialism
     }
@@ -985,7 +2311,7 @@ focus = {
 focus = {
     id = RUS_our_russia
     icon = GFX_our_russia
-    cost = x
+    cost = 3
     x = 46
     y = 4
     prerequisite = {
@@ -1694,14 +3020,14 @@ focus = {
     available = {
         has_country_leader_ideology = civilizationism
         NOT = {
-           is_country_leader = SOV_Vladimir_Putin 
+           has_idea = idea_RUS_is_putin_UR
         }
     }
     prerequisite = {
         focus = RUS_uru_UR
     }
     mutually_exclusive = {
-        focus = RUIS_PUTIN_UR
+        focus = RUS_PUTIN_UR
     }
     completion_reward = { }
 }
@@ -1714,7 +3040,7 @@ focus = {
     y = 13
     available = {
         has_country_leader_ideology = civilizationism
-        is_country_leader = SOV_Vladimir_Putin
+        has_idea = idea_RUS_is_putin_UR
     }
     prerequisite = {
         focus = RUS_uru_UR
@@ -2436,13 +3762,26 @@ focus = {
 }
 
 ################################# Курильский договор
+#ОВЗ
 focus = {
-    id = RUS_sakhalin_pact
+    id = RUS_ovz_pact
     icon = GFX_sakhalin_pact
     cost = 0
     x = 45
     y = 11
-    completion_reward = { }
+    available = {
+        has_idea = idea_ovz_pact_I
+    }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_ovz_pact_I
+                }
+            }   
+            add_political_power = 100            
+        }
+    }
 }
 #Русская сфера
 focus = {
@@ -2452,9 +3791,22 @@ focus = {
     x = 45
     y = 12
     prerequisite = {
-        focus = RUS_sakhalin_pact
+        focus = RUS_ovz_pact
     }
-    completion_reward = { }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_ovz_pact_I
+                }
+                swap_ideas = {
+                    remove_idea = idea_ovz_pact_I
+                    add_idea = idea_ovz_pact_II
+                }       
+            }
+        }
+        
+    }
 }
 #Забота о подданых
 focus = {
@@ -2463,10 +3815,22 @@ focus = {
     cost = 3
     x = 43
     y = 13
+    available = {
+        has_idea = idea_ovz_pact_III
+    }
     prerequisite = {
         focus = RUS_rus_sphere
     }
-    completion_reward = { }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_ovz_pact_III
+                }
+                add_ideas = idea_ovz_care_ab_sph
+            }
+        }
+    }
 }
 #Единое экономическое пространство
 focus = {
@@ -2475,10 +3839,25 @@ focus = {
     cost = 4
     x = 45
     y = 13
+    available = {
+        has_idea = idea_ovz_pact_II
+    }
     prerequisite = {
         focus = RUS_rus_sphere
     }
-    completion_reward = { }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_ovz_pact_II
+                }
+                swap_ideas = {
+                    remove_idea = idea_ovz_pact_II
+                    add_idea = idea_ovz_pact_III
+                }
+            }
+        }
+    }
 }
 focus = {
     id = RUS_instructors
@@ -2486,10 +3865,22 @@ focus = {
     cost = 3
     x = 47
     y = 13
+    available = {
+        has_idea = idea_ovz_pact_III
+    }
     prerequisite = {
         focus = RUS_rus_sphere
     }
-    completion_reward = { }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_ovz_pact_III
+                }
+                add_ideas = idea_ovz_instuct      
+            }
+        }
+    }
 }
 #Настоящая свобода
 focus = {
@@ -2498,7 +3889,7 @@ focus = {
     cost = 5
     x = 45
     y = 14
-    completion_reward = { }
+    
     prerequisite = {
         focus = RUS_care_ab_sphere
     }
@@ -2508,9 +3899,42 @@ focus = {
     prerequisite = {
         focus = RUS_instructors
     }
+    completion_reward = {
+        add_political_power = 100
+    }
+}#157 фокусов всего
+
+
+########## Шорткаты
+shortcut = {
+    name = RUS_econmics_shortcut
+    target = RUS_soveren_econom
+    scroll_wheel_factor = 0.5
 }
-
-
-
+shortcut = {
+    name = RUS_army_shortcut
+    target = RUS_AFRF
+    scroll_wheel_factor = 0.5
+}
+shortcut = {
+    name = RUS_expansion_shortcut
+    target = RUS_buy_alaska
+    scroll_wheel_factor = 0.5
+}
+shortcut = {
+    name = RUS_politics_shortcut
+    target = RUS_UR
+    scroll_wheel_factor = 0.5
+}
+shortcut = {
+    name = RUS_Brics_shortcut
+    target = RUS_no_dollars
+    scroll_wheel_factor = 0.5
+}
+shortcut = {
+    name = RUS_sakhalin_pact_shortcut
+    target = RUS_sakhalin_pact
+    scroll_wheel_factor = 0.5
+}
 
 }
