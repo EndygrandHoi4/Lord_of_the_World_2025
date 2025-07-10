@@ -65,7 +65,7 @@ ideas = {
 
 			}
 		}
-
+		# БРИКС - комменты ставьте сссссссука!!!
 		idea_BRICS_countries = {
 			allowed = {
 				tag = A03
@@ -80,9 +80,21 @@ ideas = {
 				tag 
 			}
 			removal_cost = -1
-			picture 
+			picture = GFX_BRICS # Добавил от фокусов, потом замените
 			modifier = {
-
+				liberalism_drift = -0.1
+				radicalism_drift = -0.1
+			}
+		}
+		# БРИКС 2027
+		idea_BRICS_tts = {
+			allowed = {
+				has_idea = idea_BRICS_countries
+			}
+			removal_cost = -1 
+			picture = GFX_briks # Добавил от фокусов, потом замените
+			modifier = {
+				production_speed_buildings_factor = 0.1
 			}
 		}
 
