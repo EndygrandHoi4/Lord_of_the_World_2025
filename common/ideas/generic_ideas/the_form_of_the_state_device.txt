@@ -1,0 +1,9 @@
+ideas = {
+
+	the_form_of_the_state_device = {
+		law = yes
+		use_list_view = yes
+
+		
+	}
+}

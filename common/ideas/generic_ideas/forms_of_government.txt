@@ -1,0 +1,178 @@
+ideas = {
+
+	forms_of_government = {
+		law = yes
+		use_list_view = yes
+		
+		#Абсолютная монархия
+		Absolute_monarchy = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+			
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+
+			}
+		}
+		#Конституционная монархия
+		Constitutional_monarchy = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+
+			}
+		}
+		#Выборная монархия (Ватикан)
+		Elective_monarchy = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+
+			}
+		}
+
+		parliamentary_republic = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+
+			}
+		}
+
+		presidential_republic = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+
+			}
+		}
+
+		Islamic_republic = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+
+			}
+		}
+
+		#Директорская республика (Швейцария)
+		Directorial_republic = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+
+			}
+		}
+
+		#Межправительственная организация (ЕС)
+		international_organization = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+
+			}
+		}
+	}
+}
