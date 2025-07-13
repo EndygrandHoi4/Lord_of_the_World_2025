@@ -1,0 +1,133 @@
+ideas = {
+	economy_situation = {
+		#Коллапс и бартер
+		collapse_eco = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				production_speed_buildings_factor = -1
+				consumer_goods_factor = 0.75
+				political_power_gain = -0.5
+				production_speed_industrial_complex_factor = -0.8
+				production_speed_infrastructure_factor = -0.8
+				monthly_population = -0.75 
+			}
+		}
+		#Рецессия
+		recess_eco = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				production_speed_buildings_factor = -0.25
+				consumer_goods_factor = 0.25
+				political_power_gain = -0.1
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_infrastructure_factor = -0.5
+				monthly_population = -0.5
+			}
+		}
+		#Стагнация
+		stagn_eco = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				political_power_gain = 0.1
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_infrastructure_factor = -0.25
+				monthly_population = -0.25
+			}
+		}
+		#Рост
+		up_eco = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				consumer_goods_factor = 0.0
+				political_power_gain = 0.15
+				production_speed_industrial_complex_factor = 0.35
+				production_speed_infrastructure_factor = 0.0
+				monthly_population = 0.0
+			}
+		}
+		#Эко Бум
+		boom_eco = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.5
+				consumer_goods_factor = -0.25
+				political_power_gain = 0.2
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_infrastructure_factor = 0.25
+				monthly_population = 0.1
+			}
+		}
+	}
+}

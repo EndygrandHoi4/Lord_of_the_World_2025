@@ -1,0 +1,259 @@
+ideas = {
+	economy_ust = {
+		#0% Обычная армия
+		army_ust_0 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.05
+				war_support_factor = 0.5
+			}
+		}
+		#10% Опытная армия
+		army_ust_1 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.15
+				war_support_factor = 0.5
+			}
+		}
+		#20% Сильная армия
+		army_ust_2 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.25
+				war_support_factor = 0.5
+			}
+		}
+		#30% Армия ветеранов
+		army_ust_3 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.35
+				war_support_factor = 0.4
+			}
+		}
+		#40% Утомлённая армия
+		army_ust_4 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.3
+				war_support_factor = 0.3
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			}
+		}
+		#50% Уставшая армия
+		army_ust_5 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.25
+				war_support_factor = 0.2
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+			}
+		}
+		#60% Отказническая армия
+		army_ust_6 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.20
+				war_support_factor = 0.1
+				army_attack_factor = -0.15
+				army_defence_factor = -0.10
+			}
+		}
+		#70% Бунтующая армия
+		army_ust_7 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.15
+				war_support_factor = 0.0
+				army_attack_factor = -0.2
+				army_defence_factor = -0.15
+			}
+		}
+		#80% Сдающаяся армия
+		army_ust_8 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.10
+				war_support_factor = -0.1
+				army_attack_factor = -0.25
+				army_defence_factor = -0.25
+			}
+		}
+		#90% Дизертирующая армия
+		army_ust_9 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				experience_gain_army_factor = 0.05
+				war_support_factor = -0.2
+				army_attack_factor = -0.3
+				army_defence_factor = -0.3
+			}
+		}
+		#100% Нерабочая армия
+		army_ust_10 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				war_support_factor = -0.3
+				army_attack_factor = -0.4
+				army_defence_factor = -0.4
+			}
+		}
+	}
+}

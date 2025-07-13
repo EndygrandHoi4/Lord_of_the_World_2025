@@ -1,0 +1,255 @@
+ideas = {
+	economy_ust = {
+		#0% Стабильная экономика
+		ust_0 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				
+			}
+		}
+		#10% Чуствительная экономика
+		ust_1 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.01
+				production_speed_buildings_factor = -0.03
+			}
+		}
+		#20% Расшатанная экономика
+		ust_2 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.02
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		#30% Устающая экономика
+		ust_3 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.03
+				production_speed_buildings_factor = -0.08
+			}
+		}
+		#40% Устающая экономика
+		ust_4 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_gain = -0.04
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		#50% Рушащаяся экономика
+		ust_5 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				political_power_gain = -0.05
+				production_speed_buildings_factor = -0.13
+			}
+		}
+		#60% Рушащаяся экономика
+		ust_6 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				political_power_gain = -0.06
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		#70% Слабая экономика
+		ust_7 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.35
+				political_power_gain = -0.07
+				production_speed_buildings_factor = -0.18
+			}
+		}
+		#80% Слабая экономика
+		ust_8 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.4
+				political_power_gain = -0.08
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		#90% Повсеместный бартер
+		ust_9 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.5
+				political_power_gain = -0.09
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		#100% Коллапс
+		ust_10 = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.55
+				political_power_gain = -0.1
+				production_speed_buildings_factor = -0.3
+			}
+		}
+	}
+}

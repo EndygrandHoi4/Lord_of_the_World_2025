@@ -1,0 +1,156 @@
+ideas = {
+    economy_priority = {
+		#Малый бизнес
+		minibuis_ecp = {
+			cost = 500
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.25
+			}
+		}
+		#Предприятия
+		ic_ecp = {
+			cost = 500
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		#Сфера услуг
+		uslugi_ecp = {
+			cost = 500
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				research_speed_factor = 0.25
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		#Военная машина
+		warmach_ecp = {
+			cost = 500
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+			}
+		}
+		#Ресурсные корпорации
+		resourses_ecp = {
+			cost = 500
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				local_resources_factor = 0.2
+				resource_trade_cost_bonus_per_factory = 0.5
+			}
+		}
+		#Нефтяная игла
+		oil_ecp = {
+			cost = 500
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				production_oil_factor = 0.5
+			}
+		}
+		#Олигархи
+		_ecp = {
+			cost = 500
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				legitimacy_gain_factor = 0.1
+				political_power_gain = 0.25
+			}
+		}
+	}
+}

@@ -1,0 +1,88 @@
+ideas = {
+	nuclear_status = {
+		#Нет атому
+		nuc_hasnt = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				
+			}
+		}
+		#Мирный атом
+		nuc_peaceful = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				
+			}
+		}
+		#Оборонительный атом
+		nuc_defence = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				
+			}
+		}
+		#Наступательный атом
+		nuc_attack = {
+			cost = 10000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,136 @@
+ideas = {
+	recruition = {
+		#Нет армии
+		no_army_rec = {
+			cost = 250
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				weekly_manpower = 0.0
+			}
+		}
+		#Добровольческая служба
+		wolonteur_rec = {
+			cost = 250
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				weekly_manpower = 0.05
+			}
+		}
+		#Частичная мобилизация
+		mini_rec = {
+			cost = 250
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				weekly_manpower = 0.15
+			}
+		}
+		#Масштабная мобилизация
+		mash_rec = {
+			cost = 250
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				weekly_manpower = 0.25
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		#Всеобщая мобилизация
+		all_rec = {
+			cost = 250
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				weekly_manpower = 0.35
+				production_factory_efficiency_gain_factor = -0.25
+				production_factory_max_efficiency_factor = -0.25
+			}
+		}
+		#До последнего гражданина
+		gov_rec = {
+			cost = 250
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
+
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				weekly_manpower = 0.5
+				production_factory_efficiency_gain_factor = -0.5
+				production_factory_max_efficiency_factor = -0.5
+			}
+		}
+	}
+}
