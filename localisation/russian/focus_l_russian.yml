@@ -229,7 +229,13 @@
  RUS_gorbachev_court:0 "§RСуд над Горбачёвым§!"
  RUS_na_cheku_NOD:0 "§RНа-чеку!§!"
  RUS_militarisation:0 "§RМилитаризация§!"
- 
+
+ #Шоткаты
+ RUS_economics_shortcut:0 "Экономика"
+ RUS_army_shortcut:0 "Армия"
+ RUS_expansion_shortcut:0 "Расширение"
+ RUS_politics_shortcut:0 "Политика"
+ RUS_sakhalin_pact_shortcut:0 "ОВЗ"
  
  
 
