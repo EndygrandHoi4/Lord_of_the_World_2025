@@ -4239,7 +4239,7 @@ focus = {
 
 ########## Шорткаты
 shortcut = {
-    name = RUS_econmics_shortcut
+    name = RUS_economics_shortcut
     target = RUS_soveren_econom
     scroll_wheel_factor = 0.5
 }
@@ -4256,11 +4256,6 @@ shortcut = {
 shortcut = {
     name = RUS_politics_shortcut
     target = RUS_UR
-    scroll_wheel_factor = 0.5
-}
-shortcut = {
-    name = RUS_Brics_shortcut
-    target = RUS_no_dollars
     scroll_wheel_factor = 0.5
 }
 shortcut = {
