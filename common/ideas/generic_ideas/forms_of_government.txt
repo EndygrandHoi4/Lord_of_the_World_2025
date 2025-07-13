@@ -22,7 +22,11 @@ ideas = {
 			}
 
 			modifier = {
-
+				political_advisor_cost_factor = 1
+				political_power_gain = 0.1
+				production_speed_buildings_factor = -0.3
+				stability_factor = -0.1
+				consumer_goods_factor = -0.3
 			}
 		}
 		#Конституционная монархия
@@ -43,10 +47,14 @@ ideas = {
 			}
 
 			modifier = {
-
+				political_advisor_cost_factor = 0.5
+				political_power_gain = 0.15
+				production_speed_buildings_factor = -0.1
+				stability_factor = -0.1
+				consumer_goods_factor = -0.25
 			}
 		}
-		#Выборная монархия (Ватикан)
+		#Выборная монархия (Ватикан) А ПОЛЬША??????????
 		Elective_monarchy = {
 			cost = 1000
 			removal_cost = -1
@@ -64,7 +72,34 @@ ideas = {
 			}
 
 			modifier = {
+				political_advisor_cost_factor = 0.25
+				political_power_gain = 0.05
+				production_speed_buildings_factor = -0.2
+				stability_factor = -0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		#Парламентская монархия
+		Parlament_monarchy = {
+			cost = 1000
+			removal_cost = -1 
+			level = 1
+			cancel_if_invalid = no
 
+			# picture =
+			
+			ai_will_do = {
+				
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_advisor_cost_factor = 0.1
+				political_power_gain = 0.1
+				production_speed_buildings_factor = -0.1
+				stability_factor = -0.05
+				consumer_goods_factor = -0.25
 			}
 		}
 
@@ -86,7 +121,10 @@ ideas = {
 			}
 
 			modifier = {
-
+				consumer_goods_factor = 0.25
+				political_power_gain = -0.2
+				stability_factor = 0.1
+				political_advisor_cost_factor = 0
 			}
 		}
 
@@ -108,7 +146,32 @@ ideas = {
 			}
 
 			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.05
+				stability_factor = -0.1
+				political_advisor_cost_factor = 0.05
+			}
+		}
 
+		#Смешанная республика
+		Prespar_republic = {
+			cost = 1000
+			removal_cost = -1 
+			level = 1
+			cancel_if_invalid = no
+
+			# picture =
+			ai_will_do = {
+				
+			} 
+			available = {
+				
+			}
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.1
+				stability_factor = 0.0
+				political_advisor_cost_factor = -0.05
 			}
 		}
 
@@ -130,7 +193,10 @@ ideas = {
 			}
 
 			modifier = {
-
+				consumer_goods_factor = 0.0
+				political_power_gain = -0.2
+				stability_factor = -0.3
+				political_advisor_cost_factor = 0.2
 			}
 		}
 
@@ -152,7 +218,10 @@ ideas = {
 			}
 
 			modifier = {
-
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.4
+				stability_factor = 0.5
+				political_advisor_cost_factor = -0.5
 			}
 		}
 
@@ -174,7 +243,34 @@ ideas = {
 			}
 
 			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.25
+				stability_factor = 0.3
+				political_advisor_cost_factor = 0.25
+			}
+		}
+		#Оппозиционное правительство (БЭНЭРЭ)
+		alt_gov = {
+			cost = 1000
+			removal_cost = -1
+			level = 1
+			cancel_if_invalid = no
 
+			#picture = 
+
+			ai_will_do = {
+
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = 0.0
+				stability_factor = -0.3
+				political_advisor_cost_factor = 0.5
 			}
 		}
 	}
