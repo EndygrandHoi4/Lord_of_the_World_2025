@@ -154,7 +154,7 @@ ideas = {
 		}
 
 		#Смешанная республика
-		Prespar_republic = {
+		shaked_republic = {
 			cost = 1000
 			removal_cost = -1 
 			level = 1
