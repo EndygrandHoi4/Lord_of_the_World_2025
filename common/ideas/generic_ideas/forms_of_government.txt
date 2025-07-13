@@ -68,6 +68,7 @@ ideas = {
 			}
 		}
 
+		#Парламентская республика
 		parliamentary_republic = {
 			cost = 1000
 			removal_cost = -1
@@ -89,6 +90,7 @@ ideas = {
 			}
 		}
 
+		#Президентская республика
 		presidential_republic = {
 			cost = 1000
 			removal_cost = -1
@@ -110,6 +112,7 @@ ideas = {
 			}
 		}
 
+		#Исламская республика
 		Islamic_republic = {
 			cost = 1000
 			removal_cost = -1
