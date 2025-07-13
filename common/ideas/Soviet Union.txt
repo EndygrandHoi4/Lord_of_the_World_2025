@@ -1091,6 +1091,43 @@ ideas = {
                     political_advisor_cost_factor = 0.25
                 }
             }
-        }        
+        }
+        #ТМВ 
+        idea_RUS_TWW_I = {
+            allowed = {
+
+            }
+            removal_cost = -1 
+            picture = GFX_slavic_state
+            modifier = {
+                army_armor_attack_factor = -0.15
+                experience_gain_army_factor = -0.1
+                political_power_gain = -0.1
+            }
+        }
+        idea_RUS_TWW_II = {
+            allowed = {
+
+            }
+            removal_cost = -1 
+            picture = GFX_slavic_state
+            modifier = {
+                army_armor_attack_factor = -0.05
+                experience_gain_army_factor = 0.1
+                political_power_gain = 0.0
+            }
+        }
+        idea_RUS_TWW_III = {
+            allowed = {
+
+            }
+            removal_cost = -1 
+            picture = GFX_slavic_state
+            modifier = {
+                army_armor_attack_factor = 0.05
+                experience_gain_army_factor = 0.2
+                political_power_gain = 0.1
+            }
+        }
     }
 }

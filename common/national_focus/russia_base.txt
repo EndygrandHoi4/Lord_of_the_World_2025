@@ -3903,7 +3903,339 @@ focus = {
         add_political_power = 100
     }
 }#157 фокусов всего
-
+########## Ветка формы правления
+#Резиденция Романовых
+focus = {
+    id = RUS_res_romanov
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 41
+    y = 7
+    completion_reward = { }
+}
+#Славное прошлое
+focus = {
+    id = RUS_the_great_past
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 40
+    y = 8
+    prerequisite = {
+        focus = RUS_res_romanov
+    }
+    mutually_exclusive = {
+        focus = RUS_mon_inf
+    }
+    completion_reward = { }
+}
+#Влияние монархистов
+focus = {
+    id = RUS_mon_inf
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 42
+    y = 8
+    prerequisite = {
+        focus = RUS_res_romanov
+    }
+    mutually_exclusive = {
+        focus = RUS_the_great_past
+    }
+    completion_reward = { }
+}
+############## Ветка Третья мировая
+#Вторжение кейстейта
+focus = {
+    id = RUS_war_keystate
+    icon = GFX_surrender_tiny_flag
+    cost = 1
+    x = 53
+    y = 8
+    available = {
+        has_idea = idea_RUS_TWW_I
+    }
+    completion_reward = { }
+}
+#Сплотить ОВЗ
+focus = {
+    id = RUS_with_ovz
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 52
+    y = 9
+    prerequisite = {
+        focus = RUS_war_keystate
+    }
+    completion_reward = {
+        add_political_power = 100
+    }
+}
+#Свои в стане врага #Венгрия, Словакия и Сербия
+focus = {
+    id = RUS_our_in_enemies
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 54
+    y = 9
+    prerequisite = {
+        focus = RUS_war_keystate
+    }
+    completion_reward = {
+        #НЕ ЗАБЫТЬ ДОБАВИТЬ ИВЕНТЫ
+    }
+}
+#Найти предателей
+focus = {
+    id = RUS_find_imposters
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 49
+    y = 10
+    prerequisite = {
+        focus = RUS_with_ovz
+    }
+    prerequisite = {
+        focus = RUS_our_in_enemies
+    }
+    completion_reward = {
+        add_war_support = 0.25
+    }
+}
+#Мобилизация экономики
+focus = {
+    id = RUS_mob_eco
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 51
+    y = 10
+    prerequisite = {
+        focus = RUS_with_ovz
+    }
+    prerequisite = {
+        focus = RUS_our_in_enemies
+    }
+    completion_reward = {
+        add_offsite_building = {
+            type = arms_factory
+            level = 2
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 2
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 2
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 2
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 2
+        }
+    }
+}
+#Враг падёт!
+focus = {
+    id = RUS_en_will_fall
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 53
+    y = 10
+    prerequisite = {
+        focus = RUS_with_ovz
+    }
+    prerequisite = {
+        focus = RUS_our_in_enemies
+    }
+    completion_reward = {
+        add_political_power = 100
+    }
+}
+#Переговоры с США
+focus = {
+    id = RUS_kst_USA
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 55
+    y = 10
+    prerequisite = {
+        focus = RUS_with_ovz
+    }
+    prerequisite = {
+        focus = RUS_our_in_enemies
+    }
+    completion_reward = {
+        #НЕ ЗАБЫТЬ ДОБАВИТЬ РЕШЕНИЯ
+    }
+}
+#Засланные казачки
+focus = {
+    id = RUS_cossacs_in_en
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 57
+    y = 10
+    prerequisite = {
+        focus = RUS_with_ovz
+    }
+    prerequisite = {
+        focus = RUS_our_in_enemies
+    }
+    completion_reward = {
+        add_stability = 0.15
+    }
+}
+#НАША Единая Армия!
+focus = {
+    id = RUS_our_army_ovz
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 51
+    y = 12
+    prerequisite = {
+        focus = RUS_find_imposters
+        focus = RUS_mob_eco
+        focus = RUS_en_will_fall
+        focus = RUS_kst_USA
+        focus = RUS_cossacs_in_en
+    }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_ovz_pact_III
+                }
+                add_manpower = 100000
+            }
+        }
+    }
+}
+#Победа будет наша!
+focus = {
+    id = RUS_win_wb_our
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 53
+    y = 11
+    prerequisite = {
+        focus = RUS_find_imposters
+        focus = RUS_mob_eco
+        focus = RUS_en_will_fall
+        focus = RUS_kst_USA
+        focus = RUS_cossacs_in_en
+    }
+    completion_reward = {
+        army_experience = 10
+    }
+}
+#Война с другой стороны
+focus = {
+    id = RUS_war_ext
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 55
+    y = 12
+    prerequisite = {
+        focus = RUS_find_imposters
+        focus = RUS_mob_eco
+        focus = RUS_en_will_fall
+        focus = RUS_kst_USA
+        focus = RUS_cossacs_in_en
+    }
+    completion_reward = {
+        add_command_power = 100
+        add_political_power = 100
+    }
+}
+#Мирная позиция
+focus = {
+    id = RUS_peaceful_pos
+    icon = GFX_surrender_tiny_flag
+    cost = 3
+    x = 53
+    y = 13
+    prerequisite = {
+        focus = RUS_our_army_ovz
+    }
+    prerequisite = {
+        focus = RUS_war_ext
+    }
+    prerequisite = {
+        focus = RUS_win_wb_our
+    }
+    completion_reward = {
+        add_stability = 0.1
+    }
+}
+#Трёхсторонние переговоры
+focus = {
+    id = RUS_three_pos_kst
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 53
+    y = 14
+    prerequisite = {
+        focus = RUS_peaceful_pos
+    }
+    completion_reward = {
+        #НЕ ЗАБЫТЬ ИВЕНТ
+    }
+}
+#Давление наступлениями
+focus = {
+    id = RUS_inf_attacks
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 51
+    y = 14
+    prerequisite = {
+        focus = RUS_peaceful_pos
+    }
+    completion_reward = {
+        add_timed_idea = {
+            idea = idea_RUS_supernastup
+            days = 180
+        }
+    }
+}
+#Диверсии в Кейстейте
+focus = {
+    id = RUS_divers_keystate
+    icon = GFX_real_freedom
+    cost = 2
+    x = 55
+    y = 14
+    prerequisite = {
+        focus = RUS_peaceful_pos
+    }
+    completion_reward = {
+        add_command_power = 100
+        
+    }
+}
+#Мир через войны!
+focus = {
+    id = RUS_peace_from_wars
+    icon = GFX_surrender_tiny_flag
+    cost = 2
+    x = 53
+    y = 15
+    prerequisite = {
+        focus = RUS_inf_attacks
+    }
+    prerequisite = {
+        focus = RUS_three_pos_kst
+    }
+    prerequisite = {
+        focus = RUS_divers_keystate
+    }
+    completion_reward = {
+        add_war_support = 0.05
+    }
+}#171 фокус всегоооооо!!!!!!!!!
 
 ########## Шорткаты
 shortcut = {
