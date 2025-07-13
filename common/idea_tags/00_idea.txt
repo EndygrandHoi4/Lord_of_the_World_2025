@@ -47,6 +47,59 @@ idea_categories = {
 		removal_cost = 0
 	}
 
+	specmin_structure = { #СОРОС, РКН, ФСБ и тд
+		slot = specmins
+		slot = specmins
+		slot = specmins
+		slot = specmins
+		slot = specmins
+		slot = specmins
+
+		ledger = civilian
+
+		cost = 200
+		removal_cost = 0
+	}
+
+	economy_structure = {
+		slot = economy_situation #Рецессия, Стагнация, Бум и тд
+		slot = economy_mobilisation #Мобилизация эко
+		slot = economy_ust #Усталость
+		slot = economy_priority #Приоритеты
+		slot = economy_priority #
+		slot = economy_priority #
+
+		ledger = civilian
+
+		cost = 500
+		removal_cost = 0
+	}
+
+	army_structure_1 = {
+		character_slot = land_advisor
+		character_slot = navy_advisor
+		character_slot = air_advisor
+		character_slot = theoretic 
+		slot = army_ust #Усталость армии
+		slot = nuclear_status
+
+		ledger = army
+		removal_cost = 0
+
+	}
+
+	army_structure_2 = {
+		character_slot = army_advisor
+		character_slot = army_advisor
+		character_slot = army_advisor
+		character_slot = army_advisor
+		slot = recruition #Призыв
+		slot = army_era #Уровень армии
+
+		ledger = army
+		removal_cost = 0
+	}
+
 
 
 
@@ -57,3 +110,12 @@ idea_categories = {
 
 
 }
+
+slot_ledgers = {
+		land_advisor = army
+		navy_advisor = navy
+		air_advisor = air
+		
+		theoretic = invalid # must be overridden
+		
+	}
