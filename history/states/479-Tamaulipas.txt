@@ -14,7 +14,7 @@ state = {
 
 		owner = A54
 		add_core_of = A54
-		add_core_of = RIG
+		add_core_of = C65
 
 		buildings = {
 			infrastructure = 2

@@ -24,8 +24,8 @@ state={
 			6826 1
 		}
 		add_core_of = A50
-		add_core_of = KUR
-		add_core_of = ASY
+		add_core_of = C10
+		add_core_of = E06
 	}
 	
 	provinces={

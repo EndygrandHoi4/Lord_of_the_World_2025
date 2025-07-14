@@ -35,8 +35,8 @@ state={
 		}
 		owner = A47
 		add_core_of = A47
-		add_core_of = TIG
-		add_claim_by = ERI
+		add_core_of = C47
+		add_claim_by = B46
 		1936.6.1 = {
 			owner = A19
 			controller = A19

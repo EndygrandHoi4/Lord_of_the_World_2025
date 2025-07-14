@@ -251,7 +251,7 @@ IF = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { MAN A51 A41 }
+		nationalities = { B15 A51 A41 }
 	}
 
 	create_operative_leader = {
@@ -469,7 +469,7 @@ set_autonomy = {
 	autonomous_state = autonomy_wtt_imperial_protectorate
 }
 set_autonomy = {
-	target = MAN
+	target = B15
 	autonomous_state = autonomy_wtt_imperial_protectorate
 }
 

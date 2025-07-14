@@ -6,7 +6,7 @@ state={
 
 	history={
 		owner = A58
-		add_core_of = SAM
+		add_core_of = B88
 		buildings = {
 			infrastructure = 2
 			7290 = {

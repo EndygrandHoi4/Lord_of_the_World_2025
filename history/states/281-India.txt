@@ -8,7 +8,7 @@ state={
 
 	history={
 		owner = A02
-		add_core_of = MLD
+		add_core_of = B82
 		buildings = {
 			infrastructure = 2
 			4967 = {

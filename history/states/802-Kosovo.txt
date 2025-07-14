@@ -13,13 +13,13 @@ state = {
 			9849 2 
 		}
 		owner = A22
-		CONTROLLER = KOS
+		CONTROLLER = C78
 		buildings = {
 			infrastructure = 1
 
 		}
 		add_core_of = A21
-		add_core_of = KOS
+		add_core_of = C78
 		add_core_of = A22
 
 	}

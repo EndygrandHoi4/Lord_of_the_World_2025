@@ -23,7 +23,7 @@ state={
 		}
 		add_core_of = A02
 		add_core_of = A32
-		add_core_of = NIR
+		add_core_of = B94
 	}
 
 	provinces={

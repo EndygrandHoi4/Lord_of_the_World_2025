@@ -12,7 +12,7 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = A60
-		add_core_of = KUR
+		add_core_of = C10
 	}
 
 	provinces={

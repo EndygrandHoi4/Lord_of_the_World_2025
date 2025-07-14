@@ -10,7 +10,7 @@ state = {
 
 		owner = A01
 		add_core_of = A01
-		add_core_of = PRE
+		add_core_of = B97
 
 		victory_points = {
 			9388 1 # Stralsund

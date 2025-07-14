@@ -9,7 +9,7 @@ state = {
 
 		owner = A54
 		add_core_of = A54
-		add_core_of = YUC
+		add_core_of = C64
 
 		buildings = {
 			infrastructure = 2

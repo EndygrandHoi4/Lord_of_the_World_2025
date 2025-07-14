@@ -10,8 +10,8 @@ state = {
 
 	history = {
 
-		owner = NGA
-		add_core_of = NGA
+		owner = B61
+		add_core_of = B61
 
 		buildings = {
 			infrastructure = 2

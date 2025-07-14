@@ -14,7 +14,7 @@ state = {
 
 		owner = A31
 		add_core_of = A31
-		add_core_of = SMI
+		add_core_of = C61
 
 		victory_points = { 
 			11164 2 # Kemi

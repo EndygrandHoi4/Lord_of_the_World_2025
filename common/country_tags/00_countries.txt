@@ -548,40 +548,6 @@ C76 = "countries/Rhineland.txt"
 C77 = "countries/United Baltic Duchy.txt"
 #KOS
 C78	= "countries/Kosovo.txt"
-
-# REICHSKOMMISSARIATS (no cores) (European)
-#RKB = "countries/Reichskommisariat Belgien.txt"
-#RKN = "countries/Reichskommisariat Niederlande.txt"
-#RKG = "countries/Reichskommisariat Norwegen.txt"
-#RKU = "countries/Reichskommisariat Ukraine.txt"
-#RKO = "countries/Reichskommisariat Ostland.txt"
-#RKK = "countries/Reichskommisariat Kaukasien.txt"
-#RKT = "countries/Reichskommisariat Turkestan.txt"
-#RKM = "countries/Reichskommisariat Moskowien.txt"
-#RKL = "countries/Reichskommisariat Urals.txt"
-#GEN = "countries/Generalgouvernement.txt"
-#RKH = "countries/Bohmen Mahren.txt"
-#RKI = "countries/Reichskommisariat Iberien.txt"
-#RKC = "countries/Reichskommisariat Balkan.txt"
-#RGB = "countries/Reichskommisariat Grossbritannien.txt"
-
-# REICHSKOMMISSARIATS (no cores) (African)
-#RKA = "countries/Reichskommisariat Mittelafrika.txt"
-#RNA = "countries/Reichskommisariat Nordafrika.txt"
-
-# REICHSKOMMISSARIATS (no cores) (American)
-#RKV = "countries/Reichskommisariat Klein Venedig.txt"
-#RAN = "countries/Reichskommisariat Anden.txt"
-#RCO = "countries/Reichskommisariat Kolumbus.txt"
-#RUS = "countries/Reichskommisariat Nordamerika.txt"
-
-# REICHSKOMMISSARIATS (no cores) (Asian)
-#RHD = "countries/Reichskommisariat Grosshindustan.txt"
-#RAR = "countries/Reichskommisariat Arabien.txt"
-#ROA = "countries/Reichskommisariat Ostasien.txt"
-#RAA = "countries/Reichskommisariat Australasien.txt"
-
-# AMERINDIAN NATIONS (no starting cores)
 #GAR
 C79 = "countries/Guarani.txt"
 #INC
@@ -600,8 +566,6 @@ C85 = "countries/Itza.txt"
 C86 = "countries/Nahua.txt"
 #IAS
 C87 = "countries/Isthmo Amerindia.txt"
-
-# GoE 
 #DIP
 C88 = "countries/Partisans.txt"
 #PSH
@@ -644,9 +608,6 @@ E07 = "countries/Bahrain.txt"
 E08 = "countries/Omani Imamate.txt"
 #BLC
 E09 = "countries/Balochistan.txt"
-#NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")
 
-
-#NEW COUNTRIES
-E10 = "countries/european union.txt"
-E11 = "countries/Pridnestrovian Moldavian Republic.txt"
+###E10 = "countries/european union.txt"
+###E11 = "countries/Pridnestrovian Moldavian Republic.txt"

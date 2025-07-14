@@ -31,8 +31,8 @@ state = {
 		
 		owner = A47
 		add_core_of = A47
-		add_core_of = SOM
-		add_core_of = ORO
+		add_core_of = B48
+		add_core_of = C52
 
 		1936.6.1 = {
 			owner = A19

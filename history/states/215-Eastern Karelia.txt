@@ -12,7 +12,7 @@ state={
 
 		}
 		add_core_of = A03
-		add_core_of = KAR
+		add_core_of = C20
 	}
 
 	provinces={

@@ -30,7 +30,7 @@ state={
 		}
 
 		add_core_of = A03
-		add_core_of = SMI
+		add_core_of = C61
 		
 	}
 

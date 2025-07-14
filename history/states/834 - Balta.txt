@@ -24,8 +24,8 @@ state = {
 		}
 		add_core_of = E11
 		add_core_of = A03
-		add_core_of = UKR
-		add_core_of = MOL
+		add_core_of = A04
+		add_core_of = B27
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2

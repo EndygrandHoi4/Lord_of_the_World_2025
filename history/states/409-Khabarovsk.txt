@@ -23,8 +23,8 @@ state = {
 			}
 		}
 		add_core_of = A03
-		add_core_of = FER
-		add_core_of = VLA
+		add_core_of = C27
+		add_core_of = C29
 	}
 
 	provinces = {

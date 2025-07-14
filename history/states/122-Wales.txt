@@ -28,7 +28,7 @@ state= {
 			}
 		}
 		add_core_of = A02
-		add_core_of = WLS
+		add_core_of = B73
 	}
 
 	provinces=

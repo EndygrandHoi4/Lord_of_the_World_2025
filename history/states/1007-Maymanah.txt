@@ -17,7 +17,7 @@ state={
 			infrastructure = 1 
 		}
 		add_core_of = A34
-		add_core_of = TMS
+		add_core_of = B36
 		victory_points = {
 			12248 1
 		}

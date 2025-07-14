@@ -41,7 +41,7 @@ state = {
 
 		}
 		add_core_of = A19
-		add_core_of = TTS
+		add_core_of = C60
 
 	}
 

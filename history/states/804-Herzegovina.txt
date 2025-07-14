@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = BOS
+		owner = B91
 		victory_points = {
 			9894 3
 		}
@@ -20,8 +20,8 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = A21
-		add_core_of = BOS
-		add_core_of = HRZ
+		add_core_of = B91
+		add_core_of = B92
 	}
 
 	provinces={

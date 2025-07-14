@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = A21
 		add_core_of = A22
-		add_core_of = TRA
+		add_core_of = C11
 	}
 
 	provinces={

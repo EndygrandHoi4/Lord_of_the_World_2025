@@ -29,7 +29,7 @@ state={
 		}
 		owner = A47
 		add_core_of = A47
-		add_core_of = AFA
+		add_core_of = C48
 		1936.6.1 = {
 			owner = A19
 			controller = A19

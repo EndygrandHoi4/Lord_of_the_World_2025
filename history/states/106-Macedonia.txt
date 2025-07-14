@@ -18,7 +18,7 @@ state = {
 			3882 5
 		}
 		add_core_of = A21
-		add_core_of = MAC
+		add_core_of = B93
 		add_claim_by = A29
 	}
 

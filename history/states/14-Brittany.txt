@@ -34,7 +34,7 @@ state={
 			}
 		}
 		add_core_of = A06
-		add_core_of = BRI
+		add_core_of = C07
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5

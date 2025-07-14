@@ -26,7 +26,7 @@ state = {
 			}
 		}
 		add_core_of = A19
-		add_core_of = SPM
+		add_core_of = C59
 	}
 	provinces = {
 		902 6891 9772 9863 11755 11773 11824 11874 	

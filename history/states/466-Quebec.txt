@@ -10,7 +10,7 @@ state = {
 
 		owner = A40
 		add_core_of = A40
-		add_core_of = QUE
+		add_core_of = C66
 
 		buildings = {
 			infrastructure = 1

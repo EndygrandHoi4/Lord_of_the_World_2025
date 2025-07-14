@@ -9,7 +9,7 @@ state={
 	{
 		owner = A08
 		add_core_of = A41
-		add_core_of = MAN
+		add_core_of = B15
 		add_core_of = A08
 		victory_points = {
 			1150 1 

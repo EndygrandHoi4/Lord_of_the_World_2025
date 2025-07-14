@@ -13,7 +13,7 @@ state={
 	local_supplies=0.000
 	history={
 		owner = A80
-		add_core_of = RAS
+		add_core_of = C94
 		buildings = {
 			infrastructure = 1
 		}

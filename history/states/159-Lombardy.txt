@@ -21,7 +21,7 @@ state = {
 
 		}
 		add_core_of = A19
-		add_core_of = LBV
+		add_core_of = C56
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 7

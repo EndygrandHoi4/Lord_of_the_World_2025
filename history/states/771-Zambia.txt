@@ -12,8 +12,8 @@ state = {
 
 	history = {
 
-		owner = ZAM
-		add_core_of = ZAM
+		owner = B53
+		add_core_of = B53
 
 		victory_points = {
 			5199 2 #Lusaka

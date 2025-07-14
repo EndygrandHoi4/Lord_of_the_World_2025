@@ -14,7 +14,7 @@ state = {
 		owner = A35
 		add_core_of = A35
 		add_claim_by = A42
-		add_core_of = WLA
+		add_core_of = C69
 
 		buildings = {
 			infrastructure = 0

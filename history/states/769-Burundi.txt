@@ -7,19 +7,19 @@ state = {
 
 	history = {
 
-		owner = BRD
+		owner = B51
 
 		IF = {
 			limit = {
 				has_dlc = "Gotterdammerung"
 			}
-			transfer_state_to = COG
+			transfer_state_to = B11
 			add_dynamic_modifier = {
 				modifier = COG_burundian_separatism_modifier
 			}	
 		}
 		
-		add_core_of = BRD
+		add_core_of = B51
 
 		victory_points = {
 			2220 1

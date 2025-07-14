@@ -20,7 +20,7 @@ state={
 				naval_base = 6
 			}
 		}
-		add_claim_by = KHL
+		add_claim_by = E01
 		victory_points = {
 			1349 25
 		}

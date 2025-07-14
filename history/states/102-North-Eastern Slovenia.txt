@@ -8,7 +8,7 @@ state=
 	
 	history =
 	{
-		owner = SLV
+		owner = B90
 		buildings = {
 			infrastructure = 3
 		}
@@ -16,7 +16,7 @@ state=
 			665 1
 		}
 		add_core_of = A21
-		add_core_of = SLV
+		add_core_of = B90
 	}
 	provinces={
 		596 665 3631 3654 6672 9596

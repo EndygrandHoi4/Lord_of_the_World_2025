@@ -15,7 +15,7 @@ state = {
 			infrastructure = 2 #was 3 before split
 		}
 		add_core_of = A19
-		add_core_of = LBV
+		add_core_of = C56
 		add_claim_by = A13
 	}
 

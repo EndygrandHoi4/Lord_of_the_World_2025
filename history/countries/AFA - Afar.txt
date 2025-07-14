@@ -15,7 +15,7 @@ add_ideas = {
 }
 
 A19 = {
-	give_guarantee = AFA
+	give_guarantee = C48
 }
 
 set_convoys = 10
