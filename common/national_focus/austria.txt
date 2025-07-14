@@ -6,7 +6,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 50
-			tag = AUS
+			tag = A13
 			#always = no
 
 		}

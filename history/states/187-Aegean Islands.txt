@@ -28,7 +28,7 @@ state={
 		victory_points = {
 			8435 1
 		}
-		add_core_of = GRE
+		add_core_of = A25
 	}
 
 	provinces={

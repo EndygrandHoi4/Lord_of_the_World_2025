@@ -22,7 +22,7 @@ state = {
 				naval_base = 3
 			}
 		}
-		add_core_of = GRE
+		add_core_of = A25
 	}
 	provinces = {
 		1164 4170 9940 12058

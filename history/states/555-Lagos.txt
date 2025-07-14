@@ -8,9 +8,9 @@ state={
 
 	history={
 		owner = A03
-		add_core_of = JAP
+		add_core_of = A51
 		add_core_of = A03
-		#add_claim_by = SOV # Removed because of too much aggression
+		#add_claim_by = A03 # Removed because of too much aggression
 		buildings = {
 			infrastructure = 2
 			1399 = {

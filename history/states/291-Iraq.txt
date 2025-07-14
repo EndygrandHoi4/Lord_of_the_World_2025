@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = IRQ
-		add_core_of = IRQ
+		owner = A50
+		add_core_of = A50
 		add_claim_by = KUR
 
 		victory_points = {

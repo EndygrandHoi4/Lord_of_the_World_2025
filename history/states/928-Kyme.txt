@@ -7,8 +7,8 @@ state = {
 	state_category = rural
 	
 	history = {
-		owner = FIN
-		add_core_of = FIN
+		owner = A31
+		add_core_of = A31
 
 		victory_points = { #Kotka
 			3061 2

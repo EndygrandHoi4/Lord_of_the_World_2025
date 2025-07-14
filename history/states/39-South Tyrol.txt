@@ -19,9 +19,9 @@ state = {
 			infrastructure = 2 # was 3 before split
 			industrial_complex = 1 #Bolzano's industrial zone started in 1934-35 (Steel meels, Lancia...)
 		}
-		add_core_of = ITA
+		add_core_of = A19
 		add_core_of = LBV
-		add_claim_by = AUS
+		add_claim_by = A13
 	}
 
 	provinces = {

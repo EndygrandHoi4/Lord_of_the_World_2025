@@ -40,43 +40,43 @@ IF = {
 	}
 
 	# The Force Publique Modifier
-	set_variable = { BEL.COG_force_publique_army_leader_cost_factor = 1.0 }
-	set_variable = { BEL.COG_force_publique_acclimatization_hot_climate_gain_factor = 0.15 }
-	set_variable = { BEL.COG_force_publique_command_power_gain_mult = -0.5 }
-	set_variable = { BEL.COG_force_publique_max_command_power = -50 }
-	set_variable = { BEL.COG_force_publique_army_core_defence_factor = 0.05 }
-	set_variable = { BEL.COG_force_publique_equipment_capture_factor = 0.1 }
-	set_variable = { BEL.COG_force_publique_supply_consumption_factor = -0.05 }
-	set_variable = { BEL.COG_force_publique_resistance_target = -0.05 }
-	set_variable = { BEL.COG_force_publique_autonomy_gain = -0.2 }
-	set_variable = { BEL.COG_force_publique_conscription_factor = 0 }
-	set_variable = { BEL.COG_force_publique_army_core_attack_factor = 0 }
-	set_variable = { BEL.COG_force_publique_army_attack_factor = 0 }
-	set_variable = { BEL.COG_force_publique_army_defence_factor = 0 }
-	set_variable = { BEL.COG_force_publique_conscription = 0 }
-	set_variable = { BEL.COG_force_publique_air_training_xp_gain_factor = 0 }
-	set_variable = { BEL.COG_force_publique_production_speed_air_base_factor = 0 }
-	set_variable = { BEL.COG_force_publique_experience_loss_factor = 0 }
-	set_variable = { BEL.COG_force_publique_army_morale_factor = 0 }
+	set_variable = { A09.COG_force_publique_army_leader_cost_factor = 1.0 }
+	set_variable = { A09.COG_force_publique_acclimatization_hot_climate_gain_factor = 0.15 }
+	set_variable = { A09.COG_force_publique_command_power_gain_mult = -0.5 }
+	set_variable = { A09.COG_force_publique_max_command_power = -50 }
+	set_variable = { A09.COG_force_publique_army_core_defence_factor = 0.05 }
+	set_variable = { A09.COG_force_publique_equipment_capture_factor = 0.1 }
+	set_variable = { A09.COG_force_publique_supply_consumption_factor = -0.05 }
+	set_variable = { A09.COG_force_publique_resistance_target = -0.05 }
+	set_variable = { A09.COG_force_publique_autonomy_gain = -0.2 }
+	set_variable = { A09.COG_force_publique_conscription_factor = 0 }
+	set_variable = { A09.COG_force_publique_army_core_attack_factor = 0 }
+	set_variable = { A09.COG_force_publique_army_attack_factor = 0 }
+	set_variable = { A09.COG_force_publique_army_defence_factor = 0 }
+	set_variable = { A09.COG_force_publique_conscription = 0 }
+	set_variable = { A09.COG_force_publique_air_training_xp_gain_factor = 0 }
+	set_variable = { A09.COG_force_publique_production_speed_air_base_factor = 0 }
+	set_variable = { A09.COG_force_publique_experience_loss_factor = 0 }
+	set_variable = { A09.COG_force_publique_army_morale_factor = 0 }
 
 	# The Model Colony Modifier
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_political_power_factor = -0.1 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_war_support_factor = -0.05 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_production_speed_buildings_factor = 0.03 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_democratic_drift = 0.01 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_autonomy_gain_global_factor = 0.00 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_research_speed_factor = 0.01 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_consumer_goods_factor = 0.0 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_local_resources_factor = 0.0 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_stability_factor = 0.0 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_production_speed_industrial_complex_factor = 0.0 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_autonomy_gain = 0.0 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_trade_laws_cost_factor = 0.0 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_production_speed_infrastructure_factor = 0.0 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_production_speed_supply_node_factor = 0.0 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_industrial_capacity_dockyard = 0.0 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_cic_to_overlord_factor = 0.0 }
-	set_variable = { BEL.COG_belgian_congo_colonial_dynamic_modifier_mic_to_overlord_factor = 0.0 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_political_power_factor = -0.1 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_war_support_factor = -0.05 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_production_speed_buildings_factor = 0.03 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_democratic_drift = 0.01 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_autonomy_gain_global_factor = 0.00 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_research_speed_factor = 0.01 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_consumer_goods_factor = 0.0 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_local_resources_factor = 0.0 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_stability_factor = 0.0 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_production_speed_industrial_complex_factor = 0.0 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_autonomy_gain = 0.0 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_trade_laws_cost_factor = 0.0 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_production_speed_infrastructure_factor = 0.0 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_production_speed_supply_node_factor = 0.0 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_industrial_capacity_dockyard = 0.0 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_cic_to_overlord_factor = 0.0 }
+	set_variable = { A09.COG_belgian_congo_colonial_dynamic_modifier_mic_to_overlord_factor = 0.0 }
 
 	# The Armée Nationale Congolaise Modifier
 	set_variable = { COG_armee_nationale_congolaise_modifier_army_leader_cost_factor = 0 }
@@ -216,7 +216,7 @@ set_popularities = {
 		add_political_power = 600
 		add_command_power = 50
 
-		# ONES THAT CAN JUST BE COMPLETED NORMALLY
+		# ONES THAT A40 JUST BE COMPLETED NORMALLY
 		complete_national_focus = COG_governor_general_pierre_ryckmans
 		complete_national_focus = CONGO_belgian_congo
 		complete_national_focus = CONGO_rawji_group

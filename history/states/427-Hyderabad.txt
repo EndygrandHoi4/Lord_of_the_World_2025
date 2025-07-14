@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = A80
 		add_core_of = HYD
 		victory_points = {
 			8087 15 

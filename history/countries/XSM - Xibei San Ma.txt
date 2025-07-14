@@ -50,10 +50,10 @@ if = {
 			has_dlc = "Waking the Tiger"
 		}
 
-		CHI = { add_to_faction = PREV }
+		A41 = { add_to_faction = PREV }
 		add_to_war = {
-			targeted_alliance = CHI
-			enemy = JAP
+			targeted_alliance = A41
+			enemy = A51
 			hostility_reason = asked_to_join
 		}
 

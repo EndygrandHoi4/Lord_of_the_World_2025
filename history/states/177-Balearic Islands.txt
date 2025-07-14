@@ -12,7 +12,7 @@ state = {
 		}
 
 		owner = A18
-		add_core_of = SPR
+		add_core_of = A18
 		add_claim_by = CAT
 
 		buildings = {

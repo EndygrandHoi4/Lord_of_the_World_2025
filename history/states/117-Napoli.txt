@@ -25,7 +25,7 @@ state = {
 				naval_base = 6
 			}
 		}
-		add_core_of = ITA
+		add_core_of = A19
 		add_core_of = TTS
 		1939.1.1 = {
 			buildings = {

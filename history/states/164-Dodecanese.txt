@@ -21,7 +21,7 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = GRE
+		add_core_of = A25
 
 		### CHANGED TO A MROE ROBUST SYSTEM
 		##CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES

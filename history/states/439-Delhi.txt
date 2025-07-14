@@ -9,13 +9,13 @@ state={
 	state_category=large_city
 	local_supplies=1.000
 	history={
-		owner = RAJ
+		owner = A80
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 4
 		}
-		add_core_of = RAJ
+		add_core_of = A80
 		victory_points = {
 			2086 30
 		}

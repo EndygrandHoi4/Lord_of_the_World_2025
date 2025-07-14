@@ -13,7 +13,7 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = A80
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

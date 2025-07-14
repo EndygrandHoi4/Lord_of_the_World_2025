@@ -7,11 +7,11 @@
 		modifier = {
 			add = 10
 			OR = {
-				tag = YUN
-				tag = SIK
-				tag = GXC
-				tag = SHX
-				tag = XSM
+				tag = A70
+				tag = A66
+				tag = A82
+				tag = A83
+				tag = A84
 			}
 		}
 	}

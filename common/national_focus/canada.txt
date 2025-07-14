@@ -6,12 +6,12 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = CAN
+			tag = A40
 		}
 
 		#modifier = {
 		#	add = 10
-		#	original_tag = CAN
+		#	original_tag = A40
 		#	has_dlc = "Together for Victory"
 		#}
 	}

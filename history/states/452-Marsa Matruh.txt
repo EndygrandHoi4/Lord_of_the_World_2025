@@ -7,7 +7,7 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = EGY
+		owner = A90
 		buildings = {
 			infrastructure = 2
 		}
@@ -20,7 +20,7 @@ state={
 			9989 1 #Sidi Barrani
 		}
 
-		add_core_of = EGY
+		add_core_of = A90
 	}
 
 	provinces={

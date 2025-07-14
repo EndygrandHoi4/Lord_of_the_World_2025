@@ -726,7 +726,7 @@ if = {
 		type = light_tank_chassis_0
 		variant_name = "FT mod. 31"
 		amount = 34
-		producer = FRA
+		producer = A06
 	}
 }
 
@@ -763,7 +763,7 @@ if = {
 			type = light_tank_chassis_0
 			variant_name = "Vickers 6 ton A"
 			amount = 26
-			producer = ENG
+			producer = A02
 		}
 	}
 }

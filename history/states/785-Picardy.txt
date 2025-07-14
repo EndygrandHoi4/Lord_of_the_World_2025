@@ -14,7 +14,7 @@ state={
 			11420 5
 		}
 		owner = A06
-		add_core_of = FRA
+		add_core_of = A06
 		buildings = {
 			infrastructure = 4 #was: 8
 			industrial_complex = 1

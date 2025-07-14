@@ -39,7 +39,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = FRA
+		add_core_of = A06
 	}
 
 	provinces={

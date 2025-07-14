@@ -8,7 +8,7 @@ state = {
 	history = {
 
 		owner = A95
-		add_core_of = PAL
+		add_core_of = A94
 		add_core_of = A95
 
 		buildings = {

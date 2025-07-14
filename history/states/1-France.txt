@@ -18,7 +18,7 @@ state={
 			}
 		}
 		add_core_of = COR
-		add_core_of = FRA
+		add_core_of = A06
 	}
 
 	provinces={

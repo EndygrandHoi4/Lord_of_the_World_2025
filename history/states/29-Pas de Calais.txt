@@ -29,7 +29,7 @@ state={
 				naval_base = 6
 			}
 		}
-		add_core_of = FRA
+		add_core_of = A06
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 6

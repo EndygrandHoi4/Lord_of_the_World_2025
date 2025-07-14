@@ -29,7 +29,7 @@ state = {
 				naval_base = 2
 			}
 		}
-		add_core_of = ITA
+		add_core_of = A19
 		add_core_of = PAP
 	}
 

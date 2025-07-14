@@ -16,7 +16,7 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = DEN
+		add_core_of = A28
 		add_core_of = GRN
 
 		victory_points = { #Nuuk

@@ -400,7 +400,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { RAJ }
+		nationalities = { A80 }
 	}
 }
 
@@ -495,7 +495,7 @@ if = {
 	add_equipment_to_stockpile = { 
 		type = infantry_equipment_0 #for Garrison aid
 		amount = 5500
-		producer = RAJ
+		producer = A80
 	}
 }
 if = {
@@ -519,7 +519,7 @@ if = {
 				state = 990
 			}
 		}
-		add_core_of = RAJ
+		add_core_of = A80
 	}
 }
 country_event = { id = GOE_RAJ_partition.1 days = 40 random_days = 25 }

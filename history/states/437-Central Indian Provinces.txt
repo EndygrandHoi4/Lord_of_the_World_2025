@@ -10,7 +10,7 @@ state={
 	local_supplies=0.000
 
 	history={
-		owner = RAJ
+		owner = A80
 		add_core_of = CIP
 		victory_points = {
 			4106 5

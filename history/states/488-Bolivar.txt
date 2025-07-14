@@ -7,12 +7,12 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = VEN
+		owner = A69
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = VEN
+		add_core_of = A69
 		victory_points = {
 			10879 1
 		}

@@ -6,7 +6,7 @@ focus_tree = {
 
 		modifier = {
 			add = 50
-			tag = IRQ
+			tag = A50
 			has_dlc = "Graveyard of Empires"
 		}
 	}

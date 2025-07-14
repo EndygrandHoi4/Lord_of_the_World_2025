@@ -5,7 +5,7 @@ state={
 		1199 1908 2054 4149 4915 4971 4984 7905 7998 10847 12743 12829 12844 12886 
 	}
 	history={
-		owner = RAJ
+		owner = A80
 		add_core_of = RJP
 		buildings = {
 			infrastructure = 1

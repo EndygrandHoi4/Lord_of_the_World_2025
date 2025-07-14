@@ -8,8 +8,8 @@ state = {
 
 	history = {
 
-		owner = YEM
-		add_core_of = YEM
+		owner = A77
+		add_core_of = A77
 		add_core_of = FSA
 
 		victory_points = {

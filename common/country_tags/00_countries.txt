@@ -1,198 +1,198 @@
-#GER
+#A01
 A01 = "countries/Germany.txt"
-#ENG 
+#A02 
 A02 = "countries/United Kingdom.txt"
-#SOV
+#A03
 A03 = "countries/Soviet Union.txt"
-#SWE
+#A05
 A05 = "countries/Sweden.txt"
-#FRA 
+#A06 
 A06 = "countries/France.txt"
-#LUX 
+#A17 
 A17 = "countries/Luxemburg.txt"
-#BEL 
+#A09 
 A09 = "countries/Belgium.txt"
-#HOL	
+#A10	
 A10 = "countries/Holland.txt"
-#CZE	
+#A11	
 A11 = "countries/Czechoslovakia.txt"
-#POL	
+#A12	
 A12 = "countries/Poland.txt"
-#AUS	
+#A13	
 A13 = "countries/Austria.txt"
-#LIT	
+#A14	
 A14 = "countries/Lithuania.txt"
-#EST	
+#A15	
 A15 = "countries/Estonia.txt"
-#LAT
+#A16
 A16	= "countries/Latvia.txt"
-#SPR
+#A18
 A18 = "countries/Spain.txt"
-#ITA
+#A19
 A19 = "countries/Italy.txt"
-#ROM
+#A20
 A20 = "countries/Romania.txt"
-#YUG
+#A21
 A21 = "countries/Yugoslavia.txt"
-#SER
+#A22
 A22 = "countries/Serbia.txt"
-#SWI
+#A23
 A23 = "countries/Switzerland.txt"
-#TUR
+#A24
 A24 = "countries/Turkey.txt"
-#GRE
+#A25
 A25 = "countries/Greece.txt"
-#ALB
+#A26
 A26 = "countries/Albania.txt"
-#NOR
+#A27
 A27 = "countries/Norway.txt"
-#DEN
+#A28
 A28 = "countries/Denmark.txt"
-#BUL
+#A29
 A29 = "countries/Bulgaria.txt"
-#POR
+#A30
 A30 = "countries/Portugal.txt"
-#FIN
+#A31
 A31 = "countries/Finland.txt"
-#IRE
+#A32
 A32 = "countries/Ireland.txt"
-#HUN
+#A33
 A33 = "countries/Hungary.txt"
-#AFG
+#A34
 A34 = "countries/Afghanistan.txt"
-#ARG
+#A35
 A35 = "countries/Argentina.txt"
-#AST
+#A36
 A36 = "countries/Australia.txt"
-#BHU
+#A37
 A37 = "countries/Bhutan.txt"
-#BOL
+#A38
 A38 = "countries/Bolivia.txt"
-#BRA
+#A39
 A39 = "countries/Brazil.txt"
-#CAN
+#A40
 A40 = "countries/Canada.txt"
-#CHI
+#A41
 A41 = "countries/China.txt"
-#CHL
+#A42
 A42 = "countries/Chile.txt"
-#COL
+#A43
 A43 = "countries/Colombia.txt"
-#COS
+#A44
 A44 = "countries/Costa Rica.txt"
-#ECU
+#A45
 A45 = "countries/Ecuador.txt"
-#ELS
+#A46
 A46 = "countries/El Salvador.txt"
-#ETH
+#A47
 A47 = "countries/Ethiopia.txt"
-#GUA
+#A48
 A48 = "countries/Guatemla.txt"
-#HON
+#A49
 A49 = "countries/Honduras.txt"
-#IRQ
+#A50
 A50 = "countries/Iraq.txt"
-#JAP
+#A51
 A51 = "countries/Japan.txt"
-#KOR
+#A52
 A52 = "countries/Korea.txt"
-#LIB
+#A53
 A53 = "countries/Liberia.txt"
-#MEX
+#A54
 A54 = "countries/Mexico.txt"
-#MEN
+#A55
 A55 = "countries/Mengkukuo.txt"
-#NEP
+#A56
 A56 = "countries/Nepal.txt"
-#NIC
+#A57
 A57 = "countries/Nicaragua.txt"
-#NZL
+#A58
 A58 = "countries/New Zealand.txt"
-#PAN
+#A59
 A59 = "countries/Panama.txt"
-#PER
+#A60
 A60 = "countries/Persia.txt"
-#PHI
+#A61
 A61 = "countries/Philippines.txt"
-#PRU
+#A62
 A62 = "countries/Peru.txt"
-#SAF
+#A63
 A63 = "countries/South Africa.txt"
-#SAU
+#A64
 A64 = "countries/Saudi Arabia.txt"
-#SIA
+#A65
 A65 = "countries/Siam.txt"
-#SIK
+#A66
 A66 = "countries/Sinkiang.txt"
-#TIB
+#A67
 A67 = "countries/Tibet.txt"
-#URG
+#A68
 A68 = "countries/Uruguay.txt"
-#VEN
+#A69
 A69 = "countries/Venezula.txt"
-#YUN
+#A70
 A70 = "countries/Yunnan.txt"
-#USA
-A07 = "countries/USA.txt"
-#MON
+#A07
+A07 = "countries/A07.txt"
+#A71
 A71 = "countries/Mongolia.txt"
-#TAN
+#A72
 A72 = "countries/Tannu Tuva.txt"
-#PAR
+#A73
 A73 = "countries/Paraguay.txt"
-#CUB
+#A74
 A74 = "countries/Cuba.txt"
-#DOM
+#A75
 A75 = "countries/Dominican Republic.txt"
-#HAI
+#A76
 A76 = "countries/Haiti.txt"
-#YEM
+#A77
 A77 = "countries/Yeman.txt"
-#OMA
+#A78
 A78 = "countries/Oman.txt"
-#SLO
+#A79
 A79 = "countries/Slovakia.txt"
-#RAJ
+#A80
 A80 = "countries/British Raj.txt"
-#CRO
+#A81
 A81 = "countries/Croatia.txt"
-#GXC
+#A82
 A82 = "countries/Guangxi.txt"
-#PRC
+#A08
 A08 = "countries/ComChina.txt"
-#SHX
+#A83
 A83 = "countries/Shanxi.txt"
-#XSM
+#A84
 A84 = "countries/Xibei San Ma.txt"
-#ICE
+#A85
 A85 = "countries/Iceland.txt"
-#LEB
+#A86
 A86 = "countries/Lebanon.txt"
-#JOR
+#A87
 A87 = "countries/Jordan.txt"
-#SYR
+#A89
 A89 = "countries/Syria.txt"
-#EGY
+#A90
 A90 = "countries/Egypt.txt"
-#LBA
+#A91
 A91 = "countries/Libya.txt"
-#WGR
+#A92
 A92 = "countries/West Germany.txt"
-#DDR
+#A93
 A93 = "countries/East Germany.txt"
-#PAL
+#A94
 A94 = "countries/Palestine.txt"
-#ISR
+#A95
 A95 = "countries/Israel.txt"
-#VIN
+#A96
 A96 = "countries/Vietnam.txt"
-#CAM
+#A97
 A97 = "countries/Cambodia.txt"
-#MAL
+#A98
 A98 = "countries/Malaysia.txt"
-#INS
+#A99
 A99 = "countries/Indonesia.txt"
-#LAO
+#B01
 B01 = "countries/Laos.txt"
 #MNT
 B02 = "countries/Montenegro.txt"

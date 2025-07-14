@@ -7,9 +7,9 @@ state = {
 
 	history = {
 		owner = A08
-		add_core_of = XSM
-		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = A84
+		add_core_of = A41
+		add_core_of = A08
 
 		buildings = {
 			infrastructure = 2
@@ -28,7 +28,7 @@ state = {
 					}
 
 				}
-				CHI = {
+				A41 = {
 					transfer_state = PREV
 
 				}

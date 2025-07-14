@@ -24,7 +24,7 @@ state={
 			industrial_complex = 2
 			air_base = 2
 		}
-		add_core_of = YUG
+		add_core_of = A21
 		add_core_of = BOS
 	}
 

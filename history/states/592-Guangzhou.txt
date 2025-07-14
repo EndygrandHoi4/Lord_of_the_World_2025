@@ -11,9 +11,9 @@ state={
 
 	history={
 		owner = A08
-		add_core_of = GXC
-		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = A82
+		add_core_of = A41
+		add_core_of = A08
 		
 		buildings = {
 			infrastructure = 2
@@ -36,10 +36,10 @@ state={
 				limit = {
 					NOT = { has_dlc = "Waking the Tiger" }
 				}
-				remove_core_of = GXC
-				CHI = { transfer_state = PREV }
+				remove_core_of = A82
+				A41 = { transfer_state = PREV }
 			}
-			JAP = {
+			A51 = {
 				set_province_controller = 1047
 				set_province_controller = 7152
 				set_province_controller = 11938

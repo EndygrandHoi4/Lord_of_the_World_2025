@@ -14,7 +14,7 @@ add_ideas = {
 	bba_AFA_skilled_desert_warriors
 }
 
-ITA = {
+A19 = {
 	give_guarantee = AFA
 }
 

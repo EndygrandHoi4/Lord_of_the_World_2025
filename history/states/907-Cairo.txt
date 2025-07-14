@@ -5,7 +5,7 @@ state={
 	state_category=town
 
 	history={
-		owner = EGY
+		owner = A90
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -24,7 +24,7 @@ state={
 		victory_points = {
 			1068 3 
 		}
-		add_core_of = EGY
+		add_core_of = A90
 
 	}
 	provinces={

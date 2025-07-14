@@ -33,7 +33,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = FRA
+		add_core_of = A06
 		add_core_of = BRI
 		1939.1.1 = {
 			buildings = {

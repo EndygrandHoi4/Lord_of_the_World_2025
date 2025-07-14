@@ -7,16 +7,16 @@
 		modifier = {
 			add = 10
 			OR = {
-				tag = SLO
+				tag = A79
 				tag = TRA
-				tag = CRO
+				tag = A81
 				tag = LBV
 				tag = SIL
 				tag = MNT
 				tag = BOS
 				tag = SLV
 				tag = HRZ
-				tag = ALB
+				tag = A26
 			}
 		}
 	}

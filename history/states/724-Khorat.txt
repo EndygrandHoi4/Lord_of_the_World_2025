@@ -11,7 +11,7 @@ state={
 
 
 	history={
-		owner = SIA
+		owner = A65
 		buildings = {
 			infrastructure = 2
 			12230 = {
@@ -21,7 +21,7 @@ state={
 		victory_points = {
 			7236 1 
 		}
-		add_core_of = SIA
+		add_core_of = A65
 	}
 	
 	provinces={

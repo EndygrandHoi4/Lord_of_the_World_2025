@@ -15,7 +15,7 @@ state=
 		victory_points = {
 			665 1
 		}
-		add_core_of = YUG
+		add_core_of = A21
 		add_core_of = SLV
 	}
 	provinces={

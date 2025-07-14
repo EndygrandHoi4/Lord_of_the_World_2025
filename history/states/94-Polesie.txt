@@ -15,7 +15,7 @@ state={
 		victory_points = {
 			560 1
 		}
-		add_core_of = POL
+		add_core_of = A12
 		add_core_of = BLR
 	}
 

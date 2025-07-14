@@ -6,7 +6,7 @@
 		
 		modifier = {
 			add = 10
-			tag = HOL
+			tag = A10
 			has_dlc = "Man the Guns"
 		}
 	}

@@ -18,7 +18,7 @@ state = {
 		}
 		add_dynamic_modifier = {
 			modifier = ETH_state_decentralization_dynamic_modifier
-			scope = ETH
+			scope = A47
 		}
 		
 		buildings = {
@@ -29,13 +29,13 @@ state = {
 			1984 2
 		}
 		
-		owner = ETH
-		add_core_of = ETH
+		owner = A47
+		add_core_of = A47
 		add_core_of = QEM
 
 		1936.6.1 = {
 			owner = A19
-			controller = ITA
+			controller = A19
 		}
 	}
 

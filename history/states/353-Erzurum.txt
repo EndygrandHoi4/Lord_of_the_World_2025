@@ -31,7 +31,7 @@ state={
 			limit = {
 				NOT = { has_dlc = "Battle for the Bosporus" }
 			}
-			add_core_of = TUR
+			add_core_of = A24
 			add_core_of = KUR
 		}
 	}
