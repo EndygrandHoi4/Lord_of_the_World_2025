@@ -609,5 +609,5 @@ E08 = "countries/Omani Imamate.txt"
 #BLC
 E09 = "countries/Balochistan.txt"
 
-###E10 = "countries/european union.txt"
-###E11 = "countries/Pridnestrovian Moldavian Republic.txt"
+E10 = "countries/european union.txt"
+E11 = "countries/Pridnestrovian Moldavian Republic.txt"
