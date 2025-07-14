@@ -1,0 +1,692 @@
+economy_ust_category = {
+	eco_cicle_debug_mission = {
+		activation = {
+			NOT = {
+				has_idea = ust_0
+				has_idea = ust_1
+				has_idea = ust_2
+				has_idea = ust_3
+				has_idea = ust_4
+				has_idea = ust_5
+				has_idea = ust_6
+				has_idea = ust_7
+				has_idea = ust_8
+				has_idea = ust_9
+				has_idea = ust_10
+			}
+		}
+		is_good = no
+		days_mission_timeout = 1
+		timeout_effect = {
+			add_ideas = ust_0
+		}
+	}
+	eco_cicle_mission = {
+		activation = {
+			exists = yes
+		}
+		is_good = yes
+		days_mission_timeout = 70
+		timeout_effect = {
+			if = {
+				limit = {
+					has_war = no
+					NOT = {
+						has_idea = shaked_ecm
+						has_idea = milita_ecm
+						has_idea = totalwar_ecm
+
+						has_idea = mini_rec
+						has_idea = mash_rec
+						has_idea = all_rec
+						has_idea = gov_rec
+					}
+				}
+				add_political_power = 100
+				if = {
+					limit = {
+						has_idea = ust_0
+					}
+					add_stability = 0.05
+					add_political_power = 50
+				}
+				if = {
+					limit = {
+						has_idea = ust_0
+					}
+					swap_ideas = {
+						remove_idea = ust_0
+						add_idea = ust_1
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_1
+					}
+					swap_ideas = {
+						remove_idea = ust_1
+						add_idea = ust_2
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_2
+					}
+					swap_ideas = {
+						remove_idea = ust_2
+						add_idea = ust_3
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_3
+					}
+					swap_ideas = {
+						remove_idea = ust_3
+						add_idea = ust_4
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_4
+					}
+					swap_ideas = {
+						remove_idea = ust_4
+						add_idea = ust_5
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_7
+					}
+					swap_ideas = {
+						remove_idea = ust_7
+						add_idea = ust_6
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_8
+					}
+					swap_ideas = {
+						remove_idea = ust_8
+						add_idea = ust_7
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_9
+					}
+					swap_ideas = {
+						remove_idea = ust_9
+						add_idea = ust_8
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_10
+					}
+					swap_ideas = {
+						remove_idea = ust_10
+						add_idea = ust_9
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_war = yes
+
+						has_idea = shaked_ecm
+						has_idea = milita_ecm
+
+						has_idea = mini_rec
+						has_idea = mash_rec
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_0
+					}
+					swap_ideas = {
+						remove_idea = ust_0
+						add_idea = ust_1
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_1
+					}
+					swap_ideas = {
+						remove_idea = ust_1
+						add_idea = ust_2
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_2
+					}
+					swap_ideas = {
+						remove_idea = ust_2
+						add_idea = ust_3
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_3
+					}
+					swap_ideas = {
+						remove_idea = ust_3
+						add_idea = ust_4
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_4
+					}
+					swap_ideas = {
+						remove_idea = ust_4
+						add_idea = ust_5
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_5
+					}
+					swap_ideas = {
+						remove_idea = ust_5
+						add_idea = ust_6
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_6
+					}
+					swap_ideas = {
+						remove_idea = ust_6
+						add_idea = ust_7
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_7
+					}
+					swap_ideas = {
+						remove_idea = ust_7
+						add_idea = ust_8
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_8
+					}
+					swap_ideas = {
+						remove_idea = ust_8
+						add_idea = ust_9
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_9
+					}
+					swap_ideas = {
+						remove_idea = ust_9
+						add_idea = ust_10
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = milita_ecm
+						has_idea = totalwar_ecm
+
+						has_idea = gov_rec
+						has_idea = all_rec
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_0
+					}
+					swap_ideas = {
+						remove_idea = ust_0
+						add_idea = ust_1
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_1
+					}
+					swap_ideas = {
+						remove_idea = ust_1
+						add_idea = ust_2
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_2
+					}
+					swap_ideas = {
+						remove_idea = ust_2
+						add_idea = ust_3
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_3
+					}
+					swap_ideas = {
+						remove_idea = ust_3
+						add_idea = ust_4
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_4
+					}
+					swap_ideas = {
+						remove_idea = ust_4
+						add_idea = ust_5
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_5
+					}
+					swap_ideas = {
+						remove_idea = ust_5
+						add_idea = ust_6
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_6
+					}
+					swap_ideas = {
+						remove_idea = ust_6
+						add_idea = ust_7
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_7
+					}
+					swap_ideas = {
+						remove_idea = ust_7
+						add_idea = ust_8
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_8
+					}
+					swap_ideas = {
+						remove_idea = ust_8
+						add_idea = ust_9
+					}
+				}
+				if = {
+					limit = {
+						has_idea = ust_9
+					}
+					swap_ideas = {
+						remove_idea = ust_9
+						add_idea = ust_10
+					}
+				}
+				add_political_power = -10
+				add_stability = -0.05
+			}
+			activate_mission = eco_cicle_mission
+		}
+	}
+	eco_building_mission = {
+		activation = {
+			exists = yes
+		}
+		is_good = yes
+		days_mission_timeout = 70
+		timeout_effect = {
+			root = {
+				if = {
+					limit = {
+						has_idea = infro_ecm
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+						}
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+						}
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_idea = civ_ecm
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_idea = shaked_ecm
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_idea = milita_ecm
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					limit = {
+						has_idea = milita_ecm
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_idea = totalwar_ecm
+					}
+					limit = {
+						has_idea = milita_ecm
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+						}
+					}limit = {
+						has_idea = milita_ecm
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+						}
+					}limit = {
+						has_idea = milita_ecm
+					}
+					random_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	eco_obligation_mission = {
+		available = {
+			exists = yes
+		}
+		allowed = {
+			exists = yes
+			has_political_power = 100
+		}
+		cost = 100
+		days_re_enable = 120
+		days_remove = 20
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = ust_0
+				}
+				swap_ideas = {
+					remove_idea = ust_0
+					add_idea = ust_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ust_1
+				}
+				swap_ideas = {
+					remove_idea = ust_1
+					add_idea = ust_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ust_2
+				}
+				swap_ideas = {
+					remove_idea = ust_2
+					add_idea = ust_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ust_3
+				}
+				swap_ideas = {
+					remove_idea = ust_3
+					add_idea = ust_4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ust_4
+				}
+				swap_ideas = {
+					remove_idea = ust_4
+					add_idea = ust_5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ust_7
+				}
+				swap_ideas = {
+					remove_idea = ust_7
+					add_idea = ust_6
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ust_8
+				}
+				swap_ideas = {
+					remove_idea = ust_8
+					add_idea = ust_7
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ust_9
+				}
+				swap_ideas = {
+					remove_idea = ust_9
+					add_idea = ust_8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ust_10
+				}
+				swap_ideas = {
+					remove_idea = ust_10
+					add_idea = ust_9
+				}
+			}
+		}
+	}
+}
+
+army_ust_category = {
+	army_ust_debug_mission = {
+		activation = {
+			NOT = {
+				has_idea = army_ust_0
+				has_idea = army_ust_1
+				has_idea = army_ust_2
+				has_idea = army_ust_3
+				has_idea = army_ust_4
+				has_idea = army_ust_5
+				has_idea = army_ust_6
+				has_idea = army_ust_7
+				has_idea = army_ust_8
+				has_idea = army_ust_9
+				has_idea = army_ust_10
+			}
+		}
+		is_good = no
+		days_mission_timeout = 1
+		timeout_effect = {
+			add_ideas = aemy_ust_0
+		}
+	}
+	army_ust_mission = {
+		activation = {
+			exists = yes
+		}
+		is_good = yes
+		days_mission_timeout = 70
+		timeout_effect = {
+			if = {
+				limit = {
+					has_idea = army_ust_0
+				}
+				add_stability = 0.05
+				add_political_power = 50
+			}
+			if = {
+				limit = {
+					has_idea = army_ust_0
+				}
+				swap_ideas = {
+					remove_idea = army_ust_0
+					add_idea = army_ust_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = army_ust_1
+				}
+				swap_ideas = {
+					remove_idea = army_ust_1
+					add_idea = army_ust_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = army_ust_2
+				}
+				swap_ideas = {
+					remove_idea = army_ust_2
+					add_idea = army_ust_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = army_ust_3
+				}
+				swap_ideas = {
+					remove_idea = army_ust_3
+					add_idea = army_ust_4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = army_ust_4
+				}
+				swap_ideas = {
+					remove_idea = army_ust_4
+					add_idea = army_ust_5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = army_ust_7
+				}
+				swap_ideas = {
+					remove_idea = army_ust_7
+					add_idea = army_ust_6
+				}
+			}
+			if = {
+				limit = {
+					has_idea = army_ust_8
+				}
+				swap_ideas = {
+					remove_idea = army_ust_8
+					add_idea = army_ust_7
+				}
+			}
+			if = {
+				limit = {
+					has_idea = army_ust_9
+				}
+				swap_ideas = {
+					remove_idea = army_ust_9
+					add_idea = army_ust_8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = army_ust_10
+				}
+				swap_ideas = {
+					remove_idea = army_ust_10
+					add_idea = army_ust_9
+				}
+			}
+		}
+	}
+}

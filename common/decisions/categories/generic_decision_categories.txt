@@ -1,0 +1,20 @@
+economy_ust_category = {
+	available = {
+		has_capitulated = no
+		exists = yes
+	}
+	visible = {
+		exists = yes
+	}
+	icon = GFX_surrender_tiny_flag
+}
+army_ust_category = {
+	available = {
+		has_capitulated = no
+		exists = yes
+	}
+	visible = {
+		exists = yes
+	}
+	icon = GFX_surrender_tiny_flag
+}
