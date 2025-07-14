@@ -1,0 +1,17 @@
+﻿I_russian:
+ RUS_SVO_decision_category: "Специальная Военная Операция"
+ mission_SVO_RUS_esc: "Эскалация"
+ decision_SVO_RUS_call_trump: "Позвонить Трампу"
+ decision_SVO_RUS_exchange_mp: "Обменяться пленными"
+ 
+ RUS_provgov_decision_category: "Временное правительство"
+ mission_RUS_provgov_collapse: "Коллапс правительства"
+ 
+ economy_ust_category: "Экономика"
+ eco_cicle_mission: "Экономический цикл"
+ eco_building_mission: "Эффекты от наших субсидий"
+ eco_obligation_mission: "Выпустить облигации"
+
+ army_ust_category: "Работоспособность армии"
+ army_ust_mission: "Реакция армии"
+ 
