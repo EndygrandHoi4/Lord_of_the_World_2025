@@ -7,4 +7,233 @@ focus_tree = {
             tag = A07
         }
     }
+#Правление Бидона
+focus = {
+    id = USA_Bidon
+    icon = GFX_real_freedom
+    cost = 2.7
+    x = 15
+    y = 1
+    
+    completion_reward = {
+        retire_character = USA_Joe_Biden
+        set_politics = {
+            ruling_party = Centrism
+        }
+        ##ПОДСОЕДИНИТЬ ИВЕНТ
+    }
+}
+#24 часа
+focus = {
+    id = USA_tf_hours
+    icon = GFX_real_freedom
+    cost = 0.3
+    x = 15
+    y = 2
+    prerequisite = {
+        focus = USA_Bidon
+    }
+    completion_reward = {
+        add_popularity = {
+            ideology = Centrism
+            popularity = -0.01
+        }
+        add_political_power = -100
+    }
+}
+#Политика Трампизма
+focus = {
+    id = USA_trump_politics
+    icon = GFX_real_freedom
+    cost = 1
+    x = 15
+    y = 3
+    prerequisite = {
+        focus = USA_tf_hours
+    }
+    completion_reward = {
+        add_war_support = 0.1
+        add_ideas = idea_USA_ext_polit_I
+    }
+}
+#Сбросить оковы
+focus = {
+    id = USA_down_candals
+    icon = GFX_real_freedom
+    cost = 1
+    x = 13
+    y = 4
+    prerequisite = {
+        focus = USA_trump_politics
+    }
+    completion_reward = {
+        add_stability = 0.1
+        add_political_power = 50
+    }
+}
+#Американский залив
+focus = {
+    id = USA_american_w
+    icon = GFX_real_freedom
+    cost = 1
+    x = 15
+    y = 4
+    prerequisite = {
+        focus = USA_trump_politics
+    }
+    completion_reward = {
+        add_breakthrough_points = {
+            specialization = specialization_naval
+            value = 1
+        }
+        add_war_support = 0.1
+        swap_ideas = {
+            remove_idea = idea_USA_ext_polit_I
+            add_idea = idea_USA_ext_polit_II
+        }
+    }
+}
+#Политика Маска
+focus = {
+    id = USA_Mask_politics
+    icon = GFX_real_freedom
+    cost = 1
+    x = 17
+    y = 4
+    prerequisite = {
+        focus = USA_trump_politics
+    }
+    completion_reward = { 
+        #Тут добавить Илона Макса
+
+    }
+}
+#Готовить Парад
+focus = {
+    id = USA_prp_parade
+    icon = GFX_real_freedom
+    cost = 1
+    x = 15
+    y = 5
+    prerequisite = {
+        focus = USA_down_candals
+    }
+    prerequisite = {
+        focus = USA_american_w
+    }
+    prerequisite = {
+        focus = USA_Mask_politics
+    }
+    completion_reward = {
+        add_breakthrough_points = {
+            specialization = specialization_land
+            value = 1
+        }
+        add_stability = -0.1
+        add_political_power = -100
+    }
+}
+#Территориальные амбиции
+focus = {
+    id = USA_terr_amb
+    icon = GFX_real_freedom
+    cost = 3
+    x = 13
+    y = 6
+    prerequisite = {
+        focus = USA_prp_parade
+    }
+    completion_reward = {
+        add_war_support = 0.1
+        swap_ideas = {
+            remove_idea = idea_USA_ext_polit_II
+            add_idea = idea_USA_ext_polit_I
+        }
+    }
+}
+#Борьба с повесточкой
+focus = {
+    id = USA_fight_pov
+    icon = GFX_real_freedom
+    cost = 2
+    x = 15
+    y = 6
+    prerequisite = {
+        focus = USA_prp_parade
+    }
+    completion_reward = {
+        add_stability = 0.2
+        add_popularity = {
+            ideology = Centrism
+            popularity = 0.02
+        }
+        add_political_power = 50
+    }
+}
+#Курвтор переговоров
+focus = {
+    id = USA_peace_courator
+    icon = GFX_real_freedom
+    cost = 3
+    x = 17
+    y = 6
+    prerequisite = {
+        focus = USA_prp_parade
+    }
+    completion_reward = {
+        add_political_power = 500
+    }
+}
+#Раскол Запада
+focus = {
+    id = USA_broken_west
+    icon = GFX_real_freedom
+    cost = 3
+    x = 15
+    y = 7
+    prerequisite = {
+        focus = USA_terr_amb
+    }
+    prerequisite = {
+        focus = USA_fight_pov
+    }
+    prerequisite = {
+        focus = USA_peace_courator
+    }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_USA_ext_polit_I
+            add_idea = idea_USA_ext_polit_II
+        }
+    }
+}
+#Парад на день рождения
+focus = {
+    id = USA_bd_parade
+    icon = GFX_real_freedom
+    cost = 4
+    x = 15
+    y = 8
+    prerequisite = {
+        focus = USA_broken_west
+    }
+    completion_reward = {
+        army_experience = 10
+        add_political_power = -100
+    }
+}
+#Накал в обществе
+focus = {
+    id = USA_peaple_pizdec
+    icon = GFX_real_freedom
+    cost = 2.7
+    x = 15
+    y = 9
+    prerequisite = {
+        focus = USA_bd_parade
+    }
+    completion_reward = {
+        add_ideas = idea_USA_int_crisis_I
+    }
+}
 }
