@@ -1,6 +1,6 @@
 ﻿#COUNTRY LEADERS
-recruit_character = USA_donald_trump
 recruit_character = USA_Joe_Biden
+recruit_character = USA_donald_trump
 
 #MINISTERS
 #recruit_character = 
@@ -12,13 +12,13 @@ starting_train_buffer = 3.0
 
 set_politics = {
 	ruling_party = liberalism
-	last_election = "2020.3.3"
+	last_election = "2024.3.3"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	Centrism = 50
-	liberalism = 50
+	Centrism = 52
+	liberalism = 48
 	radicalism = 0
 	reactionism = 0
 	theocracy = 0
