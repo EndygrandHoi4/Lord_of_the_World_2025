@@ -236,4 +236,693 @@ focus = {
         add_ideas = idea_USA_int_crisis_I
     }
 }
+
+########### Конгресс
+#Конгресс
+focus = {
+    id = USA_congress_fc
+    icon = GFX_real_freedom
+    cost = 1
+    x = 30
+    y = 2
+    available = {
+        has_completed_focus = USA_peaple_pizdec
+    }
+    completion_reward = {
+        add_political_power = 100
+    }
+}
+### ветка пиздеца
+#Масштабные протесты
+focus = {
+    id = USA_protests
+    icon = GFX_real_freedom
+    cost = 0.3
+    x = 30
+    y = 4
+    prerequisite = {
+        focus = USA_congress_fc
+    }
+    prerequisite = {
+        focus = USA_very_serious
+        focus = USA_vibori
+    }
+    available = {
+        or = {
+            has_idea = idea_USA_int_crisis_I
+            has_idea = idea_USA_int_crisis_II
+            has_idea = idea_USA_int_crisis_III
+            has_idea = idea_USA_int_crisis_IV
+        }
+    }
+    completion_reward = {
+        add_stability = -0.1
+    }
+}
+#Сплотить партию
+focus = {
+    id = USA_un_party
+    icon = GFX_real_freedom
+    cost = 1
+    x = 30
+    y = 5
+    prerequisite = {
+        focus = USA_un_party
+    }
+    available = {
+        or = {
+            has_idea = idea_USA_int_crisis_I
+            has_idea = idea_USA_int_crisis_II
+            has_idea = idea_USA_int_crisis_III
+            has_idea = idea_USA_int_crisis_IV
+        }
+    }
+    completion_reward = {
+        add_political_power = 100
+        swap_ideas = {
+            remove_idea = idea_USA_int_crisis_I
+            add_idea = idea_USA_int_crisis_II
+        }
+    }
+}
+#Дело Макса
+focus = {
+    id = USA_mask
+    icon = GFX_real_freedom
+    cost = 1
+    x = 28
+    y = 6
+    prerequisite = {
+        focus = USA_un_party
+    }
+    available = {
+        or = {
+            has_idea = idea_USA_int_crisis_I
+            has_idea = idea_USA_int_crisis_II
+            has_idea = idea_USA_int_crisis_III
+            has_idea = idea_USA_int_crisis_IV
+        }
+    }
+    completion_reward = {
+        ####### ЕБАНИ СДЕСЬ КАНТРИ ИВЕНТИК
+    }
+}
+#Борьба оппозицией
+focus = {
+    id = USA_fight_oppos
+    icon = GFX_real_freedom
+    cost = 2
+    x = 30
+    y = 6
+    prerequisite = {
+        focus = USA_un_party
+    }
+    available = {
+        or = {
+            has_idea = idea_USA_int_crisis_I
+            has_idea = idea_USA_int_crisis_II
+            has_idea = idea_USA_int_crisis_III
+            has_idea = idea_USA_int_crisis_IV
+        }
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                has_idea = idea_USA_int_crisis_II
+            }
+            swap_ideas = {
+                remove_idea = idea_USA_int_crisis_II
+                add_idea = idea_USA_int_crisis_III
+            }
+        }
+        if = {
+            limit = {
+                has_idea = idea_USA_int_crisis_III
+            }
+            swap_ideas = {
+                remove_idea = idea_USA_int_crisis_III
+                add_idea = idea_USA_int_crisis_IV
+            }
+        }
+    }
+}
+#Борьба с иммигрантами
+focus = {
+    id = USA_fight_immig
+    icon = GFX_real_freedom
+    cost = 1
+    x = 32
+    y = 6
+    prerequisite = {
+        focus = USA_un_party
+    }
+    available = {
+        or = {
+            has_idea = idea_USA_int_crisis_I
+            has_idea = idea_USA_int_crisis_II
+            has_idea = idea_USA_int_crisis_III
+            has_idea = idea_USA_int_crisis_IV
+        }
+    }
+    completion_reward = {
+        if = {
+            limit = {
+                has_idea = idea_USA_int_crisis_II
+            }
+            swap_ideas = {
+                remove_idea = idea_USA_int_crisis_II
+                add_idea = idea_USA_int_crisis_III
+            }
+        }
+        if = {
+            limit = {
+                has_idea = idea_USA_int_crisis_III
+            }
+            swap_ideas = {
+                remove_idea = idea_USA_int_crisis_III
+                add_idea = idea_USA_int_crisis_IV
+            }
+        }
+    }
+}
+#Больше тюрем!
+focus = {
+    id = USA_more_prist
+    icon = GFX_real_freedom
+    cost = 2
+    x = 30
+    y = 7
+    available = {
+        or = {
+            has_idea = idea_USA_int_crisis_I
+            has_idea = idea_USA_int_crisis_II
+            has_idea = idea_USA_int_crisis_III
+            has_idea = idea_USA_int_crisis_IV
+        }
+    }
+    prerequisite = {
+        focus = USA_fight_immig
+    }
+    prerequisite = {
+        focus = USA_fight_oppos
+    }
+    completion_reward = {
+        add_political_power = 100
+        add_stability = 0.2
+    }
+}
+#Разогнать протесты!
+focus = {
+    id = USA_no_meetings
+    icon = GFX_real_freedom
+    cost = 1
+    x = 29
+    y = 8
+    prerequisite = {
+        focus = USA_more_prist
+    }
+    available = {
+        or = {
+            has_idea = idea_USA_int_crisis_I
+            has_idea = idea_USA_int_crisis_II
+            has_idea = idea_USA_int_crisis_III
+            has_idea = idea_USA_int_crisis_IV
+        }
+    }
+    completion_reward = {
+        remove_ideas = idea_USA_int_crisis_IV
+    }
+}
+#MAGA!
+focus = {
+    id = USA_MAGA
+    icon = GFX_real_freedom
+    cost = 1
+    x = 31
+    y = 8
+    prerequisite = {
+        focus = USA_more_prist
+    }
+    available = {
+        or = {
+            has_idea = idea_USA_int_crisis_I
+            has_idea = idea_USA_int_crisis_II
+            has_idea = idea_USA_int_crisis_III
+            has_idea = idea_USA_int_crisis_IV
+        }
+    }
+    completion_reward = {
+        add_political_power = 100
+        add_war_support = 0.1
+    }
+}
+### Подветка поддержки Трампа
+#Самый серьёзный политик
+focus = {
+    id = USA_very_serious
+    icon = GFX_real_freedom
+    cost = 1
+    x = 26
+    y = 3
+    prerequisite = {
+        focus = USA_congress_fc
+    }
+    mutually_exclusive = {
+        focus = USA_vibori
+    }
+    completion_reward = {
+        add_political_power = 100
+    }
+}
+#Ораторство
+focus = {
+    id = USA_oratot
+    icon = GFX_real_freedom
+    cost = 1
+    x = 24
+    y = 4
+    prerequisite = {
+        focus = USA_very_serious
+    }
+    completion_reward = {
+        add_popularity = {
+            ideology = Centrism
+            popularity = 0.05
+        }
+        add_stability = 0.05
+    }
+}
+#Обыграть Зе в карты
+focus = {
+    id = USA_no_cards_dude
+    icon = GFX_real_freedom
+    cost = 1
+    x = 24
+    y = 5
+    prerequisite = {
+        focus = USA_very_serious
+    }
+    completion_reward = {
+        add_political_power = 100
+        A04 = {
+            add_political_power = -100
+        }
+    }
+}
+#Страна-нефтеманьяк
+focus = {
+    id = USA_jack_oileater
+    icon = GFX_real_freedom
+    cost = 1
+    x = 26
+    y = 4
+    prerequisite = {
+        focus = USA_very_serious
+    }
+    completion_reward = { }
+}
+#СТЕНА!
+focus = {
+    id = USA_beatiful_wall
+    icon = GFX_real_freedom
+    cost = 1
+    x = 26
+    y = 5
+    prerequisite = {
+        focus = USA_jack_oileater
+    }
+    completion_reward = { }
+}
+#Сделка по ресурсам
+focus = {
+    id = USA_res_deal
+    icon = GFX_real_freedom
+    cost = 1
+    x = 25
+    y = 6
+    prerequisite = {
+        focus = USA_no_cards_dude
+    }
+    prerequisite = {
+        focus = USA_beatiful_wall
+    }
+    completion_reward = { 
+        #ИВЕНТ ССУКА!!!
+    }
+}
+#Лавировать меж сторонами
+focus = {
+    id = USA_lav_ways
+    icon = GFX_real_freedom
+    cost = 1
+    x = 28
+    y = 4
+    prerequisite = {
+        focus = USA_very_serious
+    }
+    completion_reward = {
+        add_political_power = 100
+    }
+}
+#Нет - иммигрантам
+focus = {
+    id = USA_no_immig
+    icon = GFX_real_freedom
+    cost = 1
+    x = 28
+    y = 5
+    prerequisite = {
+        focus = USA_lav_ways
+    }
+    completion_reward = {
+        add_manpower = -10000
+        add_war_support = 0.1
+        add_stability = 0.05
+    }
+}
+### Подветка судью на мыло
+#Требовать выборы!
+focus = {
+    id = USA_vibori
+    icon = GFX_real_freedom
+    cost = 1
+    x = 34
+    y = 3
+    prerequisite = {
+        focus = USA_congress_fc
+    }
+    mutually_exclusive = {
+        focus = USA_very_serious
+    }
+    completion_reward = {
+        add_stability = -0.05
+    }
+}
+#Другой Республиканец ### Вивек Рамасвами
+focus = {
+    id = USA_Vivek
+    icon = GFX_real_freedom
+    cost = 3
+    x = 32
+    y = 4
+    available = {
+        NOT = {
+            has_completed_focus = USA_amerika_party
+            has_completed_focus = USA_back_to_dem
+        }
+    }
+    mutually_exclusive = {
+        focus = USA_amerika_party
+    }
+    prerequisite = {
+        focus = USA_vibori
+    }
+    completion_reward = {
+        retire_character = USA_donald_trump
+    }
+}
+#Честная политика
+focus = {
+    id = USA_clear_politics
+    icon = GFX_real_freedom
+    cost = 3
+    x = 32
+    y = 5
+    prerequisite = {
+        focus = USA_Vivek
+    }
+    completion_reward = {
+        add_stability = 0.1
+        add_political_power = 100
+    }
+}
+#Партия Америка
+focus = {
+    id = USA_amerika_party
+    icon = GFX_real_freedom
+    cost = 3
+    x = 34
+    y = 4
+    available = {
+        NOT = {
+            has_completed_focus = USA_Vivek
+            has_completed_focus = USA_back_to_dem
+        }
+        has_completed_focus = USA_mask
+    }
+    prerequisite = {
+        focus = USA_vibori
+    }
+    mutually_exclusive = {
+        focus = USA_Vivek
+        focus = USA_back_to_dem
+    }
+    completion_reward = {
+        set_party_name = {
+            ideology = progressivism
+            long_name = USA_progressivism_amer_long
+            name = USA_progressivism_amer
+        }
+        recruit_character = USA_Ilon_Mask
+    }
+}
+#Бизнесс и политика!
+focus = {
+    id = USA_buis_and_politics
+    icon = GFX_real_freedom
+    cost = 3
+    x = 34
+    y = 5
+    prerequisite = {
+        focus = USA_amerika_party
+    }
+    completion_reward = {
+        add_offsite_building = {
+            type = industrial_complex
+            level = 2
+        }
+    }
+}
+#Вернутся к демократам
+focus = {
+    id = USA_back_to_dem
+    icon = GFX_real_freedom
+    cost = 3
+    x = 36
+    y = 4
+    available = {
+        NOT = {
+            has_completed_focus = USA_amerika_party
+            has_completed_focus = USA_Vivek
+        }
+    }
+    prerequisite = {
+        focus = USA_vibori
+    }
+    mutually_exclusive = {
+        focus = USA_amerika_party
+    }
+    completion_reward = {
+        set_politics = {
+            ruling_party = liberalism
+        }
+        recruit_character = USA_Kamala_Harris
+    }
+}
+#Оправится от позора
+focus = {
+    id = USA_pozor_dem
+    icon = GFX_real_freedom
+    cost = 3
+    x = 36
+    y = 5
+    prerequisite = {
+        focus = USA_back_to_dem
+    }
+    completion_reward = {
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.1
+        }
+        add_political_power = 100
+    }
+}
+#К лучшему будущему!
+focus = {
+    id = USA_to_better_future
+    icon = GFX_real_freedom
+    cost = 1
+    x = 35
+    y = 6
+    prerequisite = {
+        focus = USA_buis_and_politics
+        focus = USA_pozor_dem
+        focus = USA_clear_politics
+    }
+    completion_reward = {
+        add_stability = 0.15
+    }
+}
+######### Экономика
+#Экономический вопрос
+focus = {
+    id = USA_eco_quest
+    icon = GFX_real_freedom
+    cost = 2
+    x = 20
+    y = 11
+    completion_reward = { }
+}
+### Подветка план Рубио
+focus = {
+    id = USA_Rubio_plan
+    icon = GFX_real_freedom
+    cost = 3
+    x = 19
+    y = 12
+    prerequisite = {
+        focus = USA_eco_quest
+    }
+    mutually_exclusive = {
+        focus = USA_Mask_plan
+    }
+    completion_reward = { }
+}
+#Новая госсобственность
+focus = {
+    id = USA_new_gov_own
+    icon = GFX_real_freedom
+    cost = 5
+    x = 19
+    y = 14
+    prerequisite = {
+        focus = USA_Rubio_plan
+    }
+    completion_reward = { }
+}
+
+## Межподветка
+focus = {
+    id = USA_autobans
+    icon = GFX_real_freedom
+    cost = 5
+    x = 20
+    y = 13
+    prerequisite = {
+        focus = USA_Rubio_plan
+        focus = USA_Mask_plan
+    }
+    completion_reward = { }
+}
+
+### Подветка план Макса
+focus = {
+    id = USA_Mask_plan
+    icon = GFX_real_freedom
+    cost = 3
+    x = 21
+    y = 12
+    prerequisite = {
+        focus = USA_eco_quest
+    }
+    mutually_exclusive = {
+        focus = USA_Rubio_plan
+    }
+    completion_reward = { }
+}
+#Увеличить эффективность
+focus = {
+    id = USA_up_eff
+    icon = GFX_real_freedom
+    cost = 5
+    x = 21
+    y = 14
+    prerequisite = {
+        focus = USA_Mask_plan
+    }
+    completion_reward = { }
+}
+
+
+######### Внешняя политика
+#Внешний вопрос
+focus = {
+    id = USA_ext_quest
+    icon = GFX_real_freedom
+    cost = 2
+    x = 30
+    y = 11
+    completion_reward = { }
+}
+
+###Межветка Эковойна
+#День пошлин
+focus = {
+    id = USA_up_cost_day
+    icon = GFX_real_freedom
+    cost = 0.3
+    x = 25
+    y = 12
+    prerequisite = {
+        focus = USA_eco_quest
+    }
+    prerequisite = {
+        focus = USA_ext_quest
+    }
+    completion_reward = { }
+}
+#Торговая война с Китаем
+focus = {
+    id = USA_prc_dealwar
+    icon = GFX_real_freedom
+    cost = 2
+    x = 23
+    y = 13
+    prerequisite = {
+        focus = USA_up_cost_day
+    }
+    completion_reward = { }
+}
+#Ужас Евросоюза
+focus = {
+    id = USA_EU_nightmare
+    icon = GFX_real_freedom
+    cost = 2
+    x = 27
+    y = 13
+    prerequisite = {
+        focus = USA_up_cost_day
+    }
+    completion_reward = { }
+}
+#На колени!
+focus = {
+    id = USA_na_koleni
+    icon = GFX_real_freedom
+    cost = 2
+    x = 25
+    y = 14
+    prerequisite = {
+        focus = USA_up_cost_day
+    }
+    prerequisite = {
+        focus = USA_prc_dealwar
+        focus = USA_EU_nightmare
+    }
+    completion_reward = { }
+}
+#Гегемон вернулся?
+focus = {
+    id = USA_gegemon_back
+    icon = GFX_real_freedom
+    cost = 2
+    x = 25
+    y = 15
+    prerequisite = {
+        focus = USA_na_koleni
+    }
+    completion_reward = { }
+}
+
+
 }

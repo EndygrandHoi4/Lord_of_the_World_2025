@@ -31,4 +31,36 @@ characters={
 		}
 	}
 
+	USA_Ilon_Mask={
+		name=USA_Ilon_Mask
+		# portraits={
+		# 	civilian={
+		# 		large= "gfx/leaders/USA/portrait_USA_Ilon_Maksik.dds"
+		# 	}
+		# }
+		country_leader={
+			ideology = technocratic_globalism
+			traits={ dislikes_germany }
+			expire="2067.1.1.1"
+			id=-1
+		}
+	}
+
+	USA_Kamala_Harris={
+		name=USA_Kamala_Harris
+		# portraits={
+		# 	civilian={
+		# 		large= "gfx/leaders/USA/portrait_USA_Ilon_Maksik.dds"
+		# 	}
+		# }
+		country_leader={
+			ideology = liberal_democracy
+			traits={ }
+			expire="2064.1.1.1"
+			id=-1
+			#iq=3
+		}
+	}
+	
+
 }
