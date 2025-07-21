@@ -39,6 +39,7 @@ focus = {
             popularity = -0.01
         }
         add_political_power = -100
+        add_ideas = idea_USA_Mask_I
     }
 }
 #Политика Трампизма
@@ -325,6 +326,7 @@ focus = {
     }
     completion_reward = {
         ####### ЕБАНИ СДЕСЬ КАНТРИ ИВЕНТИК
+        ###СО СВАПОМ ИЛИ ДЕЛИТОМ МАКСА
     }
 }
 #Борьба оппозицией
@@ -763,21 +765,41 @@ focus = {
         add_stability = 0.15
     }
 }
+
+#Конфликт с Максом
+focus = {
+    id = USA_if_mask_pidor
+    icon = GFX_real_freedom
+    cost = 0
+    x = 25
+    y = 9
+    available = {
+        has_completed_focus = USA_mask
+        not = {
+            has_idea = idea_USA_Mask_II
+        }
+    }
+    completion_reward = { }
+}
+
 ######### Экономика
 #Экономический вопрос
 focus = {
     id = USA_eco_quest
     icon = GFX_real_freedom
-    cost = 2
+    cost = 5
     x = 20
     y = 11
+    available = {
+        has_completed_focus = USA_no_meetings
+    }
     completion_reward = { }
 }
 ### Подветка план Рубио
 focus = {
     id = USA_Rubio_plan
     icon = GFX_real_freedom
-    cost = 3
+    cost = 5
     x = 19
     y = 12
     prerequisite = {
@@ -785,6 +807,9 @@ focus = {
     }
     mutually_exclusive = {
         focus = USA_Mask_plan
+    }
+    available = {
+        has_completed_focus = USA_if_mask_pidor
     }
     completion_reward = { }
 }
@@ -792,34 +817,112 @@ focus = {
 focus = {
     id = USA_new_gov_own
     icon = GFX_real_freedom
-    cost = 5
+    cost = 10
     x = 19
     y = 14
     prerequisite = {
         focus = USA_Rubio_plan
     }
-    completion_reward = { }
+    completion_reward = {
+        random_core_state = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = industrial_complex
+                level = 3
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+            }
+        }
+        random_core_state = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 3
+            }
+        }
+    }
 }
 
 ## Межподветка
 focus = {
     id = USA_autobans
     icon = GFX_real_freedom
-    cost = 5
+    cost = 10
     x = 20
     y = 13
     prerequisite = {
         focus = USA_Rubio_plan
         focus = USA_Mask_plan
     }
-    completion_reward = { }
+    completion_reward = {
+        random_core_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+        }
+        random_core_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+        }
+        random_core_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+        }
+        random_core_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+        }
+        random_core_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+        }
+        random_core_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+        }
+        random_core_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+        }
+        random_core_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+        }
+        random_core_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+            }
+        }
+    }
 }
 
 ### Подветка план Макса
 focus = {
     id = USA_Mask_plan
     icon = GFX_real_freedom
-    cost = 3
+    cost = 5
     x = 21
     y = 12
     prerequisite = {
@@ -828,19 +931,31 @@ focus = {
     mutually_exclusive = {
         focus = USA_Rubio_plan
     }
-    completion_reward = { }
+    available = {
+        NOT = {
+            has_completed_focus = USA_if_mask_pidor
+        }
+    }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 #Увеличить эффективность
 focus = {
     id = USA_up_eff
     icon = GFX_real_freedom
-    cost = 5
+    cost = 10
     x = 21
     y = 14
     prerequisite = {
         focus = USA_Mask_plan
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_USA_Mask_II
+            add_idea = idea_USA_Mask_III
+        }
+    }
 }
 
 
@@ -852,6 +967,100 @@ focus = {
     cost = 2
     x = 30
     y = 11
+    available = {
+        has_completed_focus = USA_no_meetings
+    }
+    completion_reward = { }
+}
+#Иранская Бомба
+focus = {
+    id = USA_ira_quest
+    icon = GFX_real_freedom
+    cost = 5
+    x = 29
+    y = 12
+    available = {
+        or = {
+            has_completed_focus = USA_jack_oileater
+            has_completed_focus = USA_to_better_future
+        }
+    }
+    prerequisite = {
+        focus = USA_ext_quest
+    }
+    completion_reward = { }
+}
+#Задавить пиратов
+focus = {
+    id = USA_down_pirates
+    icon = GFX_real_freedom
+    cost = 5
+    x = 29
+    y = 14
+    available = {
+        or = {
+            has_completed_focus = USA_jack_oileater
+            has_completed_focus = USA_to_better_future
+        }
+    }
+    prerequisite = {
+        focus = USA_ira_quest
+    }
+    completion_reward = { }
+}
+#Канадский вопрос
+focus = {
+    id = USA_can_quest
+    icon = GFX_real_freedom
+    cost = 5
+    x = 31
+    y = 12
+    available = {
+        or = {
+            has_completed_focus = USA_res_deal
+            has_completed_focus = USA_to_better_future
+        }
+    }
+    prerequisite = {
+        focus = USA_ext_quest
+    }
+    completion_reward = { }
+}
+#Мексиканский вопрос
+focus = {
+    id = USA_mex_quest
+    icon = GFX_real_freedom
+    cost = 5
+    x = 31
+    y = 14
+    available = {
+        or = {
+            has_completed_focus = USA_beatiful_wall
+            has_completed_focus = USA_to_better_future
+        }
+    }
+    prerequisite = {
+        focus = USA_can_quest
+    }
+    completion_reward = { }
+}
+#Дело Гренландии
+focus = {
+    id = USA_greenland
+    icon = GFX_real_freedom
+    cost = 10
+    x = 30
+    y = 13
+    available = {
+        or = {
+            has_completed_focus = USA_res_deal
+            has_completed_focus = USA_to_better_future
+        }
+    }
+    prerequisite = {
+        focus = USA_ira_quest
+        focus = USA_can_quest
+    }
     completion_reward = { }
 }
 
@@ -875,7 +1084,7 @@ focus = {
 focus = {
     id = USA_prc_dealwar
     icon = GFX_real_freedom
-    cost = 2
+    cost = 5
     x = 23
     y = 13
     prerequisite = {
@@ -887,7 +1096,7 @@ focus = {
 focus = {
     id = USA_EU_nightmare
     icon = GFX_real_freedom
-    cost = 2
+    cost = 5
     x = 27
     y = 13
     prerequisite = {
@@ -899,7 +1108,7 @@ focus = {
 focus = {
     id = USA_na_koleni
     icon = GFX_real_freedom
-    cost = 2
+    cost = 5
     x = 25
     y = 14
     prerequisite = {
@@ -915,7 +1124,7 @@ focus = {
 focus = {
     id = USA_gegemon_back
     icon = GFX_real_freedom
-    cost = 2
+    cost = 5
     x = 25
     y = 15
     prerequisite = {
