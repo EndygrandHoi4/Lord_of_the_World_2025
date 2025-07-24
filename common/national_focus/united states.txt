@@ -1133,5 +1133,162 @@ focus = {
     completion_reward = { }
 }
 
+###Сахалинский договор
+focus = {
+    id = USA_sakh_pact
+    icon = GFX_real_freedom
+    cost = 0
+    available = {
+        has_completed_focus = USA_sakh_pact
+    }
+    x = 45
+    y = 5
+    completion_reward = { }
+}
+#Межамерика
+focus = {
+    id = USA_mezhamer
+    icon = GFX_real_freedom
+    cost = 4
+    x = 45
+    y = 6
+    prerequisite = {
+        focus = USA_sakh_pact
+    }
+    completion_reward = { }
+}
+#Новая доктрина Монро
+focus = {
+    id = USA_new_monroe
+    icon = GFX_real_freedom
+    cost = 4
+    x = 47
+    y = 7
+    prerequisite = {
+        focus = USA_mezhamer
+    }
+    completion_reward = { }
+}
+#Единая промышленность
+focus = {
+    id = USA_united_ind
+    icon = GFX_real_freedom
+    cost = 3
+    x = 43
+    y = 7
+    prerequisite = {
+        focus = USA_mezhamer
+    }
+    completion_reward = { }
+}
+#Полицейский америки
+focus = {
+    id = USA_policeman
+    icon = GFX_real_freedom
+    cost = 3
+    x = 47
+    y = 8
+    prerequisite = {
+        focus = USA_new_monroe
+        focus = USA_united_ind
+    }
+    completion_reward = { }
+}
+#Глобальные корпорации
+focus = {
+    id = USA_global_corps
+    icon = GFX_real_freedom
+    cost = 3
+    x = 43
+    y = 8
+    prerequisite = {
+        focus = USA_united_ind
+        focus = USA_new_monroe
+    }
+    completion_reward = { }
+}
+#Разжигатели войн
+focus = {
+    id = USA_war_flamers
+    icon = GFX_real_freedom
+    cost = 1
+    x = 45
+    y = 9
+    prerequisite = {
+        focus = USA_global_corps
+        focus = USA_policeman
+    }
+    completion_reward = { }
+}
+
+#Промышленость Кейстейта
+focus = {
+    id = USA_keystate_ind
+    icon = GFX_real_freedom
+    cost = 5
+    x = 40
+    y = 10
+    prerequisite = {
+        focus = USA_war_flamers
+    }
+    completion_reward = { }
+}
+#С Кейстейтом!
+focus = {
+    id = USA_with_keystate
+    icon = GFX_real_freedom
+    cost = 10
+    x = 40
+    y = 11
+    prerequisite = {
+        focus = USA_keystate_ind
+    }
+    mutually_exclusive = {
+        focus = USA_with_OVZ
+    }
+    completion_reward = { }
+}
+
+#Ресурсы ОВЗ
+focus = {
+    id = USA_OVZ_res
+    icon = GFX_real_freedom
+    cost = 5
+    x = 50
+    y = 10
+    prerequisite = {
+        focus = USA_war_flamers
+    }
+    completion_reward = { }
+}
+#С ОВЗ!
+focus = {
+    id = USA_with_OVZ
+    icon = GFX_real_freedom
+    cost = 10
+    x = 50
+    y = 11
+    prerequisite = {
+        focus = USA_OVZ_res
+    }
+    mutually_exclusive = {
+        focus = USA_with_keystate
+    }
+    completion_reward = { }
+}
+
+#Наши позиции
+focus = {
+    id = USA_our_pos
+    icon = GFX_real_freedom
+    cost = 1
+    x = 45
+    y = 12
+    prerequisite = {
+        focus = USA_with_OVZ
+        focus = USA_with_keystate
+    }
+    completion_reward = { }
+}
 
 }
