@@ -1,0 +1,91 @@
+equipments = {
+
+	support_equipment = {
+		year = 1990
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			infantry
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.5
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 4
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	support_equipment_1 = {
+		year = 1990
+
+		archetype = support_equipment
+		priority = 20	
+	}
+
+	support_equipment_2 = {
+		year = 2015
+
+		reliability = 0.55
+
+		archetype = support_equipment
+		priority = 20	
+	}
+
+	support_equipment_3 = {
+		year = 2020
+
+		reliability = 0.6
+
+		archetype = support_equipment
+		priority = 20	
+	}
+
+	support_equipment_4 = {
+		year = 2023
+
+		reliability = 0.65
+
+		archetype = support_equipment
+		priority = 20	
+	}
+
+	support_equipment_5 = {
+		year = 2025
+
+		reliability = 0.7
+
+		archetype = support_equipment
+		priority = 20	
+	}
+
+	support_equipment_6 = {
+		year = 2027
+
+		reliability = 0.75
+
+		archetype = support_equipment
+		priority = 20	
+	}
+
+	support_equipment_7 = {
+		year = 2029
+
+		reliability = 0.8
+
+		archetype = support_equipment
+		priority = 20	
+	}
+
+}
