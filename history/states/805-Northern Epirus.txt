@@ -23,12 +23,6 @@ state={
 		add_core_of = A26
 		add_claim_by = A25
 		add_claim_by = A19
-
-		1939.4.12 = {
-			owner = A19
-			controller = A19
-			remove_claim_by = A19
-		}
 	}
 
 	local_supplies=0.0 

@@ -13,7 +13,6 @@ state = {
 			9849 2 
 		}
 		owner = A22
-		CONTROLLER = C78
 		buildings = {
 			infrastructure = 1
 

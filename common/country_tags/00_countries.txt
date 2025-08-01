@@ -32,7 +32,7 @@ A18 = "countries/Spain.txt"
 A19 = "countries/Italy.txt"
 #A20
 A20 = "countries/Romania.txt"
-#A21
+#A21 НЕ ИСПОЛЬЗУЕТСЯ
 A21 = "countries/Yugoslavia.txt"
 #A22
 A22 = "countries/Serbia.txt"
