@@ -5,7 +5,7 @@ state={
 	state_category = pastoral 
 
 	history={
-		owner = MZB
+		owner = B09
 		buildings = {
 			infrastructure = 2
 			2123 = {
@@ -15,7 +15,7 @@ state={
 
 		}
 
-		add_core_of = MZB
+		add_core_of = B09
 
 	}
 	provinces={

@@ -27,7 +27,7 @@ state = {
 		}
 
 		add_core_of = A79
-		add_core_of = SLO
+		add_core_of = A79
 
 		# This should isntead be reclaimable through Hungarian focuses with ww
 		IF = {
@@ -36,7 +36,7 @@ state = {
 					has_dlc = "Gotterdammerung"
 				}
 			}
-			add_claim_by = HUN
+			add_claim_by = A33
 		}
 
 	}

@@ -11,12 +11,12 @@ state={
 	}
 
 	history={
-		owner = PAK
+		owner = B13
 		buildings = {
 		}
-		add_core_of = NWF
-		add_core_of = PAK
-		add_core_of = KHL
+		add_core_of = C95
+		add_core_of = B13
+		add_core_of = E01
 		set_compliance = 0
 		start_resistance = yes
 		set_resistance =  70

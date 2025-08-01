@@ -10,8 +10,8 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = AUS
-		add_claim_by = SWI
+		add_core_of = A13
+		add_claim_by = A23
 
 	}
 	provinces={

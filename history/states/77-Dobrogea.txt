@@ -15,8 +15,8 @@ state={
 			infrastructure = 3
 			industrial_complex = 2
 		}
-		add_core_of = ROM
-		add_claim_by = BUL
+		add_core_of = A20
+		add_claim_by = A29
 	}
 
 	provinces={

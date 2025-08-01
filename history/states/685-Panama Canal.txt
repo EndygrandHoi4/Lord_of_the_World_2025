@@ -17,7 +17,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = PAN
+		add_core_of = A59
 	}
 	
 	provinces={ 7617 }

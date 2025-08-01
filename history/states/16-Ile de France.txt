@@ -9,7 +9,7 @@ state = {
 	history = {
 
 		owner = A06
-		add_core_of = FRA
+		add_core_of = A06
 
 		victory_points = {
 			11506 50 # Paris

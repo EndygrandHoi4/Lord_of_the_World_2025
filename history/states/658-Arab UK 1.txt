@@ -11,8 +11,8 @@ state = {
 
 	history = {
 		
-		owner = UAE
-		add_core_of = UAE
+		owner = B37
+		add_core_of = B37
 
 		victory_points = {
 			7960 1 # Abu Dhabi

@@ -46,7 +46,7 @@ state={
 			}
 
 		}
-		add_core_of = GRE
+		add_core_of = A25
 
 	}
 

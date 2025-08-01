@@ -22,7 +22,7 @@ state= {
 				coastal_bunker = 2
 			}
 		}
-		add_core_of = TUR
+		add_core_of = A24
 
 		1936.1.1.1 = { 
 			if = {

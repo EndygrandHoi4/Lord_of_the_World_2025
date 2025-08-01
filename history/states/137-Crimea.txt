@@ -44,7 +44,7 @@ state = {
 		}
 
 		add_core_of = A03
-		add_core_of = CRI
+		add_core_of = C21
 
 		1939.1.1 = {
 			buildings = {

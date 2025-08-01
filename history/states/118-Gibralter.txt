@@ -16,7 +16,7 @@ state=
 				coastal_bunker = 2
 			}
 		}
-		add_claim_by = SPR
+		add_claim_by = A18
 	}
 	provinces={
 		4135

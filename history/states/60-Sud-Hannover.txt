@@ -13,8 +13,8 @@ state = {
 	history = {
 
 		owner = A01
-		add_core_of = GER
-		add_core_of = THU
+		add_core_of = A01
+		add_core_of = C74
 
 		victory_points = { 
 			3561 5 # Erfurt

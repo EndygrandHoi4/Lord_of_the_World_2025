@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = IRE
+		owner = A32
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3
@@ -18,7 +18,7 @@ state={
 		victory_points = {
 			6313 1 #Limerick
 		}
-		add_core_of = IRE
+		add_core_of = A32
 	}
 
 	provinces={

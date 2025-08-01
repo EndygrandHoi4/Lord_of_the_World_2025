@@ -6,8 +6,8 @@ state = {
 
 	history = {
 		
-		owner = BHR
-		add_core_of = BHR
+		owner = E07
+		add_core_of = E07
 
 		victory_points = {
 			13313 2 # Manama

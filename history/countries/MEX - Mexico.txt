@@ -234,24 +234,24 @@ IF = {
 			MEX_oil_concessions
 		}
 		
-		ENG = {
+		A02 = {
 			add_opinion_modifier = {
-				target = MEX
+				target = A54
 				modifier = embargo
 			}
 		}
-		USA = {
+		A07 = {
 			add_opinion_modifier = {
-				target = MEX
+				target = A54
 				modifier = embargo
 			}
 		}
 		add_opinion_modifier = {
-			target = ENG
+			target = A02
 			modifier = embargo
 		}
 		add_opinion_modifier = {
-			target = USA
+			target = A07
 			modifier = embargo
 		}
 		

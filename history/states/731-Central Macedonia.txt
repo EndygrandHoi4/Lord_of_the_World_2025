@@ -18,8 +18,8 @@ state={
 			}
 
 		}
-		add_core_of = GRE
-		add_claim_by = BUL
+		add_core_of = A25
+		add_claim_by = A29
 
 	}
 

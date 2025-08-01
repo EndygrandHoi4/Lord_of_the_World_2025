@@ -6,7 +6,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = POL
+			tag = A12
 		}
 	}
 	default = no

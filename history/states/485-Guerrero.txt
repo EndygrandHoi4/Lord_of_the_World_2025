@@ -12,7 +12,7 @@ state={
 
 
 	history={
-		owner = MEX
+		owner = A54
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -20,7 +20,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = MEX
+		add_core_of = A54
 		victory_points = {
 			10730 5
 		}

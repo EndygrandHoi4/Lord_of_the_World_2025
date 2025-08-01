@@ -8,9 +8,9 @@ state = {
 
 	history = {
 
-		owner = YEM
-		add_core_of = YEM
-		add_core_of = FSA
+		owner = A77
+		add_core_of = A77
+		add_core_of = E05
 
 		victory_points = {
 			5074 2 # Aden 

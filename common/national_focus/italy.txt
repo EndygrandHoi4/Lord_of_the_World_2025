@@ -7,7 +7,7 @@
 		modifier = {
 			add = 10
 			OR = {
-				tag = ITA
+				tag = A19
 				tag = RSI
 				tag = RDS
 			}

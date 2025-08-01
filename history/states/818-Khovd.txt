@@ -6,14 +6,14 @@ state={
 	}
 
 	history={
-		owner = MON
+		owner = A71
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			7843 1 #Ulaangom
 		}
-		add_core_of = MON
+		add_core_of = A71
 	}
 	manpower=149000
 	buildings_max_level_factor=1.000

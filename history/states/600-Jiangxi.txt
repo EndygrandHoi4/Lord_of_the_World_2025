@@ -4,8 +4,8 @@ state={
 
 	history={
 		owner = A08
-		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = A41
+		add_core_of = A08
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
@@ -15,7 +15,7 @@ state={
 			3992 3 
 		}
 		1938.10.25 = {
-			JAP = {
+			A51 = {
 				set_province_controller = 1153
 				set_province_controller = 1628
 				set_province_controller = 3992

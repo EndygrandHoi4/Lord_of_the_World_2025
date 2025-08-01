@@ -14,7 +14,7 @@ state={
 		victory_points = {
 			8093 1 
 		}
-		add_core_of = PER
+		add_core_of = A60
 	}
 
 	provinces={

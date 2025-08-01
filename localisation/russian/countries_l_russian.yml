@@ -212,6 +212,12 @@
  A09_progressivism_DEF: "Бельгийская республика"
  A09_progressivism_ADJ: "Бельгийск."
 
+#A10 IN PROGRESS
+ A10: "Нидерланды"
+
+#A11 IN PROGRESS
+ A11: "Чехия"
+
 #A12 Польша
  A12_Centrism: "Республика Польша"
  A12_Centrism_DEF: "Республика Польша"
@@ -239,6 +245,21 @@
  A12_progressivism: "Польская Социальная Республика"
  A12_progressivism_DEF: "Польская Социальная Республика"
  A12_progressivism_ADJ: "Польск."
+
+#A13 IN PROGRESS
+ A13: "Австрия"
+
+#A14 IN PROGRESS
+ A14: "Литва"
+
+#A15 IN PROGRESS
+ A15: "Эстония"
+
+#A16 IN PROGRESS
+ A16: "Латвия"
+
+#A17 IN PROGRESS
+ A17: "Люксембург"
 
 #A18 Испания
  A18_Centrism: "Королевство Испания"
@@ -324,6 +345,12 @@
  A20_progressivism_DEF: "Новая Румыния"
  A20_progressivism_ADJ: "Румыниск."
 
+#A21 НЕ ИСПОЛЬЗУЕТСЯ (ЮГОСЛАВИЯ)
+ ###
+
+#A22 IN PROGRESS
+ A22: "Сербия"
+
 #A23 Швейцария
  A23_Centrism: "Швейцарская Конфедерация"
  A23_Centrism_DEF: "Швейцарская Конфедерация"
@@ -398,6 +425,9 @@
  A25_progressivism: "Светская Федерация Эллады"
  A25_progressivism_DEF: "Светская Федерация Эллады"
  A25_progressivism_ADJ: "Элладск."
+
+#A26
+ A26: "Албания"
 
 #A29 Болгария
  A29_Centrism: "Республика Болгария"

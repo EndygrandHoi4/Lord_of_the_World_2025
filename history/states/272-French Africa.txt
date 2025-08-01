@@ -10,8 +10,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = SEN
-		add_core_of = SEN
+		owner = B71
+		add_core_of = B71
 		victory_points = {
 			4948 5 
 		}

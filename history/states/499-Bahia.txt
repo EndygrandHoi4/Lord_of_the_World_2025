@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = BRA
+		owner = A39
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
@@ -20,7 +20,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = BRA
+		add_core_of = A39
 		victory_points = {
 			10946 1 
 		}

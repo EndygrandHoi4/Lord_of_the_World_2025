@@ -11,9 +11,9 @@ state = {
 
 	history = {
 
-		owner = CAN
-		add_core_of = CAN
-		add_core_of = QUE
+		owner = A40
+		add_core_of = A40
+		add_core_of = C66
 
 		buildings = {
 			infrastructure = 3 #was: 6

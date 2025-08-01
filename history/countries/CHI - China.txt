@@ -237,8 +237,8 @@ set_convoys = 40
 	
 	set_global_flag = fall_of_nanjing
 	create_faction = chinese_united_front
-	add_to_faction = PRC
-	remove_opinion_modifier = { target = PRC modifier = hostile_status }
+	add_to_faction = A08
+	remove_opinion_modifier = { target = A08 modifier = hostile_status }
 	#load_oob = "CHI_united_front"
 	set_global_flag = CHI_unite
 	
@@ -312,7 +312,7 @@ set_popularities = {
 	neutrality = 100
 }
 
-add_opinion_modifier = { target = PRC modifier = hostile_status }
+add_opinion_modifier = { target = A08 modifier = hostile_status }
 
 ### VARIANTS ###
 # 1936 Start #

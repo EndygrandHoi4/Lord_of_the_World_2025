@@ -12,8 +12,8 @@ state = {
 	history = {
 
 		owner = A01
-		add_core_of = GER
-		add_core_of = WUR
+		add_core_of = A01
+		add_core_of = C01
 
 		victory_points = {
 			9517 20 #Stuttgart

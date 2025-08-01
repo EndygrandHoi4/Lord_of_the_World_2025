@@ -8,11 +8,11 @@ state = {
 		victory_points = {
 			6626 3
 		}
-		owner = SLV
-		add_core_of = ITA
-		add_core_of = YUG
-		add_core_of = SLV
-		add_core_of = LBV
+		owner = B90
+		add_core_of = A19
+		add_core_of = A21
+		add_core_of = B90
+		add_core_of = C56
 		buildings = {
 			infrastructure = 1
 			dockyard = 1

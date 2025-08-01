@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = KOR
+		owner = A52
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -20,7 +20,7 @@ state={
 			4052 1
 		}	
 
-		add_core_of = KOR
+		add_core_of = A52
 	}
 
 	provinces={

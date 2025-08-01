@@ -32,7 +32,7 @@ state={
                 }
 			}
 		}
-		add_core_of = TUR
+		add_core_of = A24
 		if = {
 			limit = { has_dlc = "Battle for the Bosporus"}
 			set_demilitarized_zone = yes

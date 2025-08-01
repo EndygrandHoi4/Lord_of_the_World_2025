@@ -33,8 +33,8 @@ state = {
 				naval_base = 4
 			}
 		}
-		add_core_of = ITA
-		add_core_of = TOS
+		add_core_of = A19
+		add_core_of = C58
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2

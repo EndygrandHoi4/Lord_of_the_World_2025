@@ -7,9 +7,9 @@ state = {
 
 	history = {
 
-		owner = MOR
+		owner = B43
 		
-		add_core_of = MOR
+		add_core_of = B43
 
 		victory_points = {
 			4108 3 # Marrakesh

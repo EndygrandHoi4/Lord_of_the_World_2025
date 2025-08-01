@@ -11,11 +11,11 @@ state={
 	}
 
 	history={
-		owner = BOT
+		owner = B14
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = BOT
+		add_core_of = B14
 		victory_points = {
 			8214 1
 		}

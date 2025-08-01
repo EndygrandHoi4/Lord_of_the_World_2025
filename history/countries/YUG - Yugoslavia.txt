@@ -90,23 +90,23 @@ if = {
 		#has_dlc = Battle for the Bosporus
 	}
 	add_opinion_modifier = { 
-		target = GRE
+		target = A25
 		modifier = BFTB_balkan_pact_ally
 	}
 	add_opinion_modifier = { 
-		target = ROM
+		target = A20
 		modifier = BFTB_balkan_pact_ally
 	}
 	add_opinion_modifier = { 
-		target = TUR
+		target = A24
 		modifier = BFTB_balkan_pact_ally
 	}
 	add_opinion_modifier = { 
-		target = BUL
+		target = A29
 		modifier = BFTB_balkan_pact_enemy
 	}
 	add_opinion_modifier = { 
-		target = HUN
+		target = A33
 		modifier = BFTB_balkan_pact_enemy
 	}
 }

@@ -6,7 +6,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = ROM
+			tag = A20
 			#always = no
 			has_dlc = "Death or Dishonor"
 		}

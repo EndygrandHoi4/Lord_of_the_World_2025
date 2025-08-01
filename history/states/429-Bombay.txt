@@ -10,8 +10,8 @@ state={
 	}
 
 	history={
-		owner = RAJ
-		add_core_of = RAJ
+		owner = A80
+		add_core_of = A80
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -20,7 +20,7 @@ state={
 				naval_base = 6
 			}
 		}
-		add_claim_by = KHL
+		add_claim_by = E01
 		victory_points = {
 			1349 25
 		}

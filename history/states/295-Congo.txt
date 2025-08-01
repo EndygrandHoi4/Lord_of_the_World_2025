@@ -6,13 +6,13 @@ state = {
 
 	history = {
 
-		owner = COG
+		owner = B11
 
 		IF = {
 			limit = {
 				has_dlc = "Gotterdammerung"
 			}
-			transfer_state_to = COG
+			transfer_state_to = B11
 			add_dynamic_modifier = {
 				modifier = COG_state_loyal_to_belgium_modifier
 			}
@@ -41,7 +41,7 @@ state = {
 			13365 1 # Nkamba
 		}
 
-		add_core_of = COG
+		add_core_of = B11
 
 	}
 

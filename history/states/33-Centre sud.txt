@@ -15,7 +15,7 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = FRA
+		add_core_of = A06
 	}
 
 	provinces={

@@ -15,8 +15,8 @@ state={
 			infrastructure = 3
 			arms_factory = 1
 		}
-		add_core_of = ROM
-		add_core_of = UKR
+		add_core_of = A20
+		add_core_of = A04
 	}
 	provinces={
 		577 9548

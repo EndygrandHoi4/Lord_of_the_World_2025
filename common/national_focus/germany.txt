@@ -6,7 +6,7 @@
 		
 		modifier = {
 			add = 10
-			tag = GER
+			tag = A01
 		}
 	}
 }

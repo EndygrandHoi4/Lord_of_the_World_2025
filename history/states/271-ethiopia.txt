@@ -21,7 +21,7 @@ state=
 		#add_dynamic_modifier = {
 		#	modifier = ETH_state_decentralization_dynamic_modifier
 		#}
-		owner = ETH
+		owner = A47
 		buildings = {
 			infrastructure = 2
 			arms_factory = 2
@@ -36,12 +36,12 @@ state=
 		}
 		
 		
-		add_core_of = ETH
-		add_core_of = ORO
+		add_core_of = A47
+		add_core_of = C52
 
 		1936.6.1 = {
 			owner = A19
-			controller = ITA
+			controller = A19
 		}
 	}
 

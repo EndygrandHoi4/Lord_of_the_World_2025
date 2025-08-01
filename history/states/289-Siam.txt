@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = SIA
+		owner = A65
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -24,7 +24,7 @@ state={
 		}
 		
 		
-		add_core_of = SIA
+		add_core_of = A65
 
 	}
 

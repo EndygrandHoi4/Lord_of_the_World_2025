@@ -16,7 +16,7 @@ state={
 			arms_factory = 1
 			industrial_complex = 2
 		}
-		add_core_of = SWI
+		add_core_of = A23
 	}
 	provinces={
 		6666 6683 9622 9638 13124 

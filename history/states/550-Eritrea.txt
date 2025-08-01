@@ -10,8 +10,8 @@ state=
 	state_category = rural
 	
 	history={
-		owner = ERI
-		add_core_of = ERI
+		owner = B46
+		add_core_of = B46
 		victory_points = { #Massaua
 			12766 1
 		}
