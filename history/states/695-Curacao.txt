@@ -12,7 +12,7 @@ state = {
 	history = {
 		
 		owner = A10
-		add_core_of = CRC
+		add_core_of = B20
 
 		victory_points = {
 			153 1 # Willemstad

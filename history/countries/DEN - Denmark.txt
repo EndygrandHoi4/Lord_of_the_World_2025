@@ -36,12 +36,12 @@ IF = {
 		}
 	}
 	set_autonomy = {
-		target = ICE
+		target = A85
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
 	ELSE = {
-		puppet = ICE
+		puppet = A85
 	}
 }
 

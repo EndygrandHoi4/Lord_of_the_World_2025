@@ -9,8 +9,8 @@ state={
 	state_category=town
 	local_supplies=0.000
 	history={
-		owner = RAJ
-		add_claim_by = KHL
+		owner = A80
+		add_claim_by = E01
 		victory_points = {
 			1377 10
 		}

@@ -7,7 +7,7 @@ state = {
 	
 	
 	history = {
-		owner = ICE
+		owner = A85
 		victory_points = { 12674 1 }
 		buildings = {
 			infrastructure = 1
@@ -17,8 +17,8 @@ state = {
 			}
 			industrial_complex = 1
 		}
-		# add_core_of = DEN
-		add_core_of = ICE
+		# add_core_of = A28
+		add_core_of = A85
 	}
 	provinces = {
 		4861 12674 12689 13266 13267 13268 13271

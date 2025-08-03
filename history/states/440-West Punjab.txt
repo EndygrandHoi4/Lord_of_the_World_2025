@@ -5,9 +5,9 @@ state={
 		4979 8007 8022 8106 9084 10066 10139 10173 10772 10887 10898 12005 12822 
 	}
 	history={
-		owner = PAK
-		add_core_of = PAK
-		add_core_of = KHL
+		owner = B13
+		add_core_of = B13
+		add_core_of = E01
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

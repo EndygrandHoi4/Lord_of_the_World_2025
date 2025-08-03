@@ -21,8 +21,8 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = ITA
-		add_core_of = PAP
+		add_core_of = A19
+		add_core_of = C57
 	}
 
 	provinces = {

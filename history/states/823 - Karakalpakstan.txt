@@ -9,7 +9,7 @@ state = {
 			1614 1
 		}
 		
-		owner = UZB
+		owner = B38
 		
 		buildings = {
 			infrastructure = 2
@@ -17,8 +17,8 @@ state = {
 		}
 		
 		add_core_of = A03
-		add_core_of = UZB
-		add_core_of = KKP
+		add_core_of = B38
+		add_core_of = C30
 		
 	}
 

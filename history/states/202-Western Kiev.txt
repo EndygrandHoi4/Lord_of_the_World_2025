@@ -23,7 +23,7 @@ state={
 			air_base = 8
 		}
 		add_core_of = A03
-		add_core_of = UKR
+		add_core_of = A04
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 3

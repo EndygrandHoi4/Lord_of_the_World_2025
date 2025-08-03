@@ -7,7 +7,7 @@ state=
 	history=
 	{
 		owner = A07
-		add_core_of = GUM
+		add_core_of = B86
 		buildings = {
 			infrastructure = 3 #was: 5
 			12140 = {

@@ -65,8 +65,8 @@ set_convoys = 5
 1939.1.1 = {
 
 	add_to_war = {
-		targeted_alliance = JAP
-		enemy = CHI
+		targeted_alliance = A51
+		enemy = A41
 		hostility_reason = puppet
 	}
 	

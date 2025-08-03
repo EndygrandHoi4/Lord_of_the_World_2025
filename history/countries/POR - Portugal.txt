@@ -66,30 +66,30 @@ if = {
 	set_war_support = 0.15	
 	set_research_slots = 2
 
-	ENG = {
+	A02 = {
 		add_opinion_modifier = {
-			target = POR 
+			target = A30 
 			modifier  = POR_anglo_portuguese_alliance
 		}
 	}
 
-	POR = {
+	A30 = {
 		add_opinion_modifier = {
-			target = ENG 
+			target = A02 
 			modifier  = POR_anglo_portuguese_alliance
 		}
 	}
 
-	GER = {
+	A01 = {
 		add_opinion_modifier = {
-			target = POR
+			target = A30
 			modifier = fascism_leanings_good
 		}
 	}
 
-	ITA = {
+	A19 = {
 		add_opinion_modifier = {
-			target = POR
+			target = A30
 			modifier = fascism_leanings_good
 		}
 	}
@@ -130,7 +130,7 @@ if = {
 
 		SPA = {
 			add_opinion_modifier = {
-				target = POR
+				target = A30
 				modifier = POR_helped_in_civil_war
 			}
 		}

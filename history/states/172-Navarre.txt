@@ -4,14 +4,14 @@ state={
 
 	history={
 		owner = A18
-		add_core_of = NAV
+		add_core_of = C04
 		victory_points = {
 			3933 1
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
 		}
-		add_core_of = SPR
+		add_core_of = A18
 
 	}
 

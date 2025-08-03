@@ -10,8 +10,8 @@ state={
 
 	history= {
 		owner = A89
-		add_core_of = TUR
-		add_core_of = SYR
+		add_core_of = A24
+		add_core_of = A89
 		victory_points = {
 			12029 1
 		}
@@ -21,7 +21,7 @@ state={
 
 		1938.9.30 = {
 			owner = A24
-			controller = TUR
+			controller = A24
 		}
 	}
 

@@ -24,14 +24,14 @@ state={
 			limit = {
 				has_dlc = "Battle for the Bosporus"
 			}
-			add_core_of = KUR
+			add_core_of = C10
 		}
 		if = {
 			limit = {
 				NOT = { has_dlc = "Battle for the Bosporus" }
 			}
-			add_core_of = TUR
-			add_core_of = KUR
+			add_core_of = A24
+			add_core_of = C10
 		}
 	}
 

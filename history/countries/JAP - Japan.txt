@@ -251,7 +251,7 @@ IF = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { MAN JAP CHI }
+		nationalities = { B15 A51 A41 }
 	}
 
 	create_operative_leader = {
@@ -260,14 +260,14 @@ IF = {
 		traits = { }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { JAP }
+		nationalities = { A51 }
 	}
 }
 
 create_import = {
 	resource = oil
 	factories = 2
-	exporter = USA
+	exporter = A07
 }
 
 # Setyp 1939 Start Date
@@ -340,7 +340,7 @@ create_import = {
 	complete_national_focus = JAP_agility_focus
 
 	declare_war_on = {
-		target = CHI
+		target = A41
 		type = puppet_wargoal_focus
 	}
 	
@@ -465,11 +465,11 @@ set_convoys = 400
 
 # No more ifs needed due to integration of Tfv and Wtt :0 
 set_autonomy = {
-	target = MEN
+	target = A55
 	autonomous_state = autonomy_wtt_imperial_protectorate
 }
 set_autonomy = {
-	target = MAN
+	target = B15
 	autonomous_state = autonomy_wtt_imperial_protectorate
 }
 

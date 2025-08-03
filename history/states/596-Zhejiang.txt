@@ -7,8 +7,8 @@ state = {
 	history = {
 
 		owner = A08
-		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = A41
+		add_core_of = A08
 		
 		victory_points = { 
 			9974 1 # Ningbo
@@ -40,7 +40,7 @@ state = {
 		}
 
 		1938.10.25 = {		
-			JAP = {
+			A51 = {
 				set_province_controller = 1055
 				set_province_controller = 1096
 				set_province_controller = 4042

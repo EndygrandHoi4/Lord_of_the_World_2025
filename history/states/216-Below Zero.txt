@@ -9,7 +9,7 @@ state = {
 
 		owner = A03
 		add_core_of = A03
-		add_core_of = KAR
+		add_core_of = C20
 
 		victory_points = {
 			11159 1 # Petrozavodsk/Äänislinna

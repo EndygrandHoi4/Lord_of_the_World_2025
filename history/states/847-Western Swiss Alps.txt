@@ -12,7 +12,7 @@ state={
 			infrastructure = 1 
 			industrial_complex = 1
 		}
-		add_core_of = SWI
+		add_core_of = A23
 	}
 	provinces={
 		636 9587 3612 9618  

@@ -5,7 +5,7 @@ state = {
 
 	history = {
 	
-		owner = UZB
+		owner = B38
 		
 		victory_points = {
 			1459 3 
@@ -20,7 +20,7 @@ state = {
 		}
 		
 		add_core_of = A03
-		add_core_of = UZB
+		add_core_of = B38
 		
 		1939.1.1 = {
 			buildings = {

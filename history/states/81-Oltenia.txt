@@ -15,7 +15,7 @@ state={
 			infrastructure = 3
 			industrial_complex = 2
 		}
-		add_core_of = ROM
+		add_core_of = A20
 	}
 	provinces={
 		637 3630 3645 6652 6667 11588 11605 11657 

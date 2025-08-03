@@ -35,14 +35,8 @@ state = {
 			}
 
 		}
-		add_core_of = ALB
-		add_claim_by = ITA
-		1939.4.12 = {
-			owner = A19
-			controller = ITA
-			remove_claim_by = ITA
-
-		}
+		add_core_of = A26
+		add_claim_by = A19
 
 	}
 

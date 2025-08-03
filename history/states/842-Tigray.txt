@@ -18,7 +18,7 @@ state={
 		}
 		add_dynamic_modifier = {
 			modifier = ETH_state_decentralization_dynamic_modifier
-			scope = ETH
+			scope = A47
 
 		}
 		buildings = {
@@ -33,13 +33,13 @@ state={
 		victory_points = {
 			13238 1 
 		}
-		owner = ETH
-		add_core_of = ETH
-		add_core_of = TIG
-		add_claim_by = ERI
+		owner = A47
+		add_core_of = A47
+		add_core_of = C47
+		add_claim_by = B46
 		1936.6.1 = {
 			owner = A19
-			controller = ITA
+			controller = A19
 
 		}
 

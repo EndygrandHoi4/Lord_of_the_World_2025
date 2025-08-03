@@ -5,7 +5,7 @@
 		factor = 0
 		modifier = {
 			add = 10
-			tag = MEX
+			tag = A54
 			has_dlc = "Man the Guns"
 		}
 	}

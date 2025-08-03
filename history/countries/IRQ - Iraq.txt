@@ -191,17 +191,17 @@ IF = {
 
 	IF = {
 		limit = { has_dlc = "Arms Against Tyranny" }
-		give_market_access = ENG
+		give_market_access = A02
 	}
 
-	ENG = {
+	A02 = {
 		add_opinion_modifier = {
-			target = IRQ
+			target = A50
 			modifier = IRQ_anglo_iraqi_treaty_in_place_opm
 		}	
 	}
 	add_opinion_modifier = {
-		target = ENG
+		target = A02
 		modifier = IRQ_anglo_iraqi_treaty_in_place_opm
 	}
 
@@ -264,19 +264,19 @@ IF = {
 		complete_national_focus = IRQ_modernization
 
 		diplomatic_relation = {
-			country = TUR
+			country = A24
 			relation = non_aggression_pact
 			active = yes
 		}
 
 		diplomatic_relation = {
-			country = PER
+			country = A60
 			relation = non_aggression_pact
 			active = yes
 		}
 
 		diplomatic_relation = {
-			country = AFG
+			country = A34
 			relation = non_aggression_pact
 			active = yes
 		}

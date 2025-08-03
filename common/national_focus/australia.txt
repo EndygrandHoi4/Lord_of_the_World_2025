@@ -6,12 +6,12 @@
 		
 		modifier = {
 			add = 10
-			tag = AST
+			tag = A36
 		}
 
 		#modifier = {
 		#	add = 10
-		#	original_tag = AST
+		#	original_tag = A36
 		#	has_dlc = "Together for Victory"
 		#}
 	}

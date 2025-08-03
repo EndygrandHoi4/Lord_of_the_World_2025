@@ -12,7 +12,7 @@ state = {
 	history = {
 
 		owner = A13
-		add_core_of = AUS
+		add_core_of = A13
 
 		victory_points = {
 			11666 30 

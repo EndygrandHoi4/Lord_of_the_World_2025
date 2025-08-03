@@ -6,8 +6,8 @@ state={
 	impassable = yes
 
 	history={
-		owner = NGR
-		add_core_of = NGR
+		owner = B74
+		add_core_of = B74
 
 	}
 

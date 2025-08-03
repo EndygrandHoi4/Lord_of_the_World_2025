@@ -2,7 +2,7 @@
 
 set_oob = "ICE_1936"
 
-set_variable = { ICE.communism_support_needed = 0.15 }
+set_variable = { A85.communism_support_needed = 0.15 }
 
 set_research_slots = 2
 

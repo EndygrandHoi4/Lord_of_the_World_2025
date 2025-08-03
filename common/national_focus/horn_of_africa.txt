@@ -6,14 +6,14 @@ focus_tree = {
 		modifier = {
 			add = 10
 			OR = {
-				original_tag = AFA
-				original_tag = ORO
-				original_tag = QEM
-				original_tag = TIG
-				original_tag = BEG
-				original_tag = HAR
-				original_tag = SID
-				original_tag = GBA
+				original_tag = C48
+				original_tag = C52
+				original_tag = C53
+				original_tag = C47
+				original_tag = C49
+				original_tag = C46
+				original_tag = C51
+				original_tag = C50
 			}
 		}
 	}

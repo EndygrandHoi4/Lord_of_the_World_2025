@@ -14,8 +14,8 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = PER 
-		add_core_of = BLC
+		add_core_of = A60 
+		add_core_of = E09
 	}
 
 	provinces={

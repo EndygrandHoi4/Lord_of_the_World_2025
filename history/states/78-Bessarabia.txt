@@ -7,7 +7,7 @@ state=
 	state_category = town
 	
 	history= {
-		add_core_of = MOL
+		add_core_of = B27
 		owner = B27
 		victory_points = {
 			3707 1
@@ -16,7 +16,7 @@ state=
 			infrastructure = 2
 			air_base = 2
 		}
-		add_core_of = ROM
+		add_core_of = A20
 	}
 	provinces=
 	{

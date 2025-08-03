@@ -54,7 +54,7 @@ recruit_character = PAK_mt
 recruit_character = PAK_ncm
 recruit_character = PAK_nt
 
-1939.1.1 = {#placeholder same tech as ENG
+1939.1.1 = {#placeholder same tech as A02
 	#generic focuses
 
 	add_political_power = 1198

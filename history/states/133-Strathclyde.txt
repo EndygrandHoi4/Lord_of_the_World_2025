@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		add_core_of = SCO
+		add_core_of = B31
 		owner = A02
 		victory_points = {
 			3273 15
@@ -30,7 +30,7 @@ state={
 			}
 
 		}
-		add_core_of = ENG
+		add_core_of = A02
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5
