@@ -96,6 +96,35 @@
  idea_RUS_TWW_I: "Третья Мировая Война"
  idea_RUS_TWW_II: "Третья Мировая Война"
  idea_RUS_TWW_III: "Третья Мировая Война"
+ idea_RUS_monpower_I: "Влияние монархистов"
+ idea_RUS_monpower_II: "Влияние монархистов"
+ idea_RUS_monpower_III: "Влияние монархистов"
+ idea_RUS_monpower_IV: "Влияние монархистов"
+ idea_RUS_monpower_V: "Влияние монархистов"
+ idea_RUS_neotolstism_I: "Неотолстизм"
+ idea_RUS_neotolstism_II: "Неотолстизм"
+ idea_RUS_neotolstism_III: "Неотолстизм"
+ idea_RUS_imperialism_I: "Неоимпериализм"
+ idea_RUS_imperialism_II: "Неоимпериализм"
+ idea_OVZ_ecomob: "Мобилизация экономики"
+ 
+ #Пиндостанские фокусы
+ idea_USA_ext_polit_I: "Внешняя политика"
+ idea_USA_ext_polit_II: "Внешняя политика"
+ idea_USA_ext_polit_III: "Внешняя политика"
+ idea_USA_int_crisis_I: "Внутренний кризис"
+ idea_USA_int_crisis_II: "Внутренний кризис"
+ idea_USA_int_crisis_III: "Внутренний кризис"
+ idea_USA_int_crisis_IV: "Внутренний кризис"
+ idea_USA_Mask_I: "Илон Маск"
+ idea_USA_Mask_II: "Илон Маск"
+ idea_USA_Mask_III: "Илон Маск"
+ idea_upcost_USA_I: "Торговая война"
+ idea_upcost_USA_II: "Торговая война"
+ idea_mezhamer_I: "Межамерика"
+ idea_mezhamer_II: "Межамерика"
+ idea_mezhamer_III: "Межамерика"
+
 
 
  #СВО
