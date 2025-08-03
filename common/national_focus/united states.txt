@@ -671,6 +671,7 @@ focus = {
             has_completed_focus = USA_back_to_dem
         }
         has_completed_focus = USA_mask
+        has_completed_focus = USA_if_mask_pidor
     }
     prerequisite = {
         focus = USA_vibori
@@ -774,7 +775,7 @@ focus = {
     x = 25
     y = 9
     available = {
-        has_completed_focus = USA_mask
+        always = no
         not = {
             has_idea = idea_USA_Mask_II
         }
@@ -988,7 +989,14 @@ focus = {
     prerequisite = {
         focus = USA_ext_quest
     }
-    completion_reward = { }
+    completion_reward = {
+        A95 = {
+            create_wargoal = {
+                target = A60
+                type = liberate_wargoal
+            }
+        }
+    }
 }
 #Задавить пиратов
 focus = {
@@ -1042,7 +1050,12 @@ focus = {
     prerequisite = {
         focus = USA_can_quest
     }
-    completion_reward = { }
+    completion_reward = {
+        create_wargoal = {
+            target = A54
+            type = independence_wargoal
+        }
+    }
 }
 #Дело Гренландии
 focus = {
@@ -1078,7 +1091,27 @@ focus = {
     prerequisite = {
         focus = USA_ext_quest
     }
-    completion_reward = { }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    NOT = {
+                        tag = A03
+                        tag = A07
+                    }
+                }
+                add_timed_idea = {
+                    idea = idea_upcost_USA_I
+                    days = 2
+                }
+            }
+        }
+        A07 = {
+            add_timed_idea = {
+                idea = idea_upcost_USA_II
+            }
+        }
+    }
 }
 #Торговая война с Китаем
 focus = {
@@ -1090,7 +1123,20 @@ focus = {
     prerequisite = {
         focus = USA_up_cost_day
     }
-    completion_reward = { }
+    completion_reward = {
+        A08 = {
+            add_timed_idea = {
+                idea = idea_upcost_USA_II
+                days = 30
+            }
+        }
+        A07 = {
+            add_timed_idea = {
+                idea = idea_upcost_USA_II
+                days = 30
+            }
+        }
+    }
 }
 #Ужас Евросоюза
 focus = {
@@ -1102,7 +1148,17 @@ focus = {
     prerequisite = {
         focus = USA_up_cost_day
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 1000
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_EU_countries
+                }
+                add_political_power = -100
+            }
+        }
+    }
 }
 #На колени!
 focus = {
@@ -1118,7 +1174,12 @@ focus = {
         focus = USA_prc_dealwar
         focus = USA_EU_nightmare
     }
-    completion_reward = { }
+    completion_reward = {
+        add_offsite_building = {
+            type = industrial_complex
+            level = 3
+        }
+    }
 }
 #Гегемон вернулся?
 focus = {
@@ -1130,7 +1191,9 @@ focus = {
     prerequisite = {
         focus = USA_na_koleni
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 
 ###Сахалинский договор
@@ -1139,11 +1202,13 @@ focus = {
     icon = GFX_real_freedom
     cost = 0
     available = {
-        has_completed_focus = USA_sakh_pact
+        always = no
     }
     x = 45
     y = 5
-    completion_reward = { }
+    completion_reward = {
+        create_faction = mezhamer_faction
+    }
 }
 #Межамерика
 focus = {
@@ -1167,7 +1232,23 @@ focus = {
     prerequisite = {
         focus = USA_mezhamer
     }
-    completion_reward = { }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    or = {
+                        has_idea = idea_mezhamer_I
+                        has_idea = idea_mezhamer_II
+                        has_idea = idea_mezhamer_III
+                    }
+                }
+                army_experience = 100
+                navy_experience = 100
+                air_experience = 100        
+            }
+        }
+        
+    }
 }
 #Единая промышленность
 focus = {
@@ -1179,7 +1260,19 @@ focus = {
     prerequisite = {
         focus = USA_mezhamer
     }
-    completion_reward = { }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_mezhamer_I
+                }
+                swap_ideas = {
+                    remove_idea = idea_mezhamer_I
+                    add_idea = idea_mezhamer_II
+                }
+            }
+        }
+    }
 }
 #Полицейский америки
 focus = {
@@ -1192,7 +1285,9 @@ focus = {
         focus = USA_new_monroe
         focus = USA_united_ind
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 #Глобальные корпорации
 focus = {
@@ -1205,7 +1300,27 @@ focus = {
         focus = USA_united_ind
         focus = USA_new_monroe
     }
-    completion_reward = { }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    or = {
+                        has_idea = idea_mezhamer_I
+                        has_idea = idea_mezhamer_II
+                        has_idea = idea_mezhamer_III
+                    }
+                }
+                add_offsite_building = {
+                    type = industrial_complex
+                    level = 2
+                }
+                add_offsite_building = {
+                    type = arms_factory
+                    level = 2
+                }
+            }
+        }
+    }
 }
 #Разжигатели войн
 focus = {
@@ -1218,7 +1333,20 @@ focus = {
         focus = USA_global_corps
         focus = USA_policeman
     }
-    completion_reward = { }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    or = {
+                        has_idea = idea_mezhamer_I
+                        has_idea = idea_mezhamer_II
+                        has_idea = idea_mezhamer_III
+                    }
+                }
+                add_war_support = 0.25
+            }
+        }
+    }
 }
 
 #Промышленость Кейстейта
@@ -1231,7 +1359,18 @@ focus = {
     prerequisite = {
         focus = USA_war_flamers
     }
-    completion_reward = { }
+    completion_reward = {
+        A02 = {
+            add_political_power = -100
+        }
+        A06 = {
+            add_political_power = -100
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 5
+        }
+    }
 }
 #С Кейстейтом!
 focus = {
@@ -1246,7 +1385,12 @@ focus = {
     mutually_exclusive = {
         focus = USA_with_OVZ
     }
-    completion_reward = { }
+    completion_reward = {
+        create_wargoal = {
+            target = A03
+            type = independence_wargoal
+        }
+    }
 }
 
 #Ресурсы ОВЗ
@@ -1259,7 +1403,17 @@ focus = {
     prerequisite = {
         focus = USA_war_flamers
     }
-    completion_reward = { }
+    completion_reward = {
+        A03 = {
+            add_political_power = -100
+        }
+        random_controlled_state = {
+            add_resource = {
+                type = steel
+                amount = 30
+            }
+        }
+    }
 }
 #С ОВЗ!
 focus = {
@@ -1274,7 +1428,12 @@ focus = {
     mutually_exclusive = {
         focus = USA_with_keystate
     }
-    completion_reward = { }
+    completion_reward = {
+        create_wargoal = {
+            target = A04
+            type = liberate_wargoal
+        }
+    }
 }
 
 #Наши позиции
@@ -1288,7 +1447,24 @@ focus = {
         focus = USA_with_OVZ
         focus = USA_with_keystate
     }
-    completion_reward = { }
+    completion_reward = {
+        every_country = {
+            if = {
+                limit = {
+                    or = {
+                        has_idea = idea_mezhamer_I
+                        has_idea = idea_mezhamer_II
+                        has_idea = idea_mezhamer_III
+                    }
+                }
+            }
+            army_experience = 100
+            swap_ideas = {
+                remove_idea = idea_mezhamer_II
+                add_idea = idea_mezhamer_III
+            }
+        }
+    }
 }
 
 }
