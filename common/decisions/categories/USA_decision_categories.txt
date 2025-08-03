@@ -1,0 +1,9 @@
+USA_politics_decision_category = {
+	visible = {
+		tag = A07
+		A07 = {
+			exists = yes
+		}
+	}
+	icon = GFX_surrender_tiny_flag
+}
