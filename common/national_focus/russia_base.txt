@@ -2151,7 +2151,12 @@ focus = {
     mutually_exclusive = {
         focus = RUS_supp_imperialism
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_pazifism
+            add_idea = idea_RUS_neotolstism_I
+        }
+    }
 }
 #Воскресить имперскость
 focus = {
@@ -2163,7 +2168,12 @@ focus = {
     mutually_exclusive = {
         focus = RUS_supp_tolstism
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_pazifism
+            add_idea = idea_RUS_neotolstism_I
+        }
+    }
 }
 #Мирная экспансия
 focus = {
@@ -2175,7 +2185,12 @@ focus = {
     prerequisite = {
         focus = RUS_supp_tolstism
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_neotolstism_I
+            add_idea = idea_RUS_neotolstism_II
+        }
+    }
 }
 #Горсть ултиматумов
 focus = {
@@ -2190,7 +2205,13 @@ focus = {
     prerequisite = {
         focus = RUS_supp_imperialism
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_neotolstism_I
+            add_idea = idea_RUS_imperialism_I
+        }
+        add_threat = 0.1
+    }
 }
 #Мир прежде всего
 focus = {
@@ -2202,7 +2223,12 @@ focus = {
     prerequisite = {
         focus = RUS_supp_tolstism
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_neotolstism_II
+            add_idea = idea_RUS_neotolstism_III
+        }
+    }
 }
 #Алашская автономия
 focus = {
@@ -2278,7 +2304,28 @@ focus = {
     prerequisite = {
         focus = RUS_ultimatums
     }
-    completion_reward = { }
+    completion_reward = {
+        create_wargoal = {
+            target = B04
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = B34
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = B36
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = B38
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = B25
+            type = annex_everything
+        }
+    }
 }
 #Аве Империум
 focus = {
@@ -2290,7 +2337,12 @@ focus = {
     prerequisite = {
         focus = RUS_supp_imperialism
     }
-    completion_reward = { }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = idea_RUS_imperialism_I
+            add_idea = idea_RUS_imperialism_II
+        }
+    }
 }
 #Славянское государство
 focus = {
@@ -2320,7 +2372,9 @@ focus = {
     mutually_exclusive = {
         focus = RUS_slavic_state
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 1000
+    }
 }
 #Западная Украина
 focus = {
@@ -2348,7 +2402,12 @@ focus = {
     mutually_exclusive = {
         focus = RUS_poland
     }
-    completion_reward = { }
+    completion_reward = {
+        create_wargoal = {
+            target = A04
+            type = annex_everything
+        }
+    }
 }
 #И вновь раздел Польши
 focus = {
@@ -2376,7 +2435,50 @@ focus = {
     mutually_exclusive = {
         focus = RUS_get_west_ukr
     }
-    completion_reward = { }
+    completion_reward = {
+        create_wargoal = {
+            target = A12
+            type = puppet_wargoal_focus
+        }
+        A01 = {
+            create_wargoal = {
+                target = A12
+                type = take_state_focus
+            }
+            
+        }
+        63 = {
+            add_core_of = A01
+        }
+        68 = {
+            add_core_of = A01
+        }
+        66 = {
+            add_core_of = A01
+        }
+        86 = {
+            add_core_of = A01
+        }
+        67 = {
+            add_core_of = A01
+        }
+        762 = {
+            add_core_of = A01
+        }
+        807 = {
+            add_core_of = A01
+        }
+        85 = {
+            add_core_of = A01
+        }
+        5 = {
+            add_core_of = A01
+        }
+        A79 = {
+            transfer_state = 72
+            transfer_state = 88
+        }
+    }
 }
 #Третий Рим
 focus = {
@@ -2391,7 +2493,9 @@ focus = {
     mutually_exclusive = {
         focus = RUS_russian_empire
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 1000
+    }
 }
 #Российская Империя
 focus = {
@@ -2406,7 +2510,12 @@ focus = {
     mutually_exclusive = {
         focus = RUS_third_rome
     }
-    completion_reward = { }
+    completion_reward = {
+        create_wargoal = {
+            target = A71
+            type = puppet_wargoal_focus
+        }
+    }
 }
 #Славная страна
 focus = {
@@ -2419,7 +2528,9 @@ focus = {
         focus = RUS_get_west_ukr
         focus = RUS_poland
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 #Купить Гавайи
 focus = {
@@ -2432,7 +2543,11 @@ focus = {
         focus = RUS_get_west_ukr
         focus = RUS_poland
     }
-    completion_reward = { }
+    completion_reward = {
+        A07 = {
+            country_event = usa.8
+        }
+    }
 }
 #Русский - интернация
 focus = {
@@ -2445,7 +2560,11 @@ focus = {
         focus = RUS_get_west_ukr
         focus = RUS_poland
     }
-    completion_reward = { }
+    completion_reward = {
+        every_controlled_state = {
+            add_core_of = A03
+        }
+    }
 }
 #####################################################
 #####################################################
@@ -3770,17 +3889,10 @@ focus = {
     x = 45
     y = 11
     available = {
-        has_idea = idea_ovz_pact_I
+        always = no
     }
     completion_reward = {
-        every_country = {
-            if = {
-                limit = {
-                    has_idea = idea_ovz_pact_I
-                }
-            }   
-            add_political_power = 100            
-        }
+        create_faction = ovz_faction
     }
 }
 #Русская сфера
@@ -3909,6 +4021,9 @@ focus = {
     id = RUS_res_romanov
     icon = GFX_surrender_tiny_flag
     cost = 2
+    available = {
+        always = no
+    }
     x = 41
     y = 7
     completion_reward = { }
@@ -3920,13 +4035,21 @@ focus = {
     cost = 2
     x = 40
     y = 8
+    available = {
+        NOT = {
+            has_country_leader_ideology = social_democracy
+            has_country_leader_ideology = neoconservatism
+        }
+    }
     prerequisite = {
         focus = RUS_res_romanov
     }
     mutually_exclusive = {
         focus = RUS_mon_inf
     }
-    completion_reward = { }
+    completion_reward = {
+        add_political_power = 100
+    }
 }
 #Влияние монархистов
 focus = {
@@ -3935,13 +4058,21 @@ focus = {
     cost = 2
     x = 42
     y = 8
+    available = {
+        NOT = {
+            has_country_leader_ideology = radical_socialism
+            has_country_leader_ideology = market_socialism
+        }
+    }
     prerequisite = {
         focus = RUS_res_romanov
     }
     mutually_exclusive = {
         focus = RUS_the_great_past
     }
-    completion_reward = { }
+    completion_reward = {
+
+    }
 }
 ############## Ветка Третья мировая
 #Вторжение кейстейта
@@ -3954,7 +4085,14 @@ focus = {
     available = {
         has_idea = idea_RUS_TWW_I
     }
-    completion_reward = { }
+    completion_reward = {
+        add_war_support = 0.5
+        complete_national_focus = RUS_rus_sphere
+        complete_national_focus = RUS_care_ab_sphere
+        complete_national_focus = RUS_e_e_s
+        complete_national_focus = RUS_instructors
+        complete_national_focus = RUS_real_freedom
+    }
 }
 #Сплотить ОВЗ
 focus = {
@@ -3967,10 +4105,21 @@ focus = {
         focus = RUS_war_keystate
     }
     completion_reward = {
-        add_political_power = 100
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_ovz_pact_III
+                }
+                add_offsite_building = {
+                    type = arms_factory
+                    level = 1
+                }
+                add_command_power = 100
+            }
+        }
     }
 }
-#Свои в стане врага #Венгрия, Словакия и Сербия
+#Свои в стане врага 
 focus = {
     id = RUS_our_in_enemies
     icon = GFX_surrender_tiny_flag
@@ -3981,7 +4130,15 @@ focus = {
         focus = RUS_war_keystate
     }
     completion_reward = {
-        #НЕ ЗАБЫТЬ ДОБАВИТЬ ИВЕНТЫ
+        add_command_power = 100
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_ovz_pact_III
+                }
+                army_experience = 100
+            }
+        }
     }
 }
 #Найти предателей
@@ -3998,7 +4155,15 @@ focus = {
         focus = RUS_our_in_enemies
     }
     completion_reward = {
-        add_war_support = 0.25
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_ovz_pact_III
+                }
+                add_war_support = 0.25
+                add_manpower = -1000
+            }
+        }
     }
 }
 #Мобилизация экономики
@@ -4015,25 +4180,76 @@ focus = {
         focus = RUS_our_in_enemies
     }
     completion_reward = {
-        add_offsite_building = {
-            type = arms_factory
-            level = 2
+        random_controlled_state = {
+            remove_building = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
         }
-        add_offsite_building = {
-            type = arms_factory
-            level = 2
+        random_controlled_state = {
+            remove_building = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
         }
-        add_offsite_building = {
-            type = arms_factory
-            level = 2
+        random_controlled_state = {
+            remove_building = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
         }
-        add_offsite_building = {
-            type = arms_factory
-            level = 2
+        random_controlled_state = {
+            remove_building = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
         }
-        add_offsite_building = {
-            type = arms_factory
-            level = 2
+        random_controlled_state = {
+            remove_building = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
+        }
+        random_controlled_state = {
+            remove_building = {
+                type = industrial_complex
+                level = 1
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+            }
+        }
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_ovz_pact_III
+                }
+                add_timed_idea = {
+                    idea = idea_OVZ_ecomob
+                    days = 70
+                }
+            }
         }
     }
 }
@@ -4068,7 +4284,7 @@ focus = {
         focus = RUS_our_in_enemies
     }
     completion_reward = {
-        #НЕ ЗАБЫТЬ ДОБАВИТЬ РЕШЕНИЯ
+        add_political_power = 100
     }
 }
 #Засланные казачки
@@ -4128,7 +4344,7 @@ focus = {
         focus = RUS_cossacs_in_en
     }
     completion_reward = {
-        army_experience = 10
+        army_experience = 100
     }
 }
 #Война с другой стороны
@@ -4157,6 +4373,9 @@ focus = {
     cost = 3
     x = 53
     y = 13
+    available = {
+        always = no
+    }
     prerequisite = {
         focus = RUS_our_army_ovz
     }
@@ -4168,6 +4387,14 @@ focus = {
     }
     completion_reward = {
         add_stability = 0.1
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = idea_ovz_pact_III
+                }
+            }
+            add_war_support = -0.1
+        }
     }
 }
 #Трёхсторонние переговоры
@@ -4213,7 +4440,6 @@ focus = {
     }
     completion_reward = {
         add_command_power = 100
-        
     }
 }
 #Мир через войны!
@@ -4235,7 +4461,16 @@ focus = {
     completion_reward = {
         add_war_support = 0.05
     }
-}#171 фокус всегоооооо!!!!!!!!!
+}
+focus = {
+    id = RUS_elect
+    icon = GFX_real_freedom
+    cost = 1
+    x = 29
+    y = 8
+    completion_reward = { }
+}
+#172 фокуса всегоооооо!!!!!!!!!
 
 ########## Шорткаты
 shortcut = {
