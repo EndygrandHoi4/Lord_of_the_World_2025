@@ -12,3 +12,31 @@ RUS_provgov_decision_category = {
 	}
 	icon = GFX_No_Constitution
 }
+RUS_monarchy_decision_category = {
+	visible = {
+		tag = A03
+		has_completed_focus = RUS_res_romanov
+	}
+	icon = GFX_adm_crisis_NP
+}
+RUS_expansion_category = {
+	visible = {
+		tag = A03
+		or = {
+			has_completed_focus = RUS_peace_important
+			has_completed_focus = RUS_ave_imperium
+		}
+	}
+	icon = GFX_ru_internation
+}
+RUS_tww_category = {
+	visible = {
+		tag = A03
+		or = {
+			has_idea = idea_RUS_TWW_I	
+			has_idea = idea_RUS_TWW_II
+			has_idea = idea_RUS_TWW_III	
+		}
+	}
+	#icon = 
+}
