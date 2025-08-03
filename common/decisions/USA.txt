@@ -1,0 +1,41 @@
+USA_politics_decision_category = {
+	#Атаковать Иран
+	USA_atk_ira_dec = {
+		allowed = {
+			tag = A07
+		}
+		available = {
+			A95 = {
+				has_war_with = A60
+			}
+			A07 = {
+				NOT = {
+					has_war_with = A60
+				}
+			}
+		}
+		days_remove = 7
+		complete_effect = {
+			create_wargoal = {
+				target = A60
+				type = liberate_wargoal
+			}
+		}
+	}
+	#Попытаться ккупить Гренландию
+	USA_try_buy_greenland_mis = {
+		allowed = {
+			tag = A07
+		}
+		available = {
+			always = no	
+		}
+		days_mission_timeout = 10
+		is_good = yes
+		timeout_effect = {
+			A07 = {
+				country_event = usa.5
+			}
+		}
+	}
+}

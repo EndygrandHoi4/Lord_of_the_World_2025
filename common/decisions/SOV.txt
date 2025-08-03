@@ -361,3 +361,382 @@ RUS_provgov_decision_category = {
 		}
 	}
 }
+RUS_monarchy_decision_category = {
+	RUS_political_pos_mis = {
+		activation = {
+			has_completed_focus = RUS_res_romanov
+		}
+		allowed = {
+			tag = A03
+		}
+		available = {
+			or = {
+				has_completed_focus = RUS_mon_inf
+				has_completed_focus = RUS_the_great_past
+			}
+		}
+		cancel_trigger = {
+			or = {
+				has_completed_focus = RUS_mon_inf
+				has_completed_focus = RUS_the_great_past
+			}
+		}
+		days_mission_timeout = 100
+		is_good = no
+		timeout_effect = {
+			start_civil_war = {
+				ideology = progressivism 
+			}
+		}
+		complete_effect = {
+			add_political_power = 100
+		}
+		cancel_effect = {
+			add_political_power = 100
+		}
+	}
+	#Монархия: Продвигать достижения империи
+	RUS_atch_mon_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_completed_focus = RUS_mon_inf
+			has_political_power = 25
+		}
+		days_re_enable = 20
+		cost = 25
+		days_remove = 10
+		complete_effect = {
+			add_popularity = {
+				ideology = radicalism
+				popularity = -0.1
+			}
+			add_command_power = 10
+		}
+	}
+	#Монархия: Организовать визит 
+	RUS_org_visit_mon_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_completed_focus = RUS_mon_inf
+			has_political_power = 25
+		}
+		days_re_enable = 20
+		cost = 25
+		days_remove = 10
+		complete_effect = {
+			add_popularity = {
+				ideology = progressivism
+				popularity = -0.1 
+			}
+			add_command_power = 10
+		}
+	}
+	#Монархия: Усилить монархические партии
+	RUS_buff_mon_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_completed_focus = RUS_mon_inf
+			has_political_power = 25
+			command_power = 20
+			NOT = {
+				has_idea = idea_RUS_monpower_V
+			}
+		}
+		cost = 25
+		days_re_enable = 1
+		days_remove = 5
+		complete_effect = {
+			add_command_power = -20
+			if = {
+				limit = {
+					has_idea = idea_RUS_monpower_III
+				}
+				swap_ideas = {
+					remove_idea = idea_RUS_monpower_III
+					add_idea = idea_RUS_monpower_IV
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_RUS_monpower_IV
+				}
+				swap_ideas = {
+					remove_idea = idea_RUS_monpower_IV
+					add_idea = idea_RUS_crush_V
+				}
+			}
+		}
+	}
+	#Монархия: Требовать референдум
+	RUS_referendum_mon_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_completed_focus = RUS_mon_inf
+			has_idea = idea_RUS_monpower_V
+		}
+		days_remove = 30
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = shaked_republic
+				add_idea = Parlament_monarchy
+			}
+			add_political_power = 100
+			remove_ideas = idea_RUS_monpower_V
+		}
+	}
+	#Республика: Указать на ошибки монархов
+	RUS_errs_rep_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_completed_focus = RUS_the_great_past
+			has_political_power = 25
+		}
+		days_re_enable = 20
+		days_remove = 10
+		cost = 25
+		complete_effect = {
+			add_command_power = 10
+			add_political_power = 100
+		}
+	}
+	#Республика: Осудить культы царей
+	RUS_cult_tsars_rep_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_completed_focus = RUS_the_great_past
+			has_political_power = 25
+		}
+		days_re_enable = 20
+		days_remove = 10
+		cost = 25
+		complete_effect = {
+			add_command_power = 10
+			add_political_power = 100
+		}
+	}
+	#Республика: Продвигать достижения республик
+	RUS_attch_rep_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_completed_focus = RUS_the_great_past
+			has_political_power = 200
+			command_power = 20
+			NOT = {
+				has_idea = idea_RUS_monpower_I
+			}
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 5
+		complete_effect = {
+			add_command_power = -20
+			if = {
+				limit = {
+					has_idea = idea_RUS_monpower_III
+				}
+				swap_ideas = {
+					remove_idea = idea_RUS_monpower_III
+					add_idea = idea_RUS_monpower_II
+				}
+			}
+			if = {
+				limit = {
+					has_idea = idea_RUS_monpower_II
+				}
+				swap_ideas = {
+					remove_idea = idea_RUS_monpower_II
+					add_idea = idea_RUS_monpower_I
+				}
+			}
+		}
+	}
+	#Республика: Покончить с монархистами
+	RUS_nomon_rep_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_political_power = 100
+			has_idea = idea_RUS_monpower_I
+		}
+		cost = 100
+		days_remove = 10
+		complete_effect = {
+			remove_ideas = idea_RUS_monpower_I
+			add_political_power = 100
+		}
+	}
+}
+RUS_expansion_category = {
+	######### Славия
+	#Пригласить страны
+	RUS_invite_slavic_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_completed_focus = RUS_slavic_state
+			has_completed_focus = RUS_ru_internation
+			has_political_power = 100
+		}
+		cost = 100
+		days_remove = 1
+		complete_effect = {
+			A11 = {
+				country_event = russia.16
+			}
+			A79 = {
+				country_event = russia.16
+			}
+			A29 = {
+				country_event = russia.16
+			}
+			B93 = {
+				country_event = russia.16
+			}
+			A01 = {
+				country_event = russia.16
+			}
+			A22 = {
+				country_event = russia.16
+			}
+			A03 = {
+				create_wargoal = {
+					target = B91
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = B90
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = A81
+					type = independence_wargoal
+				}
+			}
+		}
+	}
+	#Продвигать междусловянский
+	RUS_medzh_slavic_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_completed_focus = RUS_slavic_state
+			has_completed_focus = RUS_ru_internation
+		}
+		days_remove = 30
+		days_re_enable = 10
+		complete_effect = {
+			every_controlled_state = {
+				add_resistance = -0.5
+				add_compliance = 0.5
+			}
+		}
+	}
+	#Объявить Славянскую Унию!
+	RUS_declair_slavic_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_completed_focus = RUS_slavic_state
+			has_completed_focus = RUS_ru_internation
+			A03 = {
+				owns_state = 10
+				owns_state = 68
+				owns_state = 9
+				owns_state = 202
+				owns_state = 206
+				owns_state = 48
+				owns_state = 104
+				owns_state = 107
+				owns_state = 106
+				owns_state = 103
+				owns_state = 853
+				owns_state = 70
+				owns_state = 78
+				owns_state = 834
+			}
+		}
+		days_remove = 1
+		complete_effect = {
+			every_controlled_state = {
+				add_core_of = A03
+			}
+			add_political_power = 100
+			A03 = {
+				set_politics = {
+					name = A03_SLAVIC
+				}
+			}
+		}
+	}
+}
+
+RUS_tww_category = {
+	RUS_ecomob_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			NOT = {
+				has_idea = idea_OVZ_ecomob
+			}
+			has_completed_focus = RUS_mob_eco
+		}
+		days_remove = 1
+		days_re_enable = 180
+		complete_effect = {
+			every_country = {
+				if = {
+					limit = {
+						or = {
+							has_idea = idea_ovz_pact_I
+							has_idea = idea_ovz_pact_II
+							has_idea = idea_ovz_pact_III
+						}
+					}
+					add_timed_idea = {
+						idea = idea_OVZ_ecomob
+						days = 70
+					}
+				}
+			}
+		}
+	}
+	RUS_nastup_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			has_completed_focus = RUS_en_will_fall
+			NOT = {
+				has_idea = idea_RUS_supernastup
+			}
+		}
+		days_re_enable = 70
+		days_remove = 1
+		complete_effect = {
+			add_timed_idea = {
+				idea = idea_RUS_supernastup
+				days = 30
+			}
+		}
+	}
+
+}
