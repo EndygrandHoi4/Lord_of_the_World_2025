@@ -13,35 +13,92 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 55 y = 1500 }
-	focus = {
-		id = UKR_3_year_war
-		icon = GFX
-		x = 10
-		y = 0
-		cost = 10
-	completion_reward = {
-		}
-	}
-	focus = {
-		id = UKR_place_holder_1
-		icon = GFX
-		x = 10
-		y = 1
-		cost = 10
 
-		prerequisite = {focus = UKR_3_year_war}
-		completion_reward = {
+####### Ветка А! О! С-В-О!
+#Наша позиция
+focus = {
+	id = UKR_our_pos
+	icon = GFX_real_freedom
+	cost = 3
+	x = 5
+	y = 1
+	completion_reward = { }
+}
+#Переобуться (Трамп!)
+focus = {
+	id = UKR_Trump
+	icon = GFX_real_freedom
+	cost = 1
+	x = 5
+	y = 2
+	available = {
+		A07 = {
+			has_completed_focus = USA_tf_hours
 		}
 	}
-	focus = {
-		id = UKR_place_holder_2
-		icon = GFX
-		x = 10
-		y = 2
-		cost = 10
+	prerequisite = {
+		focus = UKR_our_pos
+	}
+	completion_reward = { }
+}
+#Сдерживать наступление
+focus = {
+	id = UKR_defence
+	icon = GFX_real_freedom
+	cost = 10
+	x = 3
+	y = 2
+	available = {
+		A03 = {
+			has_completed_focus = RUS_kursk_operation
+		}
+	}
+	prerequisite = {
+		focus = UKR_our_pos
+	}
+	completion_reward = { }
+}
+#Вопрос переговоров
+focus = {
+	id = UKR_peace_deals
+	icon = GFX_real_freedom
+	cost = 5
+	x = 7
+	y = 2
+	available = {
+		A03 = {
+			has_completed_focus = RUS_clear_conditions
+		}
+	}
+	prerequisite = {
+		focus = UKR_our_pos
+	}
+	completion_reward = { }
+}
+#Конец?
+focus = {
+	id = UKR_is_final
+	icon = GFX_real_freedom
+	cost = 2
+	x = 20
+	y = 1
+	available = {
+		has_war_with = A04		
+	}
+	completion_reward = { }
+}
+#Сместить Зе!
+focus = {
+	id = UKR_no_zelensky
+	icon = GFX_real_freedom
+	cost = 5
+	x = 20
+	y = 2
+	prerequisite = {
+		focus = UKR_is_final
+	}
+	completion_reward = { }
+}
 
-		prerequisite = {focus = UKR_place_holder_1}
-		completion_reward = {
-		}
-	}
-	}
+
+}
