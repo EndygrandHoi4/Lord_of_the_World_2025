@@ -724,7 +724,7 @@ add_namespace = russia
 		title = russia.18t
 		desc = russia.18d
 		is_triggered_only = no
-		option = { #Кандидат от Единой России!
+		option = { #Кандидат от Единой России - Путин!
 			name = russia.18a
 			set_party_name = {
 				ideology = Centrism
@@ -732,16 +732,29 @@ add_namespace = russia
 				name = SOV_Centrism_party_UR_russian
 			}
 			retire_character = SOV_Roman_Uneman
+			retire_character = SOV_Dmitry_Medvedev
 			recruit_character = SOV_Vladimir_Putin
 		}
-		option = { #Кандидат оБ - Юнеман!
+		option = { #Кандидат от Единой России - Медведев!
 			name = russia.18b
+			set_party_name = {
+				ideology = Centrism
+				long_name = SOV_Centrism_party_UR_russian_long
+				name = SOV_Centrism_party_UR_russian
+			}
+			retire_character = SOV_Roman_Uneman
+			retire_character = SOV_Vladimir_Putin
+			recruit_character = SOV_Dmitry_Medvedev
+		}
+		option = { #Кандидат оБ - Юнеман!
+			name = russia.18c
 			set_party_name = {
 				ideology = Centrism
 				long_name = SOV_Centrism_party_OB_russian_long
 				name = SOV_Centrism_party_OB_russian
 			}
 			retire_character = SOV_Vladimir_Putin
+			retire_character = SOV_Dmitry_Medvedev
 			recruit_character = SOV_Roman_Uneman
 		}
 	}
@@ -784,6 +797,32 @@ add_namespace = russia
 			retire_character = SOV_Nikolay_Haritonov
 			retire_character = SOV_Leonid_Slutzky
 			recruit_character = SOV_Genady_Zuganov
+		}
+	}
+
+	# Реестр ПО РФ
+	country_event = {
+		id = russia.20
+		title = russia.20t
+		desc = russia.20d
+		is_triggered_only = yes
+		option = { # Профинансируем переход
+			name = russia.20a
+			A03 = {
+				add_ideas = idea_RUS_reestr_LITE
+			}
+		}
+		option = { # Потребуем перехода! (исторический)
+			name = russia.20b
+			A03 = {
+				add_ideas = idea_RUS_reestr_HIST
+			}
+		}
+		option = { # Потребуем перехода и обложим налогом!
+			name = russia.20c
+			A03 = {
+				add_ideas = idea_RUS_reestr_HARD
+			}
 		}
 	}
 
