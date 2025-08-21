@@ -40,3 +40,9 @@ RUS_tww_category = {
 	}
 	#icon = 
 }
+RUS_internal_category = {
+	visible = {
+		tag = A03
+	}
+	#icon = 
+}

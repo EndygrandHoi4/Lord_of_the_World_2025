@@ -738,5 +738,237 @@ RUS_tww_category = {
 			}
 		}
 	}
-
+}
+RUS_internal_category = {
+	#Дело Лесты
+	RUS_lesta_mis_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			A03 = {
+				exists = yes
+			}
+		}
+		is_good = no
+		days_mission_timeout = 163
+		timeout_effect = {
+			if = {
+				limit = {
+					or = {
+						or = {
+							has_idea = idea_RUS_reestr_HIST
+							has_idea = idea_RUS_reestr_HARD
+						}
+						reactionism > 0.1
+					}
+					or = {
+						has_idea = idea_RUS_unliked_po_I
+						has_idea = idea_RUS_unliked_po_II
+						has_idea = idea_RUS_unliked_po_III
+					}
+					Centrism > 0.3
+				}
+				A03 = {
+					add_ideas = idea_RUS_cheburnet_true
+				}
+			} else = {
+				A03 = {
+					add_ideas = idea_RUS_cheburnet_broken
+				}
+			}
+		}
+	}
+	#Борьба с дезинформацией
+	RUS_fight_desinfo_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			date < 2025.6.12
+		}
+		days_re_enable = 20
+		days_remove = 5
+		cost = 25
+		remove_effect = {
+			add_political_power = -25
+			add_popularity = {
+				ideology = Centrism
+				popularity = 0.05
+			}
+		}
+	}
+	#Запустить реестр ПО РФ
+	RUS_reestr_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			A03 = {
+				exists = yes
+			}
+		}
+		days_remove = 1
+		remove_effect = {
+			A03 = {
+				country_event = russia.20
+			}
+		}
+	}
+	#Нежелательное ПО
+	RUS_unliked_po_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			date > 2025.2.4			
+		}
+		days_remove = 1
+		remove_effect = {
+			A03 = {
+				add_ideas = idea_RUS_unliked_po_I
+			}
+		}
+	}
+	#Нежелательные корпорации
+	RUS_unliked_corp_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			date > 2025.3.17
+		}
+		visible = {
+			A03 = {
+				has_idea = idea_RUS_unliked_po_I
+			}
+		}
+		days_remove = 1
+		remove_effect = {
+			A03 = {
+				swap_ideas = {
+					remove_idea = idea_RUS_unliked_po_I
+					add_idea = idea_RUS_unliked_po_II
+				}
+			}
+		}
+	}
+	#Блокировать VPN!
+	RUS_unliked_vpn_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			date > 2025.6.4
+		}
+		visible = {
+			A03 = {
+				has_idea = idea_RUS_unliked_po_II
+			}
+		}
+		days_remove = 1
+		remove_effect = {
+			A03 = {
+				swap_ideas = {
+					remove_idea = idea_RUS_unliked_po_II
+					add_idea = idea_RUS_unliked_po_III
+				}
+			}
+		}
+	}
+	#Разделить РКН
+	RUS_deunite_RKN_dec = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			A03 = {
+				has_war = no
+				or = {
+					has_idea = idea_RUS_cheburnet_true	
+					has_idea = idea_RUS_cheburnet_broken			
+				}
+				or = {
+					has_country_leader_ideology = civilizationism
+					has_country_leader_ideology = market_socialism
+					has_country_leader_ideology = neoconservatism
+					has_country_leader_ideology = radical_socialism
+				}
+			}
+		}
+		visible = {
+			or = {
+				has_idea = idea_RUS_cheburnet_broken
+				has_idea = idea_RUS_cheburnet_true
+			}
+		}
+		cost = 50
+		days_remove = 30
+		remove_effect = {
+			remove_ideas = idea_RUS_cheburnet_broken
+			remove_ideas = idea_RUS_cheburnet_true
+			remove_ideas = idea_RUS_unliked_po_I
+			remove_ideas = idea_RUS_unliked_po_II
+			remove_ideas = idea_RUS_unliked_po_III
+			remove_ideas = idea_RUS_reestr_HARD
+			remove_ideas = idea_RUS_reestr_HIST
+			if = {
+				limit = {
+					NOT = {
+						has_idea = idea_RUS_reestr_LITE
+					}
+				}
+				add_ideas = idea_RUS_reestr_LITE
+			}
+		}
+	}
+	RUS_arest_RKN = {
+		allowed = {
+			tag = A03
+		}
+		available = {
+			A03 = {
+				has_war = no
+				or = {
+					has_idea = idea_RUS_cheburnet_true	
+					has_idea = idea_RUS_cheburnet_broken			
+				}
+				or = {
+					has_country_leader_ideology = social_democracy
+					has_government = liberalism
+					has_country_leader_ideology = authoritarian_democracy
+				}
+			}
+		}
+		cost = 25
+		days_remove = 45
+		remove_effect = {
+			remove_ideas = idea_RUS_cheburnet_broken
+			remove_ideas = idea_RUS_cheburnet_true
+			add_popularity = {
+				ideology = Centrism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.1
+			}
+			remove_ideas = idea_RUS_unliked_po_I
+			remove_ideas = idea_RUS_unliked_po_II
+			remove_ideas = idea_RUS_unliked_po_III
+			remove_ideas = idea_RUS_reestr_HARD
+			remove_ideas = idea_RUS_reestr_HIST
+			if = {
+				limit = {
+					NOT = {
+						has_idea = idea_RUS_reestr_LITE
+					}
+				}
+				add_ideas = idea_RUS_reestr_LITE
+			}
+		}
+	}
 }

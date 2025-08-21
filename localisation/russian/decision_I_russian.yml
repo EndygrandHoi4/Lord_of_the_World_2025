@@ -36,6 +36,16 @@
  RUS_ecomob_dec: "Толчок экономике"
  RUS_nastup_dec: "Наступление"
 
+ RUS_internal_category: "Внутреняя политика"
+ RUS_lesta_mis_dec: "Дело Lesta Games"
+ RUS_fight_desinfo_dec: "Борьба с дезинформацией"
+ RUS_reestr_dec: "Создать реестр ПО РФ"
+ RUS_unliked_po_dec: "Нежелательное ПО"
+ RUS_unliked_corp_dec: "Нежелательные корпорации"
+ RUS_unliked_vpn_dec: "Блокировать ВПН сервисы!"
+ RUS_deunite_RKN_dec: "Разделить РКН"
+ RUS_arest_RKN: "Начать расследование по РКН"
+
  USA_politics_decision_category: "Внешняя политика"
  USA_atk_ira_dec: "Атаковать Иран!"
  USA_try_buy_greenland_mis: "Попытка купить Гренландию"
