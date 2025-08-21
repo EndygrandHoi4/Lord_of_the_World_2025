@@ -1284,5 +1284,104 @@ ideas = {
                 production_speed_arms_factory_factor = 0.5
             }
         }
+        ########## Внутреняя политика!
+        idea_RUS_reestr_LITE = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            #picture = GFX #Роскомнадзор иконку сюды!
+            modifier = {
+                research_speed_factor = 0.05
+                production_factory_max_efficiency_factor = 0.1
+                production_speed_buildings_factor = 0.05
+                reactionism_drift = -0.01
+            }
+        }
+        idea_RUS_reestr_HIST = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            #picture = GFX #Роскомнадзор иконку сюды!
+            modifier = {
+                # research_speed_factor = 0.0
+                production_factory_max_efficiency_factor = 0.15
+                production_speed_buildings_factor = 0.05
+                Centrism_drift = -0.01
+                reactionism_drift = -0.02
+            }
+        }
+        idea_RUS_reestr_HARD = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            #picture = GFX #Роскомнадзор иконку сюды!
+            modifier = {
+                research_speed_factor = -0.05
+                production_factory_max_efficiency_factor = 0.2
+                production_speed_buildings_factor = 0.05
+                Centrism_drift = -0.02
+                reactionism_drift = -0.02
+            }
+        }
+        # Нежелательные приложения
+        idea_RUS_unliked_po_I ={
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            #picture = GFX #Роскомнадзор иконку сюды!
+            modifier = {
+                stability_weekly = -0.01
+            }
+        }
+        idea_RUS_unliked_po_II ={
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            #picture = GFX #Роскомнадзор иконку сюды!
+            modifier = {
+                stability_weekly = -0.01
+                research_speed_factor = -0.01
+            }
+        }
+        idea_RUS_unliked_po_III = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            #picture = GFX #Роскомнадзор иконку сюды!
+            modifier = {
+                stability_weekly = -0.01
+                research_speed_factor = -0.2
+                production_factory_efficiency_gain_factor = -0.1
+            }
+        }
+        #Чебурнет
+        idea_RUS_cheburnet_true = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            #picture = GFX #Роскомнадзор иконку сюды!
+            modifier = {
+                research_speed_factor = -0.25
+                production_factory_efficiency_gain_factor = 0.25
+            }
+        }
+        idea_RUS_cheburnet_broken = {
+            allowed = {
+                original_tag = A03
+            }
+            removal_cost = -1
+            #picture = GFX #Роскомнадзор иконку сюды!
+            modifier = {
+                research_speed_factor = -0.25
+                stability_factor = -0.01
+            }
+        }
     }
 }

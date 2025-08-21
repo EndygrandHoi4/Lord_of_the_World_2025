@@ -107,6 +107,14 @@
  idea_RUS_imperialism_I: "Неоимпериализм"
  idea_RUS_imperialism_II: "Неоимпериализм"
  idea_OVZ_ecomob: "Мобилизация экономики"
+ idea_RUS_reestr_LITE: "Реестр ПО РФ"
+ idea_RUS_reestr_HIST: "Реестр ПО РФ"
+ idea_RUS_reestr_HARD: "Реестр ПО РФ"
+ idea_RUS_unliked_po_I: "Нежелательное ПО"
+ idea_RUS_unliked_po_II: "Нежелательное ПО"
+ idea_RUS_unliked_po_III: "Нежелательное ПО"
+ idea_RUS_cheburnet_true: "Настоящий Чебурнет"
+ idea_RUS_cheburnet_broken: "Сломаный Чебурнет"
  
  #Пиндостанские фокусы
  idea_USA_ext_polit_I: "Внешняя политика"
