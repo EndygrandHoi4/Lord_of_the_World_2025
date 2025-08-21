@@ -26,6 +26,20 @@ characters = {
 			id = -1
 		}
 	}
+	SOV_Dmitry_Medvedev = {
+		name = SOV_Dmitry_Medvedev
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV_portrait_SOV_Iron_Dimon.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			traits = {}
+			expire = "2068.5.1.2" 
+			id = -1
+		}
+	}
 
 	SOV_Vladislav_Davankov = {
 		name = SOV_Vladislav_Davankov
