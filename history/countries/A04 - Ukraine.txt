@@ -7,6 +7,7 @@ recruit_character = UKR_vladimir_zelenski
 #MINISTERS
 #recruit_character = 
 
+oob = A04_2025
 
 ####
 #### VANILLA ####
@@ -23,12 +24,43 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	Centrism = 60
+	Centrism = 30
 	liberalism = 16
-	radicalism = 4
+	radicalism = 9
 	reactionism = 20
-	theocracy = 0
-	progressivism = 0
+	theocracy = 15
+	progressivism = 10
+}
+
+set_party_name = {
+	ideology = Centrism
+	long_name = UKR_Centrism_OPFL_long
+	name = UKR_Centrism_OPFL
+}
+set_party_name = {
+	ideology = liberalism
+	long_name = UKR_liberalism_ES_long
+	name = UKR_liberalism_ES
+}
+set_party_name = {
+	ideology = radicalism
+	long_name = UKR_radicalism_SP_long
+	name = UKR_radicalism_SP
+}
+set_party_name = {
+	ideology = reactionism
+	long_name = UKR_reactionism_ot_long
+	name = UKR_reactionism_ot
+}
+set_party_name = {
+	ideology = theocracy
+	long_name = UKR_pc_long 
+	name = UKR_pc
+}
+set_party_name = {
+	ideology = progressivism
+	long_name = UKR_progressivism_soros_long
+	name = UKR_progressivism_soros
 }
 
 
