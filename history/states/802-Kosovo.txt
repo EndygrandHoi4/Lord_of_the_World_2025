@@ -2,7 +2,7 @@ state = {
 	id = 802
 	name = "STATE_802"
 	resources = {
-		steel = 2.000
+		steel = 2
 	}
 
 	history = {
@@ -22,9 +22,6 @@ state = {
 		add_core_of = A22
 
 	}
-
-	set_demilitarized_zone = yes
-
 	provinces = {
 		6940 9849 9874 9890 
 	}

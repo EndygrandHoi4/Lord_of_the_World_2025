@@ -1,7 +1,7 @@
 
 state={
-	id=202
-	name="STATE_202"
+	id=1019
+	name="STATE_1019"
 	manpower = 1495352
 	resources={
 		oil=8 # was: 14
@@ -12,9 +12,6 @@ state={
 
 	history={
 		owner = A04
-		victory_points = {
-			525 25
-		}
 		buildings = {
 			infrastructure = 4 #was: 7
 			arms_factory = 2
@@ -27,7 +24,7 @@ state={
 	}
 
 	provinces={
-		504 525  3494 3543 6497 9465 9568
+		9491 11530
 	}
 
 	local_supplies=0.0 
