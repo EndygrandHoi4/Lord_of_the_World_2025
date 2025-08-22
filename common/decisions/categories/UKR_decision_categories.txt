@@ -1,0 +1,17 @@
+UKR_army_category = {
+	allowed = {
+		tag = A04
+	}
+	visible = {
+		always = yes
+	}
+	# picture = 
+}
+UKR_keystate_category = {
+	allowed = {
+		tag = A04
+	}
+	visible = {
+		has_completed_focus = UKR_secret_remilita
+	}
+}

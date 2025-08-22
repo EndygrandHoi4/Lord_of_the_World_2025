@@ -52,3 +52,8 @@
 
  IRA_politics_decision_category: "Внешняя политика"
  IRA_wp_USA_and_ISR_dec: "Договириться о мире"
+
+ UKR_army_category: "Армия"
+ UKR_army_regress_mis_dec: "Деградация армии"
+ UKR_army_reconstr_mis_dec: "Реконструкция армии"
+ UKR_defence: "Отчаянная оборона"
