@@ -146,3 +146,16 @@
  idea_SVO_esc_IV: "Эскалация IV"
  idea_SVO_esc_V: "Эскалация V"
  idea_SVO_was: "Память об СВО"
+
+ #Украина - Хохланд
+ idea_UKR_army_I: "Вооружённые Силы Украины"
+ idea_UKR_army_II: "Вооружённые Силы Украины"
+ idea_UKR_army_III: "Вооружённые Силы Украины"
+ idea_UKR_army_IV: "Вооружённые Силы Украины"
+ idea_UKR_army_V: "Вооружённые Силы Украины"
+ idea_UKR_defence: "Отчаянная оборона"
+ idea_UKR_afterwar_I: "Восстановление после войны"
+ idea_UKR_afterwar_II: "Восстановление после войны"
+ idea_UKR_afterwar_III: "Восстановление после войны"
+ idea_UKR_afterwar_IV: "Восстановление после войны"
+ idea_UKR_afterwar_V: "Восстановление после войны"
