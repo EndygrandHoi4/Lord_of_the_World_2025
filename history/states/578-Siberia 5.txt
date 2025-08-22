@@ -2,9 +2,9 @@
 state={
 	id=578
 	name="STATE_578" # Tomsk
-	manpower = 609304
+	manpower = 1039728
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = A03
@@ -13,7 +13,7 @@ state={
 		}
 		add_core_of = A03
 		victory_points = {
-			7789 1
+			7789 10
 		}
 	}
 

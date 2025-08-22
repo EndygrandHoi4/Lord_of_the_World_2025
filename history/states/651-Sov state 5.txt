@@ -1,10 +1,10 @@
 
-state = {
+state = { # БАШКОРТОСТАН
 	id=651
 	name = "STATE_651" # Ufa
-	manpower = 2552075
+	manpower = 3042377
 
-	state_category = city
+	state_category = large_city
 
 	history = {
 		owner = A03
@@ -14,7 +14,7 @@ state = {
 
 		}
 		victory_points = {
-			1278 5
+			1278 30
 		}
 		victory_points = {
 			4354 1 

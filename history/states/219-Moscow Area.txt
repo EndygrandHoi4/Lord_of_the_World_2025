@@ -2,7 +2,7 @@
 state={
 	id=219
 	name="STATE_219"
-	manpower = 8335992
+	manpower = 22050020
 	
 	state_category = megalopolis
 	resources={
@@ -15,7 +15,7 @@ state={
 			6380 50 
 		}
 		buildings = {
-			infrastructure = 4 #was: 8
+			infrastructure = 5 #was: 8
 			arms_factory = 7
 			industrial_complex = 3
 			air_base = 10
@@ -29,15 +29,6 @@ state={
             }
 		}
 		add_core_of = A03
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-				arms_factory = 10
-				3391 = {
-					land_facility = 1 # Mytischi
-				}
-			}
-		}
 	}
 
 	provinces={

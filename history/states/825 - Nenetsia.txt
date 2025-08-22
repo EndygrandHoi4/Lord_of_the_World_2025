@@ -2,9 +2,9 @@
 state = {
 	id = 825
 	name = "STATE_825" # Nenets
-	manpower = 21795
+	manpower = 41906
 	
-	state_category = rural
+	state_category = town
 	
 	resources = {
 		oil = 7 # was: 8

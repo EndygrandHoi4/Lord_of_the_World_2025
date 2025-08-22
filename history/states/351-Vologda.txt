@@ -2,9 +2,9 @@
 state={
 	id=351
 	name="STATE_351" # Vologda
-	manpower = 2352100
+	manpower = 1115371
 	
-	state_category = town
+	state_category = city
 
 	history={
 		owner = A03
@@ -13,7 +13,7 @@ state={
 		}
 		add_core_of = A03
 		victory_points = {
-			9131 3
+			9131 11
 		}
 	}
 

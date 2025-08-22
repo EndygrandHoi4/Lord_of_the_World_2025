@@ -1,34 +1,34 @@
 state = {
 	id = 137
 	name = "STATE_137"
-	manpower = 1061607
+	manpower = 2460551
 	
-	state_category = city
+	state_category = metropolis
 
 	history = {
 
 		owner = A03
 
 		victory_points = {
-			3686 20 # Sevastopol
+			3686 15 # Sevastopol
 		}
 
 		victory_points = {
-			9680 1 # Kerch
+			9680 10 # Kerch
 		}
 
 		victory_points = {
-			6704 1 # Yalta
+			6704 10 # Yalta
 		}
 
 		victory_points = {
-			705 3 # Simferopol
+			705 25 # Simferopol
 		}
 
 		buildings = {
 
-			infrastructure = 3
-			dockyard = 1
+			infrastructure = 5
+			dockyard = 2
 			air_base = 3
 
 			3686 = {

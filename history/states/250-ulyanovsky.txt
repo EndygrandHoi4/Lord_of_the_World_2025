@@ -1,8 +1,8 @@
-
+#ulyanovsk
 state={
 	id=250
 	name="STATE_250"
-	manpower = 1630524
+	manpower = 1165334
 	
 	state_category = town
 	resources={
@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = A03
 		victory_points = {
-			392 1
+			392 11
 		}
 	}
 
