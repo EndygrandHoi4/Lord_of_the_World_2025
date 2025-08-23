@@ -13,3 +13,40 @@ news_event = {
 		name = news.1a
 	}
 }
+
+news_event = {
+	id = news.2
+	title = news.2t 
+	desc = news.2d 
+	is_triggered_only = yes
+	trigger = {
+		date > 2027.5.27 # ПАТАМУШТА МОЙ ДЭРЭ
+	}
+	option = {
+		name = news.2a
+		A03 = {
+			complete_national_focus = RUS_ovz_pact
+		}
+		A07 = {
+			complete_national_focus = USA_sakh_pact
+		}
+		E10 = {
+			complete_national_focus = EU_sakh_pact
+			complete_national_focus = EU_a_secret_insides
+		}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = idea_Commonwealth_of_Independent_States_countries
+				}
+				remove_ideas = idea_Commonwealth_of_Independent_States_countries
+			}
+			if = {
+				limit = {
+					has_idea = idea_NATO_countries
+				}
+				remove_ideas = idea_NATO_countries
+			}
+		}
+	}
+}
