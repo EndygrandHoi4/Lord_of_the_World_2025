@@ -1,0 +1,104 @@
+add_namespace = kst
+
+	#Итоги СВО
+	news_event = {
+		id = kst.1
+		title = kst.1t
+		desc = kst.1d
+		trigger = {
+			always = no
+		}
+		is_triggered_only = yes
+		option = {
+			name = kst.1a
+			E10 = {
+				complete_national_focus = EU_SMO
+			}
+			add_political_power = 10
+		}
+	}
+
+	#Кейстейт инвайт Скандинавов
+	country_event = {
+		id = kst.2
+		title = kst.2t
+		desc = kst.2d
+		trigger = {
+			always = no
+		}
+		is_triggered_only = yes
+		option = { #YEP
+			name = kst.2a
+			root = {
+				add_to_faction = A02
+			}
+		}
+		option = { #Guarants
+			name = kst.2b
+			A02 = {
+				give_guarantee = root
+			}
+		}
+	}
+
+	#Кейстейт торг с США
+	country_event = {
+		id = kst.3
+		title = kst.3t
+		desc = kst.3d 
+		is_triggered_only = yes
+		trigger = {
+			always = no
+		}
+		option = { #ACCEPT
+			name = kst.3a
+			E10 = {
+				complete_national_focus = EU_USA_connect
+			}
+		}
+		option = { #NOPE
+			name = kst.3b 
+			add_political_power = 100
+		}
+	}
+
+	#Третья мировая война
+	news_event = {
+		id = kst.4
+		title = kst.4t 
+		desc = kst.4d 
+		trigger = {
+			always = no
+		}
+		is_triggered_only = yes
+		option = { #Final World. 
+			name = kst.4a
+		}
+	}
+	
+	#Выбор Украины
+	country_event = {
+		id = kst.5
+		title = kst.5t
+		desc = kst.5d
+		trigger = {
+			always = no
+		}
+		is_triggered_only = yes
+		option = { #UKR
+			name = kst.5a
+		}
+		option = { #KST
+			name = kst.5b
+			if = {
+				limit = {
+					A04 = {
+						is_ai = no
+					}
+				}
+				E12 = {
+					change_tag_from = A04
+				}
+			}
+		}
+	}
