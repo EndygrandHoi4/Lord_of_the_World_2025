@@ -611,3 +611,4 @@ E09 = "countries/Balochistan.txt"
 
 E10 = "countries/european union.txt"
 E11 = "countries/Pridnestrovian Moldavian Republic.txt"
+E12 = "countries/Keystate.txt"
