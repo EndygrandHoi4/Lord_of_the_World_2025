@@ -7,7 +7,7 @@ recruit_character = UKR_vladimir_zelenski
 #MINISTERS
 #recruit_character = 
 
-oob = A04_2025
+#oob = A04_2025
 
 ####
 #### VANILLA ####
