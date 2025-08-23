@@ -1,0 +1,31 @@
+
+state={
+	id=1019
+	name="STATE_1019"
+	manpower = 1495352
+	resources={
+		oil=8 # was: 14
+		aluminium=7 # was: 12
+	}
+	
+	state_category = city
+
+	history={
+		owner = A04
+		buildings = {
+			infrastructure = 4 #was: 7
+			arms_factory = 2
+			industrial_complex = 3
+			fuel_silo = 1
+			air_base = 8
+		}
+		add_core_of = A03
+		add_core_of = A04
+	}
+
+	provinces={
+		9491 11530
+	}
+
+	local_supplies=0.0 
+}

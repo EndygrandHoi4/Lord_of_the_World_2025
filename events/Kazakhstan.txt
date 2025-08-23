@@ -1,0 +1,52 @@
+add_namespace = kazakhstan 
+
+	#Автономия в РФ
+	country_event = {
+		id = kazakhstan.1
+		title = kazakhstan.1t
+		desc = kazakhstan.1d
+		is_triggered_only = yes
+		option = { #Да
+			name = kazakhstan.1a
+			A03 = {
+				puppet = {
+					target = B04
+				}
+			}
+		}
+		option = { #Нет
+			name = kazakhstan.1b
+			A03 = {
+				create_wargoal = {
+					target = B04
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+
+	#Автономия в РФ + сдвиг терок
+	country_event = {
+		id = kazakhstan.2
+		title = kazakhstan.2t 
+		desc = kazakhstan.2d 
+		is_triggered_only = yes
+		option = { #Да
+			name = kazakhstan.2a
+			A03 = {
+				puppet = {
+					target = B04
+				}
+			}
+			#### Добавить решения Казахам
+		}
+		option = { #Нет
+			name = kazakhstan.2b
+			A03 = {
+				create_wargoal = {
+					target = B04
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
