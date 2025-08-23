@@ -2,10 +2,10 @@
 state={
 	id=255
 	name="STATE_255"
-	manpower = 1985773
+	manpower = 2342937
 	
 	
-	state_category = city
+	state_category = town
 
 
 	history={
@@ -15,10 +15,7 @@ state={
 		}
 		add_core_of = A03
 		victory_points = {
-			9258 11
-		}
-		victory_points = {
-			11309 8 #Saransk
+			9258 3
 		}
 	}
 

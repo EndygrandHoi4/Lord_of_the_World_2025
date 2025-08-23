@@ -1,24 +1,29 @@
-#EKATERINBURG
+
 state={
 	id=653
-	name="STATE_653" # EKB
-	manpower = 4221452
+	name="STATE_653" # Sverdlovsk
+	manpower = 2161650
 	
-	state_category = metropolis
+	state_category = city
 
 	history={
 		owner = A03
 		victory_points = {
-			1821 40
+			1821 5
 		}
 		buildings = {
-			infrastructure = 4 #was: 6
+			infrastructure = 3 #was: 6
 			arms_factory = 2
 			industrial_complex = 1
 			air_base = 1
 
 		}
 		add_core_of = A03
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 3
+			}
+		}
 	}
 
 	provinces={

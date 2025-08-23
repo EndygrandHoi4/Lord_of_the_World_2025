@@ -4,12 +4,12 @@ state={
 	name="STATE_252"
 	manpower = 3378176
 	
-	state_category = metropolis
+	state_category = city
 
 	history={
 		owner = A03
 		victory_points = {
-			11375 30
+			11375 10
 		}
 		buildings = {
 			infrastructure = 3 #was: 5

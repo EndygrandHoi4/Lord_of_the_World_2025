@@ -8,20 +8,20 @@ state = {
 	history = {
 		owner = A03
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 
 		}
 		add_core_of = A03
 		add_core_of = C37
 		victory_points = {
-			11614 15
+			11614 1
 		}
 	}
 
 	provinces = {
 		685 6674 9632 11614
 	}
-	manpower = 1587040
+	manpower = 387990
 	buildings_max_level_factor = 1.000
 	state_category = pastoral
 

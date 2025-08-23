@@ -2,14 +2,14 @@
 state={
 	id=572
 	name="STATE_572" # Chelyabinsk
-	manpower = 3385124
+	manpower = 2074932
 	
-	state_category = metropolis
+	state_category = town
 
 	history={
 		owner = A03
 		victory_points = {
-			9292 30
+			9292 5
 		}
 		buildings = {
 			infrastructure = 3 #was: 6

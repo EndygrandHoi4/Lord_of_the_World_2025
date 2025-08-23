@@ -1,9 +1,9 @@
-#Buryatia
+
 state={
 	id=564
 	name="STATE_564" # Ulan Ude
-	manpower = 971139
-	state_category = town
+	manpower = 370893
+	state_category = rural
 	resources={
 		steel=10 # was: 20
 		chromium=12 # was: 34
@@ -14,10 +14,10 @@ state={
 	history={
 		owner = A03
 		victory_points = {
-			7835 7 
+			7835 2 
 		}
 		victory_points = {
-			12644 2 
+			12644 1 
 		}
 		buildings = {
 			infrastructure = 2

@@ -2,9 +2,9 @@
 state={
 	id=654
 	name="STATE_654" # Gorno-Altaysk
-	manpower = 2099186
+	manpower = 153510
 	
-	state_category = town
+	state_category = wasteland
 
 	history={
 		owner = A03
@@ -14,7 +14,7 @@ state={
 		add_core_of = A03
 		add_core_of = C18
 		victory_points = {
-			4800 5 #Oyrot-Tura/Gorno-Altaysk
+			4800 1 #Oyrot-Tura/Gorno-Altaysk
 		}
 	}
 

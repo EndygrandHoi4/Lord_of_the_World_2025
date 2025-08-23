@@ -2,9 +2,9 @@
 state={
 	id=249
 	name="STATE_249"
-	manpower = 4019606
+	manpower = 2761291
 	
-	state_category = metropolis
+	state_category = town
 	resources={
 		steel=25 # was: 40
 	}
@@ -20,6 +20,11 @@ state={
 		}
 		add_core_of = A03
 		add_core_of = C22
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+			}
+		}
 	}
 
 	provinces={

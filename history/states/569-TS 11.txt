@@ -1,10 +1,10 @@
 
 state = {
 	id = 569
-	name = "STATE_569" # Khakassia and Kemerovo
-	manpower = 3052776
+	name = "STATE_569" # Khakassia
+	manpower = 1567322
 	
-	state_category = city
+	state_category = town
 
 	history = {
 		owner = A03
@@ -21,7 +21,7 @@ state = {
 			7822 1
 		}
 		victory_points = {
-			10580 20
+			10580 2
 		}
 	}
 

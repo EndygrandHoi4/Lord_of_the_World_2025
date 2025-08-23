@@ -2,14 +2,14 @@
 state = {
 	id = 574
 	name = "STATE_574" # Yakutsk
-	manpower = 968230
+	manpower = 407866
 	
-	state_category = city
+	state_category = pastoral
 
 	history={
 		owner = A03
 		victory_points = {
-			10641 9
+			10641 1
 		}
 		buildings = {
 			infrastructure = 1

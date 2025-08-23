@@ -2,13 +2,13 @@
 state={
 	id=247
 	name="STATE_247"
-	manpower = 595287
+	manpower = 1331211
 	state_category = town
 
 	history={
 		owner = A03
 		victory_points = {
-			6245 5 
+			6245 10 
 		}
 		buildings = {
 			infrastructure = 3 #was: 5

@@ -26,20 +26,6 @@ characters = {
 			id = -1
 		}
 	}
-	SOV_Dmitry_Medvedev = {
-		name = SOV_Dmitry_Medvedev
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/SOV_portrait_SOV_Iron_Dimon.dds"
-			}
-		}
-		country_leader = {
-			ideology = authoritarian_democracy
-			traits = {}
-			expire = "2068.5.1.2" 
-			id = -1
-		}
-	}
 
 	SOV_Vladislav_Davankov = {
 		name = SOV_Vladislav_Davankov
@@ -140,8 +126,8 @@ characters = {
 			expire = "2032.3.1.1"
 			id = -1
 			traits = {	}
-		}
 	}
+
 	
 
 	#TODO: This should be a country leader token added to Stalin in the appropriate event/focus/whatever
@@ -4280,5 +4266,22 @@ characters = {
 			}
 		}
 	}
+
+	SOV_vladimir_kotelnikov = {
+		name = SOV_vladimir_kotelnikov
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_vladimir_kotelnikov
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_electronics_specialist }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+
 
 }

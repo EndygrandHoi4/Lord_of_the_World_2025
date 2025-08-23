@@ -2,7 +2,7 @@
 state={
 	id=239
 	name="STATE_239"
-	manpower = 1441345
+	manpower = 1226088
 	
 	state_category = town
 
@@ -13,7 +13,7 @@ state={
 			industrial_complex = 1
 		}
 		victory_points = {
-			3578 20 
+			3578 5 
 		}
 		add_core_of = A03
 	}

@@ -1,7 +1,7 @@
 state = {
 	id = 217
 	name = "STATE_217"
-	manpower = 2000000
+	manpower = 1135070
 	
 	state_category = city
 
@@ -11,7 +11,7 @@ state = {
 		add_core_of = A03
 
 		victory_points = {
-			3529 40 # Volgograd
+			3529 30 # Stalingrad
 		}
 
 		buildings = {
@@ -21,8 +21,14 @@ state = {
 			air_base = 1
 
 			# 22nd Congress of the CPSU Stalingrad Hydroelectric Power Station
-			# 3555 = { dam = 1 }
+			#3555 = { dam = 1 }
 
+		}
+		
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+			}
 		}
 	}
 

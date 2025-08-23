@@ -1,4 +1,3 @@
-
 state = {
 	id = 1017
 	name = "STATE_1017"
@@ -20,5 +19,6 @@ state = {
 		
 	}
 
-	provinces = { 9536 }
-}
+	provinces = {
+		9536
+	}

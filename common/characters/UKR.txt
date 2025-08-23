@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = neonazism
-			expire = "2074.3.1"
+			expire = "1953.3.1"
 			id = -1
 			traits = { }
 		}
@@ -23,7 +23,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = market_socialism
+			ideology = marxism
 			expire = "1953.3.1"
 			id = -1
 			traits = { }
@@ -38,7 +38,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = neonazism
+			ideology = fascism_ideology
 			expire = "1953.3.1"
 			id = -1
 			traits = { }

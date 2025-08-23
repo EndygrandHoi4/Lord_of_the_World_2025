@@ -2,9 +2,9 @@
 state={
 	id=260
 	name="STATE_260" # Voronezh
-	manpower = 2260045
+	manpower = 2567983
 	
-	state_category = large_city
+	state_category = town
 
 	history={
 		owner = A03
@@ -14,9 +14,17 @@ state={
 			synthetic_refinery = 1 #NSB
 		}
 		victory_points = {
-			413 25
+			413 5
 		}
 		add_core_of = A03
+		1939.1.1 = {
+			buildings = {
+				9448 = {
+					air_facility = 1
+				}
+			}
+			
+		}
 	}
 
 	provinces={

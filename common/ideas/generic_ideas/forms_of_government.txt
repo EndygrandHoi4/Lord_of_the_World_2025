@@ -18,7 +18,7 @@ ideas = {
 			}
 
 			available = {
-				always = no
+
 			}
 
 			modifier = {
@@ -43,7 +43,7 @@ ideas = {
 			}
 
 			available = {
-				always = no
+
 			}
 
 			modifier = {
@@ -68,7 +68,7 @@ ideas = {
 			}
 
 			available = {
-				always = no
+
 			}
 
 			modifier = {
@@ -92,7 +92,7 @@ ideas = {
 				
 			}
 			available = {
-	always = no				
+				
 			}
 			modifier = {
 				political_advisor_cost_factor = 0.1
@@ -117,7 +117,7 @@ ideas = {
 			}
 
 			available = {
-				always = no
+
 			}
 
 			modifier = {
@@ -142,7 +142,7 @@ ideas = {
 			}
 
 			available = {
-				always = no
+
 			}
 
 			modifier = {
@@ -165,7 +165,7 @@ ideas = {
 				
 			} 
 			available = {
-	always = no				
+				
 			}
 			modifier = {
 				consumer_goods_factor = 0.15
@@ -189,7 +189,7 @@ ideas = {
 			}
 
 			available = {
-				always = no
+
 			}
 
 			modifier = {
@@ -214,7 +214,7 @@ ideas = {
 			}
 
 			available = {
-				always = no
+
 			}
 
 			modifier = {
@@ -239,7 +239,7 @@ ideas = {
 			}
 
 			available = {
-				always = no
+
 			}
 
 			modifier = {
@@ -263,7 +263,7 @@ ideas = {
 			}
 
 			available = {
-				always = no
+
 			}
 
 			modifier = {

@@ -2,9 +2,9 @@
 state={
 	id=234
 	name="STATE_234"
-	manpower = 5842238
+	manpower = 2903371
 	
-	state_category = metropolis
+	state_category = city
 	resources={
 		tungsten=17 # was: 26
 		oil=12 # was: 18
@@ -19,7 +19,7 @@ state={
 			719 3
 		}
 		victory_points = {
-			3734 40
+			3734 5
 		}
 		buildings = {
 			infrastructure = 3 #was: 5

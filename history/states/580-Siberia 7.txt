@@ -1,14 +1,14 @@
 
 state = {
 	id = 580
-	name = "STATE_580" # Khanty-Mansiysk
-	manpower = 1000782
+	name = "STATE_580" # Tobolsk
+	manpower = 88126
 	
-	state_category = metropolis
+	state_category = pastoral
 
 	history = {
 		victory_points = {
-			1659 20
+			1659 1
 		}
 		owner = A03
 		buildings = {
