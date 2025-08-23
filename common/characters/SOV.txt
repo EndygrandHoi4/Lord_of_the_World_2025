@@ -144,8 +144,8 @@ characters = {
 			expire = "2032.3.1.1"
 			id = -1
 			traits = {	}
+		}
 	}
-
 	
 
 	#TODO: This should be a country leader token added to Stalin in the appropriate event/focus/whatever
@@ -4285,5 +4285,4 @@ characters = {
 		}
 	}
 
-}
 }
