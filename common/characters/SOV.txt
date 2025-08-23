@@ -82,6 +82,7 @@ characters = {
 			ideology = market_socialism
 			traits = { }
 			expire = "2032.8.1.1"
+			id = -1
 		}
 	}
 
@@ -96,6 +97,7 @@ characters = {
 			ideology = social_democracy
 			traits = { }
 			expire = "2083.3.1.1"
+			id = -1
 		}
 	}
 
@@ -110,6 +112,7 @@ characters = {
 			ideology = neoconservatism
 			traits = { }
 			expire = "2054.2.1.1"
+			id = -1
 		}
 	}
 	
@@ -124,6 +127,7 @@ characters = {
 			ideology = radical_socialism
 			traits = { }
 			expire = "2061.10.1.1"
+			id = -1
 		}
 	}
 	#Временное правительство
