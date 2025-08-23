@@ -1355,6 +1355,11 @@ focus = {
     cost = 5
     x = 40
     y = 10
+    available = {
+        E10 = {
+            has_completed_focus = EU_USA_connect
+        }
+    }
     prerequisite = {
         focus = USA_war_flamers
     }
