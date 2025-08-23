@@ -9,7 +9,7 @@ state={
 	state_category = enclave
 
 	history= {
-		owner = A89
+		owner = A24
 		add_core_of = A24
 		add_core_of = A89
 		victory_points = {
@@ -17,11 +17,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
-		}
-
-		1938.9.30 = {
-			owner = A24
-			controller = A24
 		}
 	}
 

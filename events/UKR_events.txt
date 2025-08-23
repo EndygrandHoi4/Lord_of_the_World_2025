@@ -50,3 +50,53 @@ add_namespace = ukraina
 			}
 		}
 	}
+
+	country_event = { # План Восток
+		id = ukraina.3
+		title = ukraina.3t
+		desc = ukraina.3d
+		is_triggered_only = yes
+		option = { #Сместиться на запад!
+			name = ukraina.3a 
+			A04 = {
+				complete_national_focus = UKR_move_to_west
+			}
+		}
+		option = { #Быть верными плану!
+			name = ukraina.3b 
+			A04 = {
+				complete_national_focus = UKR_torg_arteria
+			}
+		}
+	}
+
+	country_event = { #Выбор фракции - запад 1
+		id = ukraina.4
+		title = ukraina.4t 
+		desc = ukrain.4d 
+		is_triggered_only = yes
+		option = { #Залужный
+			name = ukraina.4a
+			A04 = {
+				set_politics = {
+					ruling_party = radicalism
+				}
+				add_popularity = {
+					ideology = radicalism
+					popularity = 0.1
+				}
+			}
+		}
+		option = { #Евросолидарность
+			name = ukraina.4b
+			A04 = {
+				set_politics = {
+					ruling_party = liberalism
+				}
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.1
+				}
+			}
+		}
+	}

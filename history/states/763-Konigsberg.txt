@@ -1,7 +1,7 @@
 state = {
 	id = 763
 	name = "STATE_763"
-	manpower = 2140234
+	manpower = 1032904
 	state_category = city
 
 	history = {
@@ -11,7 +11,7 @@ state = {
 		add_core_of = B97
 		
 		victory_points = {
-			6332 10 # Königsberg
+			6332 10 # Kaliningrad
 		}
 
 		buildings = {
@@ -23,12 +23,6 @@ state = {
 				naval_base = 5
 			}
 			air_base = 6
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				anti_air_building = 5
-			}
 		}
 	}
 

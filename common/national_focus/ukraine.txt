@@ -13,35 +13,832 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 55 y = 1500 }
-	focus = {
-		id = UKR_3_year_war
-		icon = GFX
-		x = 10
-		y = 0
-		cost = 10
+
+####### Ветка А! О! С-В-О!
+#Наша позиция
+focus = {
+	id = UKR_our_pos
+	icon = GFX_real_freedom
+	cost = 3
+	x = 5
+	y = 1
 	completion_reward = {
+		add_political_power = 100
+		add_command_power = 50
+	}
+}
+#Переобуться (Трамп!)
+focus = {
+	id = UKR_Trump
+	icon = GFX_real_freedom
+	cost = 1
+	x = 5
+	y = 2
+	available = {
+		A07 = {
+			has_completed_focus = USA_tf_hours
 		}
 	}
-	focus = {
-		id = UKR_place_holder_1
-		icon = GFX
-		x = 10
-		y = 1
-		cost = 10
+	prerequisite = {
+		focus = UKR_our_pos
+	}
+	completion_reward = {
+		add_political_power = -50
+	}
+}
+#Сдерживать наступление
+focus = {
+	id = UKR_defence
+	icon = GFX_real_freedom
+	cost = 10
+	x = 3
+	y = 2
+	available = {
+		A03 = {
+			has_completed_focus = RUS_kursk_operation
+		}
+	}
+	prerequisite = {
+		focus = UKR_our_pos
+	}
+	completion_reward = {
+		add_command_power = 50
+	}
+}
+#Вопрос переговоров
+focus = {
+	id = UKR_peace_deals
+	icon = GFX_real_freedom
+	cost = 5
+	x = 7
+	y = 2
+	available = {
+		A03 = {
+			has_completed_focus = RUS_clear_conditions
+		}
+	}
+	prerequisite = {
+		focus = UKR_our_pos
+	}
+	completion_reward = { }
+}
+#Конец?
+focus = {
+	id = UKR_is_final
+	icon = GFX_real_freedom
+	cost = 2
+	x = 20
+	y = 1
+	available = {
+		has_war = no		
+	}
+	completion_reward = {
+		add_stability = -0.8 
+		set_research_slots = 1
+		add_ideas = idea_UKR_afterwar_I
+	}
+}
+#Сместить Зе!
+focus = {
+	id = UKR_no_zelensky
+	icon = GFX_real_freedom
+	cost = 5
+	x = 20
+	y = 2
+	prerequisite = {
+		focus = UKR_is_final
+	}
+	completion_reward = {
+		retire_character = UKR_vladimir_zelenski
+	}
+}
 
-		prerequisite = {focus = UKR_3_year_war}
-		completion_reward = {
+############## Ветка "Голосовать против!"
+#Голосовать против!
+focus = {
+	id = UKR_elect_against
+	icon = GFX_real_freedom
+	cost = 4
+	x = 19
+	y = 4
+	mutually_exclusive = {
+		focus = UKR_new_principes
+	}
+	available = {
+		has_completed_focus = UKR_no_zelensky
+	}
+	completion_reward = { }
+}
+#И снова, здорово!
+focus = {
+	id = UKR_hello_again
+	icon = GFX_real_freedom
+	cost = 4
+	x = 19
+	y = 5
+	prerequisite = {
+		focus = UKR_elect_against
+	}
+	completion_reward = { }
+}
+########### Секретное перевооружение
+focus = {
+	id = UKR_secret_remilita
+	icon = GFX_real_freedom
+	cost = 10
+	x = 12
+	y = 6
+	prerequisite = {
+		focus = UKR_hello_again
+	}
+	completion_reward = {
+		add_manpower = 10000
+		add_research_slot = 1
+		army_experience = 100
+		hidden_effect = {
+			country_event = ukraina.4
 		}
 	}
-	focus = {
-		id = UKR_place_holder_2
-		icon = GFX
-		x = 10
-		y = 2
-		cost = 10
+}
+# С кейстейтом!
+focus = {
+	id = UKR_with_keystate
+	icon = GFX_real_freedom
+	cost = 1
+	available = {
+		has_war_with = A03
+	}
+	x = 12
+	y = 7
+	prerequisite = {
+		focus = UKR_secret_remilita
+	}
+	completion_reward = {
+		A04 = {
+			add_to_faction = A02
+		}
+	}
+}
 
-		prerequisite = {focus = UKR_place_holder_1}
-		completion_reward = {
+########### Ветка новые принципы
+#Новые принципы
+focus = {
+	id = UKR_new_principes
+	icon = GFX_real_freedom
+	cost = 4
+	x = 21
+	y = 4
+	completion_reward = { }
+}
+#Разорвать цикл!
+focus = {
+	id = UKR_down_cicle
+	icon = GFX_real_freedom
+	cost = 4
+	x = 21
+	y = 5
+	prerequisite = {
+		focus = UKR_new_principes
+	}
+	completion_reward = { }
+}
+#План "Восток" ### (Расширение инфры на востоке)
+focus = {
+	id = UKR_east_plan
+	icon = GFX_real_freedom
+	cost = 2
+	x = 28
+	y = 6
+	prerequisite = {
+		focus = UKR_down_cicle
+	}
+	completion_reward = {
+		193 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+			}
+		}
+		259 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+			}
+		}
+		203 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+			}
+		}
+		202 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+			}
+		}
+		hidden_effect = {
+			country_event = ukraina.3
 		}
 	}
+}
+################# Сместиться к западу!
+focus = { 
+id = UKR_move_to_west
+	icon = GFX_real_freedom
+	cost = 100
+	x = 24
+	y = 7
+	available = {
+		always = no
 	}
+	prerequisite = {
+		focus = UKR_east_plan
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = reactionism
+			popularity = 0.1 
+		}
+		202 = {
+			set_building_level = {
+				type = infrastructure
+				level = 5
+			}
+		}
+		201 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		198 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		199 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+	}
+}
+focus = {
+	id = UKR_batkivshina
+	icon = GFX_real_freedom
+	cost = 5
+	x = 24
+	y = 8
+	prerequisite = {
+		focus = UKR_move_to_west
+	}
+	completion_reward = {
+		set_politics = {
+			ruling_party = reactionism
+		}
+	}
+}
+#Права женщин
+focus = {
+	id = UKR_women_rights
+	icon = GFX_real_freedom
+	cost = 4
+	x = 24
+	y = 9
+	prerequisite = {
+		focus = UKR_batkivshina
+	}
+	completion_reward = { }
+}
+###Дружба со всеми
+focus = {
+	id = UKR_frendship_with_evb
+	icon = GFX_real_freedom
+	cost = 5
+	x = 26
+	y = 9
+	prerequisite = {
+		focus = UKR_batkivshina
+		focus = UKR_neutrality_is_better
+	}
+	completion_reward = {
+		add_political_power = 1000
+	}
+}
+
+
+
+
+############ Торговая артерия
+focus = {
+	id = UKR_torg_arteria
+	icon = GFX_real_freedom
+	cost = 100
+	x = 32
+	y = 7
+	prerequisite = {
+		focus = UKR_east_plan
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = Centrism
+			popularity = 0.1
+		}
+		193 = {
+			set_building_level = {
+				type = infrastructure
+				level = 4
+			}
+		}
+		259 = {
+			set_building_level = {
+				type = infrastructure
+				level = 4
+			}
+		}
+		203 = {
+			set_building_level = {
+				type = infrastructure
+				level = 5
+			}
+		}
+		202 = {
+			set_building_level = {
+				type = infrastructure
+				level = 5
+			}
+		}
+	}
+}
+######## Нейтралитет лучше!
+focus = {
+	id = UKR_neutrality_is_better
+	icon = GFX_real_freedom
+	cost = 5
+	x = 28
+	y = 8
+	prerequisite = {
+		focus = UKR_torg_arteria
+	}
+	mutually_exclusive = {
+		focus = UKR_invite_friends
+	}
+	completion_reward = {
+		add_political_power = 100
+		set_politics = {
+			ruling_party = Centrism
+		}
+	}
+}
+#Оставаться буфером
+focus = {
+	id = UKR_stay_bufer
+	icon = GFX_real_freedom
+	cost = 4
+	x = 28
+	y = 9
+	prerequisite = {
+		focus = UKR_neutrality_is_better
+	}
+	mutually_exclusive = {
+		focus = UKR_to_OVZ
+	}
+	completion_reward = { }
+}
+
+####### Позвать друзей (Эммигранты в РФ)
+focus = {
+	id = UKR_invite_friends
+	icon = GFX_real_freedom
+	cost = 5
+	x = 32
+	y = 8
+	prerequisite = {
+		focus = UKR_torg_arteria
+	}
+	mutually_exclusive = {
+		focus = UKR_neutrality_is_better
+	}
+	completion_reward = {
+		set_party_name = {
+			ideology = Centrism
+			long_name = UKR_Centrism_OPFL_II_long
+			name = UKR_Centrism_OPFL_II
+		}
+		set_politics = {
+			ruling_party = Centrism
+		}
+	}
+}
+#Интеграция в РФ
+focus = {
+	id = UKR_to_RF
+	icon = GFX_real_freedom
+	cost = 4
+	x = 32
+	y = 9
+	mutually_exclusive = {
+		focus = UKR_to_OVZ
+	}
+	prerequisite = {
+		focus = UKR_invite_friends
+	}
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+#Инвестиции ОВЗ II
+focus = {
+	id = UKR_ovz_invests_II
+	icon = GFX_real_freedom
+	cost = 5
+	x = 31
+	y = 10
+	prerequisite = {
+		focus = UKR_invite_friends
+	}
+	prerequisite = {
+		focus = UKR_to_OVZ
+		focus = UKR_to_RF
+	}
+	completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+	}
+}
+#Интеграция в ОВЗ
+focus = {
+	id = UKR_to_OVZ
+	icon = GFX_real_freedom
+	cost = 4
+	x = 30
+	y = 9
+	prerequisite = {
+		focus = UKR_invite_friends
+		focus = UKR_neutrality_is_better
+	}
+	mutually_exclusive = {
+		focus = UKR_stay_bufer
+	}
+	mutually_exclusive = {
+		focus = UKR_to_RF
+	}
+	completion_reward = {
+		A04 = {
+			add_to_faction = A03
+		}
+	}
+}
+
+
+
+######### Подветка инвестиций
+focus = {
+	id = UKR_invests
+	icon = GFX_real_freedom
+	cost = 10
+	x = 20
+	y = 6
+	prerequisite = {
+		focus = UKR_down_cicle
+		focus = UKR_hello_again
+	}
+	completion_reward = {
+		add_political_power = 100
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+	}
+}
+#Инвестиции Кейстейта
+focus = {
+	id = UKR_kst_invests
+	icon = GFX_real_freedom
+	cost = 10
+	x = 19
+	y = 7
+	prerequisite = {
+		focus = UKR_invests
+	}
+	completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+	}
+} 
+#Инвестиции ОВЗ
+focus = {
+	id = UKR_ovz_invests
+	icon = GFX_real_freedom
+	cost = 10
+	x = 21
+	y = 7
+	prerequisite = {
+		focus = UKR_invests
+	}
+	completion_reward = {
+		random_owned_state = {
+			add_resource = {
+				type = steel
+				amount = 35
+			}
+			add_resource = {
+				type = oil
+				amount = 20
+			}
+		}
+		random_owned_state = {
+			add_resource = {
+				type = steel
+				amount = 35
+			}
+			add_resource = {
+				type = oil
+				amount = 20
+			}
+		}
+		random_owned_state = {
+			add_resource = {
+				type = steel
+				amount = 35
+			}
+			add_resource = {
+				type = oil
+				amount = 20
+			}
+		}
+	}
+}
+#################### ВЕТКА ВОССТАНОВЛЕНИЕ ПОСЛЕ СВО
+### Восстановить страну
+focus = {
+	id = UKR_after_smo
+	icon = GFX_real_freedom
+	cost = 5
+	x = 5
+	y = 5
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = idea_UKR_afterwar_I
+			add_idea = idea_UKR_afterwar_II
+		}
+	}
+}
+#План реконструкции
+focus = {
+	id = UKR_reconstr_plan
+	icon = GFX_real_freedom
+	cost = 5
+	x = 5
+	y = 6
+	available = {
+		has_war = no
+	}
+	prerequisite = {
+		focus = UKR_after_smo
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = idea_UKR_afterwar_II
+			add_idea = idea_UKR_afterwar_III
+		}
+	}
+}
+#Привлечь корпорации
+focus = {
+	id = UKR_invit_corps
+	icon = GFX_real_freedom
+	cost = 5
+	x = 5
+	y = 7
+	available = {
+		has_war = no
+	}
+	prerequisite = {
+		focus = UKR_reconstr_plan
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = idea_UKR_afterwar_III
+			add_idea = idea_UKR_afterwar_IV
+		}
+	}
+}
+#Восстановить промышленность
+focus = {
+	id = UKR_get_back_prom
+	icon = GFX_real_freedom
+	cost = 5
+	x = 5
+	y = 8
+	available = {
+		has_war = no
+	}
+	prerequisite = {
+		focus = UKR_invit_corps
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = idea_UKR_afterwar_IV
+			add_idea = idea_UKR_afterwar_V
+		}
+	}
+}
+#Вернуть малый бизнес
+focus = {
+	id = UKR_get_back_litebuis
+	icon = GFX_real_freedom
+	cost = 5
+	x = 5
+	y = 9
+	available = {
+		has_war = no
+	}
+	prerequisite = {
+		focus = UKR_get_back_prom
+	}
+	prerequisite = {
+		focus = UKR_research_II
+	}
+	prerequisite = {
+		focus = UKR_reconst_II
+	}
+	completion_reward = {
+		remove_ideas = idea_UKR_afterwar_V
+	}
+}
+#Исследования
+focus = {
+	id = UKR_research_I
+	icon = GFX_real_freedom
+	cost = 3
+	x = 7
+	y = 6
+	available = {
+		has_war = no
+	}
+	prerequisite = {
+		focus = UKR_after_smo
+	}
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+focus = {
+	id = UKR_research_II
+	icon = GFX_real_freedom
+	cost = 3
+	x = 7
+	y = 8
+	prerequisite = {
+		focus = UKR_research_I
+	}
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+#Реконструкции
+focus = {
+	id = UKR_reconst_I
+	icon = GFX_real_freedom
+	cost = 3
+	x = 3
+	y = 7
+	prerequisite = {
+		focus = UKR_reconstr_plan
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+	}
+}
+focus = {
+	id = UKR_reconst_II
+	icon = GFX_real_freedom
+	cost = 3
+	x = 3
+	y = 8
+	prerequisite = {
+		focus = UKR_reconst_I
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+	}
+}
+
+}

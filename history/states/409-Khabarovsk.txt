@@ -2,17 +2,17 @@
 state = {
 	id = 409
 	name = "STATE_409"
-	manpower = 295605
+	manpower = 112345
 	resources = {
 		chromium = 9 # was: 12
 	}
 	
-	state_category = rural
+	state_category = city
 
 	history = {
 		owner = A03
 		victory_points = {
-			12189 1
+			12189 10
 		}
 		buildings = {
 			infrastructure = 2

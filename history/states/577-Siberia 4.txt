@@ -1,13 +1,13 @@
 
 state = { 
 	id = 577 # Surgut
-	manpower = 29299
+	manpower = 781000
 	name = "STATE_577"
 	resources = {
 		oil=13 # was: 14
 	}
 	
-	state_category = pastoral
+	state_category = large_city
 
 	history = {
 		owner = A03

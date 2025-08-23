@@ -1,1 +1,266 @@
-﻿
+﻿add_namespace = usa
+
+	#Договор с Ираном
+	country_event = {
+		id = usa.1
+		title = usa.1t
+		desc = usa.1d
+		picture = GFX_24_Fail ##Replace suka
+		is_triggered_only = yes
+		option = { #Мир
+			name = usa.1a
+			A07 = {
+				white_peace = A60
+			}
+			A95 = {
+				white_peace = A60
+			}
+		}
+		option = { #Продолжить войну
+			name = usa.1b
+			A07 = {
+				add_war_support = -0.2
+			}
+		}
+	}
+
+	#Судьба Канады
+	country_event = {
+		id = usa.2
+		title = usa.2t
+		desc = usa.2d 
+		picture = GFX_BRICS #REPLACE SUCHKA!!!
+		trigger = {
+			has_completed_focus = USA_can_quest
+		}
+		is_triggered_only = yes
+		option = { #Не время терять союзников
+			name = usa.2a
+			add_political_power = 150
+		}
+		option = { #Потребуем Острова на севере
+			name = usa.2b 	
+			A40 = {
+				country_event = canada.1
+			}
+		}
+		option = { #Время сменить флаг
+			name = usa.2c
+			A40 = {
+				country_event = canada.2
+			}
+		}
+	}
+
+	#Предложение по компромиссу
+	country_event = {
+		id = usa.3
+		title = usa.3t
+		desc = usa.3d 
+		is_triggered_only = yes
+		picture = GFX_idea_YUG_ikarus # R E P L A C E
+		option = { #Автономия? Можно.
+			name = usa.3a 
+			A07 = {
+				puppet = {
+					target = A40
+				}
+			}
+		}
+		option = { #Хватитит болтать!
+			name = usa.3b 
+			A07 = {
+				create_wargoal = {
+					target = A40 
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	country_event = { #Маск
+		id = usa.4
+		title = usa.4t
+		desc = usa.4d 
+		trigger = {
+			has_completed_focus = USA_mask
+		}
+		is_triggered_only = yes
+		option = { #Маск балабол!
+			name = usa.4a 
+			A07 = {
+				complete_national_focus = USA_if_mask_pidor
+				remove_ideas = idea_USA_Mask_II
+				remove_ideas = idea_USA_Mask_I
+			}
+		}
+		option = { #Пусть помирятся!
+			name = usa.4b
+			A07 = {
+				swap_ideas = {
+					remove_idea = idea_USA_Mask_I
+					add_idea = idea_USA_Mask_II
+				}
+			}
+		}
+	}
+
+	country_event = { #Гренландия
+		id = usa.5
+		title = usa.5t
+		desc = usa.5d
+		trigger = {
+			has_completed_focus = USA_greenland
+		}
+		is_triggered_only = no
+		option = { #Предложить выкуп
+			name = usa.5a
+			A28 = {
+				add_political_power = 10
+				country_event = denmark.1
+			}
+			A07 = {
+				add_political_power = -10
+			}
+		}
+		option = { #Оставить попытки
+			name = usa.5b
+			add_political_power = -100
+		}
+	}
+
+
+	################# МЕЖАМЕРИКА
+	country_event = {
+		id = usa.6
+		title = usa.6t
+		desc = usa.6d
+		trigger = {
+			A07 = {
+				has_completed_focus = USA_mezhamer
+			}
+			or = {
+				tag = A40
+				tag = A44
+				tag = A46
+				tag = A48
+				tag = A49
+				tag = A57
+				tag = A59	
+			}
+		}
+		is_triggered_only = no
+		option = { #Гаранты
+			name = usa.6a
+			if = {
+				limit = { tag = A40 }
+				A07 = {
+					give_guarantee = A40
+				}
+			}
+			if = {
+				limit = { tag = A44 }
+				A07 = {
+					give_guarantee = A44
+				}
+			}
+			if = {
+				limit = { tag = A46 }
+				A07 = {
+					give_guarantee = A46
+				}
+			}
+			if = {
+				limit = { tag = A48 }
+				A07 = {
+					give_guarantee = A48
+				}
+			}
+			if = {
+				limit = { tag = A49 }
+				A07 = {
+					give_guarantee = A49
+				}
+			}
+			if = {
+				limit = { tag = A57 }
+				A07 = {
+					give_guarantee = A57
+				}
+			}
+			if = {
+				limit = { tag = A59 }
+				A07 = {
+					give_guarantee = A59
+				}
+			}
+			root = {
+				add_ideas = idea_mezhamer_I
+			}
+		}
+		option = { #В Альянс!
+			name = usa.6b
+			root = {
+				add_to_faction = A07
+				add_ideas = idea_mezhamer_I
+			}
+		}
+	}
+
+	#Аляска
+	country_event = {
+		id = usa.7
+		title = usa.7t
+		desc = usa.7d
+		is_triggered_only = yes
+		option = { #YEP
+			name = usa.7a
+			A03 = {
+				transfer_state = 463
+				transfer_state = 650
+				add_political_power = -100
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 7
+			}
+			random_core_state = {
+				add_resource = {
+					type = steel
+					amount = 35
+				}
+			}
+		}
+		option = { #NO
+			name = usa.7b
+			add_political_power = 10
+		}
+	}
+
+	country_event = {
+		id = usa.8
+		title = usa.8t
+		desc = usa.8d
+		is_triggered_only = yes
+		option = { #YEP
+			name = usa.8a
+			A03 = {
+				transfer_state = 629
+				add_political_power = -100
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			random_core_state = {
+				add_resource = {
+					type = steel
+					amount = 35
+				}
+			}
+		}
+		option = { #NO
+			name = usa.8b
+			add_political_power = 10
+		}
+	}

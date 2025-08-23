@@ -1,4 +1,4 @@
-equipment = {
+equipments = {
 	infantry_equipment = {
 		year = 1990
 	

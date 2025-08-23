@@ -2,8 +2,8 @@
 state = {
 	id = 563
 	name = "STATE_563" # Chita
-	manpower = 1044310
-	state_category = rural
+	manpower = 788513
+	state_category = town
 	resources = {
 		steel=9 # was: 12
 		chromium=8 # was: 10
@@ -12,7 +12,7 @@ state = {
 	history = {
 		owner = A03
 		victory_points = {
-			4705 1 
+			4705 7 
 		}
 		buildings = {
 			infrastructure = 2

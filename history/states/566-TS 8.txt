@@ -2,7 +2,7 @@ state={
 	id=566
 	name="STATE_566" #Irktusk
 	
-	state_category = rural
+	state_category = city
 	resources={
 		steel=20 # was: 28.000
 		aluminium=7 # was: 10.000
@@ -11,10 +11,10 @@ state={
 	history={
 		owner = A03
 		victory_points = {
-			4797 3 
+			4797 15 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			arms_factory = 1
 			air_base = 1
 
@@ -26,7 +26,7 @@ state={
 	provinces={
 		1707 1727 1829 4797 4815 7838 10596 10661 12525 12540 12647 
 	}
-	manpower=755237
+	manpower=1765615
 	buildings_max_level_factor=1.000
 
 	local_supplies=0.0 

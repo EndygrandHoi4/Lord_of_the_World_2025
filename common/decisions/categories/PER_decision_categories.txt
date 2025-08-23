@@ -1,0 +1,8 @@
+IRA_politics_decision_category = {
+	visible = {
+		A60 = {
+			exists = yes
+		}
+	}
+	icon = GFX_real_freedom
+}

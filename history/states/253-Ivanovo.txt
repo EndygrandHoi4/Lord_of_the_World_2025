@@ -1,10 +1,10 @@
-
+#Vladimir
 state={
 	id=253
 	name="STATE_253"
 	manpower = 2585987
 	
-	state_category = town
+	state_category = city
 
 	history={
 		owner = A03
@@ -13,7 +13,13 @@ state={
 		}
 		add_core_of = A03
 		victory_points = {
-			6269 3
+			6135 10 #Kostroma
+		}
+		victory_points = {
+			378 10 #Vladimir
+		}
+		victory_points = {
+			6269 10 #Ivanovo
 		}
 	}
 

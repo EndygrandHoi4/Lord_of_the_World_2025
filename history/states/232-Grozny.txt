@@ -1,9 +1,9 @@
 state = {
 	id = 232
 	name = "STATE_232" #Dagestan
-	manpower = 1358292
+	manpower = 3259890
 	
-	state_category = rural
+	state_category = city
 	
 	resources = {
 		oil = 10 # was: 26 and then 19, but was split into 2 different states
@@ -18,11 +18,11 @@ state = {
 		}
 
 		victory_points = {
-			6701 3 # Makhachkala
+			6701 30 # Makhachkala
 		}
 
 		victory_points = {
-			7624 1 # Derbent
+			7624 10 # Derbent
 		}
 
 		add_core_of = A03

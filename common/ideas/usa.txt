@@ -1,0 +1,187 @@
+ideas = {
+	country = {
+		####### Внешняя политика
+		idea_USA_ext_polit_I = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				political_power_factor = -0.05
+			}
+		}
+		idea_USA_ext_polit_II = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				political_power_factor = -0.05
+				war_support_factor = 0.05
+			}
+		}
+		idea_USA_ext_polit_III = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				political_power_factor = -0.1
+				war_support_factor = 0.1
+			}
+		}
+
+		####### Внутренний кризис
+		idea_USA_int_crisis_I = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				political_power_factor = -0.3
+				stability_factor = -0.3
+				consumer_goods_factor = 1
+			}
+		}
+		idea_USA_int_crisis_II = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.2
+				consumer_goods_factor = 0.6
+			}
+		}
+		idea_USA_int_crisis_III = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.2
+				consumer_goods_factor = 0.6
+			}
+		}
+		idea_USA_int_crisis_IV = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				consumer_goods_factor = 0.3
+			}
+		}
+		### Макс
+		idea_USA_Mask_I = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				political_power_factor = 0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		idea_USA_Mask_II = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				political_power_factor = -0.15
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		idea_USA_Mask_III = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				political_power_factor = 0.1
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.5
+			}
+		}
+		###############
+		#   ПОШЛИНЫ   #
+		###############
+		idea_upcost_USA_I = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.1
+			}
+		}
+		idea_upcost_USA_II = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_real_freedom
+			modifier = {
+				consumer_goods_factor = 0.25
+				political_power_gain = -0.3
+			}
+		}
+
+		########### МЕЖАМЕРИКА
+		idea_mezhamer_I = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_24_Fail
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		idea_mezhamer_II = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_24_Fail
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		idea_mezhamer_III = {
+			allowed = {
+				exists = yes
+			}
+			removal_cost = -1
+			picture = GFX_24_Fail
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.1
+				experience_gain_army_factor = 0.1
+				army_attack_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+	}
+}

@@ -1,9 +1,9 @@
 state = {
 	id = 251
 	name = "STATE_251"
-	manpower = 1391819
+	manpower = 3112566
 	
-	state_category = town
+	state_category = metropolis
 
 	history = {
 
@@ -11,7 +11,7 @@ state = {
 		add_core_of = A03
 
 		victory_points = {
-			11225 3 # Kuybyshev
+			11225 30 # Kuybyshev
 		}
 
 		buildings = {
@@ -22,12 +22,6 @@ state = {
 			# Kuybyshev Hydroelectric Station
 			#6275 = { dam = 1 }
 
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-			}
 		}
 	}
 

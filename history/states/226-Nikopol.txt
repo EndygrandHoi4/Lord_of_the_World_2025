@@ -2,7 +2,7 @@
 state={
 	id=226
 	name="STATE_226" # Dnipropertovsk
-	manpower = 2391047
+	manpower = 1000000
 	
 	state_category = town
 	
@@ -12,12 +12,6 @@ state={
 
 	history={
 		owner = A04
-		victory_points = {
-			11437 10 
-		}
-		victory_points = {
-			11561 1
-		}
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
@@ -28,7 +22,7 @@ state={
 	}
 
 	provinces={
-		453 472 486 6423 9419 9433 9463 9479 11422 11437 11452 11561 
+		6423 9419 9433 11422 11437 11561 
 	}
 
 	local_supplies=0.0 
