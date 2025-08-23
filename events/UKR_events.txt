@@ -56,6 +56,11 @@ add_namespace = ukraina
 		title = ukraina.3t
 		desc = ukraina.3d
 		is_triggered_only = yes
+		trigger = {
+			A04 = {
+				has_completed_focus = UKR_east_plan
+			}
+		}
 		option = { #Сместиться на запад!
 			name = ukraina.3a 
 			A04 = {
@@ -75,6 +80,9 @@ add_namespace = ukraina
 		title = ukraina.4t 
 		desc = ukrain.4d 
 		is_triggered_only = yes
+		trigger = {
+			has_completed_focus = UKR_secret_remilita
+		}
 		option = { #Залужный
 			name = ukraina.4a
 			A04 = {

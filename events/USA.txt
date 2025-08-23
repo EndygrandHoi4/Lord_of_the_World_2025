@@ -7,6 +7,9 @@
 		desc = usa.1d
 		picture = GFX_24_Fail ##Replace suka
 		is_triggered_only = yes
+		trigger = {
+			always = no
+		}
 		option = { #Мир
 			name = usa.1a
 			A07 = {
@@ -59,6 +62,9 @@
 		desc = usa.3d 
 		is_triggered_only = yes
 		picture = GFX_idea_YUG_ikarus # R E P L A C E
+		trigger = {
+			always = no
+		}
 		option = { #Автономия? Можно.
 			name = usa.3a 
 			A07 = {
@@ -213,6 +219,9 @@
 		title = usa.7t
 		desc = usa.7d
 		is_triggered_only = yes
+		trigger = {
+			always = no
+		}
 		option = { #YEP
 			name = usa.7a
 			A03 = {
@@ -242,6 +251,9 @@
 		title = usa.8t
 		desc = usa.8d
 		is_triggered_only = yes
+		trigger = {
+			always = no
+		}
 		option = { #YEP
 			name = usa.8a
 			A03 = {

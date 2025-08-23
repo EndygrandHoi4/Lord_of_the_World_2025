@@ -6,6 +6,9 @@ add_namespace = canada
 		title = canada.1t
 		desc = canada.1d
 		is_triggered_only = yes
+		trigger = {
+			always = no
+		}
 		picture = GFX_For_Homeland #replace
 		option = { #Отдать
 			name = canada.1a
@@ -36,6 +39,9 @@ add_namespace = canada
 		title = canada.2t 
 		desc = canada.2d 
 		is_triggered_only = yes
+		trigger = {
+			always = no
+		}
 		picture = GFX_Negotiation_2 # REPLAAAAAAACE PLZ
 		option = { #Война не стоит жертв... 
 			name = canada.2a

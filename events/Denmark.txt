@@ -5,6 +5,9 @@ add_namespace = denmark
 		title = denmark.1t
 		desc = denamrk.1d
 		is_triggered_only = no
+		trigger = {
+			always = no	
+		}
 		option = { #Это смешно!
 			name = denmark.1a
 			A07 = {

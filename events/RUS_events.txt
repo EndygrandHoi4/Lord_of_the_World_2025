@@ -247,10 +247,13 @@ add_namespace = russia
 	}
 	
 	#Ивент - предложение автономии
-	country_event = { #A14, A15, A16, A31, B03, B05, B06, B07
+	country_event = { # A14, A15, A16, A31, B03, B05, B06, B07
 		id = russia.12
 		title = russia.12t
 		desc = russia.12d
+		trigger = {
+			always = no
+		}
 		is_triggered_only = no
 		option = { #Ok
 			name = russia.12a
@@ -723,6 +726,9 @@ add_namespace = russia
 		id = russia.18
 		title = russia.18t
 		desc = russia.18d
+		trigger = {
+			always = no
+		}
 		is_triggered_only = no
 		option = { #Кандидат от Единой России - Путин!
 			name = russia.18a
@@ -764,6 +770,9 @@ add_namespace = russia
 		id = russia.19
 		title = russia.19t
 		desc = russia.19d
+		trigger = {
+			always = no
+		}
 		is_triggered_only = no
 		option = { #Кандидат ЛДПР - Слуцкий!
 			name = russia.19a
@@ -805,6 +814,9 @@ add_namespace = russia
 		id = russia.20
 		title = russia.20t
 		desc = russia.20d
+		trigger = {
+			always = no
+		}
 		is_triggered_only = yes
 		option = { # Профинансируем переход
 			name = russia.20a
