@@ -1,0 +1,487 @@
+focus_tree = {
+	id = eu_focuses
+	country = {
+		factor = 0
+		modifier = {
+			tag = E10
+			add = 10
+		}
+	}
+
+#Взгляд на СВО
+focus = {
+	id = EU_SMO
+	icon = GFX_real_freedom
+	cost = 142.8
+	x = 5
+	y = 2
+	cancel = {
+		A04 = {
+			has_war_with = A03
+		}
+	}
+	cancel_if_invalid = yes
+	cancel_effect = {
+		news_event = kst.1
+	}
+	cancelable = no
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+########## Ветка ЕС
+focus = {
+	id = EU_autobans
+	icon = GFX_real_freedom
+	cost = 5
+	x = 10
+	y = 1
+	completion_reward = {
+		every_country = {
+			if = {
+				limit = {
+					has_idea = idea_EU_countries
+				}
+				random_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+				random_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+				random_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+			}
+		}
+	}
+}
+#Мы не можем пасть!
+focus = {
+	id = EU_we_cant_fall
+	icon = GFX_real_freedom
+	cost = 5
+	x = 10
+	y = 2
+	prerequisite = {
+		focus = EU_autobans
+	}
+	available = {
+		has_completed_focus = EU_SMO
+	}
+	completion_reward = {
+		A05 = {
+			remove_ideas = idea_EU_countries
+		}
+		A12 = {
+			remove_ideas = idea_EU_countries
+		}
+		A14 = {
+			remove_ideas = idea_EU_countries
+		}
+		A15 = {
+			remove_ideas = idea_EU_countries
+		}
+		A16 = {
+			remove_ideas = idea_EU_countries
+		}
+		A25 = {
+			remove_ideas = idea_EU_countries
+		}
+		A27 = {
+			remove_ideas = idea_EU_countries
+		}
+		A29 = {
+			remove_ideas = idea_EU_countries
+		}
+		A33 = {
+			remove_ideas = idea_EU_countries
+		}
+	}
+}
+#Старые друзсья (Бритиш)
+focus = {
+	id = EU_old_teamates
+	icon = GFX_real_freedom
+	cost = 5
+	x = 10
+	y = 3
+	prerequisite = {
+		focus = EU_we_cant_fall
+	}
+	completion_reward = {
+		A02 = {
+			add_ideas = idea_EU_countries
+		}
+	}
+}
+#Секретные инсайды (О сахалинском договоре)
+focus = {
+	id = EU_a_secret_insides
+	icon = GFX_real_freedom
+	cost = 142.9
+	x = 10
+	y = 4
+	prerequisite = {
+		focus = EU_old_teamates
+	}
+	completion_reward = { }
+}
+
+
+
+
+
+
+
+################# Ветка ЕС сахпакта (К кейстейту!)
+focus = {
+	id = EU_sakh_pact
+	icon = GFX_sakhalin_pact
+	cost = 1
+	x = 15
+	y = 1
+	available = {
+		always = no
+	}
+	completion_reward = {
+		#pisun666
+	}
+}
+#неоЕС
+focus = {
+	id = EU_neoEU
+	icon = GFX_real_freedom
+	cost = 5
+	x = 15
+	y = 2
+	prerequisite = {
+		focus = EU_sakh_pact
+	}
+	completion_reward = {
+		A02 = {
+			create_faction = eu_faction
+		}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = idea_EU_countries
+					NOT = {
+						tag = A02
+					}
+				}
+				add_to_faction = A02
+			}
+		}
+	}
+}
+#Секретные пакты
+focus = {
+	id = EU_secret_deals
+	icon = GFX_real_freedom
+	cost = 5
+	x = 15
+	y = 3
+	prerequisite = {
+		focus = EU_neoEU
+	}
+	completion_reward = {
+		every_country = {
+			if = {
+				limit = {
+					has_idea = idea_EU_countries
+				}
+				add_political_power = 100
+			}
+		}
+	}
+}
+#Дела с [Вставте страну из заголовка фокуса]
+focus = {
+	id = EU_deals_with_France
+	icon = GFX_real_freedom
+	cost = 3
+	x = 12
+	y = 4
+	prerequisite = {
+		focus = EU_secret_deals
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	completion_reward = { }
+}
+focus = {
+	id = EU_deals_with_England
+	icon = GFX_real_freedom
+	cost = 3
+	x = 14
+	y = 4
+	prerequisite = {
+		focus = EU_secret_deals
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	completion_reward = { }
+}
+focus = {
+	id = EU_deals_with_Germany
+	icon = GFX_real_freedom
+	cost = 3
+	x = 16
+	y = 4
+	prerequisite = {
+		focus = EU_secret_deals
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	completion_reward = { }
+}
+focus = {
+	id = EU_deals_with_USA
+	icon = GFX_real_freedom
+	cost = 3
+	x = 18
+	y = 4
+	prerequisite = {
+		focus = EU_secret_deals
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	completion_reward = { }
+}
+#Французская энергетика
+focus = {
+	id = EU_FRA_connect
+	icon = GFX_real_freedom
+	cost = 3
+	x = 12
+	y = 5
+	prerequisite = {
+		focus = EU_deals_with_France
+	}
+	available = {
+		always = no
+	}
+	completion_reward = { }
+}
+#Британское влияние
+focus = {
+	id = EU_ENG_connect
+	icon = GFX_real_freedom
+	cost = 3
+	x = 14
+	y = 5
+	prerequisite = {
+		focus = EU_deals_with_England
+	}
+	available = {
+		always = no
+	}
+	completion_reward = { }
+}
+#Немецкое вооружение
+focus = {
+	id = EU_GER_connect
+	icon = GFX_real_freedom
+	cost = 3
+	x = 16
+	y = 5
+	prerequisite = {
+		focus = EU_deals_with_Germany
+	}
+	available = {
+		always = no
+	}
+	completion_reward = { }
+}
+#Задобрить США
+focus = {
+	id = EU_USA_connect
+	icon = GFX_real_freedom
+	cost = 3
+	x = 18
+	y = 5
+	prerequisite = {
+		focus = EU_deals_with_USA
+	}
+	available = {
+		always = no
+	}
+	completion_reward = { }
+}
+#Резкая милитаризация
+focus = {
+	id = EU_supermilita_UKR
+	icon = GFX_real_freedom
+	cost = 5
+	x = 15
+	y = 6
+	prerequisite = {
+		focus = EU_ENG_connect
+		focus = EU_FRA_connect
+		focus = EU_GER_connect
+		focus = EU_USA_connect
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	completion_reward = {
+		89 = {
+			transfer_state_to = E12
+		}
+		91 = {
+			transfer_state_to = E12
+		}
+		80 = {
+			transfer_state_to = E12
+		}
+		93 = {
+			transfer_state_to = E12
+		}
+		199 = {
+			transfer_state_to = E12
+		}
+		if = {
+			limit = {
+				A04 = {
+					or = {
+						has_completed_focus = UKR_move_to_west
+						has_completed_focus = UKR_secret_remilita
+					}
+				}
+			}
+			201 = {
+				transfer_state_to = E12
+			}
+			198 = {
+				transfer_state_to = E12
+			}
+			A04 = {
+				set_capital = {
+					state = 1018
+				}
+			}
+		}
+		if = {
+			limit = {
+				A04 = {
+					has_completed_focus = UKR_secret_remilita
+				}
+			}
+			202 = {
+				transfer_state_to = E12
+			}
+		}
+		E12 = {
+			add_timed_idea = {
+				idea = idea_KST_extra_mobilisation
+				days = 240
+			}
+			add_manpower = 2000000
+			send_equipment = {
+				amount = 1000000
+				target = E12
+				equipment = infantry_equipment_4
+			}
+			send_equipment = {
+				amount = 100000
+				target = E12
+				equipment = support_equipment_4
+			}
+		}
+	}
+}
+#Надавить на Скандинавов
+focus = {
+	id = EU_skandinavia
+	icon = GFX_real_freedom
+	cost = 5
+	x = 15
+	y = 7
+	prerequisite = {
+		focus = EU_supermilita_UKR
+	}
+	completion_reward = {
+		A05 = {
+			country_event = kst.2
+		}
+		A27 = {
+			country_event = kst.2
+		}
+	}
+}
+#В атаку, кейстейт!
+focus = {
+	id = EU_atack
+	icon = GFX_real_freedom
+	cost = 1
+	x = 15
+	y = 8
+	prerequisite = {
+		focus = EU_skandinavia
+	}
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_completed_focus = EU_FRA_connect
+			}
+			E12 = {
+				add_ideas = idea_KST_FRA
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = EU_ENG_connect
+			}
+			E12 = {
+				add_ideas = idea_KST_ENG
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = EU_GER_connect
+			}
+			E12 = {
+				add_ideas = idea_KST_GER
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = EU_USA_connect
+			}
+			E12 = {
+				add_ideas = idea_KST_USA
+			}
+		}
+		E12 = {
+			modify_timed_idea = {
+				idea = idea_KST_extra_mobilisation
+				days = 200
+			}
+			declare_war_on = {
+				target = A04
+			}
+			declare_war_on = {
+				target = A03
+			}
+			add_to_faction = A02
+		}
+	}
+}
+}
