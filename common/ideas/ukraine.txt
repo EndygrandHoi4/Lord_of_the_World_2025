@@ -150,5 +150,75 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 			}
 		}
+
+		################ КЕЙСТЕЙТ
+		#Экстренная мобилизация
+		idea_KST_extra_mobilisation = {
+			allowed = {
+				tag = E12
+			}
+			removal_cost = -1
+			# picture = 
+			modifier = {
+				production_factory_efficiency_gain_factor = 1.0
+				production_factory_start_efficiency_factor = 1.0
+				production_factory_max_efficiency_factor = 1.0
+				training_time_factor = -1.0
+				army_speed_factor = 1.0
+				weekly_manpower = 1.0
+			}
+		}
+		#Французская Энергетика
+		idea_KST_FRA = {
+			allowed = {
+				tag = E12
+			}
+			removal_cost = -1
+			# picture = 
+			modifier = {
+				army_speed_factor = 0.5
+				army_org_factor = 0.25
+				training_time_factor = -0.5
+				production_factory_efficiency_gain_factor = 0.5
+			}
+		}
+		#Британское влияние
+		idea_KST_ENG = {
+			allowed = {
+				tag = E12
+			}
+			removal_cost = -1
+			# picture = 
+			modifier = {
+				army_attack_factor = 0.25
+				weekly_manpower = 1.0
+				recon_factor = 1.0
+				enemy_local_supplies = -1.0
+			}
+		}
+		#Немецкая промышленность
+		idea_KST_GER = {
+			allowed = {
+				tag = E12
+			}
+			removal_cost = -1
+			# picture = 
+			modifier = {
+				army_attack_factor = 1.0
+				army_attack_factor = 1.0
+				production_factory_max_efficiency_factor = 1.0
+				production_factory_start_efficiency_factor = 1.0
+			}
+		}
+		idea_KST_USA = {
+			allowed = {
+				tag = E12
+			}
+			removal_cost = -1
+			# picture = 
+			modifier = {
+				army_attack_against_major_factor = 1.0
+			}
+		}
 	}
 }
