@@ -4285,21 +4285,5 @@ characters = {
 		}
 	}
 
-	SOV_vladimir_kotelnikov = {
-		name = SOV_vladimir_kotelnikov
-		portraits = {
-			army = {
-				large = GFX_portrait_SOV_vladimir_kotelnikov
-			}
-		}
-
-		scientist = {
-			traits = { scientist_trait_electronics_specialist }
-			skills = {
-				specialization_air = 2
-			}
-		}
-	}
-
-
+}
 }
