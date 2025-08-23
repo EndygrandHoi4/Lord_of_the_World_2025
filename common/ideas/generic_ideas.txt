@@ -110,5 +110,44 @@ ideas = {
 
 			}
 		}
+		################### ФОКУСЫ
+		############ ЛИБЕРАЛЫ
+		#Экономическая либерализация
+		idea_eco_liberalism = {
+			allowed = {
+				has_government = liberalism
+			}
+			removal_cost = -1
+			picture
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.2
+				production_factory_start_efficiency_factor = 0.5
+			}
+		}
+		#Политическое образование
+		idea_political_edu_liberalism = {
+			allowed = {
+				has_government = liberalism
+			}
+			removal_cost = -1
+			picture
+			modifier = {
+				liberalism_drift = 0.01
+				research_speed_factor = -0.1
+			}
+		}
+		########### Центризм
+		#Стимуляция экономики
+		idea_eco_centrism = {
+			allowed = {
+				has_government = Centrism
+			}
+			removal_cost = -1
+			picture
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
 	}
 }

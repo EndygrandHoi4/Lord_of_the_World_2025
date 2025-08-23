@@ -46,7 +46,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 25
+			add_stability = 0.05
 		}
 	}
 
@@ -85,7 +85,23 @@ focus_tree = {
 		cost = 10
 		x = 4
 		y = 3
-		completion_reward = { }
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				or = {
+					tag = A01
+					tag = A02
+					tag = A05
+					tag = A06
+				}
+				add = 10
+			}
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = liberalism
+			}
+		}
 	}
 
 	#Свободные выборы
@@ -98,7 +114,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	#Защита прав человека
@@ -111,7 +129,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			add_stability = 0.05
+		}
 	}
 
 	#Экономическая либерализация
@@ -124,7 +144,9 @@ focus_tree = {
 		}
 		x = 0
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = idea_eco_liberalism
+		}
 	}
 
 	#Развитие предпринимательства
@@ -137,7 +159,26 @@ focus_tree = {
 		}
 		x = 2
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+		}
 	}
 
 	#Свободная пресса
@@ -150,7 +191,10 @@ focus_tree = {
 		}
 		x = -2
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
 	}
 
 	#Законодательная прозрачность
@@ -163,7 +207,12 @@ focus_tree = {
 		}
 		x = 9
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.05
+			}
+		}
 	}
 
 	#Расширение гражданских свобод
@@ -176,7 +225,12 @@ focus_tree = {
 		}
 		x = 5
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.05
+			}
+		}
 	}
 
 	#Иностранные инвестиции
@@ -195,7 +249,22 @@ focus_tree = {
 		}
 		x = 5
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
 	}
 
 	#Сотрудничество с демократиями
@@ -211,7 +280,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	#Политическое образование
@@ -224,7 +295,9 @@ focus_tree = {
 		}
 		x = 0
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = idea_political_edu_liberalism
+		}
 	}
 
 	#Борьба с коррупцией 
@@ -240,7 +313,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	#Глобальное развитие
@@ -263,7 +338,12 @@ focus_tree = {
 		}
 		x = 4
 		y = 7
-		completion_reward = { }
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+		}
 	}
 
 	#ЛИБЕРАЛИЗМ
@@ -303,7 +383,26 @@ focus_tree = {
 		}
 		x = 19
 		y = 3
-		completion_reward = { }
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				or = {
+					tag = B07
+					tag = E11
+					tag = B04
+					tag = B05
+					tag = B38
+					tag = A22
+					tag = A33
+				}
+				add = 10
+			}
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = Centrism
+			}
+		}
 	}
 
 	#Национальное согласие
@@ -316,7 +415,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			add_stability = 0.05
+		}
 	}
 
 	#Стимулирование экономики
@@ -329,7 +430,9 @@ focus_tree = {
 		}
 		x = 23
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = idea_eco_centrism
+		}
 	}
 
 	#Умеренная социальная политика
@@ -342,7 +445,10 @@ focus_tree = {
 		}
 		x = 17
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.02
+		}
 	}
 
 	#Программа занятости
@@ -358,7 +464,12 @@ focus_tree = {
 		}
 		x = 20
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
 	}
 
 	#Образование для всех
@@ -374,7 +485,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
 	#Гибкая налоговая система
@@ -387,7 +500,13 @@ focus_tree = {
 		}
 		x = 23
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = -50
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
 	}
 
 	#Поддержка семьи
@@ -400,7 +519,13 @@ focus_tree = {
 		}
 		x = 14
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_stability = 0.3 
+			add_popularity = {
+				ideology = Centrism
+				popularity = 0.1
+			}
+		}
 	}
 
 	#Управление конфликтами
@@ -415,7 +540,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_war_support = 0.05
+		}
 	}
 
 	#Иклюзивное правительство
@@ -432,7 +559,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 7
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	#Национальные традиции
@@ -449,7 +578,12 @@ focus_tree = {
 		}
 		x = 16
 		y = 7
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = Centrism
+				popularity = 0.1
+			}
+		}
 	}
 
 	#Инфраструктурные проекты
@@ -462,7 +596,22 @@ focus_tree = {
 		}
 		x = 25
 		y = 7
-		completion_reward = { }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+				}
+			}
+		}
 	}
 
 	#укрепление безопасности
@@ -482,7 +631,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 8
-		completion_reward = { }
+		completion_reward = {
+			add_war_support = 0.05
+		}
 	}
 
 	#Центризм
@@ -522,7 +673,15 @@ focus_tree = {
 		}
 		x = 34
 		y = 3
-		completion_reward = { }
+		completion_reward = {
+			add_manpower = 1000
+			start_civil_war = {
+				ruling_party = radicalism
+				ideology = ROOT
+				size = 0.5
+				only_own_territory = no
+			}
+		}
 	}
 
 	#Радикальные реформы
@@ -535,7 +694,12 @@ focus_tree = {
 		}
 		x = 28
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
 	}
 
 	#Военная милитаризация
@@ -548,7 +712,9 @@ focus_tree = {
 		}
 		x = 40
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			add_manpower = 100000
+		}
 	}
 
 	#Идеологическая чистота
@@ -561,7 +727,13 @@ focus_tree = {
 		}
 		x = 32
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = radicalism
+				popularity = 0.25
+			}
+			add_stability = -0.25
+		}
 	}
 
 	#Государственный контроль
@@ -574,7 +746,10 @@ focus_tree = {
 		}
 		x = 36
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 1000
+			add_command_power = 100
+		}
 	}
 
 	#Пропагандистская кампания
@@ -590,7 +765,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_war_support = 0.1
+		}
 	}
 
 	#Новые лидеры
@@ -606,7 +783,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	#Экспансионистская политика
@@ -619,7 +798,9 @@ focus_tree = {
 		}
 		x = 40
 		y = 7
-		completion_reward = { }
+		completion_reward = {
+			army_experience = 100
+		}
 	}
 
 	#Секьюритизация зависимостей
@@ -632,7 +813,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 7
-		completion_reward = { }
+		completion_reward = {
+			add_command_power = 100
+		}
 	}
 
 	#Партия нового типа
@@ -646,7 +829,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 7
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	#Кибер-суверенитет
@@ -660,7 +845,10 @@ focus_tree = {
 		}
 		x = 36
 		y = 7
-		completion_reward = { }
+		completion_reward = {
+			add_stability = -0.1
+			add_command_power = 100
+		}
 	}
 
 	#Автономная экономика
@@ -677,7 +865,9 @@ focus_tree = {
 		}
 		x = 34
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			#pisun666
+		}
 	}
 
 	#Сплочение нации
@@ -697,7 +887,9 @@ focus_tree = {
 		}
 		x = 33
 		y = 8
-		completion_reward = { }
+		completion_reward = {
+			add_stability = 0.2
+		}
 	}
 
 	#Агрессия против врагов
@@ -718,6 +910,7 @@ focus_tree = {
 		x = 35
 		y = 8
 		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 
@@ -799,7 +992,22 @@ focus_tree = {
 		}
 		x = 49
 		y = 3
-		completion_reward = { }
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				or = {
+					is_puppet = yes			
+					tag = A60
+				}
+
+				add = 5
+			}
+		}
+		completion_reward = {
+			add_autonomy_score = {
+				value = 100
+			}
+		}
 	}
 
 	#Священные законы
@@ -813,7 +1021,12 @@ focus_tree = {
 		}
 		x = 43
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = theocracy
+				popularity = 0.1
+			}
+		}
 	}
 
 	#Религиозные объединения
@@ -827,7 +1040,9 @@ focus_tree = {
 		}
 		x = 55
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			add_stability = 0.1
+		}
 	}
 
 	#Образование в духе веры
@@ -841,7 +1056,9 @@ focus_tree = {
 		}
 		x = 53
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
 	#Религиозные праздники
@@ -854,7 +1071,12 @@ focus_tree = {
 		}
 		x = 45
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_manpower = 10000
+			add_autonomy_score = {
+				value = 1000
+			}
+		}
 	}
 
 	#Распространение веры
@@ -868,7 +1090,9 @@ focus_tree = {
 		}
 		x = 51
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_war_support = 0.25
+		}
 	}
 
 	#Критика светскости
@@ -882,7 +1106,11 @@ focus_tree = {
 		}
 		x = 47
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_autonomy_score = {
+				value = 100
+			}
+		}
 	}
 
 	#Святая армия
@@ -899,7 +1127,9 @@ focus_tree = {
 		}
 		x = 49
 		y = 7
-		completion_reward = { }
+		completion_reward = {
+			add_manpower = 100000
+		}
 	}
 
 	#Религиозные традиции
@@ -912,7 +1142,11 @@ focus_tree = {
 		}
 		x = 43
 		y = 8
-		completion_reward = { }
+		completion_reward = {
+			add_autonomy_score = {
+				value = 500
+			}
+		}
 	}
 
 	#Духовная дипломатия
@@ -925,7 +1159,12 @@ focus_tree = {
 		}
 		x = 47
 		y = 8
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = theocracy
+				popularity = 0.1
+			}
+		}
 	}
 
 	#Благотворительность и помощь
@@ -938,7 +1177,12 @@ focus_tree = {
 		}
 		x = 45
 		y = 8
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = theocracy
+				popularity = 0.1
+			}
+		}
 	}
 
 	#Поддержка религиозного искусства
@@ -951,7 +1195,9 @@ focus_tree = {
 		}
 		x = 55
 		y = 8
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	#Этика в экономике
@@ -964,7 +1210,12 @@ focus_tree = {
 		}
 		x = 51
 		y = 8
-		completion_reward = { }
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+		}
 	}
 
 	#Укрепление семейных ценностей
@@ -977,7 +1228,9 @@ focus_tree = {
 		}
 		x = 53
 		y = 8
-		completion_reward = { }
+		completion_reward = {
+			add_stability = 0.1
+		}
 	}
 
 	#Восстановление традиций
@@ -997,7 +1250,19 @@ focus_tree = {
 		}
 		x = 64
 		y = 3
-		completion_reward = { }
+		completion_reward = {
+			add_autonomy_score = {
+				value = 500
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			add_offsite_building = {
+				type = infrastructure
+				level = 5
+			}
+		}
 	}
 
 	#Консервативные реформы
@@ -1025,7 +1290,9 @@ focus_tree = {
 		}
 		x = 66
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			add_manpower = 10000
+		}
 	}
 
 	#Поддержка семейных ценностей
@@ -1039,7 +1306,9 @@ focus_tree = {
 		}
 		x = 64
 		y = 4.5
-		completion_reward = { }
+		completion_reward = {
+			add_stability = 0.1
+		}
 	}
 
 	#Культурное наследие
@@ -1053,7 +1322,9 @@ focus_tree = {
 		}
 		x = 60
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_war_support = 0.1
+		}
 	}
 
 	#Укрепление государственной власти
@@ -1067,7 +1338,9 @@ focus_tree = {
 		}
 		x = 68
 		y = 5
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	#Противостояние модернизму
@@ -1081,7 +1354,12 @@ focus_tree = {
 		}
 		x = 58
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = reactionism
+				popularity = 0.1
+			}
+		}
 	}
 
 	#Реставрация религиозных норм
@@ -1095,7 +1373,9 @@ focus_tree = {
 		}
 		x = 64
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	#Традиционное образование
@@ -1109,7 +1389,9 @@ focus_tree = {
 		}
 		x = 60
 		y = 7
-		completion_reward = { }
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
 	#Антиглобализм
@@ -1123,7 +1405,9 @@ focus_tree = {
 		}
 		x = 70
 		y = 6
-		completion_reward = { }
+		completion_reward = {
+			add_command_power = 100
+		}
 	}
 
 	#Экономика самообеспечения
@@ -1137,7 +1421,16 @@ focus_tree = {
 		}
 		x = 68
 		y = 7
-		completion_reward = { }
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+		}
 	}
 
 	#Защита национального рынка
@@ -1151,7 +1444,9 @@ focus_tree = {
 		}
 		x = 66
 		y = 8
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 1000
+		}
 	}
 
 	#Национальная идентичность
@@ -1165,7 +1460,12 @@ focus_tree = {
 		}
 		x = 64
 		y = 7.5
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = reactionism
+				popularity = 0.1
+			}
+		}
 	}
 
 	#Устойчивое развитие
@@ -1179,7 +1479,12 @@ focus_tree = {
 		}
 		x = 62
 		y = 8
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = reactionism
+				popularity = 0.1
+			}
+		}
 	}
 
 	#Реакционизм
@@ -1228,7 +1533,30 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 10
 		y = 12
-		completion_reward = { }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
 	}
 
 	#Централизация производства
@@ -1242,7 +1570,19 @@ focus_tree = {
 		}
 		x = 7
 		y = 13
-		completion_reward = { }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
 	}
 
 	#Государственный план развития
@@ -1256,7 +1596,30 @@ focus_tree = {
 		}
 		x = 13
 		y = 13
-		completion_reward = { }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
 	}
 
 	#Модернизация инфраструктуры
@@ -1270,7 +1633,26 @@ focus_tree = {
 		}
 		x = 10
 		y = 13
-		completion_reward = { }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+		}
 	}
 
 	#Программы субсидирования
@@ -1285,7 +1667,26 @@ focus_tree = {
 		}
 		x = 12
 		y = 14
-		completion_reward = { }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+		}
 	}
 
 	#Национализация ресурсов
@@ -1300,7 +1701,26 @@ focus_tree = {
 		}
 		x = 8
 		y = 14
-		completion_reward = { }
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = chromium
+					amount = 5
+				}
+			}
+			random_owned_state = {
+				add_resource = {
+					type = tungsten
+					amount = 5
+				}
+			}
+		}
 	}
 
 	#Создание рабочих мест
@@ -1317,7 +1737,12 @@ focus_tree = {
 		}
 		x = 10
 		y = 15
-		completion_reward = { }
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
+		}
 	}
 
 	#Поддержка инноваций
@@ -1331,7 +1756,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 16
-		completion_reward = { }
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
 	#Реформа налогообложения
@@ -1345,7 +1772,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 16
-		completion_reward = { }
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
 
