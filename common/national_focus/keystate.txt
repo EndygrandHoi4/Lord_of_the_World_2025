@@ -1,0 +1,50 @@
+focus_tree = {
+	id = keystate_focuses
+	country = {
+		factor = 0
+		modifier = {
+			tag = E12
+			add = 10
+		}
+	}
+
+	focus = {
+		id = UKS_awake_from_darkness
+		icon = GFX_real_freedom
+		cost = 5
+		x = 10
+		y = 1
+		completion_reward = {
+			add_manpower = 2500000
+		}
+	}
+	focus = {
+		id = UKS_extra_milita
+		icon = GFX_real_freedom
+		cost = 10
+		x = 10
+		y = 2
+		prerequisite = {
+			focus = UKS_awake_from_darkness
+		}
+		completion_reward = {
+			add_manpower = 2500000
+			add_war_support = 1.0
+		}
+	}
+	focus = {
+		id = UKS_get_out
+		icon = GFX_real_freedom
+		cost = 142.8
+		x = 10
+		y = 3
+		available = {
+			has_war = yes
+		}
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = UKS_extra_milita
+		}
+		completion_reward = { }
+	}
+}
